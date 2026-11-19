@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" android:drawable="@drawable/ic_equalizer_static">
+    <target
+        android:name="path_1"
+        android:animation="@animator/audio_animation_path_1_animation"/>
+    <target
+        android:name="path_2"
+        android:animation="@animator/audio_animation_path_2_animation"/>
+    <target
+        android:name="path_3"
+        android:animation="@animator/audio_animation_path_3_animation"/>
+</animated-vector>

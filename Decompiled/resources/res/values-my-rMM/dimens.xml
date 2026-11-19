@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="analog_widget_font_ratio">0.07</dimen>
+    <dimen name="cities_widget_preview_clock_font_size">45dp</dimen>
+    <dimen name="digital_widget_margin_ratio">0</dimen>
+    <dimen name="digital_widget_preview_clock_font_size">50dp</dimen>
+    <dimen name="digital_widget_preview_clock_margin">0dp</dimen>
+    <dimen name="digital_widget_preview_label_font_size">10dp</dimen>
+    <dimen name="stacked_widget_inner_margin_ratio">0</dimen>
+    <dimen name="stacked_widget_outer_margin_ratio">0</dimen>
+    <dimen name="stacked_widget_preview_clock_font_size">50dp</dimen>
+    <dimen name="stacked_widget_preview_inner_clock_margin">0dp</dimen>
+    <dimen name="stacked_widget_preview_outer_clock_margin">0dp</dimen>
+</resources>

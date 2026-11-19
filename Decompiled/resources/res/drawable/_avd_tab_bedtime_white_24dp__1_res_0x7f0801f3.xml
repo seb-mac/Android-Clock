@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:ordering="together">
+    <objectAnimator
+        android:interpolator="@drawable/__avd_tab_bedtime_white_24dp__1__0_res_0x7f080172"
+        android:duration="317"
+        android:startOffset="0"
+        android:valueFrom="M5.01 0 C5.01,2.77 2.77,5.01 0,5.01 C-2.77,5.01 -5.01,2.77 -5.01,0 C-5.01,-2.77 -2.77,-5.01 0,-5.01 C0.33,-5.01 0.66,-4.98 0.98,-4.92 C2.09,-4.7 3.07,-4.11 3.79,-3.28 C4.55,-2.41 5.01,-1.26 5.01,0c "
+        android:valueTo="M5.01 0 C5.01,2.77 2.77,5.01 0,5.01 C-2.77,5.01 -5.01,2.77 -5.01,0 C-5.01,-2.77 -2.77,-5.01 0,-5.01 C0.33,-5.01 0.66,-4.98 0.98,-4.92 C2.09,-4.7 3.07,-4.11 3.79,-3.28 C4.55,-2.41 5.01,-1.26 5.01,0c "
+        android:valueType="pathType"
+        android:propertyName="pathData"/>
+    <objectAnimator
+        android:interpolator="@drawable/__avd_tab_bedtime_white_24dp__1__1_res_0x7f080173"
+        android:duration="400"
+        android:startOffset="317"
+        android:valueFrom="M5.01 0 C5.01,2.77 2.77,5.01 0,5.01 C-2.77,5.01 -5.01,2.77 -5.01,0 C-5.01,-2.77 -2.77,-5.01 0,-5.01 C0.33,-5.01 0.66,-4.98 0.98,-4.92 C2.09,-4.7 3.07,-4.11 3.79,-3.28 C4.55,-2.41 5.01,-1.26 5.01,0c "
+        android:valueTo="M5.01 0 C5.01,2.77 2.77,5.01 0,5.01 C-2.77,5.01 -5.01,2.77 -5.01,0 C-5.01,-2.77 -2.77,-5.01 0,-5.01 C0.33,-5.01 -1.29,-2.51 0.6,-1.6 C3.04,-0.43 3.92,-3.12 4.1,-2.91 C4.86,-2.03 5.01,-1.26 5.01,0c "
+        android:valueType="pathType"
+        android:propertyName="pathData"/>
+    <objectAnimator
+        android:interpolator="@drawable/__avd_tab_bedtime_white_24dp__1__2_res_0x7f080174"
+        android:duration="167"
+        android:startOffset="717"
+        android:valueFrom="M5.01 0 C5.01,2.77 2.77,5.01 0,5.01 C-2.77,5.01 -5.01,2.77 -5.01,0 C-5.01,-2.77 -2.77,-5.01 0,-5.01 C0.33,-5.01 -1.29,-2.51 0.6,-1.6 C3.04,-0.43 3.92,-3.12 4.1,-2.91 C4.86,-2.03 5.01,-1.26 5.01,0c "
+        android:valueTo="M5.01 0 C5.01,2.77 2.77,5.01 0,5.01 C-2.77,5.01 -5.01,2.77 -5.01,0 C-5.01,-2.77 -2.77,-5.01 0,-5.01 C0.33,-5.01 -1.29,-2.51 0.6,-1.6 C3.04,-0.43 3.92,-3.12 4.1,-2.91 C4.86,-2.03 5.01,-1.26 5.01,0c "
+        android:valueType="pathType"
+        android:propertyName="pathData"/>
+    <objectAnimator
+        android:interpolator="@drawable/__avd_tab_bedtime_white_24dp__1__3_res_0x7f080175"
+        android:duration="400"
+        android:startOffset="883"
+        android:valueFrom="M5.01 0 C5.01,2.77 2.77,5.01 0,5.01 C-2.77,5.01 -5.01,2.77 -5.01,0 C-5.01,-2.77 -2.77,-5.01 0,-5.01 C0.33,-5.01 -1.29,-2.51 0.6,-1.6 C3.04,-0.43 3.92,-3.12 4.1,-2.91 C4.86,-2.03 5.01,-1.26 5.01,0c "
+        android:valueTo="M5.01 0 C5.01,2.77 2.77,5.01 0,5.01 C-2.77,5.01 -5.01,2.77 -5.01,0 C-5.01,-2.77 -2.77,-5.01 0,-5.01 C0.33,-5.01 0.66,-4.98 0.98,-4.92 C2.09,-4.7 3.07,-4.11 3.79,-3.28 C4.55,-2.41 5.01,-1.26 5.01,0c "
+        android:valueType="pathType"
+        android:propertyName="pathData"/>
+</set>

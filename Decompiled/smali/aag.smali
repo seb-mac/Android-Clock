@@ -1,0 +1,26 @@
+###### Class defpackage.aag (aag)
+.class public final Laag;
+.super Lye;
+.source "PG"
+
+
+# virtual methods
+.method public final d(Landroid/view/View;F)V
+    .registers 3
+
+    .line 1
+    invoke-virtual {p0, p2}, Lye;->a(F)F
+
+    .line 2
+    .line 3
+    .line 4
+    move-result p0
+
+    .line 5
+    invoke-virtual {p1, p0}, Landroid/view/View;->setRotation(F)V
+
+    .line 6
+    .line 7
+    .line 8
+    return-void
+.end method

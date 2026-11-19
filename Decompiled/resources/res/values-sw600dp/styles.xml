@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DeskClockAppBarLayoutStyle" parent="@style/Widget.GoogleMaterial3.AppBarLayout">
+        <item name="android:visibility">0</item>
+        <item name="android:fitsSystemWindows">false</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintStart_toEndOf">@id/navigation_bar</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+    </style>
+    <style name="DeskClockContentStyle" parent="">
+        <item name="android:background">?android:attr/colorBackground</item>
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintStart_toEndOf">@id/navigation_bar</item>
+        <item name="layout_constraintTop_toBottomOf">@id/app_bar_layout</item>
+    </style>
+    <style name="FabContainerStyle" parent="">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">-2</item>
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+    </style>
+    <style name="GastownDeskClockAppBarLayoutStyle" parent="@style/Widget.GoogleMaterial3.AppBarLayout">
+        <item name="android:visibility">0</item>
+        <item name="android:fitsSystemWindows">false</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+    </style>
+    <style name="GastownDeskClockContentStyle" parent="">
+        <item name="android:background">?android:attr/colorBackground</item>
+        <item name="layout_constraintBottom_toTopOf">@id/navigation_bar</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintTop_toBottomOf">@id/app_bar_layout</item>
+    </style>
+    <style name="Theme.DeskClock" parent="@style/Theme.DeskClockBase">
+        <item name="android:windowBackground">@color/window_background</item>
+    </style>
+    <style name="Theme.DeskClock.Gastown" parent="@style/Theme.DeskClockBase.Gastown">
+        <item name="android:windowBackground">@color/window_background</item>
+    </style>
+    <style name="TimerSetupDigits" parent="">
+        <item name="layout_constraintBottom_toTopOf">@id/timer_setup_digit_bottom</item>
+        <item name="layout_constraintEnd_toEndOf">@id/timer_setup_view_end</item>
+        <item name="layout_constraintStart_toStartOf">@id/timer_setup_view_start</item>
+        <item name="layout_constraintTop_toBottomOf">@id/timer_setup_time_bottom</item>
+        <item name="layout_constraintVertical_bias">0</item>
+    </style>
+    <style name="TimerSetupTime" parent="@style/TimerSetupTimeBase">
+        <item name="android:layout_marginLeft">-20dp</item>
+        <item name="android:layout_marginRight">-20dp</item>
+        <item name="layout_constraintBottom_toBottomOf">@id/timer_setup_time_bottom</item>
+        <item name="layout_constraintEnd_toEndOf">@id/timer_setup_digits</item>
+        <item name="layout_constraintStart_toStartOf">@id/timer_setup_digits</item>
+        <item name="layout_constraintTop_toTopOf">@id/timer_setup_time_top</item>
+    </style>
+    <style name="Widget.Design.TabLayout" parent="@style/Base.Widget.Design.TabLayout">
+        <item name="tabGravity">center</item>
+        <item name="tabMode">fixed</item>
+    </style>
+</resources>

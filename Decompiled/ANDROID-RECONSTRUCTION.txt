@@ -1,0 +1,8 @@
+Java reconstruction is incomplete.
+
+135 method reconstructions failed, including attempts in classes without saved Java. Any throwing replacements are not the original program behavior.
+0 emitted method bodies were marked inconsistent by the decompiler.
+The engine reported 48 errors. Full diagnostics remain in the Java output.
+
+Use jadx-report.json to identify affected methods. Smali is available where disassembly succeeded. Available Java, resources and output from other extraction stages remain usable.
+An emitted Java body is not a guarantee of semantic equivalence.

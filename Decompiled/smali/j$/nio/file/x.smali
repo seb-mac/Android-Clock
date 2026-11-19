@@ -1,0 +1,113 @@
+###### Class j$.nio.file.x (j$.nio.file.x)
+.class public final synthetic Lj$/nio/file/x;
+.super Ljava/lang/Object;
+.source "r8-map-id-23e67e6259d12eb02172efd642482b8e15608bb163648e95d1d4ced085ffcf56"
+
+# interfaces
+.implements Ljava/nio/file/PathMatcher;
+
+
+# instance fields
+.field public final synthetic a:Lj$/nio/file/y;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lj$/nio/file/y;)V
+    .registers 2
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lj$/nio/file/x;->a:Lj$/nio/file/y;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final synthetic equals(Ljava/lang/Object;)Z
+    .registers 3
+
+    .line 1
+    iget-object p0, p0, Lj$/nio/file/x;->a:Lj$/nio/file/y;
+
+    .line 2
+    .line 3
+    instance-of v0, p1, Lj$/nio/file/x;
+
+    .line 4
+    .line 5
+    if-eqz v0, :cond_a
+
+    .line 6
+    .line 7
+    check-cast p1, Lj$/nio/file/x;
+
+    .line 8
+    .line 9
+    iget-object p1, p1, Lj$/nio/file/x;->a:Lj$/nio/file/y;
+
+    .line 10
+    .line 11
+    :cond_a
+    invoke-virtual {p0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    .line 12
+    .line 13
+    .line 14
+    move-result p0
+
+    .line 15
+    return p0
+.end method
+
+.method public final synthetic hashCode()I
+    .registers 1
+
+    .line 1
+    iget-object p0, p0, Lj$/nio/file/x;->a:Lj$/nio/file/y;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p0
+
+    .line 7
+    return p0
+.end method
+
+.method public final synthetic matches(Ljava/nio/file/Path;)Z
+    .registers 2
+
+    .line 1
+    iget-object p0, p0, Lj$/nio/file/x;->a:Lj$/nio/file/y;
+
+    .line 2
+    .line 3
+    invoke-static {p1}, Lj$/nio/file/q;->k(Ljava/nio/file/Path;)Lj$/nio/file/Path;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    invoke-interface {p0, p1}, Lj$/nio/file/y;->a(Lj$/nio/file/Path;)Z
+
+    .line 8
+    .line 9
+    .line 10
+    move-result p0
+
+    .line 11
+    return p0
+.end method

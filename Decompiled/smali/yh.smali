@@ -1,0 +1,15 @@
+###### Class defpackage.yh (yh)
+.class public interface abstract Lyh;
+.super Ljava/lang/Object;
+.source "PG"
+
+
+# virtual methods
+.method public abstract a(F)F
+.end method
+
+.method public abstract b()F
+.end method
+
+.method public abstract c()Z
+.end method

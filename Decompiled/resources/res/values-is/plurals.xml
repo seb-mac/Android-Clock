@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="add_minute_preset_timer">
+        <item quantity="one">Setja upp %1$d mínútu teljara</item>
+        <item quantity="other">Setja upp %1$d mínútna teljara</item>
+    </plurals>
+    <plurals name="alarm_alert_snooze_duration">
+        <item quantity="one">%d mín.</item>
+        <item quantity="other">%d mín.</item>
+    </plurals>
+    <plurals name="alarm_alert_snooze_set">
+        <item quantity="one">Blundar í %d mínútu.</item>
+        <item quantity="other">Blundar í %d mínútur.</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="one">%s dagur</item>
+        <item quantity="other">%s dagar</item>
+    </plurals>
+    <plurals name="days_ago">
+        <item quantity="one">Fyrir %s degi</item>
+        <item quantity="other">Fyrir %s dögum</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="one">%s klukkustund</item>
+        <item quantity="other">%s klukkustundir</item>
+    </plurals>
+    <plurals name="hours_extra_short">
+        <item quantity="one">%s klst.</item>
+        <item quantity="other">%s klst.</item>
+    </plurals>
+    <plurals name="hours_short">
+        <item quantity="one">%s klst.</item>
+        <item quantity="other">%s klst.</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="one">%s mínútu</item>
+        <item quantity="other">%s mínútur</item>
+    </plurals>
+    <plurals name="minutes_extra_short">
+        <item quantity="one">%s mín.</item>
+        <item quantity="other">%s mín.</item>
+    </plurals>
+    <plurals name="minutes_short">
+        <item quantity="one">%s mín</item>
+        <item quantity="other">%s mín</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d ný tilkynning</item>
+        <item quantity="other">%d nýjar tilkynningar</item>
+    </plurals>
+    <plurals name="places_autocomplete_predictions_available">
+        <item quantity="one">%1$d tillaga í boði</item>
+        <item quantity="other">%1$d tillögur í boði</item>
+    </plurals>
+    <plurals name="seconds">
+        <item quantity="one">%s sekúnda</item>
+        <item quantity="other">%s sekúndur</item>
+    </plurals>
+    <plurals name="seconds_extra_short">
+        <item quantity="one">%s s.</item>
+        <item quantity="other">%s s.</item>
+    </plurals>
+</resources>

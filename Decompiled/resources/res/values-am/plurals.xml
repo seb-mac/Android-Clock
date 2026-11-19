@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="add_minute_preset_timer">
+        <item quantity="one">የ%1$d ደቂቃ ሰዓት ቆጣሪ ያቀናብሩ</item>
+        <item quantity="other">የ%1$d ደቂቃዎች ሰዓት ቆጣሪ ያቀናብሩ</item>
+    </plurals>
+    <plurals name="alarm_alert_snooze_duration">
+        <item quantity="one">%d ደቂቃ</item>
+        <item quantity="other">%d ደቂቃ</item>
+    </plurals>
+    <plurals name="alarm_alert_snooze_set">
+        <item quantity="one">ለ%d ደቂቃዎች በማሸለብ ላይ</item>
+        <item quantity="other">ለ%d ደቂቃዎች በማሸለብ ላይ</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="one">%s ቀኖች</item>
+        <item quantity="other">%s ቀኖች</item>
+    </plurals>
+    <plurals name="days_ago">
+        <item quantity="one">ከ%s ቀኖች በፊት</item>
+        <item quantity="other">ከ%s ቀኖች በፊት</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="one">%s ሰዓቶች</item>
+        <item quantity="other">%s ሰዓቶች</item>
+    </plurals>
+    <plurals name="hours_extra_short">
+        <item quantity="one">%s ሰ</item>
+        <item quantity="other">%s ሰ</item>
+    </plurals>
+    <plurals name="hours_short">
+        <item quantity="one">%s ሰ</item>
+        <item quantity="other">%s ሰ</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="one">%s ደቂቃዎች</item>
+        <item quantity="other">%s ደቂቃዎች</item>
+    </plurals>
+    <plurals name="minutes_extra_short">
+        <item quantity="one">%sደ</item>
+        <item quantity="other">%sደ</item>
+    </plurals>
+    <plurals name="minutes_short">
+        <item quantity="one">%s ደቂቃ</item>
+        <item quantity="other">%s ደቂቃ</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d አዲስ ማሳወቂያዎች</item>
+        <item quantity="other">%d አዲስ ማሳወቂያዎች</item>
+    </plurals>
+    <plurals name="places_autocomplete_predictions_available">
+        <item quantity="one">%1$d የአስተያየት ጥቆማ ይገኛል</item>
+        <item quantity="other">%1$d የአስተያየት ጥቆማዎች ይገኛሉ</item>
+    </plurals>
+    <plurals name="seconds">
+        <item quantity="one">%s ሰከንዶች</item>
+        <item quantity="other">%s ሰከንዶች</item>
+    </plurals>
+    <plurals name="seconds_extra_short">
+        <item quantity="one">%s ሰ</item>
+        <item quantity="other">%s ሰ</item>
+    </plurals>
+</resources>

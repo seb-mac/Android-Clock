@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:ordering="together">
+    <objectAnimator
+        android:interpolator="@drawable/__avd_tab_stopwatch_transition__1__0_res_0x7f08017d"
+        android:duration="67"
+        android:startOffset="0"
+        android:valueFrom="0"
+        android:valueTo="0"
+        android:valueType="floatType"
+        android:propertyName="rotation"/>
+    <objectAnimator
+        android:interpolator="@drawable/__avd_tab_stopwatch_transition__1__1_res_0x7f08017e"
+        android:duration="438"
+        android:startOffset="67"
+        android:valueFrom="0"
+        android:valueTo="361.453"
+        android:valueType="floatType"
+        android:propertyName="rotation"/>
+    <objectAnimator
+        android:interpolator="@drawable/__avd_tab_stopwatch_transition__1__2_res_0x7f08017f"
+        android:duration="195"
+        android:startOffset="505"
+        android:valueFrom="361.453"
+        android:valueTo="360"
+        android:valueType="floatType"
+        android:propertyName="rotation"/>
+</set>

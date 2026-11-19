@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <fraction name="bedtime_onboarding_intro_horizontal_end_percent">0.85</fraction>
+    <fraction name="bedtime_onboarding_intro_horizontal_start_percent">0.15</fraction>
+    <fraction name="content_horizontal_screen_percent">1</fraction>
+    <fraction name="gastown_alarm_activity_track_bottom_percent">0.925</fraction>
+    <fraction name="gastown_alarm_activity_track_top_percent">0.8</fraction>
+    <fraction name="timer_setup_time_bottom_percent">0.2</fraction>
+    <fraction name="timer_setup_time_top_percent">0</fraction>
+</resources>

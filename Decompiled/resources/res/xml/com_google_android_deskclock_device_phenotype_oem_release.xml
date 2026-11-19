@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<phenotype-registrations>
+    <phenotype-registration>
+        <configuration-package>com.google.android.deskclock.device
+        </configuration-package>
+        <log-sources>
+            <log-source>CLEARCUT_PIXEL_DESKCLOCK
+            </log-source>
+            <log-source>DESKCLOCK_ANDROID_PRIMES
+            </log-source>
+        </log-sources>
+        <auto-subpackage>true
+        </auto-subpackage>
+        <params>CAc=
+        </params>
+    </phenotype-registration>
+</phenotype-registrations>

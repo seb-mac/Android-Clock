@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="add_minute_preset_timer">
+        <item quantity="one">Sediakan pemasa satu minit</item>
+        <item quantity="other">Sediakan pemasa %1$d minit</item>
+    </plurals>
+    <plurals name="alarm_alert_snooze_duration">
+        <item quantity="one">1 min</item>
+        <item quantity="other">%d min</item>
+    </plurals>
+    <plurals name="alarm_alert_snooze_set">
+        <item quantity="one">Ditunda selama 1 minit.</item>
+        <item quantity="other">Ditunda selama %d minit.</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="one">1 hari</item>
+        <item quantity="other">%s hari</item>
+    </plurals>
+    <plurals name="days_ago">
+        <item quantity="one">1 hari yang lalu</item>
+        <item quantity="other">%s hari yang lalu</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="one">1 jam</item>
+        <item quantity="other">%s jam</item>
+    </plurals>
+    <plurals name="hours_extra_short">
+        <item quantity="one">1j</item>
+        <item quantity="other">%sj</item>
+    </plurals>
+    <plurals name="hours_short">
+        <item quantity="one">1 jam</item>
+        <item quantity="other">%s jam</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="one">1 minit</item>
+        <item quantity="other">%s minit</item>
+    </plurals>
+    <plurals name="minutes_extra_short">
+        <item quantity="one">1m</item>
+        <item quantity="other">%sm</item>
+    </plurals>
+    <plurals name="minutes_short">
+        <item quantity="one">1 minit</item>
+        <item quantity="other">%s minit</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d pemberitahuan baharu</item>
+        <item quantity="other">%d pemberitahuan baharu</item>
+    </plurals>
+    <plurals name="places_autocomplete_predictions_available">
+        <item quantity="one">%1$d cadangan tersedia</item>
+        <item quantity="other">%1$d cadangan tersedia</item>
+    </plurals>
+    <plurals name="seconds">
+        <item quantity="one">1 saat</item>
+        <item quantity="other">%s saat</item>
+    </plurals>
+    <plurals name="seconds_extra_short">
+        <item quantity="one">1s</item>
+        <item quantity="other">%ss</item>
+    </plurals>
+</resources>

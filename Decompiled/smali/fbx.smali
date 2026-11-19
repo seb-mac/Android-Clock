@@ -1,0 +1,44 @@
+###### Class defpackage.fbx (fbx)
+.class public final Lfbx;
+.super Ljava/lang/Object;
+.source "PG"
+
+# interfaces
+.implements Lesp;
+
+
+# direct methods
+.method public constructor <init>(Lezo;)V
+    .registers 2
+
+    .line 1
+    invoke-static {p1}, Lj$/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 5
+    .line 6
+    .line 7
+    return-void
+.end method
+
+
+# virtual methods
+.method public final synthetic a(Ljava/lang/Object;)V
+    .registers 2
+
+    .line 1
+    check-cast p1, Lfbq;
+
+    .line 2
+    .line 3
+    invoke-interface {p1}, Lfbq;->a()V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method

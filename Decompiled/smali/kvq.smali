@@ -1,0 +1,9 @@
+###### Class defpackage.kvq (kvq)
+.class public interface abstract Lkvq;
+.super Ljava/lang/Object;
+.source "PG"
+
+
+# virtual methods
+.method public abstract a()Z
+.end method

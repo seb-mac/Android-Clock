@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="@drawable/city_search_background_selector"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?attr/selectableItemBackground"
+    android:minHeight="@dimen/cities_list_item_height"
+    android:paddingStart="48dp"
+    android:paddingEnd="24dp">
+    <TextView
+        android:textAppearance="@style/TextAppearance.Label"
+        android:textColor="?attr/colorOnBackground"
+        android:ellipsize="end"
+        android:id="@+id/city_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_weight="1"
+        android:paddingEnd="10dp"/>
+    <ImageView
+        android:id="@+id/city_selected"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        android:importantForAccessibility="no"
+        app:srcCompat="@drawable/quantum_gm_ic_check_circle_outline_vd_theme_24"
+        app:tint="?attr/colorAccent"
+        app:tintMode="src_in"/>
+    <TextView
+        android:textAppearance="@style/TextAppearance.Label"
+        android:id="@+id/city_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="viewEnd"
+        android:layout_marginStart="8dp"/>
+</LinearLayout>

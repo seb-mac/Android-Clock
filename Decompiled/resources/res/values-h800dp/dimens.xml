@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="gastown_stopwatch_button_container_margin_bottom">27dp</dimen>
+    <dimen name="gastown_stopwatch_button_container_margin_top">48dp</dimen>
+    <dimen name="gastown_stopwatch_center_container_margin_top">24dp</dimen>
+</resources>

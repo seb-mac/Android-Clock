@@ -1,0 +1,140 @@
+###### Class defpackage.cy (cy)
+.class public final Lcy;
+.super Ljava/lang/Object;
+.source "PG"
+
+
+# instance fields
+.field final a:Landroid/content/Context;
+
+.field public final b:Landroid/media/browse/MediaBrowser;
+
+.field protected final c:Landroid/os/Bundle;
+
+.field public final d:Lcv;
+
+.field public final e:Lvw;
+
+.field protected f:I
+
+.field public g:Landroid/os/Messenger;
+
+.field public h:Landroid/support/v4/media/session/MediaSessionCompat$Token;
+
+.field public i:Lns;
+
+
+# direct methods
+.method public constructor <init>(Landroid/content/Context;Landroid/content/ComponentName;Lcx;)V
+    .registers 7
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    new-instance v0, Lcv;
+
+    .line 5
+    .line 6
+    invoke-direct {v0, p0}, Lcv;-><init>(Lcy;)V
+
+    .line 7
+    .line 8
+    .line 9
+    iput-object v0, p0, Lcy;->d:Lcv;
+
+    .line 10
+    .line 11
+    new-instance v0, Lvw;
+
+    .line 12
+    .line 13
+    invoke-direct {v0}, Lvw;-><init>()V
+
+    .line 14
+    .line 15
+    .line 16
+    iput-object v0, p0, Lcy;->e:Lvw;
+
+    .line 17
+    .line 18
+    iput-object p1, p0, Lcy;->a:Landroid/content/Context;
+
+    .line 19
+    .line 20
+    new-instance v0, Landroid/os/Bundle;
+
+    .line 21
+    .line 22
+    invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
+
+    .line 23
+    .line 24
+    .line 25
+    iput-object v0, p0, Lcy;->c:Landroid/os/Bundle;
+
+    .line 26
+    .line 27
+    const-string v1, "extra_client_version"
+
+    .line 28
+    .line 29
+    const/4 v2, 0x1
+
+    .line 30
+    invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
+
+    .line 31
+    .line 32
+    .line 33
+    const-string v1, "extra_calling_pid"
+
+    .line 34
+    .line 35
+    invoke-static {}, Landroid/os/Process;->myPid()I
+
+    .line 36
+    .line 37
+    .line 38
+    move-result v2
+
+    .line 39
+    invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
+
+    .line 40
+    .line 41
+    .line 42
+    iput-object p0, p3, Lcx;->b:Lcy;
+
+    .line 43
+    .line 44
+    new-instance v1, Landroid/media/browse/MediaBrowser;
+
+    .line 45
+    .line 46
+    iget-object p3, p3, Lcx;->a:Landroid/media/browse/MediaBrowser$ConnectionCallback;
+
+    .line 47
+    .line 48
+    invoke-direct {v1, p1, p2, p3, v0}, Landroid/media/browse/MediaBrowser;-><init>(Landroid/content/Context;Landroid/content/ComponentName;Landroid/media/browse/MediaBrowser$ConnectionCallback;Landroid/os/Bundle;)V
+
+    .line 49
+    .line 50
+    .line 51
+    iput-object v1, p0, Lcy;->b:Landroid/media/browse/MediaBrowser;
+
+    .line 52
+    .line 53
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/content/Context;Landroid/content/ComponentName;Lcx;[B)V
+    .registers 5
+
+    .line 54
+    invoke-direct {p0, p1, p2, p3}, Lcy;-><init>(Landroid/content/Context;Landroid/content/ComponentName;Lcx;)V
+
+    return-void
+.end method

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="add_minute_preset_timer">
+        <item quantity="one">Бир мүнөттүк таймерди тууралаңыз</item>
+        <item quantity="other">%1$d мүнөттүк таймерди тууралаңыз</item>
+    </plurals>
+    <plurals name="alarm_alert_snooze_duration">
+        <item quantity="one">1 мүн.</item>
+        <item quantity="other">%d мүн.</item>
+    </plurals>
+    <plurals name="alarm_alert_snooze_set">
+        <item quantity="one">1 мүнөткө тындыруу.</item>
+        <item quantity="other">%d мүнөткө тындыруу.</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="one">1 күн</item>
+        <item quantity="other">%s күн</item>
+    </plurals>
+    <plurals name="days_ago">
+        <item quantity="one">1 күн мурун</item>
+        <item quantity="other">%s күн мурун</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="one">1 саат</item>
+        <item quantity="other">%s саат</item>
+    </plurals>
+    <plurals name="hours_extra_short">
+        <item quantity="one">1 с.</item>
+        <item quantity="other">%s с.</item>
+    </plurals>
+    <plurals name="hours_short">
+        <item quantity="one">1 саат</item>
+        <item quantity="other">%s саат</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="one">1 мүнөт</item>
+        <item quantity="other">%s мүнөт</item>
+    </plurals>
+    <plurals name="minutes_extra_short">
+        <item quantity="one">1 мүн.</item>
+        <item quantity="other">%s мүн.</item>
+    </plurals>
+    <plurals name="minutes_short">
+        <item quantity="one">1 мүн</item>
+        <item quantity="other">%s мүн</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d жаңы билдирме</item>
+        <item quantity="other">%d жаңы билдирме</item>
+    </plurals>
+    <plurals name="places_autocomplete_predictions_available">
+        <item quantity="one">%1$d сунуш жеткиликтүү</item>
+        <item quantity="other">%1$dсунуш жеткиликтүү</item>
+    </plurals>
+    <plurals name="seconds">
+        <item quantity="one">1 секунд</item>
+        <item quantity="other">%s секунд</item>
+    </plurals>
+    <plurals name="seconds_extra_short">
+        <item quantity="one">1 сек.</item>
+        <item quantity="other">%s сек.</item>
+    </plurals>
+</resources>

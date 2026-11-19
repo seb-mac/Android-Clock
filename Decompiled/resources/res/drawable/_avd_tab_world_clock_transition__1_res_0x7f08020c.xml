@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:ordering="together">
+    <objectAnimator
+        android:interpolator="@drawable/__avd_tab_world_clock_transition__1__0_res_0x7f08018b"
+        android:duration="146"
+        android:startOffset="0"
+        android:valueFrom="M1.39 9 C0.63,8.08 -1.63,4.94 -1.63,0.03 C-1.63,-4.87 0.61,-8.04 1.38,-8.98 "
+        android:valueTo="M1.33 8.98 C-3.39,8.7 -7.12,4.79 -7.12,0 C-7.12,-4.78 -3.4,-8.69 1.31,-8.98 "
+        android:valueType="pathType"
+        android:propertyName="pathData"/>
+</set>

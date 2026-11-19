@@ -1,0 +1,9 @@
+package defpackage;
+
+import android.R;
+
+/* JADX INFO: compiled from: PG */
+/* JADX INFO: loaded from: classes2.dex */
+public final class hxh {
+    public static final int[] a = {R.attr.maxWidth, R.attr.maxHeight, R.attr.elevation, com.google.android.deskclock.debug.R.attr.backgroundTint, com.google.android.deskclock.debug.R.attr.behavior_autoExpandOnRequestChildRectangleOffscreen, com.google.android.deskclock.debug.R.attr.behavior_draggable, com.google.android.deskclock.debug.R.attr.behavior_draggableOnNestedScroll, com.google.android.deskclock.debug.R.attr.behavior_expandedOffset, com.google.android.deskclock.debug.R.attr.behavior_fitToContents, com.google.android.deskclock.debug.R.attr.behavior_halfExpandedRatio, com.google.android.deskclock.debug.R.attr.behavior_hideable, com.google.android.deskclock.debug.R.attr.behavior_multipleScrollingChildrenSupported, com.google.android.deskclock.debug.R.attr.behavior_peekHeight, com.google.android.deskclock.debug.R.attr.behavior_saveFlags, com.google.android.deskclock.debug.R.attr.behavior_significantVelocityThreshold, com.google.android.deskclock.debug.R.attr.behavior_skipCollapsed, com.google.android.deskclock.debug.R.attr.gestureInsetBottomIgnored, com.google.android.deskclock.debug.R.attr.marginLeftSystemWindowInsets, com.google.android.deskclock.debug.R.attr.marginRightSystemWindowInsets, com.google.android.deskclock.debug.R.attr.marginTopSystemWindowInsets, com.google.android.deskclock.debug.R.attr.paddingBottomSystemWindowInsets, com.google.android.deskclock.debug.R.attr.paddingLeftSystemWindowInsets, com.google.android.deskclock.debug.R.attr.paddingRightSystemWindowInsets, com.google.android.deskclock.debug.R.attr.paddingTopSystemWindowInsets, com.google.android.deskclock.debug.R.attr.shapeAppearance, com.google.android.deskclock.debug.R.attr.shapeAppearanceOverlay, com.google.android.deskclock.debug.R.attr.shouldRemoveExpandedCorners};
+}

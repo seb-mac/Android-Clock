@@ -1,0 +1,9 @@
+package defpackage;
+
+import com.google.android.deskclock.debug.R;
+
+/* JADX INFO: compiled from: PG */
+/* JADX INFO: loaded from: classes2.dex */
+public final class hem {
+    public static final int[] a = {R.attr.placesBorderWidth, R.attr.placesBorderWidthButton, R.attr.placesBorderWidthButtonPrimary, R.attr.placesColorAttributionDarkTheme, R.attr.placesColorAttributionLightTheme, R.attr.placesColorButtonBorder, R.attr.placesColorButtonPrimaryBorder, R.attr.placesColorDisabledSurface, R.attr.placesColorInfo, R.attr.placesColorNegative, R.attr.placesColorNeutralContainer, R.attr.placesColorOnNeutralContainer, R.attr.placesColorOnNeutralContainerVariant, R.attr.placesColorOnPositiveContainer, R.attr.placesColorOnPrimaryContainer, R.attr.placesColorOnSecondaryContainer, R.attr.placesColorOnSurface, R.attr.placesColorOnSurfaceVariant, R.attr.placesColorOutlineDecorative, R.attr.placesColorPositive, R.attr.placesColorPositiveContainer, R.attr.placesColorPrimary, R.attr.placesColorPrimaryContainer, R.attr.placesColorSecondaryContainer, R.attr.placesColorStarRating, R.attr.placesColorSurface, R.attr.placesCornerRadius, R.attr.placesCornerRadiusButton, R.attr.placesCornerRadiusButtonPrimary, R.attr.placesCornerRadiusCard, R.attr.placesCornerRadiusCollageOuter, R.attr.placesCornerRadiusDialog, R.attr.placesCornerRadiusThumbnail, R.attr.placesSpacingExtraLarge, R.attr.placesSpacingExtraSmall, R.attr.placesSpacingLarge, R.attr.placesSpacingMedium, R.attr.placesSpacingSmall, R.attr.placesSpacingTwoExtraLarge, R.attr.placesTextAppearanceBodyMedium, R.attr.placesTextAppearanceBodySmall, R.attr.placesTextAppearanceDisplaySmall, R.attr.placesTextAppearanceHeadlineMedium, R.attr.placesTextAppearanceLabelLarge, R.attr.placesTextAppearanceLabelMedium, R.attr.placesTextAppearanceTitleLarge, R.attr.placesTextAppearanceTitleMedium, R.attr.placesTextAppearanceTitleSmall};
+}

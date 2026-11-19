@@ -1,0 +1,21 @@
+###### Class android.app.appsearch.exceptions.AppSearchException (android.app.appsearch.exceptions.AppSearchException)
+.class public synthetic Landroid/app/appsearch/exceptions/AppSearchException;
+.super Ljava/lang/Exception;
+
+
+# direct methods
+.method static synthetic constructor <clinit>()V
+    .registers 1
+
+    .line 1
+    new-instance v0, Ljava/lang/NoClassDefFoundError;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/lang/NoClassDefFoundError;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    throw v0
+.end method

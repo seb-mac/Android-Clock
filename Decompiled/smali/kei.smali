@@ -1,0 +1,4 @@
+###### Class defpackage.kei (kei)
+.class public interface abstract Lkei;
+.super Ljava/lang/Object;
+.source "PG"

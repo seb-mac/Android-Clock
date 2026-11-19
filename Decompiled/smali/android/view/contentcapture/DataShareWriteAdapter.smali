@@ -1,0 +1,21 @@
+###### Class android.view.contentcapture.DataShareWriteAdapter (android.view.contentcapture.DataShareWriteAdapter)
+.class public interface abstract synthetic Landroid/view/contentcapture/DataShareWriteAdapter;
+.super Ljava/lang/Object;
+
+
+# direct methods
+.method static synthetic constructor <clinit>()V
+    .registers 1
+
+    .line 1
+    new-instance v0, Ljava/lang/NoClassDefFoundError;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/lang/NoClassDefFoundError;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    throw v0
+.end method

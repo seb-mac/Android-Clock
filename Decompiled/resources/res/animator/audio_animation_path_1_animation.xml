@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <set android:ordering="sequentially">
+        <objectAnimator
+            android:interpolator="@anim/audio_animation_animation_interpolator_7"
+            android:duration="100"
+            android:valueFrom="M -7.0,7.0 c 0.0,0.0 4.0,0.0 4.0,0.0 c 0.0,0.0 0.0,-5.96478271484 0.0,-5.96478271484 c 0.0,0.0 -4.0,0.0 -4.0,0.0 c 0.0,0.0 0.0,5.96478271484 0.0,5.96478271484 Z"
+            android:valueTo="M -7.0,7.0 c 0.0,0.0 4.0,0.0 4.0,0.0 c 0.0,0.0 0.0,-3.92211914062 0.0,-3.92211914062 c 0.0,0.0 -4.0,0.0 -4.0,0.0 c 0.0,0.0 0.0,3.92211914062 0.0,3.92211914062 Z"
+            android:valueType="pathType"
+            android:propertyName="pathData"/>
+        <objectAnimator
+            android:interpolator="@anim/audio_animation_animation_interpolator_10"
+            android:duration="199"
+            android:valueFrom="M -7.0,7.0 c 0.0,0.0 4.0,0.0 4.0,0.0 c 0.0,0.0 0.0,-3.92211914062 0.0,-3.92211914062 c 0.0,0.0 -4.0,0.0 -4.0,0.0 c 0.0,0.0 0.0,3.92211914062 0.0,3.92211914062 Z"
+            android:valueTo="M -7.0,7.0 c 0.0,0.0 4.0,0.0 4.0,0.0 c 0.0,0.0 0.0,-9.94633483887 0.0,-9.94633483887 c 0.0,0.0 -4.0,0.0 -4.0,0.0 c 0.0,0.0 0.0,9.94633483887 0.0,9.94633483887 Z"
+            android:valueType="pathType"
+            android:propertyName="pathData"/>
+        <objectAnimator
+            android:interpolator="@anim/audio_animation_animation_interpolator_0"
+            android:duration="66"
+            android:valueFrom="M -7.0,7.0 c 0.0,0.0 4.0,0.0 4.0,0.0 c 0.0,0.0 0.0,-9.94633483887 0.0,-9.94633483887 c 0.0,0.0 -4.0,0.0 -4.0,0.0 c 0.0,0.0 0.0,9.94633483887 0.0,9.94633483887 Z"
+            android:valueTo="M -7.0,7.0 c 0.0,0.0 4.0,0.0 4.0,0.0 c 0.0,0.0 0.0,-8.9296875 0.0,-8.9296875 c 0.0,0.0 -4.0,0.0 -4.0,0.0 c 0.0,0.0 0.0,8.9296875 0.0,8.9296875 Z"
+            android:valueType="pathType"
+            android:propertyName="pathData"/>
+        <objectAnimator
+            android:interpolator="@anim/audio_animation_animation_interpolator_2"
+            android:duration="83"
+            android:valueFrom="M -7.0,7.0 c 0.0,0.0 4.0,0.0 4.0,0.0 c 0.0,0.0 0.0,-8.9296875 0.0,-8.9296875 c 0.0,0.0 -4.0,0.0 -4.0,0.0 c 0.0,0.0 0.0,8.9296875 0.0,8.9296875 Z"
+            android:valueTo="M -7.0,7.0 c 0.0,0.0 4.0,0.0 4.0,0.0 c 0.0,0.0 0.0,-7.00178527832 0.0,-7.00178527832 c 0.0,0.0 -4.0,0.0 -4.0,0.0 c 0.0,0.0 0.0,7.00178527832 0.0,7.00178527832 Z"
+            android:valueType="pathType"
+            android:propertyName="pathData"/>
+        <objectAnimator
+            android:interpolator="@anim/audio_animation_animation_interpolator_4"
+            android:duration="116"
+            android:valueFrom="M -7.0,7.0 c 0.0,0.0 4.0,0.0 4.0,0.0 c 0.0,0.0 0.0,-7.00178527832 0.0,-7.00178527832 c 0.0,0.0 -4.0,0.0 -4.0,0.0 c 0.0,0.0 0.0,7.00178527832 0.0,7.00178527832 Z"
+            android:valueTo="M -7.0,7.0 c 0.0,0.0 4.0,0.0 4.0,0.0 c 0.0,0.0 0.0,-8.9296875 0.0,-8.9296875 c 0.0,0.0 -4.0,0.0 -4.0,0.0 c 0.0,0.0 0.0,8.9296875 0.0,8.9296875 Z"
+            android:valueType="pathType"
+            android:propertyName="pathData"/>
+        <objectAnimator
+            android:interpolator="@anim/audio_animation_animation_interpolator_10"
+            android:duration="200"
+            android:valueFrom="M -7.0,7.0 c 0.0,0.0 4.0,0.0 4.0,0.0 c 0.0,0.0 0.0,-8.9296875 0.0,-8.9296875 c 0.0,0.0 -4.0,0.0 -4.0,0.0 c 0.0,0.0 0.0,8.9296875 0.0,8.9296875 Z"
+            android:valueTo="M -7.0,7.0 c 0.0,0.0 4.0,0.0 4.0,0.0 c 0.0,0.0 0.0,-2.94052124023 0.0,-2.94052124023 c 0.0,0.0 -4.0,0.0 -4.0,0.0 c 0.0,0.0 0.0,2.94052124023 0.0,2.94052124023 Z"
+            android:valueType="pathType"
+            android:propertyName="pathData"/>
+        <objectAnimator
+            android:interpolator="@anim/audio_animation_animation_interpolator_2"
+            android:duration="83"
+            android:valueFrom="M -7.0,7.0 c 0.0,0.0 4.0,0.0 4.0,0.0 c 0.0,0.0 0.0,-2.94052124023 0.0,-2.94052124023 c 0.0,0.0 -4.0,0.0 -4.0,0.0 c 0.0,0.0 0.0,2.94052124023 0.0,2.94052124023 Z"
+            android:valueTo="M -7.0,7.0 c 0.0,0.0 4.0,0.0 4.0,0.0 c 0.0,0.0 0.0,-4.02728271484 0.0,-4.02728271484 c 0.0,0.0 -4.0,0.0 -4.0,0.0 c 0.0,0.0 0.0,4.02728271484 0.0,4.02728271484 Z"
+            android:valueType="pathType"
+            android:propertyName="pathData"/>
+        <objectAnimator
+            android:interpolator="@anim/audio_animation_animation_interpolator_4"
+            android:duration="116"
+            android:valueFrom="M -7.0,7.0 c 0.0,0.0 4.0,0.0 4.0,0.0 c 0.0,0.0 0.0,-4.02728271484 0.0,-4.02728271484 c 0.0,0.0 -4.0,0.0 -4.0,0.0 c 0.0,0.0 0.0,4.02728271484 0.0,4.02728271484 Z"
+            android:valueTo="M -7.0,7.0 c 0.0,0.0 4.0,0.0 4.0,0.0 c 0.0,0.0 0.0,-2.95442199707 0.0,-2.95442199707 c 0.0,0.0 -4.0,0.0 -4.0,0.0 c 0.0,0.0 0.0,2.95442199707 0.0,2.95442199707 Z"
+            android:valueType="pathType"
+            android:propertyName="pathData"/>
+        <objectAnimator
+            android:interpolator="@anim/audio_animation_animation_interpolator_3"
+            android:duration="150"
+            android:valueFrom="M -7.0,7.0 c 0.0,0.0 4.0,0.0 4.0,0.0 c 0.0,0.0 0.0,-2.95442199707 0.0,-2.95442199707 c 0.0,0.0 -4.0,0.0 -4.0,0.0 c 0.0,0.0 0.0,2.95442199707 0.0,2.95442199707 Z"
+            android:valueTo="M -7.0,7.0 c 0.0,0.0 4.0,0.0 4.0,0.0 c 0.0,0.0 0.0,-10.9921875 0.0,-10.9921875 c 0.0,0.0 -4.0,0.0 -4.0,0.0 c 0.0,0.0 0.0,10.9921875 0.0,10.9921875 Z"
+            android:valueType="pathType"
+            android:propertyName="pathData"/>
+        <objectAnimator
+            android:interpolator="@anim/audio_animation_animation_interpolator_2"
+            android:duration="83"
+            android:valueFrom="M -7.0,7.0 c 0.0,0.0 4.0,0.0 4.0,0.0 c 0.0,0.0 0.0,-10.9921875 0.0,-10.9921875 c 0.0,0.0 -4.0,0.0 -4.0,0.0 c 0.0,0.0 0.0,10.9921875 0.0,10.9921875 Z"
+            android:valueTo="M -7.0,7.0 c 0.0,0.0 4.0,0.0 4.0,0.0 c 0.0,0.0 0.0,-8.99630737305 0.0,-8.99630737305 c 0.0,0.0 -4.0,0.0 -4.0,0.0 c 0.0,0.0 0.0,8.99630737305 0.0,8.99630737305 Z"
+            android:valueType="pathType"
+            android:propertyName="pathData"/>
+        <objectAnimator
+            android:interpolator="@anim/audio_animation_animation_interpolator_6"
+            android:duration="133"
+            android:valueFrom="M -7.0,7.0 c 0.0,0.0 4.0,0.0 4.0,0.0 c 0.0,0.0 0.0,-8.99630737305 0.0,-8.99630737305 c 0.0,0.0 -4.0,0.0 -4.0,0.0 c 0.0,0.0 0.0,8.99630737305 0.0,8.99630737305 Z"
+            android:valueTo="M -7.0,7.0 c 0.0,0.0 4.0,0.0 4.0,0.0 c 0.0,0.0 0.0,-10.0078125 0.0,-10.0078125 c 0.0,0.0 -4.0,0.0 -4.0,0.0 c 0.0,0.0 0.0,10.0078125 0.0,10.0078125 Z"
+            android:valueType="pathType"
+            android:propertyName="pathData"/>
+        <objectAnimator
+            android:interpolator="@anim/audio_animation_animation_interpolator_5"
+            android:duration="166"
+            android:valueFrom="M -7.0,7.0 c 0.0,0.0 4.0,0.0 4.0,0.0 c 0.0,0.0 0.0,-10.0078125 0.0,-10.0078125 c 0.0,0.0 -4.0,0.0 -4.0,0.0 c 0.0,0.0 0.0,10.0078125 0.0,10.0078125 Z"
+            android:valueTo="M -7.0,7.0 c 0.0,0.0 4.0,0.0 4.0,0.0 c 0.0,0.0 0.0,-1.99603271484 0.0,-1.99603271484 c 0.0,0.0 -4.0,0.0 -4.0,0.0 c 0.0,0.0 0.0,1.99603271484 0.0,1.99603271484 Z"
+            android:valueType="pathType"
+            android:propertyName="pathData"/>
+        <objectAnimator
+            android:interpolator="@anim/audio_animation_animation_interpolator_3"
+            android:duration="149"
+            android:valueFrom="M -7.0,7.0 c 0.0,0.0 4.0,0.0 4.0,0.0 c 0.0,0.0 0.0,-1.99603271484 0.0,-1.99603271484 c 0.0,0.0 -4.0,0.0 -4.0,0.0 c 0.0,0.0 0.0,1.99603271484 0.0,1.99603271484 Z"
+            android:valueTo="M -7.0,7.0 c 0.0,0.0 4.0,0.0 4.0,0.0 c 0.0,0.0 0.0,-3.94644165039 0.0,-3.94644165039 c 0.0,0.0 -4.0,0.0 -4.0,0.0 c 0.0,0.0 0.0,3.94644165039 0.0,3.94644165039 Z"
+            android:valueType="pathType"
+            android:propertyName="pathData"/>
+        <objectAnimator
+            android:interpolator="@anim/audio_animation_animation_interpolator_5"
+            android:duration="166"
+            android:valueFrom="M -7.0,7.0 c 0.0,0.0 4.0,0.0 4.0,0.0 c 0.0,0.0 0.0,-3.94644165039 0.0,-3.94644165039 c 0.0,0.0 -4.0,0.0 -4.0,0.0 c 0.0,0.0 0.0,3.94644165039 0.0,3.94644165039 Z"
+            android:valueTo="M -7.0,7.0 c 0.0,0.0 4.0,0.0 4.0,0.0 c 0.0,0.0 0.0,-2.98040771484 0.0,-2.98040771484 c 0.0,0.0 -4.0,0.0 -4.0,0.0 c 0.0,0.0 0.0,2.98040771484 0.0,2.98040771484 Z"
+            android:valueType="pathType"
+            android:propertyName="pathData"/>
+        <objectAnimator
+            android:interpolator="@anim/audio_animation_animation_interpolator_6"
+            android:duration="133"
+            android:valueFrom="M -7.0,7.0 c 0.0,0.0 4.0,0.0 4.0,0.0 c 0.0,0.0 0.0,-2.98040771484 0.0,-2.98040771484 c 0.0,0.0 -4.0,0.0 -4.0,0.0 c 0.0,0.0 0.0,2.98040771484 0.0,2.98040771484 Z"
+            android:valueTo="M -7.0,7.0 c 0.0,0.0 4.0,0.0 4.0,0.0 c 0.0,0.0 0.0,-6.97801208496 0.0,-6.97801208496 c 0.0,0.0 -4.0,0.0 -4.0,0.0 c 0.0,0.0 0.0,6.97801208496 0.0,6.97801208496 Z"
+            android:valueType="pathType"
+            android:propertyName="pathData"/>
+        <objectAnimator
+            android:interpolator="@anim/audio_animation_animation_interpolator_4"
+            android:duration="116"
+            android:valueFrom="M -7.0,7.0 c 0.0,0.0 4.0,0.0 4.0,0.0 c 0.0,0.0 0.0,-6.97801208496 0.0,-6.97801208496 c 0.0,0.0 -4.0,0.0 -4.0,0.0 c 0.0,0.0 0.0,6.97801208496 0.0,6.97801208496 Z"
+            android:valueTo="M -7.0,7.0 c 0.0,0.0 4.0,0.0 4.0,0.0 c 0.0,0.0 0.0,-10.9921875 0.0,-10.9921875 c 0.0,0.0 -4.0,0.0 -4.0,0.0 c 0.0,0.0 0.0,10.9921875 0.0,10.9921875 Z"
+            android:valueType="pathType"
+            android:propertyName="pathData"/>
+        <objectAnimator
+            android:interpolator="@anim/audio_animation_animation_interpolator_4"
+            android:duration="116"
+            android:valueFrom="M -7.0,7.0 c 0.0,0.0 4.0,0.0 4.0,0.0 c 0.0,0.0 0.0,-10.9921875 0.0,-10.9921875 c 0.0,0.0 -4.0,0.0 -4.0,0.0 c 0.0,0.0 0.0,10.9921875 0.0,10.9921875 Z"
+            android:valueTo="M -7.0,7.0 c 0.0,0.0 4.0,0.0 4.0,0.0 c 0.0,0.0 0.0,-8.89581298828 0.0,-8.89581298828 c 0.0,0.0 -4.0,0.0 -4.0,0.0 c 0.0,0.0 0.0,8.89581298828 0.0,8.89581298828 Z"
+            android:valueType="pathType"
+            android:propertyName="pathData"/>
+        <objectAnimator
+            android:interpolator="@anim/audio_animation_animation_interpolator_5"
+            android:duration="166"
+            android:valueFrom="M -7.0,7.0 c 0.0,0.0 4.0,0.0 4.0,0.0 c 0.0,0.0 0.0,-8.89581298828 0.0,-8.89581298828 c 0.0,0.0 -4.0,0.0 -4.0,0.0 c 0.0,0.0 0.0,8.89581298828 0.0,8.89581298828 Z"
+            android:valueTo="M -7.0,7.0 c 0.0,0.0 4.0,0.0 4.0,0.0 c 0.0,0.0 0.0,-9.9765625 0.0,-9.9765625 c 0.0,0.0 -4.0,0.0 -4.0,0.0 c 0.0,0.0 0.0,9.9765625 0.0,9.9765625 Z"
+            android:valueType="pathType"
+            android:propertyName="pathData"/>
+        <objectAnimator
+            android:interpolator="@anim/audio_animation_animation_interpolator_6"
+            android:duration="133"
+            android:valueFrom="M -7.0,7.0 c 0.0,0.0 4.0,0.0 4.0,0.0 c 0.0,0.0 0.0,-9.9765625 0.0,-9.9765625 c 0.0,0.0 -4.0,0.0 -4.0,0.0 c 0.0,0.0 0.0,9.9765625 0.0,9.9765625 Z"
+            android:valueTo="M -7.0,7.0 c 0.0,0.0 4.0,0.0 4.0,0.0 c 0.0,0.0 0.0,-10.9894561768 0.0,-10.9894561768 c 0.0,0.0 -4.0,0.0 -4.0,0.0 c 0.0,0.0 0.0,10.9894561768 0.0,10.9894561768 Z"
+            android:valueType="pathType"
+            android:propertyName="pathData"/>
+        <objectAnimator
+            android:interpolator="@anim/audio_animation_animation_interpolator_6"
+            android:duration="133"
+            android:valueFrom="M -7.0,7.0 c 0.0,0.0 4.0,0.0 4.0,0.0 c 0.0,0.0 0.0,-10.9894561768 0.0,-10.9894561768 c 0.0,0.0 -4.0,0.0 -4.0,0.0 c 0.0,0.0 0.0,10.9894561768 0.0,10.9894561768 Z"
+            android:valueTo="M -7.0,7.0 c 0.0,0.0 4.0,0.0 4.0,0.0 c 0.0,0.0 0.0,-5.92805480957 0.0,-5.92805480957 c 0.0,0.0 -4.0,0.0 -4.0,0.0 c 0.0,0.0 0.0,5.92805480957 0.0,5.92805480957 Z"
+            android:valueType="pathType"
+            android:propertyName="pathData"/>
+        <objectAnimator
+            android:interpolator="@anim/audio_animation_animation_interpolator_6"
+            android:duration="133"
+            android:valueFrom="M -7.0,7.0 c 0.0,0.0 4.0,0.0 4.0,0.0 c 0.0,0.0 0.0,-5.92805480957 0.0,-5.92805480957 c 0.0,0.0 -4.0,0.0 -4.0,0.0 c 0.0,0.0 0.0,5.92805480957 0.0,5.92805480957 Z"
+            android:valueTo="M -7.0,7.0 c 0.0,0.0 4.0,0.0 4.0,0.0 c 0.0,0.0 0.0,-7.951171875 0.0,-7.951171875 c 0.0,0.0 -4.0,0.0 -4.0,0.0 c 0.0,0.0 0.0,7.951171875 0.0,7.951171875 Z"
+            android:valueType="pathType"
+            android:propertyName="pathData"/>
+        <objectAnimator
+            android:interpolator="@anim/audio_animation_animation_interpolator_6"
+            android:duration="133"
+            android:valueFrom="M -7.0,7.0 c 0.0,0.0 4.0,0.0 4.0,0.0 c 0.0,0.0 0.0,-7.951171875 0.0,-7.951171875 c 0.0,0.0 -4.0,0.0 -4.0,0.0 c 0.0,0.0 0.0,7.951171875 0.0,7.951171875 Z"
+            android:valueTo="M -7.0,7.0 c 0.0,0.0 4.0,0.0 4.0,0.0 c 0.0,0.0 0.0,-3.91885375977 0.0,-3.91885375977 c 0.0,0.0 -4.0,0.0 -4.0,0.0 c 0.0,0.0 0.0,3.91885375977 0.0,3.91885375977 Z"
+            android:valueType="pathType"
+            android:propertyName="pathData"/>
+        <objectAnimator
+            android:interpolator="@anim/audio_animation_animation_interpolator_4"
+            android:duration="116"
+            android:valueFrom="M -7.0,7.0 c 0.0,0.0 4.0,0.0 4.0,0.0 c 0.0,0.0 0.0,-3.91885375977 0.0,-3.91885375977 c 0.0,0.0 -4.0,0.0 -4.0,0.0 c 0.0,0.0 0.0,3.91885375977 0.0,3.91885375977 Z"
+            android:valueTo="M -7.0,7.0 c 0.0,0.0 4.0,0.0 4.0,0.0 c 0.0,0.0 0.0,-5.96478271484 0.0,-5.96478271484 c 0.0,0.0 -4.0,0.0 -4.0,0.0 c 0.0,0.0 0.0,5.96478271484 0.0,5.96478271484 Z"
+            android:valueType="pathType"
+            android:propertyName="pathData"/>
+    </set>
+</set>

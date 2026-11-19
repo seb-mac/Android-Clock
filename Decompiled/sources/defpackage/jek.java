@@ -1,0 +1,22 @@
+package defpackage;
+
+import java.util.concurrent.Executor;
+
+/* JADX INFO: compiled from: PG */
+/* JADX INFO: loaded from: classes2.dex */
+final class jek {
+    static final jek a = new jek();
+    final Runnable b;
+    final Executor c;
+    jek next;
+
+    public jek() {
+        this.b = null;
+        this.c = null;
+    }
+
+    public jek(Runnable runnable, Executor executor) {
+        this.b = runnable;
+        this.c = executor;
+    }
+}

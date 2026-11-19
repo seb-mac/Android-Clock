@@ -1,0 +1,95 @@
+###### Class defpackage.fcs (fcs)
+.class public final Lfcs;
+.super Ljava/lang/Object;
+.source "PG"
+
+# interfaces
+.implements Leqm;
+
+
+# static fields
+.field public static final a:Lfcs;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .registers 1
+
+    .line 1
+    new-instance v0, Lfcs;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    sput-object v0, Lfcs;->a:Lfcs;
+
+    .line 7
+    .line 8
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .registers 1
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+
+# virtual methods
+.method public final equals(Ljava/lang/Object;)Z
+    .registers 2
+
+    .line 1
+    instance-of p0, p1, Lfcs;
+
+    .line 2
+    .line 3
+    return p0
+.end method
+
+.method public final hashCode()I
+    .registers 3
+
+    .line 1
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    const/4 v0, 0x1
+
+    .line 6
+    new-array v0, v0, [Ljava/lang/Object;
+
+    .line 7
+    .line 8
+    const/4 v1, 0x0
+
+    .line 9
+    aput-object p0, v0, v1
+
+    .line 10
+    .line 11
+    invoke-static {v0}, Lj$/util/Objects;->hash([Ljava/lang/Object;)I
+
+    .line 12
+    .line 13
+    .line 14
+    move-result p0
+
+    .line 15
+    return p0
+.end method

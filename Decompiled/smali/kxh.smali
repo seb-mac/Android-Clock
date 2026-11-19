@@ -1,0 +1,21 @@
+###### Class defpackage.kxh (kxh)
+.class public interface abstract Lkxh;
+.super Ljava/lang/Object;
+.source "PG"
+
+
+# virtual methods
+.method public abstract a(Landroid/content/Context;)J
+.end method
+
+.method public abstract b(Landroid/content/Context;)J
+.end method
+
+.method public abstract c(Landroid/content/Context;)J
+.end method
+
+.method public abstract d(Landroid/content/Context;)J
+.end method
+
+.method public abstract e(Landroid/content/Context;)Z
+.end method

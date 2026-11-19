@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/asld_tab_alarm"
+        android:id="@+id/tab_menu_alarm"
+        android:title="@string/menu_alarm"
+        app:showAsAction="withText|always"/>
+    <item
+        android:icon="@drawable/asld_tab_clock"
+        android:id="@+id/tab_menu_clock"
+        android:title="@string/menu_clock"
+        app:showAsAction="withText|always"/>
+    <item
+        android:icon="@drawable/asld_tab_timer"
+        android:id="@+id/tab_menu_timer"
+        android:title="@string/menu_timer"
+        app:showAsAction="withText|always"/>
+    <item
+        android:icon="@drawable/asld_tab_stopwatch"
+        android:id="@+id/tab_menu_stopwatch"
+        android:title="@string/menu_stopwatch"
+        app:showAsAction="withText|always"/>
+    <item
+        android:icon="@drawable/asld_tab_bedtime"
+        android:id="@+id/tab_menu_bedtime"
+        android:title="@string/menu_bedtime"
+        app:showAsAction="withText|always"/>
+</menu>

@@ -1,0 +1,30 @@
+###### Class defpackage.kp (kp)
+.class final Lkp;
+.super Ljava/lang/Object;
+.source "PG"
+
+
+# instance fields
+.field public a:Z
+
+.field public b:I
+
+.field public c:I
+
+.field public d:Landroid/support/v7/widget/RecyclerView;
+
+.field public e:I
+
+
+# direct methods
+.method public constructor <init>()V
+    .registers 1
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method

@@ -1,0 +1,118 @@
+###### Class defpackage.khk (khk)
+.class final Lkhk;
+.super Ljava/lang/Object;
+.source "PG"
+
+# interfaces
+.implements Ljava/util/Iterator;
+
+
+# instance fields
+.field private final a:Ljava/util/Iterator;
+
+
+# direct methods
+.method public constructor <init>(Ljava/util/Iterator;)V
+    .registers 2
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lkhk;->a:Ljava/util/Iterator;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final hasNext()Z
+    .registers 1
+
+    .line 1
+    iget-object p0, p0, Lkhk;->a:Ljava/util/Iterator;
+
+    .line 2
+    .line 3
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p0
+
+    .line 7
+    return p0
+.end method
+
+.method public final bridge synthetic next()Ljava/lang/Object;
+    .registers 2
+
+    .line 1
+    iget-object p0, p0, Lkhk;->a:Ljava/util/Iterator;
+
+    .line 2
+    .line 3
+    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    check-cast p0, Ljava/util/Map$Entry;
+
+    .line 8
+    .line 9
+    invoke-interface {p0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v0
+
+    .line 13
+    instance-of v0, v0, Lkhl;
+
+    .line 14
+    .line 15
+    if-eqz v0, :cond_16
+
+    .line 16
+    .line 17
+    new-instance v0, Lkhj;
+
+    .line 18
+    .line 19
+    invoke-direct {v0, p0}, Lkhj;-><init>(Ljava/util/Map$Entry;)V
+
+    .line 20
+    .line 21
+    .line 22
+    return-object v0
+
+    .line 23
+    :cond_16
+    return-object p0
+.end method
+
+.method public final remove()V
+    .registers 1
+
+    .line 1
+    iget-object p0, p0, Lkhk;->a:Ljava/util/Iterator;
+
+    .line 2
+    .line 3
+    invoke-interface {p0}, Ljava/util/Iterator;->remove()V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method

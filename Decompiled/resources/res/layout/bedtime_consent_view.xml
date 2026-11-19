@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:id="@+id/consent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <include layout="@layout/bedtime_card_guidelines"/>
+    <TextView
+        android:textSize="14sp"
+        android:textColor="?attr/colorOnSurfaceVariant"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/bedtime_consent_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/bedtime_data_consent_description"
+        app:layout_constraintEnd_toEndOf="@+id/end_guide"
+        app:layout_constraintStart_toStartOf="@+id/start_guide"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/button_flow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/bedtime_button_margin_top"
+        app:constraint_referenced_ids="bedtime_consent_button_cancel,bedtime_consent_button_confirm"
+        app:flow_horizontalAlign="end"
+        app:flow_horizontalGap="22dp"
+        app:flow_wrapMode="chain"
+        app:layout_constraintEnd_toEndOf="@+id/end_guide"
+        app:layout_constraintTop_toBottomOf="@+id/bedtime_consent_label"/>
+    <TextView
+        android:textSize="14sp"
+        android:textColor="?attr/colorAccent"
+        android:id="@+id/bedtime_consent_button_cancel"
+        android:background="?attr/selectableItemBackground"
+        android:padding="13dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/consent_no_thanks"
+        android:fontFamily="@font/google_sans_medium_compat"
+        style="@style/ClickableStyle"/>
+    <Button
+        android:id="@+id/bedtime_consent_button_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calendar_consent_continue"
+        style="@style/ClickableStyle"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

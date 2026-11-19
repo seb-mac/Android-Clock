@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="add_minute_preset_timer">
+        <item quantity="one">ଏକ ମିନିଟର ଟାଇମର ସେଟ କରନ୍ତୁ</item>
+        <item quantity="other">%1$d ମିନିଟର ଟାଇମର ସେଟ କରନ୍ତୁ</item>
+    </plurals>
+    <plurals name="alarm_alert_snooze_duration">
+        <item quantity="one">1 ମିନିଟ୍</item>
+        <item quantity="other">%d ମିନିଟ୍</item>
+    </plurals>
+    <plurals name="alarm_alert_snooze_set">
+        <item quantity="one">1 ମିନିଟ୍‌ ପାଇଁ ସ୍ନୁଜ୍ କରୁଛି।</item>
+        <item quantity="other">%d ମିନିଟ୍‌ ପାଇଁ ସ୍ନୁଜ୍ କରୁଛି</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="one">1 ଦିନ</item>
+        <item quantity="other">%s ଦିନ</item>
+    </plurals>
+    <plurals name="days_ago">
+        <item quantity="one">1 ଦିନ ପୂର୍ବେ</item>
+        <item quantity="other">%s ଦିନ ପୂର୍ବେ</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="one">1 ଘଣ୍ଟା</item>
+        <item quantity="other">%s ଘଣ୍ଟା</item>
+    </plurals>
+    <plurals name="hours_extra_short">
+        <item quantity="one">1ଘ</item>
+        <item quantity="other">%sଘ</item>
+    </plurals>
+    <plurals name="hours_short">
+        <item quantity="one">1 ଘଣ୍ଟା</item>
+        <item quantity="other">%s ଘଣ୍ଟା</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="one">1 ମିନିଟ୍</item>
+        <item quantity="other">%s ମିନିଟ୍</item>
+    </plurals>
+    <plurals name="minutes_extra_short">
+        <item quantity="one">1ମି</item>
+        <item quantity="other">%sମି</item>
+    </plurals>
+    <plurals name="minutes_short">
+        <item quantity="one">1 ମିନିଟ</item>
+        <item quantity="other">%s ମିନିଟ</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d new notification</item>
+        <item quantity="other">%d new notifications</item>
+    </plurals>
+    <plurals name="places_autocomplete_predictions_available">
+        <item quantity="one">%1$d ପରାମର୍ଶ ଉପଲବ୍ଧ ଅଛି</item>
+        <item quantity="other">%1$d ପରାମର୍ଶ ଉପଲବ୍ଧ ଅଛି</item>
+    </plurals>
+    <plurals name="seconds">
+        <item quantity="one">1 ସେକେଣ୍ଡ</item>
+        <item quantity="other">%s ସେକେଣ୍ଡ</item>
+    </plurals>
+    <plurals name="seconds_extra_short">
+        <item quantity="one">1ସେ</item>
+        <item quantity="other">%sସେ</item>
+    </plurals>
+</resources>

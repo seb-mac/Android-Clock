@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="add_minute_preset_timer">
+        <item quantity="one">Nastaviť časovač na jednu minútu</item>
+        <item quantity="few">Nastaviť časovač na %1$d minúty</item>
+        <item quantity="many">Nastaviť časovač na %1$d minúty</item>
+        <item quantity="other">Nastaviť časovač na %1$d minút</item>
+    </plurals>
+    <plurals name="alarm_alert_snooze_duration">
+        <item quantity="one">1 min</item>
+        <item quantity="few">%d min</item>
+        <item quantity="many">%d min</item>
+        <item quantity="other">%d min</item>
+    </plurals>
+    <plurals name="alarm_alert_snooze_set">
+        <item quantity="one">Odložené o 1 minútu</item>
+        <item quantity="few">Odložené o %d minúty</item>
+        <item quantity="many">Odložené o %d minúty</item>
+        <item quantity="other">Odložené o %d minút</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="one">1 deň</item>
+        <item quantity="few">%s dni</item>
+        <item quantity="many">%s dňa</item>
+        <item quantity="other">%s dní</item>
+    </plurals>
+    <plurals name="days_ago">
+        <item quantity="one">Pred 1 dňom</item>
+        <item quantity="few">Pred %s dňami</item>
+        <item quantity="many">Pred %s dňom</item>
+        <item quantity="other">Pred %s dňami</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="one">1 hodina</item>
+        <item quantity="few">%s hodiny</item>
+        <item quantity="many">%s hodiny</item>
+        <item quantity="other">%s hodín</item>
+    </plurals>
+    <plurals name="hours_extra_short">
+        <item quantity="one">1 h</item>
+        <item quantity="few">%s h</item>
+        <item quantity="many">%s h</item>
+        <item quantity="other">%s h</item>
+    </plurals>
+    <plurals name="hours_short">
+        <item quantity="one">1 h</item>
+        <item quantity="few">%s h</item>
+        <item quantity="many">%s h</item>
+        <item quantity="other">%s h</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="one">1 minúta</item>
+        <item quantity="few">%s minúty</item>
+        <item quantity="many">%s minúty</item>
+        <item quantity="other">%s minút</item>
+    </plurals>
+    <plurals name="minutes_extra_short">
+        <item quantity="one">1 min</item>
+        <item quantity="few">%s min</item>
+        <item quantity="many">%s min</item>
+        <item quantity="other">%s min</item>
+    </plurals>
+    <plurals name="minutes_short">
+        <item quantity="one">1 min</item>
+        <item quantity="few">%s min</item>
+        <item quantity="many">%s min</item>
+        <item quantity="other">%s min</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d nové upozornenie</item>
+        <item quantity="few">%d nové upozornenia</item>
+        <item quantity="many">%d new notifications</item>
+        <item quantity="other">%d nových upozornení</item>
+    </plurals>
+    <plurals name="places_autocomplete_predictions_available">
+        <item quantity="one">K dispozícii je %1$d návrh</item>
+        <item quantity="few">K dispozícii sú %1$d návrhy</item>
+        <item quantity="many">%1$d suggestions available</item>
+        <item quantity="other">K dispozícii je %1$d návrhov</item>
+    </plurals>
+    <plurals name="seconds">
+        <item quantity="one">1 sekunda</item>
+        <item quantity="few">%s sekundy</item>
+        <item quantity="many">%s sekundy</item>
+        <item quantity="other">%s sekúnd</item>
+    </plurals>
+    <plurals name="seconds_extra_short">
+        <item quantity="one">1 s</item>
+        <item quantity="few">%s s</item>
+        <item quantity="many">%s s</item>
+        <item quantity="other">%s s</item>
+    </plurals>
+</resources>

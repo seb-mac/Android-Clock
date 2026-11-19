@@ -1,0 +1,12 @@
+package defpackage;
+
+import android.R;
+
+/* JADX INFO: compiled from: PG */
+/* JADX INFO: loaded from: classes2.dex */
+public final class hxt {
+    public static final int[] a = {R.attr.background, R.attr.checked, R.attr.insetLeft, R.attr.insetRight, R.attr.insetTop, R.attr.insetBottom, R.attr.checkable, com.google.android.deskclock.debug.R.attr.backgroundTint, com.google.android.deskclock.debug.R.attr.backgroundTintMode, com.google.android.deskclock.debug.R.attr.cornerRadius, com.google.android.deskclock.debug.R.attr.elevation, com.google.android.deskclock.debug.R.attr.icon, com.google.android.deskclock.debug.R.attr.iconGravity, com.google.android.deskclock.debug.R.attr.iconPadding, com.google.android.deskclock.debug.R.attr.iconSize, com.google.android.deskclock.debug.R.attr.iconTint, com.google.android.deskclock.debug.R.attr.iconTintMode, com.google.android.deskclock.debug.R.attr.opticalCenterEnabled, com.google.android.deskclock.debug.R.attr.rippleColor, com.google.android.deskclock.debug.R.attr.secondaryIcon, com.google.android.deskclock.debug.R.attr.secondaryIconGravity, com.google.android.deskclock.debug.R.attr.secondaryIconTint, com.google.android.deskclock.debug.R.attr.secondaryIconTintMode, com.google.android.deskclock.debug.R.attr.shapeAppearance, com.google.android.deskclock.debug.R.attr.shapeAppearanceOverlay, com.google.android.deskclock.debug.R.attr.strokeColor, com.google.android.deskclock.debug.R.attr.strokeWidth, com.google.android.deskclock.debug.R.attr.toggleCheckedStateOnClick};
+    public static final int[] b = {R.attr.enabled, R.attr.spacing, com.google.android.deskclock.debug.R.attr.buttonSizeChange, com.google.android.deskclock.debug.R.attr.innerCornerSize, com.google.android.deskclock.debug.R.attr.overflowButtonIcon, com.google.android.deskclock.debug.R.attr.overflowMode, com.google.android.deskclock.debug.R.attr.shapeAppearance, com.google.android.deskclock.debug.R.attr.shapeAppearanceOverlay};
+    public static final int[] c = {com.google.android.deskclock.debug.R.attr.layout_overflowIcon, com.google.android.deskclock.debug.R.attr.layout_overflowText};
+    public static final int[] d = {R.attr.enabled, R.attr.spacing, com.google.android.deskclock.debug.R.attr.checkedButton, com.google.android.deskclock.debug.R.attr.innerCornerSize, com.google.android.deskclock.debug.R.attr.selectionRequired, com.google.android.deskclock.debug.R.attr.shapeAppearance, com.google.android.deskclock.debug.R.attr.shapeAppearanceOverlay, com.google.android.deskclock.debug.R.attr.singleSelection};
+}

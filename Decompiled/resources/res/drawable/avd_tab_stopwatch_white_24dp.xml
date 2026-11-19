@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_avd_tab_stopwatch_white_24dp__0_res_0x7f0801ff">
+    <target
+        android:name="stopwatch_hand"
+        android:animation="@drawable/_avd_tab_stopwatch_white_24dp__1_res_0x7f080200"/>
+    <target
+        android:name="stopwatch_button"
+        android:animation="@drawable/_avd_tab_stopwatch_white_24dp__2_res_0x7f080201"/>
+</animated-vector>
