@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <fraction name="search_empty_view_vertical_bias">0.04</fraction>
+    <fraction name="setup_digits_start_vertical_guideline_fraction">0.4</fraction>
+    <fraction name="timer_setup_time_bottom_percent">0.75</fraction>
+    <fraction name="timer_setup_time_top_percent">0.25</fraction>
+    <fraction name="timer_setup_view_end_percent">0.98</fraction>
+    <fraction name="timer_setup_view_start_percent">0.02</fraction>
+</resources>

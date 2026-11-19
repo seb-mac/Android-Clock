@@ -1,0 +1,9 @@
+###### Class defpackage.etk (etk)
+.class public interface abstract Letk;
+.super Ljava/lang/Object;
+.source "PG"
+
+
+# virtual methods
+.method public abstract d()Ljava/lang/Object;
+.end method

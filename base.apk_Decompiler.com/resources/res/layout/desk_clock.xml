@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:statusBarBackground="@null">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:elevation="8dp"
+            style="@style/DeskClockAppBarLayoutStyle">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="0dp"
+                app:contentInsetStart="0dp">
+                <TextView
+                    android:textAppearance="@style/TextAppearance.Title"
+                    android:layout_gravity="start|center_vertical"
+                    android:id="@+id/action_bar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/actionbar_title_margin_start"/>
+            </android.support.v7.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/desk_clock_pager_frame"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            style="@style/DeskClockContentStyle">
+            <include layout="@layout/fold_guidelines"/>
+            <androidx.constraintlayout.widget.Guideline
+                android:orientation="vertical"
+                android:id="@+id/guideline_content_end"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintGuide_percent="@fraction/content_horizontal_screen_percent"/>
+            <com.android.deskclock.widget.DeskClockViewPager
+                android:id="@+id/desk_clock_pager"
+                android:saveEnabled="false"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:importantForAccessibility="no"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/guideline_content_end"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+            <include
+                android:id="@+id/fab_container"
+                layout="@layout/fab_container"
+                style="@style/FabContainerStyle"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <include layout="@layout/nav_bar"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="add_minute_preset_timer">
+        <item quantity="one">Configurer un minuteur de %1$d minute</item>
+        <item quantity="other">Configurer un minuteur de %1$d minutes</item>
+    </plurals>
+    <plurals name="alarm_alert_snooze_duration">
+        <item quantity="one">%d min</item>
+        <item quantity="other">%d min</item>
+    </plurals>
+    <plurals name="alarm_alert_snooze_set">
+        <item quantity="one">Répétition après %d minute</item>
+        <item quantity="other">Répétition après %d minutes</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="one">%s jour</item>
+        <item quantity="other">%s jours</item>
+    </plurals>
+    <plurals name="days_ago">
+        <item quantity="one">Il y a %s jour</item>
+        <item quantity="other">Il y a %s jours</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="one">%s heure</item>
+        <item quantity="other">%s heures</item>
+    </plurals>
+    <plurals name="hours_extra_short">
+        <item quantity="one">%s h</item>
+        <item quantity="other">%s h</item>
+    </plurals>
+    <plurals name="hours_short">
+        <item quantity="one">%s h</item>
+        <item quantity="other">%s h</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="one">%s minute</item>
+        <item quantity="other">%s minutes</item>
+    </plurals>
+    <plurals name="minutes_extra_short">
+        <item quantity="one">%s min</item>
+        <item quantity="other">%s min</item>
+    </plurals>
+    <plurals name="minutes_short">
+        <item quantity="one">%s min</item>
+        <item quantity="other">%s min</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d nouvelle notification</item>
+        <item quantity="other">%d nouvelles notifications</item>
+    </plurals>
+    <plurals name="places_autocomplete_predictions_available">
+        <item quantity="one">%1$d suggestion disponible</item>
+        <item quantity="other">%1$d suggestions disponibles</item>
+    </plurals>
+    <plurals name="seconds">
+        <item quantity="one">%s seconde</item>
+        <item quantity="other">%s secondes</item>
+    </plurals>
+    <plurals name="seconds_extra_short">
+        <item quantity="one">%s s</item>
+        <item quantity="other">%s s</item>
+    </plurals>
+</resources>

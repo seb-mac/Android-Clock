@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:ordering="together">
+    <objectAnimator
+        android:interpolator="@drawable/__avd_alarm_activity_thumb_snooze__2__0_res_0x7f08000c"
+        android:duration="50"
+        android:startOffset="0"
+        android:valueFrom="M4.21 3.9 C4.21,3.9 1,0.69 1,0.69 C1,0.69 1,-3.9 1,-3.9 C1,-3.9 -1,-3.9 -1,-3.9 C-1,-3.9 -1,1.51 -1,1.51 C-1,1.51 2.8,5.31 2.8,5.31 C2.8,5.31 4.21,3.9 4.21,3.9c "
+        android:valueTo="M4.21 3.9 C4.21,3.9 1,0.69 1,0.69 C1,0.69 1,-3.9 1,-3.9 C1,-3.9 -1,-3.9 -1,-3.9 C-1,-3.9 -1,1.51 -1,1.51 C-1,1.51 2.8,5.31 2.8,5.31 C2.8,5.31 4.21,3.9 4.21,3.9c "
+        android:valueType="pathType"
+        android:propertyName="pathData"/>
+    <objectAnimator
+        android:interpolator="@drawable/__avd_alarm_activity_thumb_snooze__2__1_res_0x7f08000d"
+        android:duration="133"
+        android:startOffset="50"
+        android:valueFrom="M4.21 3.9 C4.21,3.9 1,0.69 1,0.69 C1,0.69 1,-3.9 1,-3.9 C1,-3.9 -1,-3.9 -1,-3.9 C-1,-3.9 -1,1.51 -1,1.51 C-1,1.51 2.8,5.31 2.8,5.31 C2.8,5.31 4.21,3.9 4.21,3.9c "
+        android:valueTo="M5.94 10.31 C5.94,10.31 -4.55,-0.98 -4.55,-0.98 C-4.55,-0.98 0.17,-5.95 0.17,-5.95 C0.17,-5.95 -1.83,-5.95 -1.83,-5.95 C-1.83,-5.95 -6.75,-1.05 -6.75,-1.05 C-6.75,-1.05 4.33,10.83 4.33,10.83 C4.33,10.83 5.94,10.31 5.94,10.31c "
+        android:valueType="pathType"
+        android:propertyName="pathData"/>
+</set>

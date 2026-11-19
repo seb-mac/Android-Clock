@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DeskClockAppBarLayoutStyle" parent="@style/Widget.GoogleMaterial3.AppBarLayout">
+        <item name="android:visibility">0</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+    </style>
+    <style name="DeskClockContentStyle" parent="">
+        <item name="layout_constraintBottom_toTopOf">@id/navigation_bar</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintTop_toBottomOf">@id/app_bar_layout</item>
+    </style>
+    <style name="GastownDeskClockAppBarLayoutStyle" parent="@style/Widget.GoogleMaterial3.AppBarLayout">
+        <item name="android:visibility">0</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+    </style>
+    <style name="GastownDeskClockContentStyle" parent="">
+        <item name="layout_constraintBottom_toTopOf">@id/navigation_bar</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintTop_toBottomOf">@id/app_bar_layout</item>
+    </style>
+</resources>

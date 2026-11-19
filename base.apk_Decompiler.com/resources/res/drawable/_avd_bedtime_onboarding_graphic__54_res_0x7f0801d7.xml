@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:ordering="together">
+    <objectAnimator
+        android:interpolator="@drawable/__avd_bedtime_onboarding_graphic__54__0_res_0x7f0800f9"
+        android:duration="5317"
+        android:startOffset="0"
+        android:valueFrom="0"
+        android:valueTo="0"
+        android:valueType="floatType"
+        android:propertyName="rotation"/>
+    <objectAnimator
+        android:interpolator="@drawable/__avd_bedtime_onboarding_graphic__54__1_res_0x7f0800fa"
+        android:duration="1000"
+        android:startOffset="5317"
+        android:valueFrom="0"
+        android:valueTo="6"
+        android:valueType="floatType"
+        android:propertyName="rotation"/>
+    <objectAnimator
+        android:interpolator="@drawable/__avd_bedtime_onboarding_graphic__54__2_res_0x7f0800fb"
+        android:duration="333"
+        android:startOffset="6317"
+        android:valueFrom="6"
+        android:valueTo="6"
+        android:valueType="floatType"
+        android:propertyName="rotation"/>
+    <objectAnimator
+        android:interpolator="@drawable/__avd_bedtime_onboarding_graphic__54__3_res_0x7f0800fc"
+        android:duration="1217"
+        android:startOffset="6650"
+        android:valueFrom="6"
+        android:valueTo="0"
+        android:valueType="floatType"
+        android:propertyName="rotation"/>
+</set>

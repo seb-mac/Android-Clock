@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="list_view_padding_bottom_for_fab">0dp</dimen>
+    <dimen name="main_analog_clock_height">438dp</dimen>
+    <dimen name="main_analog_clock_margin_top">0dp</dimen>
+    <dimen name="main_analog_clock_width">438dp</dimen>
+    <dimen name="main_digital_clock_margin_bottom">108dp</dimen>
+    <dimen name="main_digital_clock_margin_top">98dp</dimen>
+    <dimen name="main_digital_clock_text_size">160sp</dimen>
+    <dimen name="snackbar_bottom_margin">10dp</dimen>
+    <dimen name="stopwatch_time_text_size">144sp</dimen>
+</resources>

@@ -1,0 +1,255 @@
+###### Class defpackage.dtj (dtj)
+.class public final Ldtj;
+.super Ljava/io/ByteArrayOutputStream;
+.source "PG"
+
+
+# instance fields
+.field private final a:Ldta;
+
+
+# direct methods
+.method public constructor <init>(Ldta;I)V
+    .registers 4
+
+    .line 1
+    invoke-direct {p0}, Ljava/io/ByteArrayOutputStream;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Ldtj;->a:Ldta;
+
+    .line 5
+    .line 6
+    const/16 v0, 0x100
+
+    .line 7
+    .line 8
+    invoke-static {p2, v0}, Ljava/lang/Math;->max(II)I
+
+    .line 9
+    .line 10
+    .line 11
+    move-result p2
+
+    .line 12
+    invoke-virtual {p1, p2}, Ldta;->b(I)[B
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object p1
+
+    .line 16
+    iput-object p1, p0, Ldtj;->buf:[B
+
+    .line 17
+    .line 18
+    return-void
+.end method
+
+.method private final a(I)V
+    .registers 6
+
+    .line 1
+    iget v0, p0, Ldtj;->count:I
+
+    .line 2
+    .line 3
+    add-int/2addr v0, p1
+
+    .line 4
+    iget-object v1, p0, Ldtj;->buf:[B
+
+    .line 5
+    .line 6
+    array-length v1, v1
+
+    .line 7
+    if-gt v0, v1, :cond_9
+
+    .line 8
+    .line 9
+    return-void
+
+    .line 10
+    :cond_9
+    iget-object v0, p0, Ldtj;->a:Ldta;
+
+    .line 11
+    .line 12
+    iget v1, p0, Ldtj;->count:I
+
+    .line 13
+    .line 14
+    add-int/2addr v1, p1
+
+    .line 15
+    add-int/2addr v1, v1
+
+    .line 16
+    invoke-virtual {v0, v1}, Ldta;->b(I)[B
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object p1
+
+    .line 20
+    iget-object v1, p0, Ldtj;->buf:[B
+
+    .line 21
+    .line 22
+    iget v2, p0, Ldtj;->count:I
+
+    .line 23
+    .line 24
+    const/4 v3, 0x0
+
+    .line 25
+    invoke-static {v1, v3, p1, v3, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    .line 26
+    .line 27
+    .line 28
+    iget-object v1, p0, Ldtj;->buf:[B
+
+    .line 29
+    .line 30
+    invoke-virtual {v0, v1}, Ldta;->a([B)V
+
+    .line 31
+    .line 32
+    .line 33
+    iput-object p1, p0, Ldtj;->buf:[B
+
+    .line 34
+    .line 35
+    return-void
+.end method
+
+
+# virtual methods
+.method public final close()V
+    .registers 3
+
+    .line 1
+    iget-object v0, p0, Ldtj;->a:Ldta;
+
+    .line 2
+    .line 3
+    iget-object v1, p0, Ldtj;->buf:[B
+
+    .line 4
+    .line 5
+    invoke-virtual {v0, v1}, Ldta;->a([B)V
+
+    .line 6
+    .line 7
+    .line 8
+    const/4 v0, 0x0
+
+    .line 9
+    iput-object v0, p0, Ldtj;->buf:[B
+
+    .line 10
+    .line 11
+    invoke-super {p0}, Ljava/io/ByteArrayOutputStream;->close()V
+
+    .line 12
+    .line 13
+    .line 14
+    return-void
+.end method
+
+.method public final finalize()V
+    .registers 2
+
+    .line 1
+    iget-object v0, p0, Ldtj;->a:Ldta;
+
+    .line 2
+    .line 3
+    iget-object p0, p0, Ldtj;->buf:[B
+
+    .line 4
+    .line 5
+    invoke-virtual {v0, p0}, Ldta;->a([B)V
+
+    .line 6
+    .line 7
+    .line 8
+    return-void
+.end method
+
+.method public final declared-synchronized write(I)V
+    .registers 3
+
+    .line 1
+    monitor-enter p0
+
+    .line 2
+    const/4 v0, 0x1
+
+    .line 3
+    :try_start_2
+    invoke-direct {p0, v0}, Ldtj;->a(I)V
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-super {p0, p1}, Ljava/io/ByteArrayOutputStream;->write(I)V
+    :try_end_8
+    .catchall {:try_start_2 .. :try_end_8} :catchall_a
+
+    .line 7
+    .line 8
+    .line 9
+    monitor-exit p0
+
+    .line 10
+    return-void
+
+    .line 11
+    :catchall_a
+    move-exception p1
+
+    .line 12
+    :try_start_b
+    monitor-exit p0
+    :try_end_c
+    .catchall {:try_start_b .. :try_end_c} :catchall_a
+
+    .line 13
+    throw p1
+.end method
+
+.method public final declared-synchronized write([BII)V
+    .registers 4
+
+    monitor-enter p0
+
+    .line 14
+    :try_start_1
+    invoke-direct {p0, p3}, Ldtj;->a(I)V
+
+    .line 15
+    invoke-super {p0, p1, p2, p3}, Ljava/io/ByteArrayOutputStream;->write([BII)V
+    :try_end_7
+    .catchall {:try_start_1 .. :try_end_7} :catchall_9
+
+    monitor-exit p0
+
+    return-void
+
+    :catchall_9
+    move-exception p1
+
+    :try_start_a
+    monitor-exit p0
+    :try_end_b
+    .catchall {:try_start_a .. :try_end_b} :catchall_9
+
+    throw p1
+.end method

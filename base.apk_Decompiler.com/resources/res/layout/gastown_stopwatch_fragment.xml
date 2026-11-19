@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.android.deskclock.common.ui.autosizingtextview.AutoSizingTextView
+            android:textSize="@dimen/stopwatch_time_text_size"
+            android:gravity="center"
+            android:id="@+id/stopwatch_time_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_time_text_margin_top"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/GastownStopwatchTimeTextStyle"/>
+        <FrameLayout
+            android:orientation="horizontal"
+            android:id="@+id/stopwatch_center_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gastown_stopwatch_center_container_margin_top"
+            android:minHeight="106dp"
+            android:layout_marginStart="16dp"
+            app:layout_constrainedHeight="true"
+            app:layout_constraintBottom_toTopOf="@+id/stopwatch_button_container"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/stopwatch_time_text"/>
+        <FrameLayout
+            android:id="@+id/stopwatch_button_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gastown_stopwatch_button_container_margin_top"
+            android:layout_marginBottom="@dimen/gastown_stopwatch_button_container_margin_bottom"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/stopwatch_center_container"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

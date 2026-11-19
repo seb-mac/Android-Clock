@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="horizontal"
+        android:id="@+id/timer_preset_bottom_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.5"/>
+    <include
+        android:id="@+id/timer_preset_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintVertical_bias="1"
+        layout="@layout/gastown_timer_preset_group"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/timer_start_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_max="@dimen/timer_start_button_max_height"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timer_preset_bottom_guideline"
+        app:layout_constraintVertical_bias="0"
+        style="@style/TimerStartButtonStyle"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

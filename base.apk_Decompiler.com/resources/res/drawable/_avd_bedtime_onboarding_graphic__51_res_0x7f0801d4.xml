@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:ordering="together">
+    <objectAnimator
+        android:interpolator="@drawable/__avd_bedtime_onboarding_graphic__51__0_res_0x7f0800ed"
+        android:duration="5317"
+        android:startOffset="0"
+        android:valueFrom="M48.8 47.23 C39.81,47.23 37.24,47.29 31.97,41.27 C25.55,33.93 11.96,42.57 11.96,42.57 C11.96,5 49.21,12.27 49.21,12.27 C58.22,14.19 60.57,19.75 60.57,19.75 C60.57,19.75 62.51,32.12 62.51,32.12 C62.51,32.12 58.32,40.7 58.32,40.7 C58.32,40.7 54.86,47.23 48.8,47.23c "
+        android:valueTo="M48.8 47.23 C39.81,47.23 37.24,47.29 31.97,41.27 C25.55,33.93 11.96,42.57 11.96,42.57 C11.96,5 49.21,12.27 49.21,12.27 C58.22,14.19 60.57,19.75 60.57,19.75 C60.57,19.75 62.51,32.12 62.51,32.12 C62.51,32.12 58.32,40.7 58.32,40.7 C58.32,40.7 54.86,47.23 48.8,47.23c "
+        android:valueType="pathType"
+        android:propertyName="pathData"/>
+    <objectAnimator
+        android:interpolator="@drawable/__avd_bedtime_onboarding_graphic__51__1_res_0x7f0800ee"
+        android:duration="883"
+        android:startOffset="5317"
+        android:valueFrom="M48.8 47.23 C39.81,47.23 37.24,47.29 31.97,41.27 C25.55,33.93 11.96,42.57 11.96,42.57 C11.96,5 49.21,12.27 49.21,12.27 C58.22,14.19 60.57,19.75 60.57,19.75 C60.57,19.75 62.51,32.12 62.51,32.12 C62.51,32.12 58.32,40.7 58.32,40.7 C58.32,40.7 54.86,47.23 48.8,47.23c "
+        android:valueTo="M48.8 47.23 C39.81,47.23 37.97,48.34 32.71,42.32 C26.29,34.99 14.01,42.85 14.01,42.85 C11.36,4.02 49.21,12.27 49.21,12.27 C58.22,14.19 60.57,19.75 60.57,19.75 C60.57,19.75 62.51,32.12 62.51,32.12 C62.51,32.12 58.32,40.7 58.32,40.7 C58.32,40.7 54.86,47.23 48.8,47.23c "
+        android:valueType="pathType"
+        android:propertyName="pathData"/>
+    <objectAnimator
+        android:interpolator="@drawable/__avd_bedtime_onboarding_graphic__51__2_res_0x7f0800ef"
+        android:duration="417"
+        android:startOffset="6200"
+        android:valueFrom="M48.8 47.23 C39.81,47.23 37.97,48.34 32.71,42.32 C26.29,34.99 14.01,42.85 14.01,42.85 C11.36,4.02 49.21,12.27 49.21,12.27 C58.22,14.19 60.57,19.75 60.57,19.75 C60.57,19.75 62.51,32.12 62.51,32.12 C62.51,32.12 58.32,40.7 58.32,40.7 C58.32,40.7 54.86,47.23 48.8,47.23c "
+        android:valueTo="M48.8 47.23 C39.81,47.23 37.97,48.34 32.71,42.32 C26.29,34.99 14.01,42.85 14.01,42.85 C11.36,4.02 49.21,12.27 49.21,12.27 C58.22,14.19 60.57,19.75 60.57,19.75 C60.57,19.75 62.51,32.12 62.51,32.12 C62.51,32.12 58.32,40.7 58.32,40.7 C58.32,40.7 54.86,47.23 48.8,47.23c "
+        android:valueType="pathType"
+        android:propertyName="pathData"/>
+    <objectAnimator
+        android:interpolator="@drawable/__avd_bedtime_onboarding_graphic__51__3_res_0x7f0800f0"
+        android:duration="1483"
+        android:startOffset="6617"
+        android:valueFrom="M48.8 47.23 C39.81,47.23 37.97,48.34 32.71,42.32 C26.29,34.99 14.01,42.85 14.01,42.85 C11.36,4.02 49.21,12.27 49.21,12.27 C58.22,14.19 60.57,19.75 60.57,19.75 C60.57,19.75 62.51,32.12 62.51,32.12 C62.51,32.12 58.32,40.7 58.32,40.7 C58.32,40.7 54.86,47.23 48.8,47.23c "
+        android:valueTo="M48.8 47.23 C39.81,47.23 37.24,47.29 31.97,41.27 C25.55,33.93 11.96,42.57 11.96,42.57 C11.96,5 49.21,12.27 49.21,12.27 C58.22,14.19 60.57,19.75 60.57,19.75 C60.57,19.75 62.51,32.12 62.51,32.12 C62.51,32.12 58.32,40.7 58.32,40.7 C58.32,40.7 54.86,47.23 48.8,47.23c "
+        android:valueType="pathType"
+        android:propertyName="pathData"/>
+</set>

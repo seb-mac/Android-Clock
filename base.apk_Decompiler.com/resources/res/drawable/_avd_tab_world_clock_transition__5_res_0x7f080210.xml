@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:ordering="together">
+    <objectAnimator
+        android:interpolator="@drawable/__avd_tab_world_clock_transition__5__0_res_0x7f080192"
+        android:duration="73"
+        android:startOffset="0"
+        android:valueFrom="M-1.29 -8.98 C3.42,-8.7 7.16,-4.78 7.16,0 C7.16,4.8 3.41,8.72 -1.32,8.99 "
+        android:valueTo="M-1.29 -8.98 C3.42,-8.7 7.16,-4.78 7.16,0 C7.16,4.8 3.41,8.72 -1.32,8.99 "
+        android:valueType="pathType"
+        android:propertyName="pathData"/>
+    <objectAnimator
+        android:interpolator="@drawable/__avd_tab_world_clock_transition__5__1_res_0x7f080193"
+        android:duration="317"
+        android:startOffset="73"
+        android:valueFrom="M-1.29 -8.98 C3.42,-8.7 7.16,-4.78 7.16,0 C7.16,4.8 3.41,8.72 -1.32,8.99 "
+        android:valueTo="M-1.39 -9 C-0.63,-8.09 1.13,-4.95 1.13,-0.03 C1.13,4.9 -0.64,8.08 -1.39,9 "
+        android:valueType="pathType"
+        android:propertyName="pathData"/>
+    <objectAnimator
+        android:interpolator="@drawable/__avd_tab_world_clock_transition__5__2_res_0x7f080194"
+        android:duration="244"
+        android:startOffset="390"
+        android:valueFrom="M-1.39 -9 C-0.63,-8.09 1.13,-4.95 1.13,-0.03 C1.13,4.9 -0.64,8.08 -1.39,9 "
+        android:valueTo="M-1.39 -9 C-0.63,-8.09 1.63,-4.95 1.63,-0.03 C1.63,4.9 -0.64,8.08 -1.39,9 "
+        android:valueType="pathType"
+        android:propertyName="pathData"/>
+</set>

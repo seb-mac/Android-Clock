@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include app:constraintSet="@xml/gastown_timer_card_state_deskclock_portrait"/>
+    <include app:constraintSet="@xml/gastown_timer_card_state_deskclock_landscape"/>
+    <include app:constraintSet="@xml/gastown_timer_card_state_deskclock_lock_screen"/>
+    <include app:constraintSet="@xml/timer_card_state_empty"/>
+    <Transition
+        app:constraintSetEnd="@+id/timer_card_state_empty"
+        app:constraintSetStart="@+id/timer_card_state_empty"/>
+</MotionScene>

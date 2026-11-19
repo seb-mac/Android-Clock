@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_selected="true"
+        android:id="@+id/state_on"
+        android:drawable="@drawable/gs_hotel_fill1_vd_theme_24"/>
+    <item
+        android:id="@+id/state_off"
+        android:drawable="@drawable/gs_hotel_vd_theme_24"/>
+    <transition
+        android:drawable="@drawable/avd_tab_bedtime_transition"
+        android:toId="@+id/state_on"
+        android:fromId="@+id/state_off"/>
+</animated-selector>

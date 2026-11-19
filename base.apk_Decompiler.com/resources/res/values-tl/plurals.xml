@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="add_minute_preset_timer">
+        <item quantity="one">Magtakda ng %1$d minutong timer</item>
+        <item quantity="other">Magtakda ng %1$d na minutong timer</item>
+    </plurals>
+    <plurals name="alarm_alert_snooze_duration">
+        <item quantity="one">%d min</item>
+        <item quantity="other">%d na min</item>
+    </plurals>
+    <plurals name="alarm_alert_snooze_set">
+        <item quantity="one">Naka-snooze sa loob ng %d minuto.</item>
+        <item quantity="other">Naka-snooze sa loob ng %d na minuto.</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="one">%s araw</item>
+        <item quantity="other">%s na araw</item>
+    </plurals>
+    <plurals name="days_ago">
+        <item quantity="one">%s araw ang nakalipas</item>
+        <item quantity="other">%s na araw ang nakalipas</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="one">%s oras</item>
+        <item quantity="other">%s na oras</item>
+    </plurals>
+    <plurals name="hours_extra_short">
+        <item quantity="one">%sh</item>
+        <item quantity="other">%sh</item>
+    </plurals>
+    <plurals name="hours_short">
+        <item quantity="one">%s hr</item>
+        <item quantity="other">%s hr</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="one">%s minuto</item>
+        <item quantity="other">%s na minuto</item>
+    </plurals>
+    <plurals name="minutes_extra_short">
+        <item quantity="one">%sm</item>
+        <item quantity="other">%sm</item>
+    </plurals>
+    <plurals name="minutes_short">
+        <item quantity="one">%s min</item>
+        <item quantity="other">%s min</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d bagong notification</item>
+        <item quantity="other">%d na bagong notification</item>
+    </plurals>
+    <plurals name="places_autocomplete_predictions_available">
+        <item quantity="one">%1$d suhestyon ang available</item>
+        <item quantity="other">%1$d na suhestyon ang available</item>
+    </plurals>
+    <plurals name="seconds">
+        <item quantity="one">%s segundo</item>
+        <item quantity="other">%s na segundo</item>
+    </plurals>
+    <plurals name="seconds_extra_short">
+        <item quantity="one">%ss</item>
+        <item quantity="other">%ss</item>
+    </plurals>
+</resources>

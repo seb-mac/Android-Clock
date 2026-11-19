@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:id="@+id/widget_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_gravity="center"
+        android:id="@android:id/background"
+        android:background="@drawable/analog_circle_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToOutline="true"/>
+    <AnalogClock
+        android:theme="@style/Theme.DeskClock.AnalogWidget"
+        android:id="@+id/base_clock"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dial="@drawable/clock_analog_numeral_dial"
+        android:hand_hour="@drawable/clock_analog_simple_hour"
+        android:hand_minute="@drawable/clock_analog_simple_minute"
+        android:hand_second="@drawable/clock_analog_simple_second"/>
+</FrameLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="center_fab_height">96dp</dimen>
+    <dimen name="center_fab_rectangle_width">152dp</dimen>
+    <dimen name="fab_area_height">128dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

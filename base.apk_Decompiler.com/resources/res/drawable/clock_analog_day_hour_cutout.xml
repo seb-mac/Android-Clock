@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="111dp"
+    android:width="29dp"
+    android:viewportWidth="18"
+    android:viewportHeight="69">
+    <path
+        android:fillColor="@android:color/transparent"
+        android:pathData="M9,3.5L9,3.5A7,7 0,0 1,16 10.5L16,58.5A7,7 0,0 1,9 65.5L9,65.5A7,7 0,0 1,2 58.5L2,10.5A7,7 0,0 1,9 3.5z"
+        android:strokeColor="@color/analog_appwidget_hour_hand_color"
+        android:strokeWidth="3"/>
+</vector>

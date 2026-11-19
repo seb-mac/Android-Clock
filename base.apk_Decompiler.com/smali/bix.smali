@@ -1,0 +1,158 @@
+###### Class defpackage.bix (bix)
+.class final Lbix;
+.super Landroid/animation/AnimatorListenerAdapter;
+.source "PG"
+
+
+# instance fields
+.field final synthetic a:Lbja;
+
+
+# direct methods
+.method public constructor <init>(Lbja;)V
+    .registers 2
+
+    .line 1
+    iput-object p1, p0, Lbix;->a:Lbja;
+
+    .line 2
+    .line 3
+    invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onAnimationEnd(Landroid/animation/Animator;)V
+    .registers 5
+
+    .line 1
+    new-instance p1, Ljava/util/ArrayList;
+
+    .line 2
+    .line 3
+    iget-object p0, p0, Lbix;->a:Lbja;
+
+    .line 4
+    .line 5
+    iget-object v0, p0, Lbja;->a:Ljava/util/ArrayList;
+
+    .line 6
+    .line 7
+    invoke-direct {p1, v0}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
+
+    .line 8
+    .line 9
+    .line 10
+    invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
+
+    .line 11
+    .line 12
+    .line 13
+    move-result v0
+
+    .line 14
+    const/4 v1, 0x0
+
+    .line 15
+    :goto_e
+    if-ge v1, v0, :cond_1c
+
+    .line 16
+    .line 17
+    invoke-virtual {p1, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    .line 18
+    .line 19
+    .line 20
+    move-result-object v2
+
+    .line 21
+    check-cast v2, Lbiw;
+
+    .line 22
+    .line 23
+    invoke-virtual {v2, p0}, Lbiw;->b(Landroid/graphics/drawable/Drawable;)V
+
+    .line 24
+    .line 25
+    .line 26
+    add-int/lit8 v1, v1, 0x1
+
+    .line 27
+    .line 28
+    goto :goto_e
+
+    .line 29
+    :cond_1c
+    return-void
+.end method
+
+.method public final onAnimationStart(Landroid/animation/Animator;)V
+    .registers 5
+
+    .line 1
+    new-instance p1, Ljava/util/ArrayList;
+
+    .line 2
+    .line 3
+    iget-object p0, p0, Lbix;->a:Lbja;
+
+    .line 4
+    .line 5
+    iget-object v0, p0, Lbja;->a:Ljava/util/ArrayList;
+
+    .line 6
+    .line 7
+    invoke-direct {p1, v0}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
+
+    .line 8
+    .line 9
+    .line 10
+    invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
+
+    .line 11
+    .line 12
+    .line 13
+    move-result v0
+
+    .line 14
+    const/4 v1, 0x0
+
+    .line 15
+    :goto_e
+    if-ge v1, v0, :cond_1c
+
+    .line 16
+    .line 17
+    invoke-virtual {p1, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    .line 18
+    .line 19
+    .line 20
+    move-result-object v2
+
+    .line 21
+    check-cast v2, Lbiw;
+
+    .line 22
+    .line 23
+    invoke-virtual {v2, p0}, Lbiw;->c(Landroid/graphics/drawable/Drawable;)V
+
+    .line 24
+    .line 25
+    .line 26
+    add-int/lit8 v1, v1, 0x1
+
+    .line 27
+    .line 28
+    goto :goto_e
+
+    .line 29
+    :cond_1c
+    return-void
+.end method

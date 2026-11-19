@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:ordering="together">
+    <objectAnimator
+        android:interpolator="@drawable/__avd_alarm_activity_thumb_shake__0__0_res_0x7f080005"
+        android:duration="50"
+        android:startOffset="1000"
+        android:valueFrom="0"
+        android:valueTo="12"
+        android:valueType="floatType"
+        android:propertyName="rotation"/>
+    <objectAnimator
+        android:interpolator="@drawable/__avd_alarm_activity_thumb_shake__0__1_res_0x7f080006"
+        android:duration="50"
+        android:startOffset="1050"
+        android:valueFrom="12"
+        android:valueTo="-12"
+        android:valueType="floatType"
+        android:propertyName="rotation"/>
+    <objectAnimator
+        android:interpolator="@drawable/__avd_alarm_activity_thumb_shake__0__2_res_0x7f080007"
+        android:duration="50"
+        android:startOffset="1100"
+        android:valueFrom="-12"
+        android:valueTo="6"
+        android:valueType="floatType"
+        android:propertyName="rotation"/>
+    <objectAnimator
+        android:interpolator="@drawable/__avd_alarm_activity_thumb_shake__0__3_res_0x7f080008"
+        android:duration="50"
+        android:startOffset="1150"
+        android:valueFrom="6"
+        android:valueTo="-6"
+        android:valueType="floatType"
+        android:propertyName="rotation"/>
+    <objectAnimator
+        android:interpolator="@drawable/__avd_alarm_activity_thumb_shake__0__4_res_0x7f080009"
+        android:duration="50"
+        android:startOffset="1200"
+        android:valueFrom="-6"
+        android:valueTo="0"
+        android:valueType="floatType"
+        android:propertyName="rotation"/>
+</set>

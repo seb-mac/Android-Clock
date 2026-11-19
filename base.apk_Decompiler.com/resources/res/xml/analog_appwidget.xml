@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="@dimen/default_analog_widget_size"
+    android:minHeight="@dimen/default_analog_widget_size"
+    android:updatePeriodMillis="0"
+    android:initialLayout="@layout/loading_widget"
+    android:configure="com.android.deskclock.AnalogAppWidgetConfigActivity"
+    android:previewImage="@drawable/appwidget_analog_clock_preview"
+    android:resizeMode="vertical|horizontal"
+    android:minResizeWidth="0dp"
+    android:minResizeHeight="0dp"
+    android:widgetCategory="keyguard|home_screen"
+    android:widgetFeatures="reconfigurable"
+    android:previewLayout="@layout/analog_scallop_layout_preview"
+    android:targetCellWidth="2"
+    android:targetCellHeight="2"/>

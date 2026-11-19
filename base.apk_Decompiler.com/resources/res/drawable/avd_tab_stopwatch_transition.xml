@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_avd_tab_stopwatch_transition__0_res_0x7f0801fc">
+    <target
+        android:name="body_parent"
+        android:animation="@drawable/_avd_tab_stopwatch_transition__1_res_0x7f0801fd"/>
+    <target
+        android:name="button_group"
+        android:animation="@drawable/_avd_tab_stopwatch_transition__2_res_0x7f0801fe"/>
+</animated-vector>

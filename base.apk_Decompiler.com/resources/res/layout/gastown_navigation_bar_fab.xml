@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="180dp">
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:textColor="@color/fab_icon_tint"
+        android:ellipsize="end"
+        android:gravity="start|center_vertical"
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="180dp"
+        android:text="@string/fab_default_text_add_location"
+        android:singleLine="true"
+        app:backgroundTint="@color/fab_background_tint"
+        app:icon="@drawable/gs_add_vd_theme_24"
+        app:iconGravity="textStart"
+        app:iconTint="@color/fab_icon_tint"
+        style="?attr/extendedFloatingActionButtonSmallStyle"/>
+</FrameLayout>

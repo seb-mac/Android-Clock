@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/background"
+    android:layout_width="@dimen/analog_widget_dial_size"
+    android:layout_height="@dimen/analog_widget_dial_size">
+    <AnalogClock
+        android:theme="@style/Theme.DeskClock.AnalogWidget"
+        android:layout_gravity="bottom"
+        android:id="@+id/analog_appwidget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dial="@drawable/clock_analog_dial"
+        android:hand_hour="@drawable/clock_analog_hour"
+        android:hand_minute="@drawable/clock_analog_minute"
+        android:hand_second="@drawable/clock_analog_second"
+        android:dialTint="?android:attr/colorBackground"/>
+</FrameLayout>

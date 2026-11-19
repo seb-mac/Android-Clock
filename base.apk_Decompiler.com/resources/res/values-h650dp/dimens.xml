@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="legacy_widget_max_clock_font_size">100dp</dimen>
+    <dimen name="timer_setup_control_buttons_group_padding_horizontal">40dp</dimen>
+    <dimen name="timer_setup_digit_icon_size">32dp</dimen>
+</resources>
