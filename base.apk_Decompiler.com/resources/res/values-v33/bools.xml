@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <bool name="enable_titan_activities">true</bool>
-    <bool name="enable_weather_receiver">true</bool>
-</resources>

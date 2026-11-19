@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="cities_widget_preview_clock_font_size">35dp</dimen>
-    <dimen name="digital_widget_preview_clock_font_size">35dp</dimen>
-    <dimen name="digital_widget_preview_label_font_size">8dp</dimen>
-    <dimen name="stacked_widget_preview_clock_font_size">28dp</dimen>
-</resources>

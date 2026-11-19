@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<inset xmlns:android="http://schemas.android.com/apk/res/android"
-    android:drawable="@drawable/clock_analog_simple_minute_cutout"
-    android:insetLeft="48.95%"
-    android:insetRight="48.95%"
-    android:insetTop="4.4%"
-    android:insetBottom="48.9%"/>

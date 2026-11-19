@@ -1,9 +1,0 @@
-###### Class defpackage.fip (fip)
-.class public interface abstract Lfip;
-.super Ljava/lang/Object;
-.source "PG"
-
-
-# virtual methods
-.method public abstract a()Lfio;
-.end method

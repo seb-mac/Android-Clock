@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.android.deskclock.common.ui.autosizingtextview.AutoSizingTextClock xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/auto_sizing_text_clock"
-    style="@style/GastownAlarmFiringTextClockStyle"/>
