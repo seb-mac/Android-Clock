@@ -14,7 +14,7 @@ import java.util.concurrent.TimeUnit;
 public final class dge extends dgm {
     public jhc al;
     public dgn am;
-    public cxp an;
+    public StopwatchController an;
     public gog ao;
     private final dgd ap;
     private jgy aq;
@@ -40,8 +40,8 @@ public final class dge extends dgm {
         imageView2.setVisibility(4);
     }
 
-    public final cxp aO() {
-        cxp cxpVar = this.an;
+    public final StopwatchController aO() {
+        StopwatchController cxpVar = this.an;
         if (cxpVar != null) {
             return cxpVar;
         }

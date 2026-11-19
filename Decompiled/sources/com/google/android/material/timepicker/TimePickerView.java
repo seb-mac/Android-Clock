@@ -45,7 +45,7 @@ public class TimePickerView extends ConstraintLayout {
             public final void a(int i2, boolean z) {
                 imi imiVar;
                 if (z && (imiVar = this.a.f) != null) {
-                    ((ilu) imiVar).b.g(i2 == R.id.material_clock_period_pm_button ? 1 : 0);
+                    ((ilu) imiVar).initializationLock.g(i2 == R.id.material_clock_period_pm_button ? 1 : 0);
                 }
             }
         });

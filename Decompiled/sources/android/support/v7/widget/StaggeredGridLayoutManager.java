@@ -155,11 +155,11 @@ public class StaggeredGridLayoutManager extends ly implements ml {
         if (this.mShouldReverseLayout) {
             if (ndVar.d() < this.mPrimaryOrientation.f()) {
                 ArrayList arrayList = ndVar.a;
-                boolean z = nd.p((View) arrayList.get(arrayList.size() - 1)).b;
+                boolean z = nd.p((View) arrayList.get(arrayList.size() - 1)).initializationLock;
                 return true;
             }
         } else if (ndVar.f() > this.mPrimaryOrientation.j()) {
-            boolean z2 = nd.p((View) ndVar.a.get(0)).b;
+            boolean z2 = nd.p((View) ndVar.a.get(0)).initializationLock;
             return true;
         }
         return DEBUG;

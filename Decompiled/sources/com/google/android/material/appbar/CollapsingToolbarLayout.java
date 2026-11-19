@@ -465,7 +465,7 @@ public class CollapsingToolbarLayout extends FrameLayout {
     }
 
     final int a(View view) {
-        return ((getHeight() - c(view).a) - view.getHeight()) - ((hvn) view.getLayoutParams()).bottomMargin;
+        return ((getHeight() - c(view).isInitialized) - view.getHeight()) - ((hvn) view.getLayoutParams()).bottomMargin;
     }
 
     public final int b() {

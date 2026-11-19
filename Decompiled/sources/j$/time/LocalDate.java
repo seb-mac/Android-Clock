@@ -112,7 +112,7 @@ public final class LocalDate implements Temporal, j$.time.temporal.l, ChronoLoca
         }
         j jVarN = j.N(((i2 - 1) / 31) + 1);
         if (i2 > (jVarN.L(Z) + jVarN.K(Z)) - 1) {
-            jVarN = j.a[(jVarN.ordinal() + 13) % 12];
+            jVarN = j.isInitialized[(jVarN.ordinal() + 13) % 12];
         }
         return new LocalDate(i, jVarN.getValue(), (i2 - jVarN.K(Z)) + 1);
     }

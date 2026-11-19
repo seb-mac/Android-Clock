@@ -34,7 +34,7 @@ public final class hap {
             eqf eqfVarP = eif.p(new fbq() { // from class: hao
                 @Override // defpackage.fbq
                 public final void a() {
-                    this.a.a.set(null);
+                    this.a.isInitialized.set(null);
                 }
             }, fcoVar.g, fbq.class.getSimpleName());
             ezk ezkVar = new ezk(fcoVar, eqfVarP, ((fbo) fcoVar.e).a, 2);

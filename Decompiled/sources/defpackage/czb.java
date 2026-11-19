@@ -901,7 +901,7 @@ public final class czb {
         }
     }
 
-    public final void y(int i, mlu mluVar) {
+    public final void y(int i, StopwatchEventSource mluVar) {
         lxj.d(mluVar, "eventSource");
         kww kwwVarC = kub.c();
         if (kwwVarC.b || kwwVarC.r) {

@@ -11,8 +11,8 @@ import com.google.android.material.button.MaterialButton;
 /* JADX INFO: compiled from: PG */
 /* JADX INFO: loaded from: classes2.dex */
 public final class dfz extends dgk {
-    public static final mlu a = mlu.MOBILE_APP;
-    public cxp b;
+    public static final StopwatchEventSource a = StopwatchEventSource.MOBILE_APP;
+    public StopwatchController b;
     public czb c;
     private final dga d = new dga(this, 1);
 
@@ -32,8 +32,8 @@ public final class dfz extends dgk {
         return viewInflate;
     }
 
-    public final cxp a() {
-        cxp cxpVar = this.b;
+    public final StopwatchController a() {
+        StopwatchController cxpVar = this.b;
         if (cxpVar != null) {
             return cxpVar;
         }

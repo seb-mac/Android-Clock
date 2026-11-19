@@ -203,7 +203,7 @@ public final class dz implements pe {
                     HandleShortcuts handleShortcuts = (HandleShortcuts) olVar12;
                     ccs ccsVar5 = cecVar.bU().e().b;
                     handleShortcuts.q = (czb) ccsVar5.I.b();
-                    handleShortcuts.p = (cxp) ccsVar5.al.b();
+                    handleShortcuts.p = (StopwatchController) ccsVar5.al.b();
                 }
                 break;
             case 13:
@@ -217,7 +217,7 @@ public final class dz implements pe {
                     handleUris.v = (czb) ccsVar6.I.b();
                     handleUris.x = ((dme) ccsVar6.aD).b();
                     handleUris.u = (cop) ccsVar6.af.b();
-                    handleUris.r = (cxp) ccsVar6.al.b();
+                    handleUris.r = (StopwatchController) ccsVar6.al.b();
                     handleUris.s = (ddd) ccsVar6.K.b();
                     handleUris.w = ((dqi) ccsVar6.R).b();
                     bzh bzhVar = ccsVar6.mz;

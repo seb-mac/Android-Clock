@@ -2,7 +2,7 @@ package com.android.deskclock.stopwatch;
 
 import android.content.Context;
 import android.content.Intent;
-import defpackage.cxp;
+import defpackage.StopwatchController;
 import defpackage.czb;
 import defpackage.daq;
 import defpackage.dfr;
@@ -11,78 +11,78 @@ import defpackage.dfv;
 import defpackage.dlx;
 import defpackage.g;
 import defpackage.kkq;
-import defpackage.mlu;
+import defpackage.StopwatchEventSource;
 
 /* JADX INFO: compiled from: PG */
 /* JADX INFO: loaded from: classes2.dex */
-public final class StopwatchReceiver extends dfr {
-    private static final mlu e = mlu.STOPWATCH_RECEIVER;
-    public cxp c;
-    public czb d;
+public final class StopwatchReceiver extends dfr { // Stopwatch event receiver
+    private static final StopwatchEventSource e = StopwatchEventSource.STOPWATCH_RECEIVER;
+    public StopwatchReceiver stopwatchController;
+    public czb eventLogger;
 
-    public static Intent a(Context context, String str, mlu mluVar) {
-        return g.s(new Intent(context, (Class<?>) StopwatchReceiver.class).setAction(str).addFlags(268435456), mluVar);
+    public static Intent a(Context context, String action, StopwatchEventSource eventSource) {
+        return g.s(new Intent(context, (Class<?>) StopwatchReceiver.class).setAction(action).addFlags(268435456), eventSource);
     }
 
     /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
     /* JADX WARN: Code duplicated, block: B:43:0x00bd  */
     @Override // defpackage.dfr, android.content.BroadcastReceiver
     public final void onReceive(Context context, Intent intent) {
-        if (!this.a) {
-            synchronized (this.b) {
-                if (!this.a) {
+        if (!this.isInitialized) {
+            synchronized (this.initializationLock) {
+                if (!this.isInitialized) {
                     ((dfs) kkq.s(context)).aa(this);
-                    this.a = true;
+                    this.isInitialized = true;
                 }
             }
         }
-        mlu mluVarZ = g.z(g.G(intent), e);
-        int i = 4;
+        StopwatchEventSource eventSource = g.z(g.G(intent), e);
+        int eventId = 4;
         switch (intent.getAction()) {
             case "com.android.deskclock.action.RESET_STOPWATCH":
-                this.c.g();
-                i = 5;
+                this.stopwatchController.g();
+                eventId = 5;
                 break;
             case "com.android.deskclock.action.LAP_STOPWATCH":
-                this.c.j();
-                i = 6;
+                this.stopwatchController.j();
+                eventId = 6;
                 break;
             case "com.android.deskclock.action.START_STOPWATCH":
-                this.c.h();
-                i = 3;
+                this.stopwatchController.h();
+                eventId = 3;
                 break;
             case "com.android.deskclock.action.PAUSE_STOPWATCH":
-                this.c.e();
+                this.stopwatchController.e();
                 break;
             case "com.android.deskclock.action.TOGGLE_STOPWATCH":
-                boolean zF = this.c.b().f();
-                cxp cxpVar = this.c;
-                if (!zF) {
-                    cxpVar.h();
-                    i = 3;
+                boolean isRunning = this.stopwatchController.b().f();
+                StopwatchReceiver stopwatch = this.stopwatchController;
+                if (!isRunning) {
+                    stopwatch.h();
+                    eventId = 3;
                     break;
                 } else {
-                    cxpVar.e();
+                    stopwatch.e();
                     break;
                 }
             case "com.android.deskclock.action.SUPPRESS_STOPWATCH_NOTIFICATION":
-                cxp cxpVar2 = this.c;
+                StopwatchReceiver stopwatchController = this.stopwatchController;
                 dlx.c();
-                dfv dfvVarB = cxpVar2.b();
-                daq daqVar = dfvVarB.g;
-                daq daqVar2 = daq.a;
-                if (daqVar != daqVar2) {
-                    dfvVarB = new dfv(dfvVarB.a, dfvVarB.b, dfvVarB.c, dfvVarB.d, dfvVarB.e, dfvVarB.f, daqVar2);
+                dfv stopwatchState = stopwatchController.b();
+                daq notificationState = stopwatchState.g;
+                daq suppressedNotifactionState = daq.a;
+                if (notificationState != suppressedNotifactionState) {
+                    stopwatchState = new dfv(stopwatchState.a, stopwatchState.b, stopwatchState.c, stopwatchState.d, stopwatchState.e, stopwatchState.f, suppressedNotifactionState);
                 }
-                cxpVar2.k(dfvVarB);
-                i = 7;
+                stopwatchController.k(stopwatchState);
+                eventId = 7;
                 break;
             default:
-                i = 0;
+                eventId = 0;
                 break;
         }
-        if (i != 0) {
-            this.d.y(i, mluVarZ);
+        if (eventId != 0) {
+            this.eventLogger.y(eventId, eventSource);
         }
     }
 }

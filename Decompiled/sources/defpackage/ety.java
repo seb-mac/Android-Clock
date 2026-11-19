@@ -17,7 +17,7 @@ public final class ety {
     public static String a(Context context) {
         String packageName = context.getPackageName();
         try {
-            Object obj = ewi.b(context).a;
+            Object obj = ewi.b(context).isInitialized;
             return ((Context) obj).getPackageManager().getApplicationLabel(((Context) obj).getPackageManager().getApplicationInfo(packageName, 0)).toString();
         } catch (PackageManager.NameNotFoundException | NullPointerException unused) {
             String str = context.getApplicationInfo().name;

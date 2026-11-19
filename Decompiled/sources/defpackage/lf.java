@@ -94,7 +94,7 @@ public final class lf extends ki {
         }
         setSelection(-1);
         ListAdapter adapter = getAdapter();
-        (adapter instanceof HeaderViewListAdapter ? (gr) ((HeaderViewListAdapter) adapter).getWrappedAdapter() : (gr) adapter).a.i(false);
+        (adapter instanceof HeaderViewListAdapter ? (gr) ((HeaderViewListAdapter) adapter).getWrappedAdapter() : (gr) adapter).isInitialized.i(false);
         return true;
     }
 }

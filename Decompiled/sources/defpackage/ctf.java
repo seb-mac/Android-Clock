@@ -14,9 +14,9 @@ import com.google.android.deskclock.debug.R;
 public final class ctf implements cpb, cqg, cqi, dfw {
     public static final iwy a = iwy.h("com/android/deskclock/controller/ShortcutController");
     public final Context b;
-    private final cxp c;
+    private final StopwatchController c;
 
-    public ctf(Context context, cxp cxpVar) {
+    public ctf(Context context, StopwatchController cxpVar) {
         this.b = context;
         this.c = cxpVar;
     }

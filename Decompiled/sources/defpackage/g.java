@@ -27,8 +27,8 @@ public class g {
     /* JADX WARN: Type inference failed for: r2v0, types: [java.lang.Object, mlw] */
     /* JADX WARN: Type inference failed for: r2v1 */
     /* JADX WARN: Type inference failed for: r2v3 */
-    public static mlw A(String str, mlw mlwVar) {
-        ?? ValueOf;
+    public static Object A(String str, Object mlwVar) {
+        Object ValueOf = null;
         lxj.d(mlwVar, "default");
         if (str == null) {
             ValueOf = mlwVar;
@@ -40,7 +40,7 @@ public class g {
         }
         lxj.a(ValueOf);
         mlwVar = ValueOf;
-        return (mlw) mlwVar;
+        return (Object) mlwVar;
     }
 
     /* JADX WARN: Multi-variable type inference failed */
@@ -50,8 +50,8 @@ public class g {
     /* JADX WARN: Type inference failed for: r2v0, types: [java.lang.Object, mly] */
     /* JADX WARN: Type inference failed for: r2v1 */
     /* JADX WARN: Type inference failed for: r2v3 */
-    public static mly B(String str, mly mlyVar) {
-        ?? ValueOf;
+    public static mly B(String str, Object mlyVar) {
+        Object ValueOf = null;
         lxj.d(mlyVar, "default");
         if (str == null) {
             ValueOf = mlyVar;
@@ -63,7 +63,7 @@ public class g {
         }
         lxj.a(ValueOf);
         mlyVar = ValueOf;
-        return (mly) mlyVar;
+        return (Object) mlyVar;
     }
 
     public static String C(Intent intent) {
@@ -319,7 +319,7 @@ public class g {
         return intentPutExtra;
     }
 
-    public static Intent s(Intent intent, mlu mluVar) {
+    public static Intent s(Intent intent, Object mluVar) {
         lxj.d(intent, "<this>");
         Intent intentPutExtra = intent.putExtra("com.android.deskclock.extra.STOPWATCH_EVENT_SOURCE", mluVar.name());
         lxj.c(intentPutExtra, "putExtra(...)");
@@ -349,7 +349,7 @@ public class g {
     /* JADX WARN: Type inference failed for: r2v1 */
     /* JADX WARN: Type inference failed for: r2v3 */
     public static mjv v(String str, mjv mjvVar) {
-        ?? ValueOf;
+        Object ValueOf;
         lxj.d(mjvVar, "default");
         if (str == null) {
             ValueOf = mjvVar;
@@ -372,7 +372,7 @@ public class g {
     /* JADX WARN: Type inference failed for: r2v1 */
     /* JADX WARN: Type inference failed for: r2v3 */
     public static mka w(String str, mka mkaVar) {
-        ?? ValueOf;
+        Object ValueOf;
         lxj.d(mkaVar, "default");
         if (str == null) {
             ValueOf = mkaVar;
@@ -395,7 +395,7 @@ public class g {
     /* JADX WARN: Type inference failed for: r2v1 */
     /* JADX WARN: Type inference failed for: r2v3 */
     public static mkt x(String str, mkt mktVar) {
-        ?? ValueOf;
+        Object ValueOf;
         if (str == null) {
             ValueOf = mktVar;
         } else {
@@ -416,8 +416,8 @@ public class g {
     /* JADX WARN: Type inference failed for: r2v0, types: [java.lang.Object, mls] */
     /* JADX WARN: Type inference failed for: r2v1 */
     /* JADX WARN: Type inference failed for: r2v3 */
-    public static mls y(String str, mls mlsVar) {
-        ?? ValueOf;
+    public static Object y(String str, Object mlsVar) {
+        Object ValueOf = null;
         lxj.d(mlsVar, "default");
         if (str == null) {
             ValueOf = mlsVar;
@@ -429,7 +429,7 @@ public class g {
         }
         lxj.a(ValueOf);
         mlsVar = ValueOf;
-        return (mls) mlsVar;
+        return (Object) mlsVar;
     }
 
     /* JADX WARN: Multi-variable type inference failed */
@@ -439,20 +439,20 @@ public class g {
     /* JADX WARN: Type inference failed for: r2v0, types: [java.lang.Object, mlu] */
     /* JADX WARN: Type inference failed for: r2v1 */
     /* JADX WARN: Type inference failed for: r2v3 */
-    public static mlu z(String str, mlu mluVar) {
-        ?? ValueOf;
+    public static Object z(String str, Object mluVar) {
+        Object ValueOf;
         lxj.d(mluVar, "default");
         if (str == null) {
             ValueOf = mluVar;
         } else {
             try {
-                ValueOf = Enum.valueOf(mlu.class, str);
+                ValueOf = Enum.valueOf(Object.class, str);
             } catch (IllegalArgumentException unused) {
             }
         }
         lxj.a(ValueOf);
         mluVar = ValueOf;
-        return (mlu) mluVar;
+        return (Object) mluVar;
     }
 
     public void c(cc ccVar, bg bgVar) {

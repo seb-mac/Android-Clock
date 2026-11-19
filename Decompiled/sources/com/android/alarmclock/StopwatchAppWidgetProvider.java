@@ -67,7 +67,7 @@ public class StopwatchAppWidgetProvider extends AppWidgetProvider {
                     public final Object apply(Object obj) {
                         String str;
                         int dimensionPixelSize;
-                        cxp cxpVar;
+                        StopwatchReceiver cxpVar;
                         dfv dfvVar;
                         int i2;
                         int i3;
@@ -76,7 +76,7 @@ public class StopwatchAppWidgetProvider extends AppWidgetProvider {
                         int i6;
                         int i7;
                         ctq ctqVar2 = ctqVar;
-                        cxp cxpVar2 = ctqVar2.g;
+                        StopwatchReceiver cxpVar2 = ctqVar2.g;
                         Size size = (Size) obj;
                         dfv dfvVarB = cxpVar2.b();
                         int size2 = cxpVar2.c().size();
@@ -194,7 +194,7 @@ public class StopwatchAppWidgetProvider extends AppWidgetProvider {
                         remoteViews.setColorStateList(android.R.id.background, "setBackgroundTintList", (ColorStateList) null);
                         mls mlsVar = mls.STOPWATCH_WIDGET;
                         mlw mlwVar = mlw.STOPWATCH_WIDGET;
-                        mlu mluVar = mlu.WIDGET;
+                        StopwatchEventSource mluVar = StopwatchEventSource.WIDGET;
                         remoteViews.setOnClickPendingIntent(R.id.stopwatch_layout, vc.h(context2, mlsVar, mlwVar, mluVar));
                         remoteViews.setOnClickPendingIntent(i3, ctqVar2.a(StopwatchReceiver.a(context2, "com.android.deskclock.action.LAP_STOPWATCH", mluVar)));
                         remoteViews.setOnClickPendingIntent(R.id.stopwatch_reset, ctqVar2.a(StopwatchReceiver.a(context2, "com.android.deskclock.action.RESET_STOPWATCH", mluVar)));

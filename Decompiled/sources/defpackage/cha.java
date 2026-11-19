@@ -32,7 +32,7 @@ public final class cha implements ksl {
             case ard.LONG_FIELD_NUMBER /* 4 */:
                 return new akf((ns) this.a.b(), ((kss) this.b).b(), (mam) this.c.b());
             case ard.STRING_FIELD_NUMBER /* 5 */:
-                return new ctj(((hft) this.b).a(), (cop) this.c.b(), (cxp) this.a.b());
+                return new ctj(((hft) this.b).a(), (cop) this.c.b(), (StopwatchController) this.a.b());
             case ard.STRING_SET_FIELD_NUMBER /* 6 */:
                 return new ctn(((hft) this.c).a(), (cqb) this.b.b(), ((czi) this.a).a());
             case ard.DOUBLE_FIELD_NUMBER /* 7 */:
@@ -58,7 +58,7 @@ public final class cha implements ksl {
             case 9:
                 return new ddk(((hft) this.b).a(), (mam) this.c.b(), ((ddm) this.a).b());
             case 10:
-                return new dgn((bg) ((ksm) this.b).a, (cqb) this.c.b(), (cxp) this.a.b());
+                return new dgn((bg) ((ksm) this.b).a, (cqb) this.c.b(), (StopwatchController) this.a.b());
             case 11:
                 return new dki((SharedPreferences) this.a.b(), ((cox) this.c).b(), (cop) this.b.b());
             case 12:

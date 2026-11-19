@@ -7,8 +7,8 @@ import android.content.Intent;
 /* JADX INFO: compiled from: PG */
 /* JADX INFO: loaded from: classes2.dex */
 public class dfr extends BroadcastReceiver {
-    public volatile boolean a = false;
-    public final Object b = new Object();
+    public volatile boolean isInitialized = false;
+    public final Object initializationLock = new Object();
 
     @Override // android.content.BroadcastReceiver
     public void onReceive(Context context, Intent intent) {

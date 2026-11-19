@@ -19,9 +19,9 @@ public final class ctj implements chk, cof, dhz, dfw, deh {
     private final Context b;
     private final Executor c = new jhi(dlx.a);
     private ContentCaptureManager d;
-    private final cxp e;
+    private final StopwatchController e;
 
-    public ctj(Context context, cop copVar, cxp cxpVar) {
+    public ctj(Context context, cop copVar, StopwatchController cxpVar) {
         this.b = context;
         this.e = cxpVar;
         if (a.I()) {

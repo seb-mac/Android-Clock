@@ -18,12 +18,12 @@ public final class cjv implements chk, cpb, cqi, dfw, dhz, deh {
     public final cke c;
     public final cjw d;
     public final cyb e;
-    public final cxp f;
+    public final StopwatchController f;
     public final czb g;
     private final Context h;
     private final fhr i;
 
-    public cjv(Context context, czb czbVar, fhr fhrVar, cke ckeVar, cjw cjwVar, cyb cybVar, cxp cxpVar) {
+    public cjv(Context context, czb czbVar, fhr fhrVar, cke ckeVar, cjw cjwVar, cyb cybVar, StopwatchController cxpVar) {
         this.h = context;
         this.g = czbVar;
         this.i = fhrVar;

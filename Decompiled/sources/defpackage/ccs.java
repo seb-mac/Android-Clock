@@ -2577,8 +2577,8 @@ public final class ccs implements cbq, cfj, cgt, cks, cky, clg, cmk, cnk, cqz, c
 
     @Override // defpackage.dfs
     public final void aa(StopwatchReceiver stopwatchReceiver) {
-        stopwatchReceiver.d = (czb) this.I.b();
-        stopwatchReceiver.c = (cxp) this.al.b();
+        stopwatchReceiver.eventLogger = (czb) this.I.b();
+        stopwatchReceiver.stopwatchController = (StopwatchReceiver) this.al.b();
     }
 
     @Override // defpackage.dhn

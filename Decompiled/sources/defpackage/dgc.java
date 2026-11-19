@@ -17,7 +17,7 @@ import java.util.concurrent.TimeUnit;
 /* JADX INFO: compiled from: PG */
 /* JADX INFO: loaded from: classes2.dex */
 public final class dgc extends dgl {
-    public cxp a;
+    public StopwatchController a;
     public gog aj;
     private jgy al;
     private ImageButton am;
@@ -35,8 +35,8 @@ public final class dgc extends dgl {
         return layoutInflater.inflate(R.layout.gastown_stopwatch_center_fragment, viewGroup, false);
     }
 
-    public final cxp a() {
-        cxp cxpVar = this.a;
+    public final StopwatchController a() {
+        StopwatchController cxpVar = this.a;
         if (cxpVar != null) {
             return cxpVar;
         }
@@ -54,7 +54,7 @@ public final class dgc extends dgl {
             gogVar = null;
         }
         gog gogVarA = ((dgj) gogVar.a).b();
-        cxp cxpVar = (cxp) gogVar.b.b();
+        StopwatchController cxpVar = (StopwatchController) gogVar.b.b();
         cxpVar.getClass();
         this.d = new dgi(gogVarA, cxpVar, this);
         RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.recycler_view);

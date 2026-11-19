@@ -35,7 +35,7 @@ public final class cxq implements ksl {
         int i = this.j;
         if (i == 0) {
             ((hft) this.a).a();
-            return new cxp((SharedPreferences) this.b.b(), (fhr) this.c.b(), (cqb) this.d.b(), (dap) this.e.b(), ((dgt) this.f).b(), (lqv) this.g.b(), ((cxr) this.h).b(), this.i);
+            return new StopwatchController((SharedPreferences) this.b.b(), (fhr) this.c.b(), (cqb) this.d.b(), (dap) this.e.b(), ((dgt) this.f).b(), (lqv) this.g.b(), ((cxr) this.h).b(), this.i);
         }
         if (i == 1) {
             return new ctc(((hft) this.d).a(), (czb) this.a.b(), (cqb) this.i.b(), (dkp) this.h.b(), (dep) this.b.b(), (cku) this.g.b(), (csa) this.f.b(), (cop) this.c.b(), ((dme) this.e).b());

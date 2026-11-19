@@ -146,7 +146,7 @@ public final class vc {
         return hpj.a(context, 0, g.r(g.t(g.p(new Intent().setClassName(context, "com.android.deskclock.uridispatcher.InternalUriDispatcherActivity").setData(builderAppendEncodedPath.appendQueryParameter("action", String.format(Locale.US, "/%s/%d/%s", "alarm", Long.valueOf(j), "view")).build()), mkaVar), mlwVar), mlsVar), 201326592, 0);
     }
 
-    public static PendingIntent h(Context context, mls mlsVar, mlw mlwVar, mlu mluVar) {
+    public static PendingIntent h(Context context, mls mlsVar, mlw mlwVar, StopwatchEventSource mluVar) {
         return hpj.a(context, 0, g.s(g.r(g.t(new Intent().setClassName(context, "com.android.deskclock.uridispatcher.InternalUriDispatcherActivity").setData(new Uri.Builder().scheme("clock-app").authority("com.google.android.deskclock").appendEncodedPath("stopwatch").appendEncodedPath("view").build()), mlwVar), mlsVar), mluVar), 201326592, 0);
     }
 

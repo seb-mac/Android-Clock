@@ -14,6 +14,6 @@ public final class daf implements ksl {
     @Override // defpackage.lst, defpackage.lss
     /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
     public final dae b() {
-        return new dae((dao) this.a.b(), (cxp) this.b.b());
+        return new dae((dao) this.a.b(), (StopwatchController) this.b.b());
     }
 }

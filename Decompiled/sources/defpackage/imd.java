@@ -66,7 +66,7 @@ public final class imd implements imj, ilv {
                 @Override // defpackage.hxs
                 public final void a(int i, boolean z) {
                     if (z) {
-                        this.a.a.g(i == R.id.material_clock_period_pm_button ? 1 : 0);
+                        this.a.isInitialized.g(i == R.id.material_clock_period_pm_button ? 1 : 0);
                     }
                 }
             });

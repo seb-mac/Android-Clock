@@ -161,7 +161,7 @@ public final class LocalTime implements Temporal, j$.time.temporal.l, Comparable
     }
 
     public final int N(j$.time.temporal.n nVar) {
-        int i = i.a[((j$.time.temporal.a) nVar).ordinal()];
+        int i = i.isInitialized[((j$.time.temporal.a) nVar).ordinal()];
         byte b = this.b;
         int i2 = this.d;
         byte b2 = this.a;
@@ -293,7 +293,7 @@ public final class LocalTime implements Temporal, j$.time.temporal.l, Comparable
         }
         j$.time.temporal.a aVar = (j$.time.temporal.a) nVar;
         aVar.A(j);
-        int i = i.a[aVar.ordinal()];
+        int i = i.isInitialized[aVar.ordinal()];
         int i2 = this.d;
         byte b = this.c;
         byte b2 = this.b;

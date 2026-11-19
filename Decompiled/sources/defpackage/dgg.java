@@ -66,7 +66,7 @@ public final class dgg extends mq {
         if (dgiVar.u().isEmpty()) {
             return j;
         }
-        cxp cxpVar = dgiVar.e;
+        StopwatchController cxpVar = dgiVar.e;
         dlx.c();
         return Math.max(0L, j - ((dft) cxpVar.c().get(0)).c);
     }

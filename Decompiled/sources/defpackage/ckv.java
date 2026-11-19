@@ -33,7 +33,7 @@ public final class ckv implements ksl {
             case 0:
                 return new cku(((hft) this.a).a(), (SharedPreferences) this.b.b(), (fhr) this.c.b(), (cqb) this.d.b(), (dap) this.e.b(), (czb) this.f.b(), ((ckw) this.g).b());
             case 1:
-                return new cjv(((hft) this.d).a(), (czb) this.c.b(), (fhr) this.a.b(), (cke) this.f.b(), (cjw) this.g.b(), (cyb) this.b.b(), (cxp) this.e.b());
+                return new cjv(((hft) this.d).a(), (czb) this.c.b(), (fhr) this.a.b(), (cke) this.f.b(), (cjw) this.g.b(), (cyb) this.b.b(), (StopwatchController) this.e.b());
             case 2:
                 return new csb(((hft) this.a).a(), ((dme) this.e).b(), (fhr) this.c.b(), (czb) this.f.b(), (csa) this.b.b(), ((dma) this.d).b(), (jhb) this.g.b());
             case ard.INTEGER_FIELD_NUMBER /* 3 */:

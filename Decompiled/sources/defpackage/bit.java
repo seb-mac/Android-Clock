@@ -160,7 +160,7 @@ public class bit extends bhy {
             if ((this.u & 1) == 1 && bigVar2 != null) {
                 if (bigVar3 == null) {
                     View view = (View) bigVar2.b.getParent();
-                    if (!K(j(view, false), k(view, false)).a) {
+                    if (!K(j(view, false), k(view, false)).isInitialized) {
                         bigVar3 = null;
                     }
                 }
@@ -215,7 +215,7 @@ public class bit extends bhy {
                 i2 = 0;
             } else if (view2.getParent() instanceof View) {
                 View view5 = (View) view2.getParent();
-                if (K(k(view5, true), j(view5, true)).a) {
+                if (K(k(view5, true), j(view5, true)).isInitialized) {
                     i = i5;
                     animator = null;
                     c = 1;

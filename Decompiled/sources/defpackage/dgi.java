@@ -12,11 +12,11 @@ import java.util.List;
 /* JADX INFO: compiled from: PG */
 /* JADX INFO: loaded from: classes2.dex */
 public final class dgi extends fk {
-    public final cxp e;
+    public final StopwatchController e;
     public final gog f;
     private final dgc g;
 
-    public dgi(gog gogVar, cxp cxpVar, dgc dgcVar) {
+    public dgi(gog gogVar, StopwatchController cxpVar, dgc dgcVar) {
         super(new dgf());
         this.f = gogVar;
         this.e = cxpVar;

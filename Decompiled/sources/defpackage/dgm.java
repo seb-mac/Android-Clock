@@ -46,7 +46,7 @@ public abstract class dgm extends ccx {
         dgeVar.ao = ((dgj) ccnVar.a).b();
         dgeVar.al = (jhc) ccsVar.av.b();
         dgeVar.am = (dgn) ccnVar.c.b();
-        dgeVar.an = (cxp) ccsVar.al.b();
+        dgeVar.an = (StopwatchController) ccsVar.al.b();
     }
 
     @Override // defpackage.cdv, defpackage.bg

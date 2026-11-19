@@ -22,7 +22,7 @@ public class l implements Map.Entry {
             if (this.a == i && ((obj2 = this.b) == obj || (obj2 != null && obj.equals(obj2)))) {
                 return this;
             }
-            this = this.d;
+            this = this.eventLogger;
         } while (this != null);
         return null;
     }

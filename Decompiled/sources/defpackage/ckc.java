@@ -27,11 +27,11 @@ public final class ckc implements ksl {
     public final /* synthetic */ Object b() {
         switch (this.e) {
             case 0:
-                return new ckb((ddd) this.a.b(), (fhr) this.b.b(), (cxp) this.c.b(), (Optional) ((ksm) this.d).a);
+                return new ckb((ddd) this.a.b(), (fhr) this.b.b(), (StopwatchController) this.c.b(), (Optional) ((ksm) this.d).a);
             case 1:
                 return new chy((dlu) this.b.b(), (fhr) this.d.b(), (ddd) this.c.b(), (mam) this.a.b());
             case 2:
-                return new ckd((ddd) this.a.b(), (fhr) this.b.b(), (cxp) this.c.b(), (Optional) ((ksm) this.d).a);
+                return new ckd((ddd) this.a.b(), (fhr) this.b.b(), (StopwatchController) this.c.b(), (Optional) ((ksm) this.d).a);
             case ard.INTEGER_FIELD_NUMBER /* 3 */:
                 return new ckz(((hft) this.d).a(), (lvf) this.a.b(), (csa) this.c.b(), (cop) this.b.b());
             case ard.LONG_FIELD_NUMBER /* 4 */:
@@ -39,7 +39,7 @@ public final class ckc implements ksl {
             case ard.STRING_FIELD_NUMBER /* 5 */:
                 return new ctu(((hft) this.d).a(), (cqb) this.a.b(), ((dqi) this.c).b(), ((kss) this.b).b());
             case ard.STRING_SET_FIELD_NUMBER /* 6 */:
-                return new daa(((hft) this.d).a(), ksk.a(this.b), (cxp) this.c.b(), (dao) this.a.b());
+                return new daa(((hft) this.d).a(), ksk.a(this.b), (StopwatchController) this.c.b(), (dao) this.a.b());
             case ard.DOUBLE_FIELD_NUMBER /* 7 */:
                 return new dfl(((hft) this.c).a(), (che) this.d.b(), (mam) this.b.b(), (czb) this.a.b());
             case ard.BYTES_FIELD_NUMBER /* 8 */:

@@ -51,7 +51,7 @@ public final class ab implements Cloneable {
 
     private final int k(int i) {
         String str = this.a;
-        byte[] bArr = h.a;
+        byte[] bArr = h.isInitialized;
         while (i < str.length()) {
             char cCharAt = str.charAt(i);
             if (cCharAt > 255) {
@@ -60,7 +60,7 @@ public final class ab implements Cloneable {
                         if (cCharAt >= 64830 && cCharAt <= 65094 && (cCharAt <= 64831 || cCharAt >= 65093)) {
                             break;
                         }
-                    } else if (((h.c[h.b[(cCharAt - 8192) >> 5]] >> (cCharAt & 31)) & 1) != 0) {
+                    } else if (((h.stopwatchController[h.initializationLock[(cCharAt - 8192) >> 5]] >> (cCharAt & 31)) & 1) != 0) {
                         break;
                     }
                 } else {
@@ -68,7 +68,7 @@ public final class ab implements Cloneable {
                 }
                 i++;
             } else {
-                if (h.a[cCharAt] != 0) {
+                if (h.isInitialized[cCharAt] != 0) {
                     break;
                 }
                 i++;
@@ -79,7 +79,7 @@ public final class ab implements Cloneable {
 
     private final int l(int i) {
         String str = this.a;
-        byte[] bArr = h.a;
+        byte[] bArr = h.isInitialized;
         while (i < str.length() && h.a(str.charAt(i))) {
             i++;
         }

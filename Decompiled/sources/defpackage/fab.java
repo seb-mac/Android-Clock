@@ -71,7 +71,7 @@ public final class fab {
             }
             try {
                 int i2 = ewv.b;
-                context2 = ewv.c(context, "com.google.android.gms.providerinstaller.dynamite").a;
+                context2 = ewv.c(context, "com.google.android.gms.providerinstaller.dynamite").isInitialized;
             } catch (ews e) {
                 Log.w("ProviderInstaller", "Failed to load providerinstaller module: ".concat(String.valueOf(e.getMessage())));
                 context2 = null;

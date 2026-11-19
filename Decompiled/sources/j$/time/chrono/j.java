@@ -120,7 +120,7 @@ public final class j implements h, Serializable {
             return s(a(), nVar.y(this, j));
         }
         j$.time.temporal.a aVar = (j$.time.temporal.a) nVar;
-        int i = i.a[aVar.ordinal()];
+        int i = i.isInitialized[aVar.ordinal()];
         if (i == 1) {
             return c(j - j$.desugar.sun.nio.fs.g.x(this), ChronoUnit.SECONDS);
         }

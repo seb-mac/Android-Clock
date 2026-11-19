@@ -160,10 +160,10 @@ public final class abw {
             }
             aclVar.resolveLayoutDirection(motionLayout.getLayoutDirection());
             motionLayout.G(false, view, yoVar2, aclVar, sparseArray);
-            if (acwVar.d(view.getId()).c.c == 1) {
+            if (acwVar.d(view.getId()).stopwatchController.stopwatchController == 1) {
                 yoVar2.aq = view.getVisibility();
             } else {
-                yoVar2.aq = acwVar.d(view.getId()).c.b;
+                yoVar2.aq = acwVar.d(view.getId()).stopwatchController.initializationLock;
             }
         }
         ArrayList arrayList3 = ypVar.bf;

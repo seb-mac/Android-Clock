@@ -58,7 +58,7 @@ public final class cep implements ksl {
             case 11:
                 return new cru(((hft) this.b).a(), (cop) this.a.b());
             case 12:
-                return new ctf(((hft) this.a).a(), (cxp) this.b.b());
+                return new ctf(((hft) this.a).a(), (StopwatchController) this.b.b());
             case 13:
                 final cop copVar = (cop) this.b.b();
                 final mam mamVar = (mam) this.a.b();

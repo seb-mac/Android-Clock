@@ -473,7 +473,7 @@ public final class ewg {
         Bundle bundle = new Bundle();
         Account account = new Account(str, "com.google");
         elg.b(account);
-        String str2 = elg.e(context, account, "^^_account_id_^^", bundle).b;
+        String str2 = elg.e(context, account, "^^_account_id_^^", bundle).initializationLock;
         lxj.c(str2, "getAccountId(...)");
         return str2;
     }
@@ -565,7 +565,7 @@ public final class ewg {
 
     public static boolean b(Context context, int i, String str) {
         try {
-            AppOpsManager appOpsManager = (AppOpsManager) ((Context) ewi.b(context).a).getSystemService("appops");
+            AppOpsManager appOpsManager = (AppOpsManager) ((Context) ewi.b(context).isInitialized).getSystemService("appops");
             if (appOpsManager == null) {
                 throw new NullPointerException("context.getSystemService(Context.APP_OPS_SERVICE) is null");
             }

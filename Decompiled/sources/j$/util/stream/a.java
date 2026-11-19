@@ -50,7 +50,7 @@ public abstract class a implements BaseStream {
 
     public final void b(Spliterator spliterator, x2 x2Var) {
         while (this.e > 0) {
-            this = this.b;
+            this = this.initializationLock;
         }
         x2Var.c(spliterator.getExactSizeIfKnown());
         this.h(spliterator, x2Var);

@@ -25,7 +25,7 @@ public final class cnn {
                 Bundle bundle3 = new Bundle(eki.class.getClassLoader());
                 eki ekiVar2 = cnn.b;
                 long jLongValue = ((Long) ekiVar2.a(bundle, "eventId", ekj.a("long"))).longValue();
-                Object obj = cnn.a(context).a;
+                Object obj = cnn.a(context).isInitialized;
                 ((cnk) kkj.i(obj, cnk.class)).e();
                 ejr.b(ibt.J(Boolean.valueOf(cnq.b((Context) obj, jLongValue))), new lqv(ejuVar, ekiVar2, ekj.a("java.lang.Boolean")));
                 return bundle3;
@@ -42,7 +42,7 @@ public final class cnn {
                 Bundle bundle3 = new Bundle(eki.class.getClassLoader());
                 eki ekiVar2 = cnn.b;
                 long jLongValue = ((Long) ekiVar2.a(bundle, "eventId", ekj.a("long"))).longValue();
-                Object obj = cnn.a(context).a;
+                Object obj = cnn.a(context).isInitialized;
                 ((cnk) kkj.i(obj, cnk.class)).e();
                 ejr.b(ibt.J(Boolean.valueOf(cnq.b((Context) obj, jLongValue))), new lqv(ejuVar, ekiVar2, ekj.a("java.lang.Boolean")));
                 return bundle3;

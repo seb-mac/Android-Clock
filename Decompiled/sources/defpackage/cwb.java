@@ -338,7 +338,7 @@ public final class cwb {
         return (List) aQ(new cvy() { // from class: cvq
             @Override // defpackage.cvy
             public final Object a() {
-                Object obj = this.a.c.c;
+                Object obj = this.a.stopwatchController.stopwatchController;
                 dlx.a();
                 final String string = Objects.toString(uri, null);
                 ArrayList arrayList = new ArrayList(((cun) obj).A());
@@ -1003,7 +1003,7 @@ public final class cwb {
         return (cua) aQ(new cvy() { // from class: cvl
             @Override // defpackage.cvy
             public final Object a() {
-                Object obj = this.a.c.c;
+                Object obj = this.a.stopwatchController.stopwatchController;
                 dlx.a();
                 cua cuaVar2 = cuaVar;
                 return ((cun) obj).q(cuaVar2, cuaVar2.l(i, i2).f(true), null, true);
@@ -1016,7 +1016,7 @@ public final class cwb {
         return (cua) aQ(new cvy() { // from class: cvn
             @Override // defpackage.cvy
             public final Object a() {
-                Object obj = this.a.c.c;
+                Object obj = this.a.stopwatchController.stopwatchController;
                 dlx.a();
                 return ((cun) obj).m(cuaVar, cueVar, cud.SNOOZED, Optional.empty(), null, i);
             }
@@ -1027,7 +1027,7 @@ public final class cwb {
         return (cua) aQ(new cvy() { // from class: cvt
             @Override // defpackage.cvy
             public final Object a() {
-                Object obj = this.a.c.c;
+                Object obj = this.a.stopwatchController.stopwatchController;
                 cua cuaVar2 = cuaVar;
                 return ((cun) obj).r(cuaVar2, z, i, i2, cpjVar, cpeVar, str, z2, uri, str2, str3, z3, bool, cuaVar2.u, (String) cuaVar2.z().orElse(null), true);
             }

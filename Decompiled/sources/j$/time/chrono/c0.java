@@ -36,7 +36,7 @@ public final class c0 implements Externalizable {
         this.a = b;
         switch (b) {
             case 1:
-                ConcurrentHashMap concurrentHashMap = a.a;
+                ConcurrentHashMap concurrentHashMap = a.isInitialized;
                 objO = a.O(objectInput.readUTF());
                 break;
             case 2:

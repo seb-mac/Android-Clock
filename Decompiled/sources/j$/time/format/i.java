@@ -59,7 +59,7 @@ public class i implements f {
         int i2 = this.b;
         z zVar = this.d;
         if (jLongValue >= 0) {
-            int i3 = c.a[zVar.ordinal()];
+            int i3 = c.isInitialized[zVar.ordinal()];
             if (i3 != 1) {
                 if (i3 == 2) {
                     sb.append('+');
@@ -68,7 +68,7 @@ public class i implements f {
                 sb.append('+');
             }
         } else {
-            int i4 = c.a[zVar.ordinal()];
+            int i4 = c.isInitialized[zVar.ordinal()];
             if (i4 == 1 || i4 == 2 || i4 == 3) {
                 sb.append('-');
             } else if (i4 == 4) {

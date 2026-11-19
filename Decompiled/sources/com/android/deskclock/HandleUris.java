@@ -13,7 +13,7 @@ import defpackage.ced;
 import defpackage.cop;
 import defpackage.cua;
 import defpackage.cwb;
-import defpackage.cxp;
+import defpackage.StopwatchController;
 import defpackage.cyw;
 import defpackage.cyy;
 import defpackage.czb;
@@ -29,7 +29,7 @@ import defpackage.lxj;
 import defpackage.mjv;
 import defpackage.mka;
 import defpackage.mls;
-import defpackage.mlu;
+import defpackage.StopwatchEventSource;
 import defpackage.mlw;
 import defpackage.mly;
 import java.util.UUID;
@@ -38,7 +38,7 @@ import java.util.UUID;
 /* JADX INFO: loaded from: classes2.dex */
 public final class HandleUris extends ced {
     public fhr q;
-    public cxp r;
+    public StopwatchController r;
     public ddd s;
     public cyy t;
     public cop u;
@@ -53,7 +53,7 @@ public final class HandleUris extends ced {
     private static final mka D = mka.DEEP_LINK;
     private static final mlw E = mlw.DEEP_LINK;
     private static final mly F = mly.DEEP_LINK;
-    private static final mlu G = mlu.DEEP_LINK;
+    private static final StopwatchEventSource G = StopwatchEventSource.DEEP_LINK;
 
     public static cua s(String str) {
         if (str == null) {

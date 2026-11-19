@@ -1071,7 +1071,7 @@ public class CoordinatorLayout extends ViewGroup implements aji, ajj {
         for (int i2 = 0; i2 < childCount; i2++) {
             View childAt = getChildAt(i2);
             int id = childAt.getId();
-            adf adfVar = l(childAt).a;
+            adf adfVar = l(childAt).isInitialized;
             if (id != -1 && adfVar != null && (parcelable2 = (Parcelable) sparseArray.get(id)) != null) {
                 adfVar.o(childAt, parcelable2);
             }

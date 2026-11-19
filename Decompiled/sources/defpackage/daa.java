@@ -18,7 +18,7 @@ public final class daa implements chk, cpb, cqi, dfw, dhz, deh {
     private final Context b;
     private final dao c;
 
-    public daa(Context context, kqg kqgVar, cxp cxpVar, dao daoVar) {
+    public daa(Context context, kqg kqgVar, StopwatchController cxpVar, dao daoVar) {
         this.b = context;
         this.c = daoVar;
         if (daoVar.a()) {

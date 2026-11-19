@@ -1,0 +1,9 @@
+{
+    "version": 1,
+    "language": "java",
+    "name": "AndroidClock",
+    "sourcePath": "sources",
+    "classpath": [
+        "C:\\Users\\sebma\\Documents\\Code\\Android-Clock\\Decompiled\\sources\\android.jar"
+    ]
+}

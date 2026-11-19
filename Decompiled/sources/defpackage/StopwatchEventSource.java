@@ -2,7 +2,7 @@ package defpackage;
 
 /* JADX INFO: compiled from: PG */
 /* JADX INFO: loaded from: classes2.dex */
-public enum mlu implements kha {
+public enum StopwatchEventSource implements kha {
     UNKNOWN_SOURCE(0),
     MOBILE_APP(1),
     NOTIFICATION(2),
@@ -14,7 +14,7 @@ public enum mlu implements kha {
 
     private final int j;
 
-    mlu(int i2) {
+    StopwatchEventSource(int i2) {
         this.j = i2;
     }
 

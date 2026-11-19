@@ -16,11 +16,11 @@ public final class ctq implements dfw, cqg {
     public final cpu d;
     public final Resources e;
     public final ComponentName f;
-    public final cxp g;
+    public final StopwatchController g;
     public final czb h;
     public final csa i;
 
-    public ctq(Context context, fhr fhrVar, czb czbVar, cpu cpuVar, csa csaVar, cxp cxpVar) {
+    public ctq(Context context, fhr fhrVar, czb czbVar, cpu cpuVar, csa csaVar, StopwatchController cxpVar) {
         this.b = context;
         this.c = fhrVar;
         this.d = cpuVar;

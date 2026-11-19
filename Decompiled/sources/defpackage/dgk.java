@@ -91,6 +91,6 @@ public class dgk extends bg implements ksg {
         dfz dfzVar = (dfz) this;
         ccs ccsVar = ((ccn) objBV).h;
         dfzVar.c = (czb) ccsVar.I.b();
-        dfzVar.b = (cxp) ccsVar.al.b();
+        dfzVar.b = (StopwatchController) ccsVar.al.b();
     }
 }

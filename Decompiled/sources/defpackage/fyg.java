@@ -41,7 +41,7 @@ final class fyg implements ViewTreeObserver.OnGlobalLayoutListener {
                 View viewInflate;
                 boolean z;
                 iqo iqoVarH;
-                fyi fyiVar = this.a.b;
+                fyi fyiVar = this.a.initializationLock;
                 Bundle bundle = fyiVar.n;
                 bundle.setClassLoader(foa.class.getClassLoader());
                 fyiVar.f = (foa) bundle.getParcelable("promo_context");

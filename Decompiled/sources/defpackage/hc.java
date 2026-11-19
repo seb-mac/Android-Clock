@@ -89,7 +89,7 @@ abstract class hc implements AdapterView.OnItemClickListener, hj, hf {
     @Override // android.widget.AdapterView.OnItemClickListener
     public final void onItemClick(AdapterView adapterView, View view, int i, long j) {
         ListAdapter listAdapter = (ListAdapter) adapterView.getAdapter();
-        y(listAdapter).a.z((MenuItem) listAdapter.getItem(i), this, true != w() ? 4 : 0);
+        y(listAdapter).isInitialized.z((MenuItem) listAdapter.getItem(i), this, true != w() ? 4 : 0);
     }
 
     public abstract void p(boolean z);

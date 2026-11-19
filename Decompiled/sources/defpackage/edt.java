@@ -21,7 +21,7 @@ public final class edt implements dvt {
     @Override // defpackage.dvt
     public final dya b(Context context, dya dyaVar, int i, int i2) {
         edq edqVar = (edq) dyaVar.c();
-        dya ecsVar = new ecs(edqVar.a(), dtm.b(context).a, 1);
+        dya ecsVar = new ecs(edqVar.a(), dtm.b(context).isInitialized, 1);
         dvt dvtVar = this.b;
         dya dyaVarB = dvtVar.b(context, ecsVar, i, i2);
         if (!ecsVar.equals(dyaVarB)) {

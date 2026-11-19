@@ -61,7 +61,7 @@ public class GridLayoutManager extends LinearLayoutManager {
         this.l = -1;
         this.i = -1;
         this.j = -1;
-        b(getProperties(context, attributeSet, i, i2).b);
+        b(getProperties(context, attributeSet, i, i2).initializationLock);
     }
 
     private final int c(int i) {

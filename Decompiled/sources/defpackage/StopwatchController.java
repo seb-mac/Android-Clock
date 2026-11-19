@@ -26,7 +26,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
 
 /* JADX INFO: compiled from: PG */
 /* JADX INFO: loaded from: classes2.dex */
-public final class cxp implements cpb, cqg, cqa, cqi, cpo {
+public final class StopwatchController implements cpb, cqg, cqa, cqi, cpo {
     private final dgs a;
     private final fhr b;
     private final SharedPreferences c;
@@ -39,7 +39,7 @@ public final class cxp implements cpb, cqg, cqa, cqi, cpo {
     private final lqv j;
     private final lqv k;
 
-    public cxp(SharedPreferences sharedPreferences, fhr fhrVar, cqb cqbVar, dap dapVar, dgs dgsVar, lqv lqvVar, lqv lqvVar2, lst lstVar) {
+    public StopwatchController(SharedPreferences sharedPreferences, fhr fhrVar, cqb cqbVar, dap dapVar, dgs dgsVar, lqv lqvVar, lqv lqvVar2, lst lstVar) {
         this.b = fhrVar;
         this.c = sharedPreferences;
         this.d = cqbVar;
@@ -99,12 +99,12 @@ public final class cxp implements cpb, cqg, cqa, cqi, cpo {
         }
         lqv lqvVar = this.j;
         Object obj = lqvVar.b;
-        mlu mluVar = mlu.NOTIFICATION;
+        StopwatchEventSource mluVar = StopwatchEventSource.NOTIFICATION;
         Context context = (Context) obj;
         Resources resources = context.getResources();
         PendingIntent pendingIntentH = vc.h(context, mls.NOTIFICATION, mlw.NOTIFICATION, mluVar);
-        PendingIntent pendingIntentC = hpj.c(context, 0, StopwatchReceiver.a(context, "com.android.deskclock.action.SUPPRESS_STOPWATCH_NOTIFICATION", mluVar), 201326592);
-        ?? r14 = lqvVar.c;
+        PendingIntent pendingIntentC = hpj.c(context, 0, StopwatchController.a(context, "com.android.deskclock.action.SUPPRESS_STOPWATCH_NOTIFICATION", mluVar), 201326592);
+        Object r14 = lqvVar.c;
         afn afnVar = new afn(context, r14.i());
         afnVar.p = true;
         afnVar.k(pendingIntentC);
@@ -118,16 +118,16 @@ public final class cxp implements cpb, cqg, cqa, cqi, cpo {
         long jA = dfvVarB.a();
         ArrayList arrayList = new ArrayList(2);
         if (zF) {
-            Intent intentA = StopwatchReceiver.a(context, "com.android.deskclock.action.PAUSE_STOPWATCH", mluVar);
+            Intent intentA = StopwatchController.a(context, "com.android.deskclock.action.PAUSE_STOPWATCH", mluVar);
             arrayList.add(afp.b(IconCompat.c(null, "", R.drawable.gs_pause_fill1_vd_24), afn.c(resources.getText(R.string.sw_pause_button)), hpj.c(context, 0, intentA, 201326592), new Bundle()));
             if (zI) {
-                Intent intentA2 = StopwatchReceiver.a(context, "com.android.deskclock.action.LAP_STOPWATCH", mluVar);
+                Intent intentA2 = StopwatchController.a(context, "com.android.deskclock.action.LAP_STOPWATCH", mluVar);
                 arrayList.add(afp.b(IconCompat.c(null, "", 2131231674), afn.c(resources.getText(R.string.sw_lap_button)), hpj.c(context, 0, intentA2, 201326592), new Bundle()));
             }
         } else {
-            Intent intentA3 = StopwatchReceiver.a(context, "com.android.deskclock.action.START_STOPWATCH", mluVar);
+            Intent intentA3 = StopwatchController.a(context, "com.android.deskclock.action.START_STOPWATCH", mluVar);
             arrayList.add(afp.b(IconCompat.c(null, "", R.drawable.gs_play_arrow_fill1_vd_24), afn.c(resources.getText(R.string.sw_start_button)), hpj.c(context, 0, intentA3, 201326592), new Bundle()));
-            Intent intentA4 = StopwatchReceiver.a(context, "com.android.deskclock.action.RESET_STOPWATCH", mluVar);
+            Intent intentA4 = StopwatchController.a(context, "com.android.deskclock.action.RESET_STOPWATCH", mluVar);
             arrayList.add(afp.b(IconCompat.c(null, "", R.drawable.quantum_gm_ic_restart_alt_vd_24), afn.c(resources.getText(R.string.sw_reset_button)), hpj.c(context, 0, intentA4, 201326592), new Bundle()));
         }
         int size2 = arrayList.size();

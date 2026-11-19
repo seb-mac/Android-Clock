@@ -8,10 +8,10 @@ import java.util.Objects;
 public final class dgn implements dfw, dko, axp {
     private static final iwy a = iwy.h("com/android/deskclock/stopwatch/gastown/impl/ui/ScreenWakeMixin");
     private final cqb b;
-    private final cxp c;
+    private final StopwatchController c;
     private final ccx d;
 
-    public dgn(bg bgVar, cqb cqbVar, cxp cxpVar) {
+    public dgn(bg bgVar, cqb cqbVar, StopwatchController cxpVar) {
         lxj.d(bgVar, "fragment");
         lxj.d(cqbVar, "foregroundModel");
         lxj.d(cxpVar, "stopwatchModel");
@@ -28,7 +28,7 @@ public final class dgn implements dfw, dko, axp {
 
     private final void g() {
         Window window;
-        cxp cxpVar = this.c;
+        StopwatchController cxpVar = this.c;
         boolean z = this.b.c;
         if (cxpVar.b().f()) {
             ccx ccxVar = this.d;

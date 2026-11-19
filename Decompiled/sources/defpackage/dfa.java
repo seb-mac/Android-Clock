@@ -32,7 +32,7 @@ public final class dfa implements ksl {
             case 0:
                 return new dez(((hft) this.a).a(), (lvf) this.b.b(), (mam) this.c.b(), (mam) this.d.b(), (che) this.e.b(), (czb) this.f.b());
             case 1:
-                return new ctq(((hft) this.b).a(), (fhr) this.e.b(), (czb) this.d.b(), ((cpv) this.f).b(), (csa) this.c.b(), (cxp) this.a.b());
+                return new ctq(((hft) this.b).a(), (fhr) this.e.b(), (czb) this.d.b(), ((cpv) this.f).b(), (csa) this.c.b(), (StopwatchController) this.a.b());
             case 2:
                 ksq ksqVar = this.a;
                 ksq ksqVar2 = this.d;

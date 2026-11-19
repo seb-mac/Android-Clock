@@ -42,7 +42,7 @@ public final class czr implements dqd {
         materialButton.setOnClickListener(new View.OnClickListener() { // from class: czk
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
-                if (materialButton.getVisibility() != 0 || this.a.c == 3) {
+                if (materialButton.getVisibility() != 0 || this.a.stopwatchController == 3) {
                     return;
                 }
                 ((dqe) supplier.get()).aJ();

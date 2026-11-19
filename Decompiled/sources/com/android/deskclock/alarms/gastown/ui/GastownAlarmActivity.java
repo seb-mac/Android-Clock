@@ -221,8 +221,8 @@ public final class GastownAlarmActivity extends cin implements View.OnClickListe
 
     private final void N(View view, int i, int i2) {
         acw acwVarI = this.w.i(i);
-        acwVarI.d(view.getId()).c.b = view.getVisibility();
-        acwVarI.d(view.getId()).c.c = i2;
+        acwVarI.d(view.getId()).stopwatchController.initializationLock = view.getVisibility();
+        acwVarI.d(view.getId()).stopwatchController.stopwatchController = i2;
         this.w.z(i, acwVarI);
     }
 

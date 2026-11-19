@@ -4,13 +4,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import defpackage.a;
 import defpackage.cec;
-import defpackage.cxp;
+import defpackage.StopwatchController;
 import defpackage.czb;
 import defpackage.dkr;
 import defpackage.dkt;
 import defpackage.iwv;
 import defpackage.iwy;
-import defpackage.mlu;
+import defpackage.StopwatchEventSource;
 import defpackage.mlw;
 
 /* JADX INFO: compiled from: PG */
@@ -18,7 +18,7 @@ import defpackage.mlw;
 public class HandleShortcuts extends cec {
     private static final iwy s = iwy.h("com/android/deskclock/HandleShortcuts");
     private static final mlw t = mlw.SHORTCUT;
-    public cxp p;
+    public StopwatchController p;
     public czb q;
 
     @Override // defpackage.cec, defpackage.cpa, defpackage.bj, defpackage.ol, defpackage.cu, android.app.Activity
@@ -31,7 +31,7 @@ public class HandleShortcuts extends cec {
                 int iHashCode = action.hashCode();
                 if (iHashCode == -1166176035) {
                     if (action.equals("com.android.deskclock.action.START_STOPWATCH")) {
-                        this.q.y(3, mlu.SHORTCUT);
+                        this.q.y(3, StopwatchEventSource.SHORTCUT);
                         this.p.h();
                         dkt.a.x(dkr.STOPWATCH, t);
                         startActivity(new Intent(this, (Class<?>) DeskClock.class));
@@ -42,7 +42,7 @@ public class HandleShortcuts extends cec {
                     throw new IllegalArgumentException(a.be(action, "Unsupported action: "));
                 }
                 if (iHashCode == -637728399 && action.equals("com.android.deskclock.action.PAUSE_STOPWATCH")) {
-                    this.q.y(4, mlu.SHORTCUT);
+                    this.q.y(4, StopwatchEventSource.SHORTCUT);
                     this.p.e();
                     dkt.a.x(dkr.STOPWATCH, t);
                     startActivity(new Intent(this, (Class<?>) DeskClock.class));

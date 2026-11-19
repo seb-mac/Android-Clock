@@ -76,7 +76,7 @@ public final class dae {
         throw new IllegalArgumentException("sessionToken must not be null");
     }
 
-    public dae(dao daoVar, cxp cxpVar) {
+    public dae(dao daoVar, StopwatchController cxpVar) {
         this.a = daoVar;
         this.b = cxpVar;
     }

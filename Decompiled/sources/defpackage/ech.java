@@ -22,7 +22,7 @@ public final class ech implements dvt {
 
     @Override // defpackage.dvt
     public final dya b(Context context, dya dyaVar, int i, int i2) {
-        dyi dyiVar = dtm.b(context).a;
+        dyi dyiVar = dtm.b(context).isInitialized;
         Drawable drawable = (Drawable) dyaVar.c();
         dya dyaVarA = ecg.a(dyiVar, drawable, i, i2);
         if (dyaVarA == null) {

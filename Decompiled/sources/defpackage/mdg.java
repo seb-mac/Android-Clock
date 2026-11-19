@@ -65,7 +65,7 @@ public final class mdg extends mdh implements mau {
             return new mbc() { // from class: mde
                 @Override // defpackage.mbc
                 public final void cK() {
-                    this.a.a.removeCallbacks(runnable);
+                    this.a.isInitialized.removeCallbacks(runnable);
                 }
             };
         }

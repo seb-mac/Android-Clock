@@ -281,7 +281,7 @@ public abstract class f implements n {
             @Override // j$.time.temporal.n
             public final q n(k kVar) {
                 if (k(kVar)) {
-                    return a.YEAR.b;
+                    return a.YEAR.initializationLock;
                 }
                 j$.time.g.e("Unsupported field: WeekBasedYear");
                 return null;
@@ -298,7 +298,7 @@ public abstract class f implements n {
 
             @Override // j$.time.temporal.n
             public final q range() {
-                return a.YEAR.b;
+                return a.YEAR.initializationLock;
             }
 
             @Override // java.lang.Enum
@@ -312,7 +312,7 @@ public abstract class f implements n {
                     j$.time.g.e("Unsupported field: WeekBasedYear");
                     return null;
                 }
-                int iA = a.YEAR.b.a(j, f.WEEK_BASED_YEAR);
+                int iA = a.YEAR.initializationLock.a(j, f.WEEK_BASED_YEAR);
                 LocalDate localDateM = LocalDate.M(temporal);
                 a aVar = a.DAY_OF_WEEK;
                 int iK = localDateM.k(aVar);

@@ -33,7 +33,7 @@ public final /* synthetic */ class djo implements View.OnApplyWindowInsetsListen
             ViewGroup.LayoutParams layoutParams = ((FrameLayout) this.a).getLayoutParams();
             if (layoutParams != null) {
                 bg bgVar = this.b;
-                int i = alw.o(windowInsets, view).f(519).c;
+                int i = alw.o(windowInsets, view).f(519).stopwatchController;
                 Configuration configuration = bgVar.cf().getResources().getConfiguration();
                 lxj.c(configuration, "getConfiguration(...)");
                 int iApplyDimension = (int) TypedValue.applyDimension(1, configuration.screenHeightDp, bgVar.cf().getResources().getDisplayMetrics());
@@ -46,7 +46,7 @@ public final /* synthetic */ class djo implements View.OnApplyWindowInsetsListen
         } else {
             lxj.d(view, "v");
             lxj.d(windowInsets, "insets");
-            int i2 = alw.o(windowInsets, view).f(519).c;
+            int i2 = alw.o(windowInsets, view).f(519).stopwatchController;
             bg bgVar2 = this.b;
             if (Build.VERSION.SDK_INT >= 30) {
                 WindowMetrics maximumWindowMetrics = bgVar2.E().getWindowManager().getMaximumWindowMetrics();
