@@ -17,7 +17,7 @@ public final class fne implements fmw {
     private final fco f;
     private final gog g;
 
-    public fne(String str, fhr fhrVar, fof fofVar, fnl fnlVar, kqg kqgVar, fty ftyVar, fco fcoVar, gog gogVar) {
+    public fne(String str, Clock fhrVar, fof fofVar, fnl fnlVar, kqg kqgVar, fty ftyVar, fco fcoVar, gog gogVar) {
         lxj.d(str, "packageName");
         lxj.d(fhrVar, "clock");
         lxj.d(fofVar, "promoEvalLogger");

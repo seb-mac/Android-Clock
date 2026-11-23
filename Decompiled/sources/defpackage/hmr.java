@@ -28,7 +28,7 @@ public final class hmr implements Parcelable {
     public int s;
     private boolean t;
     private long u;
-    private final fhr v;
+    private final Clock v;
 
     public hmr(Parcel parcel) {
         this.a = (hnn) parcel.readParcelable(hnn.class.getClassLoader());
@@ -156,12 +156,12 @@ public final class hmr implements Parcelable {
         parcel.writeLong(this.u);
     }
 
-    public hmr(hma hmaVar, hmq hmqVar, fhr fhrVar) {
+    public hmr(hma hmaVar, hmq hmqVar, Clock fhrVar) {
         this(hmaVar.h(), hmaVar.j(), hmaVar.g(), hmaVar.i(), hmaVar.o(), hmaVar.d(), fhrVar);
         this.c = hmqVar;
     }
 
-    public hmr(hnn hnnVar, hou houVar, hnl hnlVar, hos hosVar, String str, hiq hiqVar, fhr fhrVar) {
+    public hmr(hnn hnnVar, hou houVar, hnl hnlVar, hos hosVar, String str, hiq hiqVar, Clock fhrVar) {
         this.a = hnnVar;
         this.b = houVar;
         this.d = hnlVar;

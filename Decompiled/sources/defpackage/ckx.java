@@ -7,7 +7,7 @@ public interface ckx {
 
     ckz ao();
 
-    czb aq();
+    StopwatchEventLogger aq();
 
     cpg au();
 
@@ -21,5 +21,5 @@ public interface ckx {
 
     ddd r();
 
-    fhr t();
+    Clock t();
 }

@@ -341,7 +341,7 @@ public final class cup {
         Uri uriBuild = new Uri.Builder().scheme("clock-app").authority("com.google.android.deskclock").appendEncodedPath("alarm").appendEncodedPath(String.valueOf(j)).appendEncodedPath("view").build();
         Intent intent = new Intent();
         Context context = this.a;
-        PendingIntent pendingIntentA = hpj.a(context, iHash, g.r(g.t(intent.setClassName(context, "com.android.deskclock.uridispatcher.InternalUriDispatcherActivity").setData(uriBuild), mlwVar), mlsVar), 201326592, 0);
+        PendingIntent pendingIntentA = hpj.a(context, iHash, StopwatchUtils.r(StopwatchUtils.t(intent.setClassName(context, "com.android.deskclock.uridispatcher.InternalUriDispatcherActivity").setData(uriBuild), mlwVar), mlsVar), 201326592, 0);
         afn afnVar = new afn(context, str);
         afnVar.p = this.c.q();
         afnVar.m = str2;

@@ -26,6 +26,6 @@ public final class fnf implements ksl {
     @Override // defpackage.lst, defpackage.lss
     /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
     public final fne b() {
-        return new fne((String) this.a.b(), (fhr) this.b.b(), (fof) this.c.b(), (fnl) this.d.b(), ksk.a(this.e), (fty) this.f.b(), ((eyn) this.g).b(), ((fmz) this.h).b());
+        return new fne((String) this.a.b(), (Clock) this.b.b(), (fof) this.c.b(), (fnl) this.d.b(), ksk.a(this.e), (fty) this.f.b(), ((eyn) this.g).b(), ((fmz) this.h).b());
     }
 }

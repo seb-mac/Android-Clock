@@ -23,7 +23,7 @@ public final class enu extends ems {
     public final /* bridge */ /* synthetic */ ems a() {
         Iterator it = ((env) this.a).m.iterator();
         while (it.hasNext()) {
-            this = ((ent) it.next()).a();
+            this = ((ent) it.next()).getTime();
             if (this == null) {
                 return null;
             }

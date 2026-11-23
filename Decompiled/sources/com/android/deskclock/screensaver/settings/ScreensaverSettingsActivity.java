@@ -7,7 +7,7 @@ import androidx.preference.PreferenceScreen;
 import com.google.android.deskclock.debug.R;
 import defpackage.bbv;
 import defpackage.bck;
-import defpackage.czb;
+import defpackage.StopwatchEventLogger;
 import defpackage.ddq;
 import defpackage.lxj;
 import defpackage.mln;
@@ -15,7 +15,7 @@ import defpackage.mln;
 /* JADX INFO: compiled from: PG */
 /* JADX INFO: loaded from: classes2.dex */
 public final class ScreensaverSettingsActivity extends ddq {
-    public czb q;
+    public StopwatchEventLogger q;
 
     /* JADX INFO: compiled from: PG */
     public final class PrefsFragment extends bbv {
@@ -46,7 +46,7 @@ public final class ScreensaverSettingsActivity extends ddq {
         super.onCreate(bundle);
         setContentView(R.layout.screensaver_settings);
         if (bundle == null) {
-            czb czbVar = this.q;
+            StopwatchEventLogger czbVar = this.q;
             if (czbVar == null) {
                 lxj.f("clearcutEventTracker");
                 czbVar = null;

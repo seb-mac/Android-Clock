@@ -228,7 +228,7 @@ public final class hpm {
     public final Drawable r(int i) {
         int resourceId;
         TypedArray typedArray = (TypedArray) this.a;
-        return (!typedArray.hasValue(i) || (resourceId = typedArray.getResourceId(i, 0)) == 0) ? typedArray.getDrawable(i) : g.e((Context) this.b, resourceId);
+        return (!typedArray.hasValue(i) || (resourceId = typedArray.getResourceId(i, 0)) == 0) ? typedArray.getDrawable(i) : StopwatchUtils.e((Context) this.b, resourceId);
     }
 
     public final Drawable s(int i) {

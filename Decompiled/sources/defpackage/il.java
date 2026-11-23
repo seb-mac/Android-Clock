@@ -80,7 +80,7 @@ public class il extends CheckBox {
 
     @Override // android.widget.CompoundButton
     public void setButtonDrawable(int i) {
-        setButtonDrawable(g.e(getContext(), i));
+        setButtonDrawable(StopwatchUtils.e(getContext(), i));
     }
 
     @Override // android.widget.TextView

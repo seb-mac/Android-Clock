@@ -27,14 +27,14 @@ import java.util.TimeZone;
 public final class cso implements chk, cqg, cqi, cpo, ckr {
     public static final iwy a = iwy.h("com/android/deskclock/controller/DigitalStackedAppWidgetController");
     public final Context b;
-    public final fhr c;
+    public final Clock c;
     public AppWidgetManager d;
-    public final czb e;
+    public final StopwatchEventLogger e;
     public final csa f;
     public final gog g;
     private final String h;
 
-    public cso(Context context, fhr fhrVar, czb czbVar, csa csaVar, gog gogVar) {
+    public cso(Context context, Clock fhrVar, StopwatchEventLogger czbVar, csa csaVar, gog gogVar) {
         this.b = context;
         this.h = context.getPackageName();
         this.c = fhrVar;
@@ -144,7 +144,7 @@ public final class cso implements chk, cqg, cqi, cpo, ckr {
         TextClock textClock2 = (TextClock) viewInflate.findViewById(R.id.clock_minutes);
         TextView textView = (TextView) viewInflate.findViewById(R.id.date);
         ((TextView) viewInflate.findViewById(R.id.alarm)).setText(str);
-        fhr fhrVar = this.c;
+        Clock fhrVar = this.c;
         dlv dlvVar = new dlv(fhrVar, textClock);
         dlv dlvVar2 = new dlv(fhrVar, textClock2);
         dlv dlvVar3 = new dlv(fhrVar, textView, f());

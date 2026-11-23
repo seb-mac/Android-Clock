@@ -18,14 +18,14 @@ import defpackage.chu;
 import defpackage.cur;
 import defpackage.cwb;
 import defpackage.cyb;
-import defpackage.czb;
+import defpackage.StopwatchEventLogger;
 import defpackage.dhd;
 import defpackage.dhx;
 import defpackage.dhy;
 import defpackage.dhz;
 import defpackage.dic;
 import defpackage.dpw;
-import defpackage.g;
+import defpackage.StopwatchUtils;
 import defpackage.gvu;
 import defpackage.isd;
 import defpackage.itt;
@@ -41,7 +41,7 @@ import java.util.List;
 public final class TitanViewTimersActivity extends dhd implements dhz {
     public cyb q;
     public int[] r;
-    public czb s;
+    public StopwatchEventLogger s;
     public bzh t;
     private TimerRecyclerView u;
 

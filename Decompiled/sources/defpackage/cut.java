@@ -7,7 +7,7 @@ import android.net.Uri;
 /* JADX INFO: compiled from: PG */
 /* JADX INFO: loaded from: classes2.dex */
 public final class cut extends cwm {
-    public cut(Context context, fhr fhrVar, czb czbVar, cqj cqjVar, cxi cxiVar, ddd dddVar, flw flwVar, ns nsVar, cyr cyrVar) {
+    public cut(Context context, Clock fhrVar, StopwatchEventLogger czbVar, cqj cqjVar, cxi cxiVar, ddd dddVar, flw flwVar, ns nsVar, cyr cyrVar) {
         super(cyrVar, context, fhrVar, dco.e, new cxc(1), czbVar, cqjVar, cxiVar, dddVar, flwVar, nsVar);
     }
 

@@ -152,7 +152,7 @@ public final class cgv {
                 LocalTime localTime2 = localTime;
                 int i = 1;
                 if (localTime2.getHour() != iloVar2.aB() || localTime2.getMinute() != iloVar2.aC()) {
-                    czb czbVarAp = ((cgt) kkj.i(applicationContext, cgt.class)).ap();
+                    StopwatchEventLogger czbVarAp = ((cgt) kkj.i(applicationContext, cgt.class)).ap();
                     if (cguVar2 == cgu.b || cguVar2 == cgu.e) {
                         kgt kgtVarK = mjw.a.k();
                         kgtVarK.p();

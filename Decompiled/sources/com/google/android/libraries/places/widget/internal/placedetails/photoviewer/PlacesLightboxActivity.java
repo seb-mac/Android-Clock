@@ -377,7 +377,7 @@ public final class PlacesLightboxActivity extends ea implements hoh {
                 ViewGroup.LayoutParams layoutParams = viewFindViewById8.getLayoutParams();
                 lxj.b(layoutParams, "null cannot be cast to non-null type android.view.ViewGroup.MarginLayoutParams");
                 ViewGroup.MarginLayoutParams marginLayoutParams = (ViewGroup.MarginLayoutParams) layoutParams;
-                marginLayoutParams.setMargins(marginLayoutParams.leftMargin, marginLayoutParams.topMargin, marginLayoutParams.rightMargin, alwVar.f(519).e + ((int) fB));
+                marginLayoutParams.setMargins(marginLayoutParams.leftMargin, marginLayoutParams.topMargin, marginLayoutParams.rightMargin, alwVar.f(519).values + ((int) fB));
                 return alwVar;
             }
         });

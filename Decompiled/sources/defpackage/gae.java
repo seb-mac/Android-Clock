@@ -51,16 +51,16 @@ public final class gae {
         try {
             if (hpmVarC.x(1) && (iP2 = hpmVarC.p(1, 0)) != 0) {
                 try {
-                    ((CheckedTextView) obj).setCheckMarkDrawable(g.e(((CheckedTextView) obj).getContext(), iP2));
+                    ((CheckedTextView) obj).setCheckMarkDrawable(StopwatchUtils.e(((CheckedTextView) obj).getContext(), iP2));
                 } catch (Resources.NotFoundException unused) {
                     if (hpmVarC.x(0)) {
                         Object obj2 = this.b;
-                        ((CheckedTextView) obj2).setCheckMarkDrawable(g.e(((CheckedTextView) obj2).getContext(), iP));
+                        ((CheckedTextView) obj2).setCheckMarkDrawable(StopwatchUtils.e(((CheckedTextView) obj2).getContext(), iP));
                     }
                 }
             } else if (hpmVarC.x(0) && (iP = hpmVarC.p(0, 0)) != 0) {
                 Object obj3 = this.b;
-                ((CheckedTextView) obj3).setCheckMarkDrawable(g.e(((CheckedTextView) obj3).getContext(), iP));
+                ((CheckedTextView) obj3).setCheckMarkDrawable(StopwatchUtils.e(((CheckedTextView) obj3).getContext(), iP));
             }
             if (hpmVarC.x(2)) {
                 ((CheckedTextView) this.b).setCheckMarkTintList(hpmVarC.q(2));

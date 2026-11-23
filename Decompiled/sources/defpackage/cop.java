@@ -33,7 +33,7 @@ public final class cop implements cpb, chk, cqg, cqi, cpo {
     public final Context b;
     public final kqg c;
     private final SharedPreferences d;
-    private final fhr e;
+    private final Clock e;
     private final dap f;
     private final ddd g;
     private final kqg h;
@@ -41,14 +41,14 @@ public final class cop implements cpb, chk, cqg, cqi, cpo {
     private coo l;
     private ContentObserver m;
     private cny n;
-    private final czb o;
+    private final StopwatchEventLogger o;
     private final cns p;
     private final cqj q;
     private final csa r;
     private final Handler i = new Handler(Looper.getMainLooper());
     private final List k = new CopyOnWriteArrayList();
 
-    public cop(Context context, SharedPreferences sharedPreferences, fhr fhrVar, cqj cqjVar, dap dapVar, ddd dddVar, czb czbVar, cns cnsVar, csa csaVar, kqg kqgVar, kqg kqgVar2) {
+    public cop(Context context, SharedPreferences sharedPreferences, Clock fhrVar, cqj cqjVar, dap dapVar, ddd dddVar, StopwatchEventLogger czbVar, cns cnsVar, csa csaVar, kqg kqgVar, kqg kqgVar2) {
         this.b = context;
         this.d = sharedPreferences;
         this.e = fhrVar;
@@ -75,7 +75,7 @@ public final class cop implements cpb, chk, cqg, cqi, cpo {
             dapVar.q(2147483638);
             return;
         }
-        fhr fhrVar = this.e;
+        Clock fhrVar = this.e;
         csa csaVar = this.r;
         Calendar calendarQ = ake.q(fhrVar);
         Context context = (Context) csaVar.a;
@@ -94,7 +94,7 @@ public final class cop implements cpb, chk, cqg, cqi, cpo {
             i = R.string.wakeup_alarm_time_and_sleep_duration;
         }
         String string2 = context.getString(i, charSequence, strAf);
-        afn afnVar = new afn(context, csaVar.c.b());
+        afn afnVar = new afn(context, csaVar.c.reset());
         afnVar.o();
         afnVar.p = true;
         afnVar.h(string2);
@@ -124,7 +124,7 @@ public final class cop implements cpb, chk, cqg, cqi, cpo {
         cny cnyVarB = b();
         Context context = this.b;
         Intent action = new Intent(context, (Class<?>) BedtimeReceiver.class).setAction("com.android.deskclock.action.UPDATE_BEDTIME_STATE");
-        fhr fhrVar = this.e;
+        Clock fhrVar = this.e;
         Calendar calendarQ = ake.q(fhrVar);
         Calendar calendar2 = Calendar.getInstance(calendarQ.getTimeZone());
         calendar2.set(1, calendarQ.get(1));
@@ -408,7 +408,7 @@ public final class cop implements cpb, chk, cqg, cqi, cpo {
     }
 
     public final void h() {
-        fhr fhrVar = this.e;
+        Clock fhrVar = this.e;
         Calendar calendarQ = ake.q(fhrVar);
         calendarQ.set(13, 0);
         calendarQ.set(14, 0);
@@ -424,7 +424,7 @@ public final class cop implements cpb, chk, cqg, cqi, cpo {
     public final void i() {
         long timeInMillis;
         long timeInMillis2;
-        fhr fhrVar = this.e;
+        Clock fhrVar = this.e;
         cny cnyVarB = b();
         Calendar calendarQ = ake.q(fhrVar);
         Calendar calendarX = cnyVarB.x(calendarQ);

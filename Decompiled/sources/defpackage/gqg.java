@@ -29,7 +29,7 @@ public final class gqg implements gqc {
     private final jhb g;
     private final bzi h;
 
-    public gqg(gfx gfxVar, ghx ghxVar, jhb jhbVar, lvf lvfVar, hpq hpqVar, bzi bziVar, ewg ewgVar, fhr fhrVar) {
+    public gqg(gfx gfxVar, ghx ghxVar, jhb jhbVar, lvf lvfVar, hpq hpqVar, bzi bziVar, ewg ewgVar, Clock fhrVar) {
         lxj.d(ghxVar, "authUtil");
         lxj.d(jhbVar, "backgroundExecutor");
         lxj.d(bziVar, "gnpMediaUtil");

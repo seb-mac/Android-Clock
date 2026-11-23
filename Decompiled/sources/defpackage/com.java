@@ -16,15 +16,15 @@ import java.util.Map;
 /* JADX INFO: loaded from: classes2.dex */
 final class com extends AsyncTask {
     private final cop a;
-    private final fhr b;
+    private final Clock b;
     private final long c;
     private final long d;
     private final long e;
     private boolean f;
     private final cns g;
-    private final czb h;
+    private final StopwatchEventLogger h;
 
-    public com(cop copVar, fhr fhrVar, cns cnsVar, long j, long j2, czb czbVar) {
+    public com(cop copVar, Clock fhrVar, cns cnsVar, long j, long j2, StopwatchEventLogger czbVar) {
         this.a = copVar;
         this.b = fhrVar;
         this.g = cnsVar;

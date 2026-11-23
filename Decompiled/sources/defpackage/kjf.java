@@ -35,7 +35,7 @@ public final class kjf implements List, j$.util.List, lxu {
 
     @Override // java.util.List, java.util.Collection
     public final void clear() {
-        a.a();
+        a.getTime();
     }
 
     @Override // java.util.List, java.util.Collection

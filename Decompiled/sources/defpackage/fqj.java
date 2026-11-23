@@ -7,11 +7,11 @@ import java.util.Map;
 /* JADX INFO: loaded from: classes2.dex */
 public final class fqj implements fpr {
     private static final Map a = lhm.v(new lta(1, kln.SUNDAY), new lta(2, kln.MONDAY), new lta(3, kln.TUESDAY), new lta(4, kln.WEDNESDAY), new lta(5, kln.THURSDAY), new lta(6, kln.FRIDAY), new lta(7, kln.SATURDAY));
-    private final fhr b;
+    private final Clock b;
     private final fof c;
     private final fpq d;
 
-    public fqj(fhr fhrVar, fof fofVar) {
+    public fqj(Clock fhrVar, fof fofVar) {
         lxj.d(fhrVar, "clock");
         lxj.d(fofVar, "promoEvalLogger");
         this.b = fhrVar;

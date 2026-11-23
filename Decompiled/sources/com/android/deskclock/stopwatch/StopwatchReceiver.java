@@ -3,25 +3,25 @@ package com.android.deskclock.stopwatch;
 import android.content.Context;
 import android.content.Intent;
 import defpackage.StopwatchController;
-import defpackage.czb;
-import defpackage.daq;
-import defpackage.dfr;
-import defpackage.dfs;
-import defpackage.dfv;
-import defpackage.dlx;
-import defpackage.g;
-import defpackage.kkq;
+import defpackage.StopwatchEventLogger;
+import defpackage.StopwatchNotificationState;
+import defpackage.StopwatchReceiverBase;
+import defpackage.StopwatchReceiverCallback;
+import defpackage.StopwatchStateModel; //StopwatchState
+import defpackage.dlx; //StopwatchLogger
+import defpackage.StopwatchUtils;
+import defpackage.kkq; //StopwatchManager
 import defpackage.StopwatchEventSource;
 
 /* JADX INFO: compiled from: PG */
 /* JADX INFO: loaded from: classes2.dex */
-public final class StopwatchReceiver extends dfr { // Stopwatch event receiver
+public final class StopwatchReceiver extends StopwatchReceiverBase { // Stopwatch event receiver
     private static final StopwatchEventSource e = StopwatchEventSource.STOPWATCH_RECEIVER;
     public StopwatchReceiver stopwatchController;
-    public czb eventLogger;
+    public StopwatchEventLogger eventLogger;
 
     public static Intent a(Context context, String action, StopwatchEventSource eventSource) {
-        return g.s(new Intent(context, (Class<?>) StopwatchReceiver.class).setAction(action).addFlags(268435456), eventSource);
+        return StopwatchUtils.s(new Intent(context, (Class<?>) StopwatchReceiver.class).setAction(action).addFlags(268435456), eventSource);
     }
 
     /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
@@ -31,12 +31,12 @@ public final class StopwatchReceiver extends dfr { // Stopwatch event receiver
         if (!this.isInitialized) {
             synchronized (this.initializationLock) {
                 if (!this.isInitialized) {
-                    ((dfs) kkq.s(context)).aa(this);
+                    ((StopwatchReceiverCallback) kkq.s(context)).aa(this);
                     this.isInitialized = true;
                 }
             }
         }
-        StopwatchEventSource eventSource = g.z(g.G(intent), e);
+        StopwatchEventSource eventSource = StopwatchUtils.z(StopwatchUtils.G(intent), e);
         int eventId = 4;
         switch (intent.getAction()) {
             case "com.android.deskclock.action.RESET_STOPWATCH":
@@ -52,27 +52,27 @@ public final class StopwatchReceiver extends dfr { // Stopwatch event receiver
                 eventId = 3;
                 break;
             case "com.android.deskclock.action.PAUSE_STOPWATCH":
-                this.stopwatchController.e();
+                this.stopwatchController.isReset();
                 break;
             case "com.android.deskclock.action.TOGGLE_STOPWATCH":
-                boolean isRunning = this.stopwatchController.b().f();
+                boolean isRunning = this.stopwatchController.reset().isRunning();
                 StopwatchReceiver stopwatch = this.stopwatchController;
                 if (!isRunning) {
                     stopwatch.h();
                     eventId = 3;
                     break;
                 } else {
-                    stopwatch.e();
+                    stopwatch.isReset();
                     break;
                 }
             case "com.android.deskclock.action.SUPPRESS_STOPWATCH_NOTIFICATION":
                 StopwatchReceiver stopwatchController = this.stopwatchController;
                 dlx.c();
-                dfv stopwatchState = stopwatchController.b();
-                daq notificationState = stopwatchState.g;
-                daq suppressedNotifactionState = daq.a;
+                StopwatchStateModel stopwatchState = stopwatchController.reset();
+                StopwatchNotificationState notificationState = stopwatchState.notificationState;
+                StopwatchNotificationState suppressedNotifactionState = StopwatchNotificationState.a;
                 if (notificationState != suppressedNotifactionState) {
-                    stopwatchState = new dfv(stopwatchState.a, stopwatchState.b, stopwatchState.c, stopwatchState.d, stopwatchState.e, stopwatchState.f, suppressedNotifactionState);
+                    stopwatchState = new StopwatchStateModel(stopwatchState.clock, stopwatchState.stopwatchState, stopwatchState.bootCount, stopwatchState.lastStartTime, stopwatchState.lastStartWallClockTime, stopwatchState.accumulatedTime, suppressedNotifactionState);
                 }
                 stopwatchController.k(stopwatchState);
                 eventId = 7;

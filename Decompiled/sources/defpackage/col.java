@@ -6,11 +6,11 @@ import android.os.AsyncTask;
 /* JADX INFO: loaded from: classes2.dex */
 final class col extends AsyncTask {
     private final cop a;
-    private final fhr b;
+    private final Clock b;
     private final long c;
-    private final czb d;
+    private final StopwatchEventLogger d;
 
-    public col(cop copVar, fhr fhrVar, czb czbVar) {
+    public col(cop copVar, Clock fhrVar, StopwatchEventLogger czbVar) {
         this.a = copVar;
         this.b = fhrVar;
         this.c = fhrVar.a();

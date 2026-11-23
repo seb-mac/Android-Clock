@@ -70,7 +70,7 @@ public final /* synthetic */ class civ implements View.OnClickListener {
             case 11:
                 BedtimeMorningOnboardingActivity bedtimeMorningOnboardingActivity2 = (BedtimeMorningOnboardingActivity) this.a;
                 bedtimeMorningOnboardingActivity2.u.r(null, null);
-                czb czbVar = bedtimeMorningOnboardingActivity2.w;
+                StopwatchEventLogger czbVar = bedtimeMorningOnboardingActivity2.w;
                 kgt kgtVarK = mjw.a.k();
                 kgtVarK.p();
                 mjw mjwVar = (mjw) kgtVarK.b;
@@ -89,7 +89,7 @@ public final /* synthetic */ class civ implements View.OnClickListener {
                 cnw cnwVar = cnyVarB.w;
                 String strEncode = Uri.encode(cnwVar.b);
                 bedtimeMorningOnboardingActivity3.startActivityForResult(ckuVar.b(new Uri.Builder().appendQueryParameter("workflow_action", "settings").appendQueryParameter("workflow_label", strEncode).appendQueryParameter("workflow_data", (String) cnwVar.e).appendQueryParameter("workflow_alarm_time", String.valueOf(timeInMillis)).build().toString()), 2);
-                czb czbVar2 = bedtimeMorningOnboardingActivity3.w;
+                StopwatchEventLogger czbVar2 = bedtimeMorningOnboardingActivity3.w;
                 kgt kgtVarK2 = mjw.a.k();
                 kgtVarK2.p();
                 mjw mjwVar2 = (mjw) kgtVarK2.b;

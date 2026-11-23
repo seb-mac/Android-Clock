@@ -20,7 +20,7 @@ import java.util.List;
 public final class cmp extends clx implements View.OnClickListener, cqa, dko {
     private static final iwy A = iwy.h("com/android/deskclock/bedtime/CalendarCardViewHolder");
     private final cqb B;
-    private final fhr C;
+    private final Clock C;
     private final cpu D;
     private final TextView E;
     private final View F;
@@ -42,7 +42,7 @@ public final class cmp extends clx implements View.OnClickListener, cqa, dko {
     public lo v;
     public final cns w;
 
-    public cmp(View view, cqb cqbVar, fhr fhrVar, cpu cpuVar, cns cnsVar, cop copVar) {
+    public cmp(View view, cqb cqbVar, Clock fhrVar, cpu cpuVar, cns cnsVar, cop copVar) {
         super(view);
         Context context = view.getContext();
         this.t = context;

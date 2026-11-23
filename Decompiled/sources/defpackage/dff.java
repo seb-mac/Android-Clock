@@ -7,10 +7,10 @@ import com.google.android.deskclock.debug.R;
 /* JADX INFO: loaded from: classes2.dex */
 public final class dff extends chf {
     public final dfi b;
-    public final czb c;
+    public final StopwatchEventLogger c;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public dff(dfi dfiVar, czb czbVar) {
+    public dff(dfi dfiVar, StopwatchEventLogger czbVar) {
         super(chj.SILENT_SETTING_LOW_VOLUME);
         lxj.d(czbVar, "clearcutEventTracker");
         this.b = dfiVar;

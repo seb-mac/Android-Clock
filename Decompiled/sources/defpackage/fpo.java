@@ -13,7 +13,7 @@ public final class fpo {
     public final kqg c;
     public final lvf d;
     public final Context e;
-    public final fhr f;
+    public final Clock f;
     public final git g;
     public final git h;
     public final git i;
@@ -26,7 +26,7 @@ public final class fpo {
         a = durationOfDays;
     }
 
-    public fpo(kqg kqgVar, kqg kqgVar2, lvf lvfVar, Context context, Map map, fhr fhrVar) {
+    public fpo(kqg kqgVar, kqg kqgVar2, lvf lvfVar, Context context, Map map, Clock fhrVar) {
         lxj.d(kqgVar, "gnpJobSchedulingApi");
         lxj.d(kqgVar2, "syncDataStore");
         lxj.d(map, "gnpJobs");

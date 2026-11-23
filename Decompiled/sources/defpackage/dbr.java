@@ -20,6 +20,6 @@ public final class dbr implements ksl {
     @Override // defpackage.lst, defpackage.lss
     /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
     public final flw b() {
-        return new flw(((hft) this.a).a(), (czb) this.b.b(), (ddd) this.c.b(), ((cot) this.d).b(), ksk.a(this.e));
+        return new flw(((hft) this.a).a(), (StopwatchEventLogger) this.b.b(), (ddd) this.c.b(), ((cot) this.d).b(), ksk.a(this.e));
     }
 }

@@ -14,9 +14,9 @@ public final class cyy {
     public final lvf e;
     public final lsx f;
     public final cqj g;
-    private final czb h;
+    private final StopwatchEventLogger h;
 
-    public cyy(Context context, czb czbVar, cqj cqjVar, lvf lvfVar, lvf lvfVar2, lvf lvfVar3) {
+    public cyy(Context context, StopwatchEventLogger czbVar, cqj cqjVar, lvf lvfVar, lvf lvfVar2, lvf lvfVar3) {
         lxj.d(czbVar, "clearcutEventTracker");
         lxj.d(cqjVar, "packageMonitorManager");
         lxj.d(lvfVar, "blockingContext");
@@ -58,7 +58,7 @@ public final class cyy {
             kgtVarK.p();
             ((mmf) kgtVarK.b).d = zBooleanValue;
         }
-        czb czbVar = this.h;
+        StopwatchEventLogger czbVar = this.h;
         kgy kgyVarM = kgtVarK.m();
         lxj.c(kgyVarM, "build(...)");
         mmf mmfVar2 = (mmf) kgyVarM;

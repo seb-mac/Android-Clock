@@ -43,9 +43,9 @@ abstract class dqx extends ccx {
         drpVar.e = (cqb) ccsVar.Q.b();
         ccnVar.j.c();
         drpVar.f = (ctc) cclVar.d.b();
-        drpVar.aj = (fhr) ccsVar.t.b();
+        drpVar.aj = (Clock) ccsVar.t.b();
         drpVar.ak = ccsVar.I();
-        drpVar.ay = (czb) ccsVar.I.b();
+        drpVar.ay = (StopwatchEventLogger) ccsVar.I.b();
         drpVar.au = ((cpv) ccsVar.az).b();
         drpVar.aC = (ns) ccsVar.bl.b();
         drpVar.aE = ((dlf) ccsVar.aA).b();

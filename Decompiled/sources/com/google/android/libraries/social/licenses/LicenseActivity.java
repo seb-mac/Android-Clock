@@ -79,7 +79,7 @@ public final class LicenseActivity extends ea {
                     aleVar = Build.VERSION.SDK_INT >= 29 ? new ale(alwVar) : new ald(alwVar);
                 }
                 aleVar.g(519, agw.e(i, 0, i3, i4));
-                return aleVar.a();
+                return aleVar.getTime();
             }
         };
         int i = akm.a;

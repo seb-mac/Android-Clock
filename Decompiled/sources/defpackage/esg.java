@@ -35,7 +35,7 @@ public final class esg {
             audioManager.setStreamVolume(4, i, 0);
         }
         AlarmVolumePreference alarmVolumePreference = (AlarmVolumePreference) obj2;
-        czb czbVar = alarmVolumePreference.f;
+        StopwatchEventLogger czbVar = alarmVolumePreference.f;
         kgt kgtVarK = mkl.a.k();
         kgt kgtVarK2 = mkj.a.k();
         kgtVarK2.p();

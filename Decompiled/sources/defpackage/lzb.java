@@ -63,6 +63,6 @@ public final class lzb implements Iterator, lxu {
 
     @Override // java.util.Iterator
     public final void remove() {
-        a.a();
+        a.getTime();
     }
 }

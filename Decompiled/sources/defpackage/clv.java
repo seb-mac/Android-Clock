@@ -15,12 +15,12 @@ public final class clv {
     public coc d;
     public itt e;
     public View.OnClickListener f;
-    public final czb g;
+    public final StopwatchEventLogger g;
     private final int h;
     private int i;
     private itt j;
 
-    public clv(int i, czb czbVar) {
+    public clv(int i, StopwatchEventLogger czbVar) {
         this.h = i;
         this.g = czbVar;
     }

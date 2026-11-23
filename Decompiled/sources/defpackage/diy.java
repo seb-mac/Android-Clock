@@ -41,7 +41,7 @@ abstract class diy extends ccx {
         dioVar.e = (cqb) ccsVar.Q.b();
         ccnVar.j.c();
         dioVar.f = (ctc) cclVar.d.b();
-        dioVar.aj = (fhr) ccsVar.t.b();
+        dioVar.aj = (Clock) ccsVar.t.b();
         dioVar.ak = ccsVar.I();
         dioVar.as = (ns) ccsVar.bp.b();
         dioVar.al = (cyb) ccsVar.bu.b();

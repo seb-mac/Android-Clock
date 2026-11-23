@@ -47,13 +47,13 @@ public final class cyc implements ksl {
     @Override // defpackage.lst, defpackage.lss
     public final /* bridge */ /* synthetic */ Object b() {
         Context contextA = ((hft) this.a).a();
-        fhr fhrVar = (fhr) this.b.b();
+        Clock fhrVar = (Clock) this.b.b();
         SharedPreferences sharedPreferences = (SharedPreferences) this.c.b();
         cqb cqbVar = (cqb) this.d.b();
         dap dapVar = (dap) this.e.b();
         dep depVar = (dep) this.f.b();
         cxi cxiVar = (cxi) this.g.b();
         ddd dddVar = (ddd) this.h.b();
-        return new cyb(contextA, fhrVar, sharedPreferences, cqbVar, dapVar, depVar, cxiVar, dddVar, (czb) this.j.b(), ksk.a(this.k), ((cye) this.l).b(), (ns) this.m.b(), (ns) this.n.b(), (cqj) this.o.b(), (lqv) this.p.b(), this.q);
+        return new cyb(contextA, fhrVar, sharedPreferences, cqbVar, dapVar, depVar, cxiVar, dddVar, (StopwatchEventLogger) this.j.b(), ksk.a(this.k), ((cye) this.l).b(), (ns) this.m.b(), (ns) this.n.b(), (cqj) this.o.b(), (lqv) this.p.b(), this.q);
     }
 }

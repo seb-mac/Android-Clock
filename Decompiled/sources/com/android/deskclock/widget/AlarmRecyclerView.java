@@ -43,7 +43,7 @@ public class AlarmRecyclerView extends DropShadowRecyclerView {
             luVar.w(new ls() { // from class: doi
                 @Override // defpackage.ls
                 public final void a() {
-                    this.a.a();
+                    this.a.getTime();
                 }
             });
         } else {

@@ -11,11 +11,11 @@ import com.google.android.deskclock.debug.R;
 /* JADX INFO: loaded from: classes2.dex */
 public final class dev extends chf {
     public final boolean b;
-    public final czb c;
+    public final StopwatchEventLogger c;
     private final Context d;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public dev(Context context, boolean z, czb czbVar) {
+    public dev(Context context, boolean z, StopwatchEventLogger czbVar) {
         super(chj.SILENT_SETTING_BLOCKED_NOTIFICATIONS);
         lxj.d(czbVar, "clearcutEventTracker");
         this.d = context;

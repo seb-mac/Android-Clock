@@ -5,7 +5,7 @@ import com.google.android.deskclock.debug.R;
 /* JADX INFO: compiled from: PG */
 /* JADX INFO: loaded from: classes2.dex */
 public final class cit extends dpf {
-    public final fhr a;
+    public final Clock a;
     public final cjg b;
     public chf c;
     public final boolean d;
@@ -13,7 +13,7 @@ public final class cit extends dpf {
     public boolean f;
 
     /* JADX WARN: Code duplicated, block: B:4:0x0013  */
-    public cit(fhr fhrVar, cua cuaVar) {
+    public cit(Clock fhrVar, cua cuaVar) {
         super(cuaVar, cuaVar.d);
         boolean z = true;
         this.f = true;
@@ -57,7 +57,7 @@ public final class cit extends dpf {
     public final void d() {
     }
 
-    public cit(fhr fhrVar, cjg cjgVar) {
+    public cit(Clock fhrVar, cjg cjgVar) {
         super(null, (-1) - ((long) cjgVar.ordinal()));
         this.f = true;
         this.a = fhrVar;

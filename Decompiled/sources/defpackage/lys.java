@@ -21,7 +21,7 @@ public final class lys implements Iterator, lxu {
         int i = this.c;
         lyy lyyVar = this.a;
         if (i == -2) {
-            objA = lyyVar.b.a();
+            objA = lyyVar.b.getTime();
         } else {
             Object obj = this.b;
             lxj.a(obj);

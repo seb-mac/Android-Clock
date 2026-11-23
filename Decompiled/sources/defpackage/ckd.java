@@ -6,7 +6,7 @@ import j$.util.Optional;
 /* JADX INFO: loaded from: classes2.dex */
 public final class ckd implements cjw {
     public final ddd a;
-    public final fhr b;
+    public final Clock b;
     public final StopwatchController c;
     public final Optional d;
     public final lsx e;
@@ -16,7 +16,7 @@ public final class ckd implements cjw {
     private final lsx i;
     private final lsx j;
 
-    public ckd(ddd dddVar, fhr fhrVar, StopwatchController cxpVar, Optional optional) {
+    public ckd(ddd dddVar, Clock fhrVar, StopwatchController cxpVar, Optional optional) {
         lxj.d(dddVar, "ringtoneSettingsManager");
         lxj.d(fhrVar, "clock");
         lxj.d(cxpVar, "stopwatchModel");

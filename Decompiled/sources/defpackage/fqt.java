@@ -8,7 +8,7 @@ import java.util.List;
 /* JADX INFO: loaded from: classes2.dex */
 public final class fqt implements fqp {
     private final fof a;
-    private final fhr b;
+    private final Clock b;
     private final kqg c;
     private final gog d;
 
@@ -16,7 +16,7 @@ public final class fqt implements fqp {
         iyf.h();
     }
 
-    public fqt(fof fofVar, fhr fhrVar, kqg kqgVar, gog gogVar, String str) {
+    public fqt(fof fofVar, Clock fhrVar, kqg kqgVar, gog gogVar, String str) {
         lxj.d(fofVar, "promoEvalLogger");
         lxj.d(fhrVar, "clock");
         lxj.d(kqgVar, "clearcutLogger");

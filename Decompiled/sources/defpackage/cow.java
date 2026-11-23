@@ -48,9 +48,9 @@ public final class cow {
         eya eyaVar = new eya(context);
         if (!eyaVar.a("com.google.android.gms") && !eyaVar.a("com.google.android.gms.supervision")) {
             Context context2 = eyaVar.a;
-            if (Build.VERSION.SDK_INT >= 36 && c.a()) {
+            if (Build.VERSION.SDK_INT >= 36 && c.getTime()) {
                 Context applicationContext = context2.getApplicationContext();
-                if (!ewc.c(applicationContext) && !ewc.e(applicationContext) && !ewc.a(applicationContext) && c.a()) {
+                if (!ewc.c(applicationContext) && !ewc.e(applicationContext) && !ewc.a(applicationContext) && c.getTime()) {
                     Object systemService = context2.getSystemService("supervision");
                     lxj.b(systemService, "null cannot be cast to non-null type android.app.supervision.SupervisionManager");
                     if (((SupervisionManager) systemService).isSupervisionEnabled()) {

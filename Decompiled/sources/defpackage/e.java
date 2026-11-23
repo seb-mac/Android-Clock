@@ -16,7 +16,7 @@ public final class e {
         Properties properties = new Properties();
         a = properties;
         try {
-            InputStream resourceAsStream = System.getSecurityManager() != null ? (InputStream) AccessController.doPrivileged(new f(g.class)) : g.class.getResourceAsStream("/android/icumessageformat/ICUConfig.properties");
+            InputStream resourceAsStream = System.getSecurityManager() != null ? (InputStream) AccessController.doPrivileged(new f(StopwatchUtils.class)) : StopwatchUtils.class.getResourceAsStream("/android/icumessageformat/ICUConfig.properties");
             if (resourceAsStream != null) {
                 properties.load(resourceAsStream);
             }

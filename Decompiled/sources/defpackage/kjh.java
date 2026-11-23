@@ -31,7 +31,7 @@ public class kjh implements Collection, j$.util.Collection, lxu {
 
     @Override // java.util.Collection
     public final void clear() {
-        a.a();
+        a.getTime();
     }
 
     @Override // java.util.Collection

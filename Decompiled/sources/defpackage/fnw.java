@@ -28,11 +28,11 @@ public final class fnw implements fnl {
     private final lst j;
     private final kqg k;
     private final kqg l;
-    private final fhr m;
+    private final Clock m;
     private final gog n;
     private final gog o;
 
-    public fnw(gog gogVar, String str, Context context, kqg kqgVar, gdi gdiVar, iqo iqoVar, lst lstVar, kqg kqgVar2, kqg kqgVar3, gog gogVar2, fhr fhrVar) {
+    public fnw(gog gogVar, String str, Context context, kqg kqgVar, gdi gdiVar, iqo iqoVar, lst lstVar, kqg kqgVar2, kqg kqgVar3, gog gogVar2, Clock fhrVar) {
         lxj.d(gogVar, "clearcutLoggerProvider");
         lxj.d(str, "appPackageName");
         lxj.d(kqgVar, "clientStreamz");

@@ -16,7 +16,7 @@ import defpackage.akm;
 import defpackage.bzi;
 import defpackage.cqx;
 import defpackage.cyh;
-import defpackage.czb;
+import defpackage.StopwatchEventLogger;
 import defpackage.ddz;
 import defpackage.dfy;
 import defpackage.dgx;
@@ -44,7 +44,7 @@ public final class TimerCard extends dgx implements Choreographer.FrameCallback,
     public Supplier ad;
     public dhg ae;
     public Size af;
-    public czb ag;
+    public StopwatchEventLogger ag;
     public ddz ah;
     public bzi ai;
     public lqv aj;

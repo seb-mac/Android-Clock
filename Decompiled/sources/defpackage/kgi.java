@@ -148,7 +148,7 @@ public final class kgi extends kfl implements RandomAccess, khh, kid {
         for (int i = 0; i < this.b; i++) {
             long jDoubleToLongBits = Double.doubleToLongBits(this.a[i]);
             byte[] bArr = khi.a;
-            iC = (iC * 31) + a.c(jDoubleToLongBits);
+            iC = (iC * 31) + a.withBootCount(jDoubleToLongBits);
         }
         return iC;
     }

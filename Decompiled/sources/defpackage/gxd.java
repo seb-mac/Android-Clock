@@ -12,6 +12,6 @@ public final class gxd implements ksl {
     @Override // defpackage.lst, defpackage.lss
     /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
     public final gxc b() {
-        return new gxc((fhr) this.a.b());
+        return new gxc((Clock) this.a.b());
     }
 }

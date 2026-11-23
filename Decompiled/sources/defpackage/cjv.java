@@ -19,11 +19,11 @@ public final class cjv implements chk, cpb, cqi, dfw, dhz, deh {
     public final cjw d;
     public final cyb e;
     public final StopwatchController f;
-    public final czb g;
+    public final StopwatchEventLogger g;
     private final Context h;
-    private final fhr i;
+    private final Clock i;
 
-    public cjv(Context context, czb czbVar, fhr fhrVar, cke ckeVar, cjw cjwVar, cyb cybVar, StopwatchController cxpVar) {
+    public cjv(Context context, StopwatchEventLogger czbVar, Clock fhrVar, cke ckeVar, cjw cjwVar, cyb cybVar, StopwatchController cxpVar) {
         this.h = context;
         this.g = czbVar;
         this.i = fhrVar;
@@ -176,7 +176,7 @@ public final class cjv implements chk, cpb, cqi, dfw, dhz, deh {
     }
 
     @Override // defpackage.dfw
-    public final void x(dfv dfvVar, dfv dfvVar2) {
+    public final void x(StopwatchStateModel dfvVar, StopwatchStateModel dfvVar2) {
         u(new cjt(1, this.d.b(), itt.q(dfvVar2)));
     }
 

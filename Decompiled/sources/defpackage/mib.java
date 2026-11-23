@@ -55,7 +55,7 @@ public final class mib {
                     if ((this.b.b & 1152921504606846976L) == 0) {
                         return 0;
                     }
-                    this = this.c();
+                    this = this.withBootCount();
                     bzh bzhVar = this.g;
                     int i5 = this.e & i2;
                     Object obj2 = bzhVar.ao(i5).a;

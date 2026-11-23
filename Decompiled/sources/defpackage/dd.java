@@ -82,7 +82,7 @@ public class dd extends Binder implements IInterface {
         switch (i) {
             case 1:
                 String string = parcel.readString();
-                Bundle bundle = (Bundle) g.h(parcel, Bundle.CREATOR);
+                Bundle bundle = (Bundle) StopwatchUtils.h(parcel, Bundle.CREATOR);
                 dh dhVar = (dh) this.a.get();
                 if (dhVar != null) {
                     dhVar.e(1, string, bundle);
@@ -92,26 +92,26 @@ public class dd extends Binder implements IInterface {
                 e();
                 return true;
             case ard.INTEGER_FIELD_NUMBER /* 3 */:
-                PlaybackStateCompat playbackStateCompat = (PlaybackStateCompat) g.h(parcel, PlaybackStateCompat.CREATOR);
+                PlaybackStateCompat playbackStateCompat = (PlaybackStateCompat) StopwatchUtils.h(parcel, PlaybackStateCompat.CREATOR);
                 dh dhVar2 = (dh) this.a.get();
                 if (dhVar2 != null) {
                     dhVar2.e(2, playbackStateCompat, null);
                 }
                 return true;
             case ard.LONG_FIELD_NUMBER /* 4 */:
-                b((MediaMetadataCompat) g.h(parcel, MediaMetadataCompat.CREATOR));
+                b((MediaMetadataCompat) StopwatchUtils.h(parcel, MediaMetadataCompat.CREATOR));
                 return true;
             case ard.STRING_FIELD_NUMBER /* 5 */:
                 c(parcel.createTypedArrayList(MediaSessionCompat$QueueItem.CREATOR));
                 return true;
             case ard.STRING_SET_FIELD_NUMBER /* 6 */:
-                d((CharSequence) g.h(parcel, TextUtils.CHAR_SEQUENCE_CREATOR));
+                d((CharSequence) StopwatchUtils.h(parcel, TextUtils.CHAR_SEQUENCE_CREATOR));
                 return true;
             case ard.DOUBLE_FIELD_NUMBER /* 7 */:
-                a((Bundle) g.h(parcel, Bundle.CREATOR));
+                a((Bundle) StopwatchUtils.h(parcel, Bundle.CREATOR));
                 return true;
             case ard.BYTES_FIELD_NUMBER /* 8 */:
-                f((ParcelableVolumeInfo) g.h(parcel, ParcelableVolumeInfo.CREATOR));
+                f((ParcelableVolumeInfo) StopwatchUtils.h(parcel, ParcelableVolumeInfo.CREATOR));
                 return true;
             case 9:
                 int i3 = parcel.readInt();

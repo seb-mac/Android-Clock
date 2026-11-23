@@ -97,7 +97,7 @@ public final /* synthetic */ class jjx implements Runnable {
                     String str = lkzVar.t;
                     String strG = lkx.g(lkwVar.a());
                     String strF = lkx.f(lkwVar.a(), lcp.b);
-                    String strA = this.c.a();
+                    String strA = this.c.getTime();
                     String strE = lkx.e((lfh) lkwVar.a().a(lke.a));
                     lfe lfeVar = lpb.b;
                     itt ittVarQ = itt.q(str);

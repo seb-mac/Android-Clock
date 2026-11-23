@@ -28,7 +28,7 @@ final class cvu extends cfe {
             return cwbVar.h(cuaVarI);
         }
         boolean zH = ((cwa) kkj.i(cwbVar.b, cwa.class)).aH().h();
-        czb czbVarAp = ((cwa) kkj.i(cwbVar.b, cwa.class)).ap();
+        StopwatchEventLogger czbVarAp = ((cwa) kkj.i(cwbVar.b, cwa.class)).ap();
         kgt kgtVarK = mjw.a.k();
         kgtVarK.p();
         mjw mjwVar = (mjw) kgtVarK.b;

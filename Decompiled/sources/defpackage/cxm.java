@@ -17,13 +17,13 @@ public final class cxm extends ctw {
     private static final Duration j = Duration.ofMillis(200);
     public final Context b;
     public final SharedPreferences c;
-    public final fhr d;
+    public final Clock d;
     public final dap e;
     public final dep f;
     public final cqj g;
     public final lqv h;
 
-    public cxm(Context context, SharedPreferences sharedPreferences, fhr fhrVar, dap dapVar, cqj cqjVar, dep depVar, lqv lqvVar, cyr cyrVar) {
+    public cxm(Context context, SharedPreferences sharedPreferences, Clock fhrVar, dap dapVar, cqj cqjVar, dep depVar, lqv lqvVar, cyr cyrVar) {
         super(cyrVar);
         this.b = context;
         this.c = sharedPreferences;
@@ -46,7 +46,7 @@ public final class cxm extends ctw {
         if (durationOfMillis.toMillis() <= 0 || instantOfEpochMilli.toEpochMilli() <= 0) {
             return Optional.empty();
         }
-        fhr fhrVar = this.d;
+        Clock fhrVar = this.d;
         Duration durationOfMillis2 = Duration.ofMillis(fhrVar.a());
         Instant instantC = fhrVar.c();
         durationOfMillis.toMillis();
@@ -78,7 +78,7 @@ public final class cxm extends ctw {
     }
 
     public final boolean h(LocalDateTime localDateTime) {
-        fhr fhrVar = this.d;
+        Clock fhrVar = this.d;
         return localDateTime.isBefore(fhrVar.c().minusMillis(fhrVar.a()).atZone(ZoneId.systemDefault()).u());
     }
 

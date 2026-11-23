@@ -37,16 +37,16 @@ public final class cls extends clx implements View.OnClickListener, cqa, dko {
     private final View N;
     private final View O;
     private final cqb P;
-    private final fhr Q;
+    private final Clock Q;
     private final cqw R;
     private final cop S;
-    private final czb T;
+    private final StopwatchEventLogger T;
     private final gog U;
     public final View t;
     public lo u;
     private final Context w;
 
-    public cls(cqb cqbVar, czb czbVar, fhr fhrVar, gog gogVar, cop copVar, cqw cqwVar, View view) {
+    public cls(cqb cqbVar, StopwatchEventLogger czbVar, Clock fhrVar, gog gogVar, cop copVar, cqw cqwVar, View view) {
         super(view);
         this.w = view.getContext();
         this.P = cqbVar;
@@ -243,7 +243,7 @@ public final class cls extends clx implements View.OnClickListener, cqa, dko {
             this.O.setVisibility(8);
             this.N.setVisibility(0);
         }
-        fhr fhrVar = this.Q;
+        Clock fhrVar = this.Q;
         itt ittVar = cobVar.a;
         Calendar calendarQ = ake.q(fhrVar);
         iwj iwjVarListIterator = ittVar.h().listIterator(0);

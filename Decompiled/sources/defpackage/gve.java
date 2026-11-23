@@ -29,15 +29,15 @@ public final class gve {
         this.g = executor;
         this.d = new gyv(lstVar2, 1);
         Context contextA = ((hft) flwVar.d).a();
-        Executor executor2 = (Executor) flwVar.b.b();
+        Executor executor2 = (Executor) flwVar.b.reset();
         executor2.getClass();
-        hae haeVar = (hae) flwVar.c.b();
+        hae haeVar = (hae) flwVar.c.reset();
         haeVar.getClass();
         Boolean bool = true;
         bool.getClass();
         iqo iqoVar = (iqo) ((ksm) flwVar.f).a;
         iqoVar.getClass();
-        this.c = new hac(contextA, executor2, haeVar, kqgVar, iqoVar, lstVar3, (lew) flwVar.e.b());
+        this.c = new hac(contextA, executor2, haeVar, kqgVar, iqoVar, lstVar3, (lew) flwVar.e.reset());
         this.e = kqgVar;
     }
 
@@ -167,7 +167,7 @@ public final class gve {
                         }
                         lqv lqvVar = gvhVar.m;
                         int i9 = mowVar2.b;
-                        if ((i9 & 64) != 0 || (((i9 & 65536) != 0 && ((Boolean) lqvVar.c.b()).booleanValue()) || ((Boolean) lqvVar.b.b()).booleanValue())) {
+                        if ((i9 & 64) != 0 || (((i9 & 65536) != 0 && ((Boolean) lqvVar.c.reset()).booleanValue()) || ((Boolean) lqvVar.b.reset()).booleanValue())) {
                             iqo iqoVar = (iqo) ((ens) lqvVar.a).a.cy();
                             if (iqoVar.f()) {
                                 String str3 = (String) iqoVar.b();

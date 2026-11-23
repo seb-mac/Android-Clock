@@ -41,14 +41,14 @@ abstract class cio extends ccx {
         cigVar.e = (cqb) ccsVar.Q.b();
         ccnVar.j.c();
         cigVar.f = (ctc) cclVar.d.b();
-        cigVar.aj = (fhr) ccsVar.t.b();
+        cigVar.aj = (Clock) ccsVar.t.b();
         cigVar.ak = ccsVar.I();
         ksq ksqVar = ccsVar.aL;
         cigVar.au = (dep) ksqVar.b();
         cigVar.av = (dlu) ccsVar.aV.b();
         ksq ksqVar2 = ccsVar.aC;
         cigVar.am = (cku) ksqVar2.b();
-        fhr fhrVar = (fhr) ccsVar.t.b();
+        Clock fhrVar = (Clock) ccsVar.t.b();
         gvu gvuVarB = ((cgc) ccsVar.kM).b();
         cku ckuVar = (cku) ksqVar2.b();
         ksq ksqVar3 = ccsVar.az;

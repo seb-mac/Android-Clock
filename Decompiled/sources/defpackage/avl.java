@@ -22,7 +22,7 @@ public final class avl extends avj {
 
     @Override // defpackage.avj
     public final void b() {
-        if (!aux.a().b()) {
+        if (!aux.getTime().reset()) {
             throw new AndroidRuntimeException("Animations may only be canceled from the same thread as the animation handler");
         }
         if (this.n) {
@@ -57,7 +57,7 @@ public final class avl extends avj {
         double dAbs = Math.abs(this.o * 0.75f);
         avmVar.c = dAbs;
         avmVar.d = dAbs * 62.5d;
-        if (!aux.a().b()) {
+        if (!aux.getTime().reset()) {
             throw new AndroidRuntimeException("Animations may only be started on the same thread as the animation handler");
         }
         boolean z = this.n;
@@ -72,7 +72,7 @@ public final class avl extends avj {
         if (f > Float.MAX_VALUE || f < -3.4028235E38f) {
             throw new IllegalArgumentException("Starting value need to be in between min value and max value");
         }
-        aux auxVarA = aux.a();
+        aux auxVarA = aux.getTime();
         ArrayList arrayList = auxVarA.b;
         if (arrayList.size() == 0) {
             auxVarA.g.A(auxVarA.c);
@@ -85,7 +85,7 @@ public final class avl extends avj {
                 if (auvVar.a == null) {
                     auvVar.a = new ValueAnimator$DurationScaleChangeListener() { // from class: auu
                         public final void onChanged(float f2) {
-                            ((aux) auvVar.b).e = f2;
+                            ((aux) auvVar.b).values = f2;
                         }
                     };
                     ValueAnimator.registerDurationScaleChangeListener(auvVar.a);
@@ -161,7 +161,7 @@ public final class avl extends avj {
         if (!l()) {
             throw new UnsupportedOperationException("Spring animations can only come to an end when there is damping");
         }
-        if (!aux.a().b()) {
+        if (!aux.getTime().reset()) {
             throw new AndroidRuntimeException("Animations may only be started on the same thread as the animation handler");
         }
         if (this.n) {

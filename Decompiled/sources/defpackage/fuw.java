@@ -28,6 +28,6 @@ public final class fuw implements ksl {
     @Override // defpackage.lst, defpackage.lss
     /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
     public final fuv b() {
-        return new fuv((ftx) this.a.b(), (fua) this.b.b(), (fmt) this.c.b(), (fhr) this.d.b(), (Set) ((ksm) this.e).a, (gog) this.f.b(), (lqv) this.g.b(), ((goz) this.h).b());
+        return new fuv((ftx) this.a.b(), (fua) this.b.b(), (fmt) this.c.b(), (Clock) this.d.b(), (Set) ((ksm) this.e).a, (gog) this.f.b(), (lqv) this.g.b(), ((goz) this.h).b());
     }
 }

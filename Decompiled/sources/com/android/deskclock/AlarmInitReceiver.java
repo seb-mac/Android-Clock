@@ -22,11 +22,11 @@ import defpackage.cpo;
 import defpackage.cqg;
 import defpackage.cqi;
 import defpackage.cqj;
-import defpackage.czb;
+import defpackage.StopwatchEventLogger;
 import defpackage.dmf;
 import defpackage.dmh;
 import defpackage.eif;
-import defpackage.fhr;
+import defpackage.Clock;
 import defpackage.gog;
 import defpackage.hpj;
 import defpackage.iwv;
@@ -194,21 +194,21 @@ public class AlarmInitReceiver extends cdq {
             AlarmManager alarmManager = (AlarmManager) context.getSystemService(AlarmManager.class);
             PendingIntent pendingIntentC = hpj.c(context, 10000, new Intent(context, (Class<?>) AlarmInitReceiver.class).setAction(str).addFlags(268435456), 1275068416);
             if (pendingIntentC != null) {
-                alarmManager.setExactAndAllowWhileIdle(0, ((fhr) this.g.b()).c().plus(durationOfMillis).toEpochMilli(), pendingIntentC);
+                alarmManager.setExactAndAllowWhileIdle(0, ((Clock) this.g.b()).c().plus(durationOfMillis).toEpochMilli(), pendingIntentC);
                 return;
             }
             ((iwv) ((iwv) m.c()).j("com/android/deskclock/AlarmInitReceiver", "scheduleDelayedBootCompletedIntent", 418, "AlarmInitReceiver.java")).r("Failed to schedule delayed boot completed intent due to null pending intent.");
         }
         int i2 = 4;
         if (!kvyVar.cy().k()) {
-            ((czb) this.h.b()).o(3, action2);
+            ((StopwatchEventLogger) this.h.b()).o(3, action2);
         } else if (a.I()) {
             dmh dmhVar = (dmh) this.a.b();
             int iB = (int) kvy.b();
             dmf dmfVar = dmf.NONE;
             if (!dmhVar.a(context, eif.aq(iB), Duration.ofSeconds(kvy.c()))) {
                 ((iwv) ((iwv) m.c()).j("com/android/deskclock/AlarmInitReceiver", "shouldRunExpeditedJob", 364, "AlarmInitReceiver.java")).r("Expedited job not scheduled - thermal status too high");
-                ((czb) this.h.b()).o(6, action2);
+                ((StopwatchEventLogger) this.h.b()).o(6, action2);
             } else if (kvy.h()) {
                 ActivityManager activityManager = (ActivityManager) context.getSystemService(ActivityManager.class);
                 ActivityManager.MemoryInfo memoryInfo = new ActivityManager.MemoryInfo();
@@ -282,7 +282,7 @@ public class AlarmInitReceiver extends cdq {
                             ((iwv) AlarmInitJobService.a.c().j("com/android/deskclock/AlarmInitJobService$Companion", "scheduleExpeditedHandlingJob$<anonymous>", 246, "AlarmInitJobService.kt")).u("AlarmInitJobService unable to get job id for %s", intent.getAction());
                         } else {
                             if (jobScheduler.enqueue(new JobInfo.Builder(num.intValue(), new ComponentName(context, (Class<?>) AlarmInitJobService.class)).setExpedited(true).setBackoffCriteria(AlarmInitJobService.b, 0).build(), new JobWorkItem(intent)) == 0) {
-                                czb czbVar = (czb) this.h.b();
+                                StopwatchEventLogger czbVar = (StopwatchEventLogger) this.h.b();
                                 kgt kgtVarK = mjy.a.k();
                                 kgtVarK.p();
                                 ((mjy) kgtVarK.b).b = 1;
@@ -297,9 +297,9 @@ public class AlarmInitReceiver extends cdq {
                         }
                     }
                     ((iwv) ((iwv) m.c()).j("com/android/deskclock/AlarmInitReceiver", "onReceive", 148, "AlarmInitReceiver.java")).r("AlarmInitJobService failed to schedule expedited job; falling back to AlarmInitReceiver");
-                    ((czb) this.h.b()).o(4, action2);
+                    ((StopwatchEventLogger) this.h.b()).o(4, action2);
                 } else {
-                    ((czb) this.h.b()).o(7, action2);
+                    ((StopwatchEventLogger) this.h.b()).o(7, action2);
                 }
             } else {
                 iwy iwyVar2 = AlarmInitJobService.a;
@@ -370,7 +370,7 @@ public class AlarmInitReceiver extends cdq {
                         ((iwv) AlarmInitJobService.a.c().j("com/android/deskclock/AlarmInitJobService$Companion", "scheduleExpeditedHandlingJob$<anonymous>", 246, "AlarmInitJobService.kt")).u("AlarmInitJobService unable to get job id for %s", intent.getAction());
                     } else {
                         if (jobScheduler.enqueue(new JobInfo.Builder(num.intValue(), new ComponentName(context, (Class<?>) AlarmInitJobService.class)).setExpedited(true).setBackoffCriteria(AlarmInitJobService.b, 0).build(), new JobWorkItem(intent)) == 0) {
-                            czb czbVar2 = (czb) this.h.b();
+                            StopwatchEventLogger czbVar2 = (StopwatchEventLogger) this.h.b();
                             kgt kgtVarK2 = mjy.a.k();
                             kgtVarK2.p();
                             ((mjy) kgtVarK2.b).b = 1;
@@ -385,10 +385,10 @@ public class AlarmInitReceiver extends cdq {
                     }
                 }
                 ((iwv) ((iwv) m.c()).j("com/android/deskclock/AlarmInitReceiver", "onReceive", 148, "AlarmInitReceiver.java")).r("AlarmInitJobService failed to schedule expedited job; falling back to AlarmInitReceiver");
-                ((czb) this.h.b()).o(4, action2);
+                ((StopwatchEventLogger) this.h.b()).o(4, action2);
             }
         } else {
-            ((czb) this.h.b()).o(5, action2);
+            ((StopwatchEventLogger) this.h.b()).o(5, action2);
         }
         b(context, intent, this.b, this.c, this.d, this.e, this.f, this.i, this.j, new ccf(this, i), new tk(intent, i2));
     }

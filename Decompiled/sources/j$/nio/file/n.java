@@ -19,7 +19,7 @@ public final /* synthetic */ class n implements OpenOption {
             return ((m) oVar).a;
         }
         if (oVar instanceof l) {
-            return a.c((l) oVar);
+            return a.withBootCount((l) oVar);
         }
         return oVar instanceof z ? a.e((z) oVar) : new n(oVar);
     }

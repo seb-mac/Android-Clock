@@ -68,7 +68,7 @@ public final class cmf extends cmr implements View.OnClickListener, chk, cof, cq
     public cwb as;
     public dep at;
     public cop au;
-    public czb av;
+    public StopwatchEventLogger av;
     public dlu aw;
     public ns ax;
 
@@ -384,7 +384,7 @@ public final class cmf extends cmr implements View.OnClickListener, chk, cof, cq
                 }
             }
             if (i != 0) {
-                czb czbVar = this.av;
+                StopwatchEventLogger czbVar = this.av;
                 kgt kgtVarK = mjw.a.k();
                 kgtVarK.p();
                 mjw mjwVar = (mjw) kgtVarK.b;
@@ -405,7 +405,7 @@ public final class cmf extends cmr implements View.OnClickListener, chk, cof, cq
         this.au.u(z3);
         i = 0;
         if (i != 0) {
-            czb czbVar2 = this.av;
+            StopwatchEventLogger czbVar2 = this.av;
             kgt kgtVarK2 = mjw.a.k();
             kgtVarK2.p();
             mjw mjwVar2 = (mjw) kgtVarK2.b;

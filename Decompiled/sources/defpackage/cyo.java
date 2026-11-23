@@ -28,10 +28,10 @@ import java.util.concurrent.Executors;
 public final class cyo extends ctw implements chk, dqs, cqi, cpo, ckr {
     public ExecutorService b;
     public final Context c;
-    public final fhr d;
+    public final Clock d;
     public final List e;
     public final cyk f;
-    public final czb g;
+    public final StopwatchEventLogger g;
     public final eif h;
     private final AlarmManager i;
     private final Runnable j;
@@ -39,7 +39,7 @@ public final class cyo extends ctw implements chk, dqs, cqi, cpo, ckr {
     private Handler l;
     private final csa m;
 
-    public cyo(cyr cyrVar, Context context, fhr fhrVar, czb czbVar, eif eifVar, csa csaVar, cyk cykVar, cqj cqjVar, ns nsVar, dlu dluVar) {
+    public cyo(cyr cyrVar, Context context, Clock fhrVar, StopwatchEventLogger czbVar, eif eifVar, csa csaVar, cyk cykVar, cqj cqjVar, ns nsVar, dlu dluVar) {
         super(cyrVar);
         this.j = new coy(this, 10);
         this.e = new ArrayList();
@@ -146,7 +146,7 @@ public final class cyo extends ctw implements chk, dqs, cqi, cpo, ckr {
     }
 
     public final void k(dog dogVar) {
-        fhr fhrVar = this.d;
+        Clock fhrVar = this.d;
         dog dogVarH = h();
         dog dogVarC = dogVar.c(fhrVar.c());
         if (dogVarH != dogVarC) {

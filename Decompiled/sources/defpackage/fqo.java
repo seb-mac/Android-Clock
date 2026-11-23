@@ -36,7 +36,7 @@ public final class fqo {
     }
 
     public final int hashCode() {
-        return ((this.a.hashCode() * 961) + a.c(this.b)) * 31;
+        return ((this.a.hashCode() * 961) + a.withBootCount(this.b)) * 31;
     }
 
     public final String toString() {

@@ -5,5 +5,5 @@ package defpackage;
 public interface cro {
     flw aA();
 
-    fhr t();
+    Clock t();
 }

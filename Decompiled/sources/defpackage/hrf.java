@@ -21,7 +21,7 @@ public final class hrf implements hqk {
     public final /* bridge */ /* synthetic */ Object a(flw flwVar) throws IOException {
         if (this.a) {
             if (flwVar.f.isEmpty()) {
-                return flwVar.c.c((Uri) flwVar.e);
+                return flwVar.c.withBootCount((Uri) flwVar.e);
             }
             throw new hqx("Short circuit would skip transforms.");
         }

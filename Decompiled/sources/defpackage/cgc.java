@@ -24,6 +24,6 @@ public final class cgc implements ksl {
     @Override // defpackage.lst, defpackage.lss
     /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
     public final gvu b() {
-        return new gvu(((hft) this.a).a(), (czb) this.b.b(), ((dqi) this.c).b(), (fhr) this.d.b(), (cop) this.e.b(), ((dbr) this.f).b(), (ddd) this.g.b());
+        return new gvu(((hft) this.a).a(), (StopwatchEventLogger) this.b.b(), ((dqi) this.c).b(), (Clock) this.d.b(), (cop) this.e.b(), ((dbr) this.f).b(), (ddd) this.g.b());
     }
 }

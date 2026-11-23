@@ -26,13 +26,13 @@ import java.util.TimeZone;
 public final class crt implements cqg, cpo, cqi, ckr {
     public static final iwy a = iwy.h("com/android/deskclock/controller/AnalogAppWidgetController");
     public final Context b;
-    public final fhr c;
+    public final Clock c;
     public final Resources d;
     public AppWidgetManager e;
-    public final czb f;
+    public final StopwatchEventLogger f;
     public final csa g;
 
-    public crt(Context context, fhr fhrVar, czb czbVar, csa csaVar) {
+    public crt(Context context, Clock fhrVar, StopwatchEventLogger czbVar, csa csaVar) {
         this.b = context;
         this.c = fhrVar;
         this.g = csaVar;

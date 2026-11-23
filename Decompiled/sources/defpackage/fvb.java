@@ -12,13 +12,13 @@ public final class fvb implements git {
     public final Context d;
     public final fuz e;
     public final kqg f;
-    public final fhr g;
+    public final Clock g;
     public final lvf h;
     private final lvf i;
     private final String j;
     private final Long k;
 
-    public fvb(lst lstVar, fpi fpiVar, Context context, fuz fuzVar, kqg kqgVar, fhr fhrVar, lvf lvfVar, lvf lvfVar2) {
+    public fvb(lst lstVar, fpi fpiVar, Context context, fuz fuzVar, kqg kqgVar, Clock fhrVar, lvf lvfVar, lvf lvfVar2) {
         lxj.d(lstVar, "growthkitEnabled");
         lxj.d(kqgVar, "syncDataStore");
         lxj.d(fhrVar, "clock");

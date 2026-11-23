@@ -58,7 +58,7 @@ public final class fvn implements ksl {
         iqo iqoVar2 = (iqo) this.g.b();
         ksq ksqVar = this.i;
         kqg kqgVarA = ksk.a(this.h);
-        fhr fhrVar = (fhr) ksqVar.b();
+        Clock fhrVar = (Clock) ksqVar.b();
         iqo iqoVarA = ((cbu) this.j).a();
         Set set = (Set) ((ksm) this.k).a;
         iqo iqoVarA2 = ((cbu) this.l).a();

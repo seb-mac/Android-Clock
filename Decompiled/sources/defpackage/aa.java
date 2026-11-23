@@ -23,7 +23,7 @@ public final class aa {
     public final int b() {
         int i = this.e;
         if (i == 6 || i == 7) {
-            return ab.e[this.c];
+            return ab.values[this.c];
         }
         return 1;
     }
@@ -51,7 +51,7 @@ public final class aa {
         int i = this.e;
         if (i == 6 || i == 7) {
             int iB = b();
-            String strA = g.a(iB);
+            String strA = StopwatchUtils.a(iB);
             if (iB == 0) {
                 throw null;
             }

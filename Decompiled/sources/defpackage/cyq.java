@@ -8,7 +8,7 @@ import android.os.Bundle;
 /* JADX INFO: compiled from: PG */
 /* JADX INFO: loaded from: classes2.dex */
 public final class cyq extends cwm {
-    public cyq(Context context, fhr fhrVar, czb czbVar, cqj cqjVar, cxi cxiVar, ddd dddVar, flw flwVar, ns nsVar, cyr cyrVar) {
+    public cyq(Context context, Clock fhrVar, StopwatchEventLogger czbVar, cqj cqjVar, cxi cxiVar, ddd dddVar, flw flwVar, ns nsVar, cyr cyrVar) {
         super(cyrVar, context, fhrVar, dco.c, new cxc(3), czbVar, cqjVar, cxiVar, dddVar, flwVar, nsVar);
     }
 

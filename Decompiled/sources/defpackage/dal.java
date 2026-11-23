@@ -64,7 +64,7 @@ public final class dal extends lvs implements lws {
         String strValueOf;
         ParcelableIndexable parcelableIndexable;
         dae daeVar;
-        dfv dfvVarB;
+        StopwatchStateModel dfvVarB;
         List listC;
         ParcelableIndexable parcelableIndexable2;
         ArrayList arrayList4;
@@ -206,10 +206,10 @@ public final class dal extends lvs implements lws {
                     listC = cxpVar.c();
                     ArrayList arrayList7 = new ArrayList(1);
                     parcelableIndexable2 = new ParcelableIndexable("Stopwatch", "Stopwatch", vc.o());
-                    parcelableIndexable2.c("elapsedTime", cpu.f(dfvVarB.f));
-                    parcelableIndexable2.c("stopwatchStatus", dfvVarB.b.d);
-                    if (dfvVarB.f()) {
-                        parcelableIndexable2.c("startTime", cpu.n(new Date(dfvVarB.e)));
+                    parcelableIndexable2.c("elapsedTime", cpu.f(dfvVarB.accumulatedTime));
+                    parcelableIndexable2.c("stopwatchStatus", dfvVarB.stopwatchState.d);
+                    if (dfvVarB.isRunning()) {
+                        parcelableIndexable2.c("startTime", cpu.n(new Date(dfvVarB.lastStartWallClockTime)));
                     }
                     if (!listC.isEmpty()) {
                         parcelableIndexableArr = new ParcelableIndexable[listC.size()];
@@ -289,10 +289,10 @@ public final class dal extends lvs implements lws {
                 listC = cxpVar2.c();
                 ArrayList arrayList8 = new ArrayList(1);
                 parcelableIndexable2 = new ParcelableIndexable("Stopwatch", "Stopwatch", vc.o());
-                parcelableIndexable2.c("elapsedTime", cpu.f(dfvVarB.f));
-                parcelableIndexable2.c("stopwatchStatus", dfvVarB.b.d);
-                if (dfvVarB.f()) {
-                    parcelableIndexable2.c("startTime", cpu.n(new Date(dfvVarB.e)));
+                parcelableIndexable2.c("elapsedTime", cpu.f(dfvVarB.accumulatedTime));
+                parcelableIndexable2.c("stopwatchStatus", dfvVarB.stopwatchState.d);
+                if (dfvVarB.isRunning()) {
+                    parcelableIndexable2.c("startTime", cpu.n(new Date(dfvVarB.lastStartWallClockTime)));
                 }
                 if (!listC.isEmpty()) {
                     parcelableIndexableArr = new ParcelableIndexable[listC.size()];

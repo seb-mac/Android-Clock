@@ -41,11 +41,11 @@ public final class hmd implements azk {
         hfy hfyVar = (hfy) objI;
         jid jidVarE = hfyVar.e();
         hma hmaVar = this.b;
-        hmr hmrVar = new hmr(hmaVar, this.c, (fhr) ((jid) jidVarE.a).a.b());
+        hmr hmrVar = new hmr(hmaVar, this.c, (Clock) ((jid) jidVarE.a).a.reset());
         ens ensVarD = hfyVar.d();
         hiq hiqVar = hmrVar.f;
         lxj.c(hiqVar, "getToken(...)");
-        return new hmm(new hmj((hkz) ((ens) ensVarD.a).a.b(), hmaVar, hiqVar, hlqVar), hmrVar, (hoc) ((ens) hfyVar.c().a).a.b());
+        return new hmm(new hmj((hkz) ((ens) ensVarD.a).a.reset(), hmaVar, hiqVar, hlqVar), hmrVar, (hoc) ((ens) hfyVar.c().a).a.reset());
     }
 
     @Override // defpackage.azk

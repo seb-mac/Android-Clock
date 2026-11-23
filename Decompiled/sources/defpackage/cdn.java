@@ -11,10 +11,10 @@ public final class cdn extends cfe {
     private final long b;
     private final int c;
     private final mka d;
-    private final czb e;
+    private final StopwatchEventLogger e;
     private final bzi i;
 
-    public cdn(Context context, Uri uri, String str, long j, mka mkaVar, czb czbVar, bzi bziVar) {
+    public cdn(Context context, Uri uri, String str, long j, mka mkaVar, StopwatchEventLogger czbVar, bzi bziVar) {
         super(context, true);
         this.a = str;
         this.b = j;

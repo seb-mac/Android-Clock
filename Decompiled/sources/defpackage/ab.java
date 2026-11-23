@@ -7,7 +7,7 @@ import java.util.Locale;
 /* JADX INFO: loaded from: classes2.dex */
 public final class ab implements Cloneable {
     public static final int[] e;
-    private static final int h;
+        private static final int h;
     public String a;
     public ArrayList c;
     public boolean d;
@@ -16,25 +16,18 @@ public final class ab implements Cloneable {
     public final int f = h;
 
     static {
-        int i;
-        String strA = e.a();
-        int iHashCode = strA.hashCode();
-        if (iHashCode == -413919155) {
-            if (strA.equals("DOUBLE_REQUIRED")) {
-                i = 2;
-                h = i;
-                e = hmw.A();
-                return;
+            String strA = defpackage.e.a();
+            if (strA == null) {
+                strA = "DOUBLE_OPTIONAL";
             }
-            throw new IllegalArgumentException();
-        }
-        if (iHashCode == -99796978 && strA.equals("DOUBLE_OPTIONAL")) {
-            i = 1;
-            h = i;
-            e = hmw.A();
-            return;
-        }
-        throw new IllegalArgumentException();
+        int iHashCode = strA.hashCode();
+            if (iHashCode == -413919155 && strA.equals("DOUBLE_REQUIRED")) {
+                h = 2;
+                e = hmw.A();
+            } else {
+                h = 1;
+                e = hmw.A();
+            }
     }
 
     public ab(String str) {

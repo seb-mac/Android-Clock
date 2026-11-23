@@ -22,7 +22,7 @@ public final class dgc extends dgl {
     private jgy al;
     private ImageButton am;
     private ImageButton an;
-    public fhr b;
+    public Clock b;
     public jhc c;
     public dgi d;
     public RecyclerView f;
@@ -54,7 +54,7 @@ public final class dgc extends dgl {
             gogVar = null;
         }
         gog gogVarA = ((dgj) gogVar.a).b();
-        StopwatchController cxpVar = (StopwatchController) gogVar.b.b();
+        StopwatchController cxpVar = (StopwatchController) gogVar.b.reset();
         cxpVar.getClass();
         this.d = new dgi(gogVarA, cxpVar, this);
         RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.recycler_view);
@@ -90,24 +90,24 @@ public final class dgc extends dgl {
     @Override // defpackage.bg
     public final void cd() {
         super.cd();
-        if (e().f()) {
+        if (e().isRunning()) {
             f();
         }
     }
 
-    public final dfv e() {
+    public final StopwatchStateModel e() {
         return a().b();
     }
 
     public final void f() {
-        fhr fhrVar;
+        Clock fhrVar;
         jhc jhcVar;
         p();
         coy coyVar = new coy(this, 15);
         Duration duration = dfx.a;
         long millis = dfx.a.toMillis();
         TimeUnit timeUnit = TimeUnit.MILLISECONDS;
-        fhr fhrVar2 = this.b;
+        Clock fhrVar2 = this.b;
         if (fhrVar2 == null) {
             lxj.f("clock");
             fhrVar = null;
@@ -143,7 +143,7 @@ public final class dgc extends dgl {
         List arrayList;
         dgi dgiVar = null;
         brg brgVar = new brg(this, lwdVar, 8, 0 == true ? 1 : 0);
-        if (e().e() || a().c().size() <= 0) {
+        if (e().isReset() || a().c().size() <= 0) {
             arrayList = new ArrayList();
         } else {
             List<dft> listC = a().c();

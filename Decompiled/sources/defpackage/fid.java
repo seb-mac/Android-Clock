@@ -61,13 +61,13 @@ public final class fid implements ksl {
                 lxj.d(executor, "backgroundExecutor");
                 return new ehr(contextA, executor);
             case 2:
-                return new fje((fhr) this.a.b(), ((fig) this.b).b());
+                return new fje((Clock) this.a.b(), ((fig) this.b).b());
             case ard.INTEGER_FIELD_NUMBER /* 3 */:
                 return new gog(((fnf) this.b).b(), ((ghb) this.a).a());
             case ard.LONG_FIELD_NUMBER /* 4 */:
                 return new gog(((fnk) this.a).b(), ((ghb) this.b).a());
             case ard.STRING_FIELD_NUMBER /* 5 */:
-                return new fox((gog) this.b.b(), (fhr) this.a.b());
+                return new fox((gog) this.b.b(), (Clock) this.a.b());
             case ard.STRING_SET_FIELD_NUMBER /* 6 */:
                 return new gog(((fpp) this.a).b(), ((ghb) this.b).a());
             case ard.DOUBLE_FIELD_NUMBER /* 7 */:
@@ -81,17 +81,17 @@ public final class fid implements ksl {
             case 11:
                 return new gog(ksk.a(this.b), (fnl) this.a.b());
             case 12:
-                return new fqj((fhr) this.a.b(), (fof) this.b.b());
+                return new fqj((Clock) this.a.b(), (fof) this.b.b());
             case 13:
                 return new gog(((kso) this.a).b(), ((gha) this.b).a());
             case 14:
                 return new gog(((fqx) this.a).b(), ((ghb) this.b).a());
             case 15:
-                return new fqy(((frh) this.b).b(), (fhr) this.a.b());
+                return new fqy(((frh) this.b).b(), (Clock) this.a.b());
             case 16:
                 return new gog((gog) this.a.b(), ((ghb) this.b).a());
             case 17:
-                return new fug(ksk.a(this.b), (fhr) this.a.b());
+                return new fug(ksk.a(this.b), (Clock) this.a.b());
             case 18:
                 ksq ksqVar2 = this.b;
                 Context contextA2 = ((hft) this.a).a();

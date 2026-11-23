@@ -12,7 +12,7 @@ import com.google.android.deskclock.debug.R;
 public final class cnc extends clx {
     private final TextView A;
     private final Context B;
-    private final fhr C;
+    private final Clock C;
     private final cqw D;
     private final gog E;
     private final int t;
@@ -20,7 +20,7 @@ public final class cnc extends clx {
     private final TextTime v;
     private final TextTime w;
 
-    public cnc(View view, fhr fhrVar, gog gogVar, cqw cqwVar) {
+    public cnc(View view, Clock fhrVar, gog gogVar, cqw cqwVar) {
         super(view);
         Context context = view.getContext();
         this.B = context;

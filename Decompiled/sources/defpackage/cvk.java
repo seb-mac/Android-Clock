@@ -23,7 +23,7 @@ public final /* synthetic */ class cvk implements cvy {
 
     @Override // defpackage.cvy
     public final Object a() throws Throwable {
-        fhr fhrVar;
+        Clock fhrVar;
         cus cusVar;
         int i = this.c;
         if (i == 0) {
@@ -70,7 +70,7 @@ public final /* synthetic */ class cvk implements cvy {
                 cua cuaVar5 = new cua(-1L, akf.j(), ((cua) obj6).f, ((cua) obj6).g, ((cua) obj6).h, ((cua) obj6).i, ((cua) obj6).j, ((cua) obj6).k, ((cua) obj6).a(), ((cua) obj6).m, null, null, z2, ((cua) obj6).q, ((cua) obj6).r, ((cua) obj6).t, ((cua) obj6).u, ((cua) obj6).v, (String) ((cua) obj6).y().orElse(null), (String) ((cua) obj6).z().orElse(null), cua.c);
                 Context context = ((cun) obj5).c;
                 cua cuaVarC = cuc.c(context, cuaVar5);
-                fhr fhrVar2 = ((cun) obj5).d;
+                Clock fhrVar2 = ((cun) obj5).d;
                 fhrVar2.c();
                 Duration.ofMillis(fhrVar2.a());
                 ((cun) obj5).H(cuaVarC);

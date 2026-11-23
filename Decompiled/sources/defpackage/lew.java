@@ -204,7 +204,7 @@ public final class lew {
         this.b = str;
     }
 
-    public lew(fhr fhrVar, iqo iqoVar) {
+    public lew(Clock fhrVar, iqo iqoVar) {
         this.b = fhrVar;
         this.a = iqoVar.f();
     }

@@ -20,7 +20,7 @@ public final /* synthetic */ class c implements CopyOption {
             return ((d) copyOption).a;
         }
         if (copyOption instanceof l) {
-            return a.c((l) copyOption);
+            return a.withBootCount((l) copyOption);
         }
         return copyOption instanceof StandardCopyOption ? a.d((StandardCopyOption) copyOption) : new c(copyOption);
     }

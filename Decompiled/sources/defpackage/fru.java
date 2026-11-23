@@ -53,6 +53,6 @@ public final class fru implements ksl {
         gpl gplVar = (gpl) this.h.b();
         String str = (String) this.j.b();
         ksq ksqVar3 = this.l;
-        return new frt(lvfVarA, gnmVarB, gdiVarA, kqgVarA, gofVarA, gogVarA, gogVar, gjhVar, gplVar, this.i, str, ksk.a(this.k), (fnl) ksqVar3.b(), (fhr) this.m.b(), (ghm) this.n.b(), (gog) this.o.b());
+        return new frt(lvfVarA, gnmVarB, gdiVarA, kqgVarA, gofVarA, gogVarA, gogVar, gjhVar, gplVar, this.i, str, ksk.a(this.k), (fnl) ksqVar3.b(), (Clock) this.m.b(), (ghm) this.n.b(), (gog) this.o.b());
     }
 }

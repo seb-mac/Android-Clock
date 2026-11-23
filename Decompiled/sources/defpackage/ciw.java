@@ -72,7 +72,7 @@ public final /* synthetic */ class ciw implements View.OnClickListener {
             case ard.STRING_FIELD_NUMBER /* 5 */:
                 Object obj4 = this.b;
                 gvu.b(((bg) obj4).bw(), (cua) this.a, null, null);
-                czb czbVar = ((cmf) obj4).av;
+                StopwatchEventLogger czbVar = ((cmf) obj4).av;
                 kgt kgtVarK = mjw.a.k();
                 kgtVarK.p();
                 mjw mjwVar = (mjw) kgtVarK.b;
@@ -87,7 +87,7 @@ public final /* synthetic */ class ciw implements View.OnClickListener {
                 Object obj5 = this.b;
                 cmf cmfVar = (cmf) obj5;
                 ((bg) obj5).aA(cmfVar.am.a((cua) this.a), 1);
-                czb czbVar2 = cmfVar.av;
+                StopwatchEventLogger czbVar2 = cmfVar.av;
                 kgt kgtVarK2 = mjw.a.k();
                 kgtVarK2.p();
                 mjw mjwVar2 = (mjw) kgtVarK2.b;
@@ -183,7 +183,7 @@ public final /* synthetic */ class ciw implements View.OnClickListener {
                 kgy kgyVarM = kgtVarK3.m();
                 lxj.c(kgyVarM, "build(...)");
                 kgj kgjVar = (kgj) kgyVarM;
-                czb czbVar3 = djtVar.j;
+                StopwatchEventLogger czbVar3 = djtVar.j;
                 mly mlyVar = mly.SETUP_PRESET_BUTTON;
                 czbVar3.A(7, mlyVar, kgjVar);
                 czbVar3.A(4, mlyVar, kgjVar);
@@ -228,7 +228,7 @@ public final /* synthetic */ class ciw implements View.OnClickListener {
                 ((PopupWindow) this.b).dismiss();
                 break;
             case 19:
-                ((czb) this.a).E(6, 0);
+                ((StopwatchEventLogger) this.a).E(6, 0);
                 ((View) this.b).getContext().startActivity(eif.h("CLOCK_LOCAL_WEATHER_PROMO"));
                 break;
             default:

@@ -20,6 +20,6 @@ public final class fqu implements ksl {
     @Override // defpackage.lst, defpackage.lss
     /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
     public final fqt b() {
-        return new fqt((fof) this.a.b(), (fhr) this.b.b(), ksk.a(this.c), (gog) this.d.b(), (String) this.e.b());
+        return new fqt((fof) this.a.b(), (Clock) this.b.b(), ksk.a(this.c), (gog) this.d.b(), (String) this.e.b());
     }
 }

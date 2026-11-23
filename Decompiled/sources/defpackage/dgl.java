@@ -53,7 +53,7 @@ public class dgl extends bg implements ksg {
         ksq ksqVar2 = ccsVar.al;
         dgcVar.aj = new gog((Object) ksqVar, (Object) ksqVar2, (byte[]) null);
         dgcVar.a = (StopwatchController) ksqVar2.b();
-        dgcVar.b = (fhr) ccsVar.t.b();
+        dgcVar.b = (Clock) ccsVar.t.b();
         dgcVar.c = (jhc) ccsVar.av.b();
     }
 

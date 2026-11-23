@@ -8,10 +8,10 @@ import com.android.deskclock.HandleUris;
 public final class cdj extends cfe {
     private final String a;
     private final mjv b;
-    private final czb c;
+    private final StopwatchEventLogger c;
     private final bzi d;
 
-    public cdj(Context context, String str, mjv mjvVar, czb czbVar, bzi bziVar) {
+    public cdj(Context context, String str, mjv mjvVar, StopwatchEventLogger czbVar, bzi bziVar) {
         super(context, true);
         this.a = str;
         this.b = mjvVar;

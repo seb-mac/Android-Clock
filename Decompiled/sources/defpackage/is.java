@@ -111,7 +111,7 @@ public final class is extends MultiAutoCompleteTextView {
 
     @Override // android.widget.AutoCompleteTextView
     public final void setDropDownBackgroundResource(int i) {
-        setDropDownBackgroundDrawable(g.e(getContext(), i));
+        setDropDownBackgroundDrawable(StopwatchUtils.e(getContext(), i));
     }
 
     @Override // android.widget.TextView

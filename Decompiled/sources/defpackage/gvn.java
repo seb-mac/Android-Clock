@@ -47,7 +47,7 @@ public final /* synthetic */ class gvn implements iqz {
             case 1:
                 return new evy((Context) this.b, (evk) this.a);
             case 2:
-                return ((ens) this.b).C(((gzd) this.a.b()).a);
+                return ((ens) this.b).C(((gzd) this.a.reset()).a);
             case ard.INTEGER_FIELD_NUMBER /* 3 */:
                 return ((jci) ((lnz) this.b).b).i(((kfz) this.a).v());
             case ard.LONG_FIELD_NUMBER /* 4 */:

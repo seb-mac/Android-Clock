@@ -59,7 +59,7 @@ final class gjv extends lvs implements lws {
         if (i2 == 0) {
             lsr.f(obj);
             gjz gjzVar = this.d;
-            epochMilli = gjzVar.b.c().toEpochMilli();
+            epochMilli = gjzVar.b.withBootCount().toEpochMilli();
             List list = this.e;
             Map map = this.f;
             gjm gjmVar = this.g;

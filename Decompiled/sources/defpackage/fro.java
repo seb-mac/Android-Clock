@@ -56,7 +56,7 @@ public final class fro extends lvs implements lws {
             jqx jqxVar = this.e;
             String str2 = this.f;
             kad kadVar2 = this.g;
-            long jA = frtVar2.f.a();
+            long jA = frtVar2.f.getTime();
             this.a = jA;
             this.c = 1;
             objC = frtVar2.c(jqxVar, str2, kadVar2, this);
@@ -87,7 +87,7 @@ public final class fro extends lvs implements lws {
         str = this.f;
         if (obj2 instanceof gcp) {
             jra jraVar = (jra) ((gcp) obj2).a;
-            long jA2 = frtVar.f.a() - j;
+            long jA2 = frtVar.f.getTime() - j;
             kqg kqgVar = frtVar.d;
             gpc gpcVar = (gpc) kqgVar.b();
             String str3 = frtVar.c;
@@ -123,7 +123,7 @@ public final class fro extends lvs implements lws {
             str = this.f;
             if (obj2 instanceof gcp) {
                 jra jraVar2 = (jra) ((gcp) obj2).a;
-                long jA3 = frtVar.f.a() - j;
+                long jA3 = frtVar.f.getTime() - j;
                 kqg kqgVar2 = frtVar.d;
                 gpc gpcVar2 = (gpc) kqgVar2.b();
                 String str5 = frtVar.c;
@@ -177,7 +177,7 @@ public final class fro extends lvs implements lws {
             str = this.f;
             if (obj2 instanceof gcp) {
                 jra jraVar3 = (jra) ((gcp) obj2).a;
-                long jA4 = frtVar.f.a() - j;
+                long jA4 = frtVar.f.getTime() - j;
                 kqg kqgVar3 = frtVar.d;
                 gpc gpcVar3 = (gpc) kqgVar3.b();
                 String str7 = frtVar.c;

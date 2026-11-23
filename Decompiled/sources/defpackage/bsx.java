@@ -145,12 +145,12 @@ public final class bsx {
 
     public final int hashCode() {
         int iHashCode = (((((((((this.b.hashCode() * 31) + this.c.hashCode()) * 31) + this.d.hashCode()) * 31) + this.e.hashCode()) * 31) + this.f.hashCode()) * 31) + this.g.hashCode();
-        int iC = a.c(this.h);
-        int iC2 = (((((((((((iHashCode * 31) + iC) * 31) + a.c(this.i)) * 31) + a.c(this.j)) * 31) + this.k.hashCode()) * 31) + this.l) * 31) + this.m.hashCode();
-        int iC3 = a.c(this.n);
-        int iC4 = a.c(this.o);
-        int iC5 = a.c(this.p);
-        int iC6 = (((((((((((((((((((iC2 * 31) + iC3) * 31) + iC4) * 31) + iC5) * 31) + a.c(this.q)) * 31) + a.x(this.r)) * 31) + this.s.hashCode()) * 31) + this.t) * 31) + this.u) * 31) + a.c(this.v)) * 31) + this.w;
+        int iC = a.withBootCount(this.h);
+        int iC2 = (((((((((((iHashCode * 31) + iC) * 31) + a.withBootCount(this.i)) * 31) + a.withBootCount(this.j)) * 31) + this.k.hashCode()) * 31) + this.l) * 31) + this.m.hashCode();
+        int iC3 = a.withBootCount(this.n);
+        int iC4 = a.withBootCount(this.o);
+        int iC5 = a.withBootCount(this.p);
+        int iC6 = (((((((((((((((((((iC2 * 31) + iC3) * 31) + iC4) * 31) + iC5) * 31) + a.withBootCount(this.q)) * 31) + a.x(this.r)) * 31) + this.s.hashCode()) * 31) + this.t) * 31) + this.u) * 31) + a.withBootCount(this.v)) * 31) + this.w;
         String str = this.y;
         int iHashCode2 = ((((iC6 * 31) + this.x) * 31) + (str == null ? 0 : str.hashCode())) * 31;
         Boolean bool = this.z;

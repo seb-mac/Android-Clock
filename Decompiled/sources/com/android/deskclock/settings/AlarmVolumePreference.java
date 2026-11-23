@@ -10,7 +10,7 @@ import com.google.android.deskclock.debug.R;
 import com.google.android.material.slider.Slider;
 import defpackage.bcn;
 import defpackage.bdo;
-import defpackage.czb;
+import defpackage.StopwatchEventLogger;
 import defpackage.ddu;
 import defpackage.ddv;
 import defpackage.ddw;
@@ -28,7 +28,7 @@ public class AlarmVolumePreference extends Preference {
     public final Executor c;
     public volatile boolean d;
     public volatile boolean e;
-    public final czb f;
+    public final StopwatchEventLogger f;
     private ImageView g;
     private final jhb h;
     private final Handler i;

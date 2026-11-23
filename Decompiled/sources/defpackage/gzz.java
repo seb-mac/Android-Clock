@@ -4,12 +4,12 @@ package defpackage;
 /* JADX INFO: loaded from: classes2.dex */
 final class gzz implements gzx {
     private final lst b;
-    private final fhr c;
+    private final Clock c;
     private final Object a = new Object();
     private int d = 0;
     private long e = 0;
 
-    public gzz(lst lstVar, fhr fhrVar) {
+    public gzz(lst lstVar, Clock fhrVar) {
         this.b = lstVar;
         this.c = fhrVar;
     }

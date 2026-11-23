@@ -11,9 +11,9 @@ import java.util.concurrent.TimeoutException;
 /* JADX INFO: loaded from: classes2.dex */
 public final class hpf implements hoz {
     private final lst a;
-    private final fhr b;
+    private final Clock b;
 
-    public hpf(lst lstVar, fhr fhrVar) {
+    public hpf(lst lstVar, Clock fhrVar) {
         this.a = lstVar;
         this.b = fhrVar;
     }

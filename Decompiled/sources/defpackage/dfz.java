@@ -13,7 +13,7 @@ import com.google.android.material.button.MaterialButton;
 public final class dfz extends dgk {
     public static final StopwatchEventSource a = StopwatchEventSource.MOBILE_APP;
     public StopwatchController b;
-    public czb c;
+    public StopwatchEventLogger c;
     private final dga d = new dga(this, 1);
 
     private final void aB(MaterialButton materialButton) {
@@ -48,7 +48,7 @@ public final class dfz extends dgk {
         ((Button) aki.b(view, R.id.start_stop_button)).setOnClickListener(new dfy(this, 0));
         ((Button) aki.b(view, R.id.lap_button)).setOnClickListener(new dfy(this, 2));
         ((Button) aki.b(view, R.id.reset_button)).setOnClickListener(new dfy(this, 3));
-        dfv dfvVarB = a().b();
+        StopwatchStateModel dfvVarB = a().b();
         lxj.c(dfvVarB, "getStopwatch(...)");
         f(view, dfvVarB);
         a().d(this.d);
@@ -60,19 +60,19 @@ public final class dfz extends dgk {
         a().f(this.d);
     }
 
-    public final dfv e() {
-        dfv dfvVarB = a().b();
+    public final StopwatchStateModel e() {
+        StopwatchStateModel dfvVarB = a().b();
         lxj.c(dfvVarB, "getStopwatch(...)");
         return dfvVarB;
     }
 
-    public final void f(View view, dfv dfvVar) {
+    public final void f(View view, StopwatchStateModel dfvVar) {
         int i = akm.a;
         MaterialButton materialButton = (MaterialButton) aki.b(view, R.id.start_stop_button);
         Button button = (Button) aki.b(view, R.id.lap_button);
         Button button2 = (Button) aki.b(view, R.id.reset_button);
-        dfu dfuVar = dfu.RESET;
-        int iOrdinal = dfvVar.b.ordinal();
+        StopwatchState dfuVar = StopwatchState.RESET;
+        int iOrdinal = dfvVar.stopwatchState.ordinal();
         if (iOrdinal == 0) {
             materialButton.setText(U(R.string.gastown_stopwatch_start_button_text));
             lxj.a(materialButton);
@@ -102,8 +102,8 @@ public final class dfz extends dgk {
         button2.setVisibility(0);
     }
 
-    public final czb p() {
-        czb czbVar = this.c;
+    public final StopwatchEventLogger p() {
+        StopwatchEventLogger czbVar = this.c;
         if (czbVar != null) {
             return czbVar;
         }

@@ -25,9 +25,9 @@ public final class fxa implements fwf {
     private final lst i;
     private final lvf j;
     private final mam k;
-    private final fhr l;
+    private final Clock l;
 
-    public fxa(Context context, String str, gog gogVar, fnl fnlVar, lst lstVar, Set set, lst lstVar2, fmx fmxVar, lvf lvfVar, mam mamVar, fhr fhrVar) {
+    public fxa(Context context, String str, gog gogVar, fnl fnlVar, lst lstVar, Set set, lst lstVar2, fmx fmxVar, lvf lvfVar, mam mamVar, Clock fhrVar) {
         lxj.d(str, "packageName");
         lxj.d(gogVar, "presentedPromosStore");
         lxj.d(fnlVar, "clearcutLogger");

@@ -50,7 +50,7 @@ import defpackage.cop;
 import defpackage.crc;
 import defpackage.cue;
 import defpackage.cus;
-import defpackage.czb;
+import defpackage.StopwatchEventLogger;
 import defpackage.dek;
 import defpackage.dkt;
 import defpackage.dlf;
@@ -61,7 +61,7 @@ import defpackage.dmm;
 import defpackage.dmn;
 import defpackage.dnu;
 import defpackage.dqi;
-import defpackage.fhr;
+import defpackage.Clock;
 import defpackage.gdn;
 import defpackage.gog;
 import defpackage.hft;
@@ -151,7 +151,7 @@ public final class GastownAlarmActivity extends cin implements View.OnClickListe
             activityManager.getMemoryInfo(memoryInfo);
             if (memoryInfo.lowMemory) {
                 ((iwv) ((iwv) p.c()).j("com/android/deskclock/alarms/gastown/ui/GastownAlarmActivity", "isFiringTextAnimationRequirementMet", 764, "GastownAlarmActivity.java")).r("Skipping the alarm firing text animation due to low memory.");
-                ((czb) this.t.b()).n(4);
+                ((StopwatchEventLogger) this.t.b()).n(4);
                 return;
             }
             float f = memoryInfo.totalMem / 1048576.0f;
@@ -163,11 +163,11 @@ public final class GastownAlarmActivity extends cin implements View.OnClickListe
             float f2 = memoryInfo.availMem / 1048576.0f;
             if (f2 < fB) {
                 ((iwv) ((iwv) p.c()).j("com/android/deskclock/alarms/gastown/ui/GastownAlarmActivity", "isFiringTextAnimationRequirementMet", 789, "GastownAlarmActivity.java")).E(f2, fB);
-                ((czb) this.t.b()).n(4);
+                ((StopwatchEventLogger) this.t.b()).n(4);
                 return;
             }
             J();
-            ((czb) this.t.b()).n(3);
+            ((StopwatchEventLogger) this.t.b()).n(3);
             ValueAnimator valueAnimatorOfInt = ValueAnimator.ofInt(500, 200);
             valueAnimatorOfInt.setDuration(1500L);
             valueAnimatorOfInt.setRepeatCount(-1);
@@ -373,9 +373,9 @@ public final class GastownAlarmActivity extends cin implements View.OnClickListe
         Context contextA = ((hft) lstVar).a();
         jhb jhbVar = (jhb) dnuVar.j.b();
         jhbVar.getClass();
-        czb czbVar = (czb) dnuVar.c.b();
+        StopwatchEventLogger czbVar = (StopwatchEventLogger) dnuVar.c.b();
         czbVar.getClass();
-        fhr fhrVar = (fhr) dnuVar.g.b();
+        Clock fhrVar = (Clock) dnuVar.g.b();
         fhrVar.getClass();
         lqv lqvVarB = ((dme) dnuVar.l).b();
         bzi bziVarB = ((dqi) dnuVar.i).b();
@@ -552,7 +552,7 @@ public final class GastownAlarmActivity extends cin implements View.OnClickListe
     @Override // defpackage.ol, android.app.Activity, android.content.ComponentCallbacks2
     public final void onTrimMemory(int i) {
         super.onTrimMemory(i);
-        ((czb) this.t.b()).n(5);
+        ((StopwatchEventLogger) this.t.b()).n(5);
         ((iwv) ((iwv) p.c()).j("com/android/deskclock/alarms/gastown/ui/GastownAlarmActivity", "onTrimMemory", 817, "GastownAlarmActivity.java")).r("Stopping the alarm firing text animation due to low memory.");
         J();
     }
@@ -576,8 +576,8 @@ public final class GastownAlarmActivity extends cin implements View.OnClickListe
     }
 
     public final void v(boolean z) {
-        this.w.c(R.id.transition_swipe_snooze).a(z);
-        this.w.c(R.id.transition_swipe_dismiss).a(z);
+        this.w.withBootCount(R.id.transition_swipe_snooze).a(z);
+        this.w.withBootCount(R.id.transition_swipe_dismiss).a(z);
     }
 
     public final void w(View view, Animator animator, Runnable runnable) {

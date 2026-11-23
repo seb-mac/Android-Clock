@@ -19,7 +19,7 @@ public final class kjg implements Map, j$.util.Map, lxu {
 
     @Override // java.util.Map
     public final void clear() {
-        a.a();
+        a.getTime();
     }
 
     @Override // java.util.Map, j$.util.Map

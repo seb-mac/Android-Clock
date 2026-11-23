@@ -17,7 +17,7 @@ public final class goz implements ksl {
     /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
     public final goh b() {
         kqg kqgVarA = ksk.a(this.a);
-        fhr fhrVar = (fhr) this.b.b();
+        Clock fhrVar = (Clock) this.b.b();
         mam mamVarA = ((ghb) this.c).a();
         lxj.d(kqgVarA, "gnpPerDeviceRoomDatabase");
         lxj.d(fhrVar, "clock");

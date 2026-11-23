@@ -17,18 +17,18 @@ public final class cgg {
     public hzm b;
     public cpe c;
     private final Context e;
-    private final fhr f;
+    private final Clock f;
     private final dep h;
     private final DialogInterface.OnDismissListener g = new cgd(this, 0);
     public boolean d = true;
 
-    public cgg(Context context, fhr fhrVar, dep depVar) {
+    public cgg(Context context, Clock fhrVar, dep depVar) {
         this.e = context;
         this.f = fhrVar;
         this.h = depVar;
     }
 
-    static cpe a(fhr fhrVar, cua cuaVar) {
+    static cpe a(Clock fhrVar, cua cuaVar) {
         Calendar calendarQ = ake.q(fhrVar);
         if (!cuaVar.D(calendarQ)) {
             return cua.a;
@@ -54,7 +54,7 @@ public final class cgg {
 
     private final hzm f(cua cuaVar) {
         Long lB;
-        fhr fhrVar = this.f;
+        Clock fhrVar = this.f;
         cpe cpeVarA = a(fhrVar, cuaVar);
         LocalDate localDate = cpeVarA.e;
         if (localDate == null) {
@@ -124,7 +124,7 @@ public final class cgg {
         if (this.b != null) {
             return;
         }
-        fhr fhrVar = this.f;
+        Clock fhrVar = this.f;
         boolean z2 = cuaVar.D(ake.q(fhrVar)) && cuaVar.j.d != null;
         if (z) {
             hzmVarF = f(cuaVar);

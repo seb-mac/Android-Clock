@@ -7,5 +7,5 @@ public interface cgt {
 
     cop ad();
 
-    czb ap();
+    StopwatchEventLogger ap();
 }

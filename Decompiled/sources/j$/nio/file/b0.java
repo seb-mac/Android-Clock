@@ -63,7 +63,7 @@ public abstract class b0 {
         int length = lVarArr.length;
         LinkOption[] linkOptionArr = new LinkOption[length];
         for (int i = 0; i < length; i++) {
-            linkOptionArr[i] = a.c(lVarArr[i]);
+            linkOptionArr[i] = a.withBootCount(lVarArr[i]);
         }
         return linkOptionArr;
     }

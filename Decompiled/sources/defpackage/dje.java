@@ -23,7 +23,7 @@ public final class dje extends djb implements djg {
     public djf a;
     public boolean b;
     public boolean c;
-    public czb d;
+    public StopwatchEventLogger d;
 
     public dje() {
         lxj.c(Duration.ZERO, "ZERO");
@@ -202,8 +202,8 @@ public final class dje extends djb implements djg {
         }
     }
 
-    public final czb aH() {
-        czb czbVar = this.d;
+    public final StopwatchEventLogger aH() {
+        StopwatchEventLogger czbVar = this.d;
         if (czbVar != null) {
             return czbVar;
         }

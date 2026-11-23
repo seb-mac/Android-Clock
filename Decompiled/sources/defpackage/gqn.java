@@ -43,7 +43,7 @@ public final class gqn implements gql {
     }
 
     public final int hashCode() {
-        return (this.a.hashCode() * 31) + a.c(this.b);
+        return (this.a.hashCode() * 31) + a.withBootCount(this.b);
     }
 
     public final String toString() {

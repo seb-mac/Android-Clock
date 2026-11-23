@@ -16,6 +16,6 @@ public final class cxr implements ksl {
     @Override // defpackage.lst, defpackage.lss
     /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
     public final lqv b() {
-        return new lqv(((hft) this.a).a(), (fhr) this.b.b(), (dap) this.c.b());
+        return new lqv(((hft) this.a).a(), (Clock) this.b.b(), (dap) this.c.b());
     }
 }

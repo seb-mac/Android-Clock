@@ -22,10 +22,10 @@ public final class das implements dap, cqg {
     private static final DateFormat d = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS", Locale.US);
     public final Context a;
     public final agf b;
-    private final fhr e;
+    private final Clock e;
     private final Executor f = new dar();
 
-    public das(Context context, fhr fhrVar) {
+    public das(Context context, Clock fhrVar) {
         this.a = context;
         this.b = new agf(context);
         this.e = fhrVar;
@@ -63,7 +63,7 @@ public final class das implements dap, cqg {
 
     public final void G() {
         NotificationChannel notificationChannel = new NotificationChannel("Firing", this.a.getString(R.string.firing_channel_name), 4);
-        notificationChannel.setSound(null, dcx.ALARM.a());
+        notificationChannel.setSound(null, dcx.ALARM.getTime());
         notificationChannel.setShowBadge(false);
         notificationChannel.setBypassDnd(true);
         this.b.b(notificationChannel);

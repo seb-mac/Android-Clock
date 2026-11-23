@@ -146,21 +146,21 @@ public final class ake {
         return l(context, localDate, localDate, i);
     }
 
-    public static final LocalDate o(fhr fhrVar) {
+    public static final LocalDate o(Clock fhrVar) {
         lxj.d(fhrVar, "<this>");
         LocalDate localDate = fhrVar.c().atZone(ZoneId.systemDefault()).f();
         lxj.c(localDate, "toLocalDate(...)");
         return localDate;
     }
 
-    public static final LocalDateTime p(fhr fhrVar) {
+    public static final LocalDateTime p(Clock fhrVar) {
         lxj.d(fhrVar, "<this>");
         LocalDateTime localDateTime = fhrVar.c().atZone(ZoneId.systemDefault()).u();
         lxj.c(localDateTime, "toLocalDateTime(...)");
         return localDateTime;
     }
 
-    public static final Calendar q(fhr fhrVar) {
+    public static final Calendar q(Clock fhrVar) {
         lxj.d(fhrVar, "<this>");
         Calendar calendar = Calendar.getInstance();
         calendar.setTimeInMillis(fhrVar.c().toEpochMilli());

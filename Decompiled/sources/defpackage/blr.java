@@ -132,7 +132,7 @@ public final /* synthetic */ class blr implements lwd {
                 bpj.a(bqfVar.c, bqfVar.d, bqfVar.e);
                 return ltl.a;
             case 14:
-                this.a.a();
+                this.a.getTime();
                 return ltl.a;
             case 15:
                 return new File(((che) this.a).b.getApplicationContext().getFilesDir(), "datastore/alarm_banner_preferences.preferences_pb");

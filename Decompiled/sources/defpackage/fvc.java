@@ -30,6 +30,6 @@ public final class fvc implements ksl {
         Context contextA = ((hft) this.b).a();
         fvm fvmVarB = ((fvn) this.c).b();
         ksq ksqVar = this.e;
-        return new fvb(this.a, fpjVar, contextA, fvmVarB, ksk.a(this.d), (fhr) ksqVar.b(), ((gha) this.f).a(), ((gha) this.g).a());
+        return new fvb(this.a, fpjVar, contextA, fvmVarB, ksk.a(this.d), (Clock) ksqVar.b(), ((gha) this.f).a(), ((gha) this.g).a());
     }
 }

@@ -66,7 +66,7 @@ public final /* synthetic */ class eny implements fan {
             Objects.requireNonNull(jdjVar2);
             jdfVar3.g = jdjVar2;
             jdfVar3.b |= 512;
-            String strA = lnzVar.b.a();
+            String strA = lnzVar.b.getTime();
             kgtVarF.p();
             jdf jdfVar4 = (jdf) kgtVarF.b;
             Objects.requireNonNull(strA);

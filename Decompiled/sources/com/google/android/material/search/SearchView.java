@@ -36,7 +36,7 @@ import defpackage.amw;
 import defpackage.cre;
 import defpackage.drm;
 import defpackage.ff;
-import defpackage.g;
+import defpackage.StopwatchUtils;
 import defpackage.hnd;
 import defpackage.hon;
 import defpackage.hua;
@@ -188,7 +188,7 @@ public class SearchView extends FrameLayout implements ade, ido {
         ian.r(materialToolbar, new ida() { // from class: igt
             @Override // defpackage.ida
             public final void a(View view, alw alwVar, idb idbVar) {
-                MaterialToolbar materialToolbar2 = this.a.g;
+                MaterialToolbar materialToolbar2 = this.a.notificationState;
                 boolean zS = ian.s(materialToolbar2);
                 int i2 = zS ? idbVar.c : idbVar.a;
                 int i3 = zS ? idbVar.a : idbVar.c;

@@ -38,8 +38,8 @@ public final class cfi extends cfe {
 
     @Override // defpackage.cfe
     protected final /* bridge */ /* synthetic */ Object a() {
-        czb czbVar = (czb) this.c.b();
-        fhr fhrVar = (fhr) this.d.b();
+        StopwatchEventLogger czbVar = (StopwatchEventLogger) this.c.b();
+        Clock fhrVar = (Clock) this.d.b();
         bzi bziVar = (bzi) this.e.b();
         cgz cgzVar = (cgz) this.j.b();
         Optional optional = (Optional) this.k.b();

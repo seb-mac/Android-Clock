@@ -17,10 +17,10 @@ public final class dfp extends chi {
     public volatile boolean f;
     private final Set g;
     private final ContentObserver h;
-    private final czb i;
+    private final StopwatchEventLogger i;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public dfp(Context context, che cheVar, mam mamVar, czb czbVar) {
+    public dfp(Context context, che cheVar, mam mamVar, StopwatchEventLogger czbVar) {
         super(chj.SILENT_SETTING_VIBRATION_DISABLED, cheVar, mamVar);
         lxj.d(cheVar, "bannerPreferences");
         lxj.d(mamVar, "backgroundScope");

@@ -224,7 +224,7 @@ public final class Duration implements TemporalAmount, Comparable<Duration>, Ser
     public Duration minusHours(long j) {
         long j2;
         if (j == Long.MIN_VALUE) {
-            this = A(j$.desugar.sun.nio.fs.g.R(Long.MAX_VALUE, 3600L), 0L);
+            this = A(j$.desugar.sun.nio.fs.StopwatchUtils.R(Long.MAX_VALUE, 3600L), 0L);
             this.getClass();
             j2 = 1;
         } else {

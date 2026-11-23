@@ -73,7 +73,7 @@ public final class cem implements cek {
             Objects.requireNonNull(mkxVar);
             mjlVar.C = mkxVar;
             mjlVar.b |= 134217728;
-            ((czb) obj).a(bzhVarZ.aa());
+            ((StopwatchEventLogger) obj).a(bzhVarZ.aa());
             int i = mkxVar.c;
             int i2 = mkxVar.d;
             khd khdVar = mkxVar.e;

@@ -28,17 +28,17 @@ public final class csp implements ksl {
     public final /* synthetic */ Object b() {
         switch (this.f) {
             case 0:
-                return new cso(((hft) this.a).a(), (fhr) this.b.b(), (czb) this.c.b(), (csa) this.d.b(), ((dma) this.e).b());
+                return new cso(((hft) this.a).a(), (Clock) this.b.b(), (StopwatchEventLogger) this.c.b(), (csa) this.d.b(), ((dma) this.e).b());
             case 1:
-                return new csi(((hft) this.a).a(), (fhr) this.b.b(), (czb) this.c.b(), (csa) this.d.b(), (dep) this.e.b());
+                return new csi(((hft) this.a).a(), (Clock) this.b.b(), (StopwatchEventLogger) this.c.b(), (csa) this.d.b(), (dep) this.e.b());
             case 2:
                 return new cup(((hft) this.a).a(), ((dlf) this.b).b(), ((cpv) this.e).b(), (dap) this.d.b(), ((dob) this.c).b());
             case ard.INTEGER_FIELD_NUMBER /* 3 */:
                 return new cxi(((hft) this.b).a(), (ddk) this.e.b(), (ddd) this.a.b(), (cop) this.c.b(), ((cot) this.d).b());
             case ard.LONG_FIELD_NUMBER /* 4 */:
-                return new czb(((hft) this.a).a(), (mam) this.e.b(), (emy) this.c.b(), (fco) this.d.b(), (fhr) this.b.b());
+                return new StopwatchEventLogger(((hft) this.a).a(), (mam) this.e.b(), (emy) this.c.b(), (fco) this.d.b(), (Clock) this.b.b());
             case ard.STRING_FIELD_NUMBER /* 5 */:
-                return new dew(((hft) this.e).a(), (dap) this.d.b(), (che) this.b.b(), (mam) this.c.b(), (czb) this.a.b());
+                return new dew(((hft) this.e).a(), (dap) this.d.b(), (che) this.b.b(), (mam) this.c.b(), (StopwatchEventLogger) this.a.b());
             case ard.STRING_SET_FIELD_NUMBER /* 6 */:
                 ThreadFactory threadFactory = (ThreadFactory) this.a.b();
                 jhc jhcVar = (jhc) this.b.b();
@@ -64,11 +64,11 @@ public final class csp implements ksl {
                 ((glv) this.b).b();
                 return new god(iqoVar3, iqoVar4, iqoVar5, this.a);
             case 12:
-                return new gsr((Executor) this.b.b(), ((kss) this.e).b(), ((gso) this.a).b(), (fhr) this.c.b(), this.d);
+                return new gsr((Executor) this.b.b(), ((kss) this.e).b(), ((gso) this.a).b(), (Clock) this.c.b(), this.d);
             case 13:
                 String strA = ((ghf) this.d).a();
                 kqo kqoVarB = ((guu) this.e).b();
-                fhr fhrVar = (fhr) this.a.b();
+                Clock fhrVar = (Clock) this.a.b();
                 ((hft) this.c).a();
                 return new gxi(strA, kqoVarB, fhrVar, this.b);
             case 14:

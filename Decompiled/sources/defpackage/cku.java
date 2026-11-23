@@ -25,9 +25,9 @@ public final class cku implements chk {
     public static final iwy a = iwy.h("com/android/deskclock/assistant/AssistantModel");
     public static final Uri b = new Uri.Builder().scheme("content").authority("com.google.android.googlequicksearchbox.GsaPublicContentProvider").appendPath("publicvalue").appendPath("opa_wake_up_with_assistant_deeplink_data_uri").build();
     public final Context d;
-    public final fhr e;
+    public final Clock e;
     public final UserManager f;
-    public final czb g;
+    public final StopwatchEventLogger g;
     public lqv h;
     private final SharedPreferences j;
     private final cqb k;
@@ -37,7 +37,7 @@ public final class cku implements chk {
     public final List c = new ArrayList();
     private final Object i = new Object();
 
-    public cku(Context context, SharedPreferences sharedPreferences, fhr fhrVar, cqb cqbVar, dap dapVar, czb czbVar, lqv lqvVar) {
+    public cku(Context context, SharedPreferences sharedPreferences, Clock fhrVar, cqb cqbVar, dap dapVar, StopwatchEventLogger czbVar, lqv lqvVar) {
         this.d = context;
         this.j = sharedPreferences;
         this.e = fhrVar;

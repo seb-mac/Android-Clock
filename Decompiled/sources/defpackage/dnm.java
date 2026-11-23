@@ -11,11 +11,11 @@ public final class dnm {
     public static final iwy a = iwy.h("com/android/deskclock/wearable/alarmsync/data/WearableAlarmSyncDAO");
     public static final itt b = itt.q(1);
     public final SharedPreferences c;
-    public final czb d;
+    public final StopwatchEventLogger d;
     public final fcp e;
     private final dmr f;
 
-    public dnm(SharedPreferences sharedPreferences, czb czbVar, fcp fcpVar, dmr dmrVar) {
+    public dnm(SharedPreferences sharedPreferences, StopwatchEventLogger czbVar, fcp fcpVar, dmr dmrVar) {
         this.c = sharedPreferences;
         this.d = czbVar;
         this.e = fcpVar;

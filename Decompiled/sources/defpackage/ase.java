@@ -149,7 +149,7 @@ public final class ase extends arm implements RandomAccess, ast, ats {
         for (int i = 0; i < this.a; i++) {
             long jDoubleToLongBits = Double.doubleToLongBits(this.c[i]);
             Charset charset = asu.a;
-            iC = (iC * 31) + a.c(jDoubleToLongBits);
+            iC = (iC * 31) + a.withBootCount(jDoubleToLongBits);
         }
         return iC;
     }

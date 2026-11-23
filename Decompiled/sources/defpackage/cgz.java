@@ -14,10 +14,10 @@ public final class cgz {
     public static final iwy a = iwy.h("com/android/deskclock/alarms/backupschedule/BackupAlarmScheduler");
     public final Context b;
     public final AlarmManager c;
-    public final czb d;
-    private final fhr e;
+    public final StopwatchEventLogger d;
+    private final Clock e;
 
-    public cgz(Context context, fhr fhrVar, czb czbVar) {
+    public cgz(Context context, Clock fhrVar, StopwatchEventLogger czbVar) {
         lxj.d(fhrVar, "clock");
         lxj.d(czbVar, "clearcutEventTracker");
         this.b = context;

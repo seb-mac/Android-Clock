@@ -24,7 +24,7 @@ public final class cs {
 
     public static final cs c(ViewGroup viewGroup, cc ccVar) {
         lxj.d(viewGroup, "container");
-        g gVarAp = ccVar.ap();
+        StopwatchUtils gVarAp = ccVar.ap();
         lxj.c(gVarAp, "getSpecialEffectsControllerFactory(...)");
         return a.aw(viewGroup, gVarAp);
     }
@@ -60,7 +60,7 @@ public final class cs {
     public final void d(cr crVar) {
         lxj.d(crVar, "operation");
         if (crVar.f) {
-            g.j(crVar.i, crVar.a.K(), this.a);
+            StopwatchUtils.j(crVar.i, crVar.a.K(), this.a);
             crVar.g();
         }
     }

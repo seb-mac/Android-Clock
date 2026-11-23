@@ -11,9 +11,9 @@ public final class djt extends azg {
     public String f;
     public djf g;
     public final mfo i;
-    public final czb j;
+    public final StopwatchEventLogger j;
 
-    public djt(cyb cybVar, czb czbVar) {
+    public djt(cyb cybVar, StopwatchEventLogger czbVar) {
         lxj.d(cybVar, "timerModel");
         lxj.d(czbVar, "clearcutEventTracker");
         this.a = cybVar;

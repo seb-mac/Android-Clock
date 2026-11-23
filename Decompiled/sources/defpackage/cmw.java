@@ -49,7 +49,7 @@ public class cmw extends au implements ksg {
         cmz cmzVar = (cmz) this;
         ccs ccsVar = ((ccn) objBV).h;
         cmzVar.al = (cop) ccsVar.af.b();
-        cmzVar.am = (czb) ccsVar.I.b();
+        cmzVar.am = (StopwatchEventLogger) ccsVar.I.b();
     }
 
     @Override // defpackage.bg

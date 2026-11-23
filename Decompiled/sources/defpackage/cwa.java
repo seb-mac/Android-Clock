@@ -9,7 +9,7 @@ public interface cwa {
 
     cop ad();
 
-    czb ap();
+    StopwatchEventLogger ap();
 
     cxi p();
 

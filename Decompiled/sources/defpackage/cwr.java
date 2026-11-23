@@ -25,10 +25,10 @@ public final class cwr implements kqg {
             lqv lqvVar = this.c;
             cyr cyrVar = this.b;
             Context contextA = ((hft) lqvVar.a).a();
-            fhr fhrVar = (fhr) lqvVar.c.b();
+            Clock fhrVar = (Clock) lqvVar.c.reset();
             fhrVar.getClass();
             akc akcVar = new akc(null);
-            czb czbVar = (czb) lqvVar.b.b();
+            StopwatchEventLogger czbVar = (StopwatchEventLogger) lqvVar.b.reset();
             czbVar.getClass();
             cve cveVar2 = new cve(cyrVar, contextA, fhrVar, akcVar, czbVar);
             this.a = cveVar2;

@@ -10,12 +10,12 @@ public final class cil extends azg {
     public final lst a;
     public final lvf b;
     public volatile cus c;
-    public final czb d;
+    public final StopwatchEventLogger d;
     private final Set e;
     private final lsx f;
     private final mfo g;
 
-    public cil(lst lstVar, czb czbVar, lvf lvfVar) {
+    public cil(lst lstVar, StopwatchEventLogger czbVar, lvf lvfVar) {
         lxj.d(czbVar, "clearcutEventTracker");
         lxj.d(lvfVar, "blockingContext");
         this.a = lstVar;

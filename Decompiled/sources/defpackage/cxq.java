@@ -35,16 +35,16 @@ public final class cxq implements ksl {
         int i = this.j;
         if (i == 0) {
             ((hft) this.a).a();
-            return new StopwatchController((SharedPreferences) this.b.b(), (fhr) this.c.b(), (cqb) this.d.b(), (dap) this.e.b(), ((dgt) this.f).b(), (lqv) this.g.b(), ((cxr) this.h).b(), this.i);
+            return new StopwatchController((SharedPreferences) this.b.b(), (Clock) this.c.b(), (cqb) this.d.b(), (dap) this.e.b(), ((dgt) this.f).b(), (lqv) this.g.b(), ((cxr) this.h).b(), this.i);
         }
         if (i == 1) {
-            return new ctc(((hft) this.d).a(), (czb) this.a.b(), (cqb) this.i.b(), (dkp) this.h.b(), (dep) this.b.b(), (cku) this.g.b(), (csa) this.f.b(), (cop) this.c.b(), ((dme) this.e).b());
+            return new ctc(((hft) this.d).a(), (StopwatchEventLogger) this.a.b(), (cqb) this.i.b(), (dkp) this.h.b(), (dep) this.b.b(), (cku) this.g.b(), (csa) this.f.b(), (cop) this.c.b(), ((dme) this.e).b());
         }
         if (i == 2) {
             return new ghq((lst) this.a, (lst) this.c, (lst) this.g, (lst) this.d, (lst) this.e, (lst) this.i, (lst) this.h, (lst) this.b, (lst) this.f);
         }
         if (i == 3) {
-            return new dep((SharedPreferences) this.e.b(), (fhr) this.a.b(), (czb) this.c.b(), ((czi) this.h).a(), (ddd) this.b.b(), ((dob) this.g).b(), this.d, ((den) this.f).b(), ((dqu) this.i).b());
+            return new dep((SharedPreferences) this.e.b(), (Clock) this.a.b(), (StopwatchEventLogger) this.c.b(), ((czi) this.h).a(), (ddd) this.b.b(), ((dob) this.g).b(), this.d, ((den) this.f).b(), ((dqu) this.i).b());
         }
         if (i == 4) {
             return new gvh(((hft) this.c).a(), (iqo) this.a.b(), ((ghf) this.f).a(), this.e, ((gux) this.d).b(), (iqo) ((ksm) this.b).a, (iqo) ((ksm) this.g).a, (iqo) ((ksm) this.i).a, this.h);

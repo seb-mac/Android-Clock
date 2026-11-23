@@ -283,7 +283,7 @@ public final class Instant implements Temporal, j$.time.temporal.l, Comparable<I
     public Instant A(long j, TemporalUnit temporalUnit) {
         long j2;
         if (j == Long.MIN_VALUE) {
-            this = c(Long.MAX_VALUE, temporalUnit);
+            this = withBootCount(Long.MAX_VALUE, temporalUnit);
             j2 = 1;
         } else {
             j2 = -j;

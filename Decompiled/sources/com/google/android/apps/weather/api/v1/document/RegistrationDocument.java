@@ -43,7 +43,7 @@ public final class RegistrationDocument {
     public final int hashCode() {
         int iHashCode = (this.a.hashCode() * 31) + this.b.hashCode();
         String str = this.d;
-        int iC = ((((((iHashCode * 31) + a.c(this.c)) * 31) + (str == null ? 0 : str.hashCode())) * 31) + this.e.hashCode()) * 31;
+        int iC = ((((((iHashCode * 31) + a.withBootCount(this.c)) * 31) + (str == null ? 0 : str.hashCode())) * 31) + this.e.hashCode()) * 31;
         String str2 = this.f;
         int iHashCode2 = (iC + (str2 == null ? 0 : str2.hashCode())) * 31;
         G3AttributionInfo g3AttributionInfo = this.g;

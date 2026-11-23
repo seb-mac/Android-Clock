@@ -42,9 +42,9 @@ public final class csi implements dqs, cqg, cqi, cpo, ckr, deh {
     private static final LocalTime l;
     private static final LocalTime m;
     public final Context d;
-    public final fhr e;
+    public final Clock e;
     public AppWidgetManager f;
-    public final czb g;
+    public final StopwatchEventLogger g;
     public final csa h;
     public gog i;
     private final String n;
@@ -62,7 +62,7 @@ public final class csi implements dqs, cqg, cqi, cpo, ckr, deh {
         c = itt.t(localTimeOf, localTimeOf2, localTimeOf3, localTimeOf4);
     }
 
-    public csi(Context context, fhr fhrVar, czb czbVar, csa csaVar, dep depVar) {
+    public csi(Context context, Clock fhrVar, StopwatchEventLogger czbVar, csa csaVar, dep depVar) {
         this.d = context;
         this.n = context.getPackageName();
         this.e = fhrVar;
@@ -284,7 +284,7 @@ public final class csi implements dqs, cqg, cqi, cpo, ckr, deh {
         Stream map = Collection.EL.stream(this.i.b).map(new cpt(this, 2));
         int i11 = itt.d;
         itt ittVar = (itt) map.collect(isd.a);
-        fhr fhrVar = this.e;
+        Clock fhrVar = this.e;
         final int i12 = 1;
         final int i13 = 0;
         final csg csgVar = new csg(viewInflate, new dlv(fhrVar, textView, ittVar), new dlv(fhrVar, textClock2), new dlv(fhrVar, textClock), new Supplier(this) { // from class: cse

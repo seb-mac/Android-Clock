@@ -27,7 +27,7 @@ public final /* synthetic */ class dfy implements View.OnClickListener {
         switch (this.b) {
             case 0:
                 dfz dfzVar = (dfz) this.a;
-                if (!dfzVar.e().f()) {
+                if (!dfzVar.e().isRunning()) {
                     dfzVar.p().y(3, dfz.a);
                     dfzVar.a().h();
                 } else {
@@ -42,7 +42,7 @@ public final /* synthetic */ class dfy implements View.OnClickListener {
                 break;
             case 2:
                 dfz dfzVar2 = (dfz) this.a;
-                if (dfzVar2.e().b == dfu.RUNNING && dfzVar2.a().i()) {
+                if (dfzVar2.e().stopwatchState == StopwatchState.RUNNING && dfzVar2.a().i()) {
                     dfzVar2.p().y(6, dfz.a);
                     dfzVar2.a().j();
                 }
@@ -209,7 +209,7 @@ public final /* synthetic */ class dfy implements View.OnClickListener {
                     mfo mfoVar = djtVar.i;
                     mfoVar.d(djw.a((djw) mfoVar.b()));
                     dhy dhyVarD = djtVar.a.d(null, dia.RUNNING, millis, djtVar.f, false);
-                    czb czbVar = djtVar.j;
+                    StopwatchEventLogger czbVar = djtVar.j;
                     mly mlyVar = mly.SETUP_START_BUTTON;
                     czbVar.z(7, mlyVar);
                     czbVar.z(4, mlyVar);

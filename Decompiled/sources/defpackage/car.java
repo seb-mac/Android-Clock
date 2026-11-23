@@ -157,7 +157,7 @@ public final class car {
 
     /* JADX WARN: Type inference failed for: r0v1, types: [java.lang.Object, lsx] */
     public final oz b() {
-        return (oz) this.a.a();
+        return (oz) this.a.getTime();
     }
 
     public final void c(ayc aycVar, ox oxVar) {

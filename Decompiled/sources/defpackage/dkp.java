@@ -14,9 +14,9 @@ public final class dkp {
     public final boolean[] d;
     public dkr e;
     public dkr f;
-    public final czb g;
+    public final StopwatchEventLogger g;
 
-    public dkp(SharedPreferences sharedPreferences, czb czbVar) {
+    public dkp(SharedPreferences sharedPreferences, StopwatchEventLogger czbVar) {
         boolean[] zArr = new boolean[dkr.values().length];
         this.d = zArr;
         this.a = sharedPreferences;

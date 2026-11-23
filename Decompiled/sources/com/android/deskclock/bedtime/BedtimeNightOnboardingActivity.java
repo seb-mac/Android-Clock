@@ -25,7 +25,7 @@ import defpackage.cof;
 import defpackage.cop;
 import defpackage.cqg;
 import defpackage.cqx;
-import defpackage.czb;
+import defpackage.StopwatchEventLogger;
 import defpackage.dep;
 import defpackage.gdn;
 import defpackage.gog;
@@ -61,7 +61,7 @@ public class BedtimeNightOnboardingActivity extends cmu implements View.OnClickL
     TextView q;
     public cop r;
     public dep s;
-    public czb t;
+    public StopwatchEventLogger t;
     public ns u;
     public gog v;
     private int y;
@@ -128,7 +128,7 @@ public class BedtimeNightOnboardingActivity extends cmu implements View.OnClickL
                         return;
                     }
                     if (id == R.id.bedtime_onboarding_skip) {
-                        czb czbVar = this.t;
+                        StopwatchEventLogger czbVar = this.t;
                         mkt mktVar = mkt.UNSPECIFIED;
                         czbVar.v(5, mktVar, 0L);
                         this.t.v(9, mktVar, 0L);

@@ -9,7 +9,7 @@ import defpackage.cua;
 import defpackage.cud;
 import defpackage.cue;
 import defpackage.cwb;
-import defpackage.czb;
+import defpackage.StopwatchEventLogger;
 import defpackage.dle;
 import defpackage.dlx;
 import defpackage.dmq;
@@ -196,7 +196,7 @@ public class OperationsListenerService extends dnw {
                                 kgtVarK.p();
                                 ((mkn) kgtVarK.b).d = a.ae(i2);
                                 mkn mknVar = (mkn) kgtVarK.m();
-                                czb czbVar = dntVar.k;
+                                StopwatchEventLogger czbVar = dntVar.k;
                                 kgt kgtVarK2 = mko.a.k();
                                 kgtVarK2.p();
                                 ((mko) kgtVarK2.b).d = a.ae(4);
@@ -308,7 +308,7 @@ public class OperationsListenerService extends dnw {
                             kgtVarK3.p();
                             ((mkn) kgtVarK3.b).d = a.ae(i2);
                             mkn mknVar2 = (mkn) kgtVarK3.m();
-                            czb czbVar2 = dntVar.k;
+                            StopwatchEventLogger czbVar2 = dntVar.k;
                             kgt kgtVarK4 = mko.a.k();
                             kgtVarK4.p();
                             ((mko) kgtVarK4.b).d = a.ae(4);

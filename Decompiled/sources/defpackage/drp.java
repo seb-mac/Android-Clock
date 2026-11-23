@@ -54,7 +54,7 @@ public final class drp extends dqx implements chk, dqs, cqg, cpo, dof {
     public Optional av;
     public dep aw;
     public ob ax;
-    public czb ay;
+    public StopwatchEventLogger ay;
     public dlu az;
 
     public drp() {
@@ -196,7 +196,7 @@ public final class drp extends dqx implements chk, dqs, cqg, cpo, dof {
         eif.ah(depVar, autoSizingTextClock, analogClock);
     }
 
-    public static void aS(View view, fhr fhrVar) {
+    public static void aS(View view, Clock fhrVar) {
         TextView textView = (TextView) view.findViewById(R.id.current_date);
         Context context = view.getContext();
         String string = context.getResources().getBoolean(R.bool.showLongWeekDayNameInCurrentDate) ? context.getString(R.string.long_wday_month_day_no_year) : context.getString(R.string.abbrev_wday_month_day_no_year);
@@ -214,7 +214,7 @@ public final class drp extends dqx implements chk, dqs, cqg, cpo, dof {
     }
 
     /* JADX WARN: Multi-variable type inference failed */
-    public static void aT(View view, czb czbVar, ctc ctcVar) {
+    public static void aT(View view, StopwatchEventLogger czbVar, ctc ctcVar) {
         View viewFindViewById = view.findViewById(R.id.weather_container);
         ImageView imageView = (ImageView) viewFindViewById.findViewById(R.id.weather_icon);
         TextView textView = (TextView) viewFindViewById.findViewById(R.id.weather_current_temp);
@@ -284,7 +284,7 @@ public final class drp extends dqx implements chk, dqs, cqg, cpo, dof {
 
     @Override // defpackage.ccx
     public final void aG() {
-        czb czbVar = this.ay;
+        StopwatchEventLogger czbVar = this.ay;
         kww kwwVarC = kub.c();
         if (kwwVarC.b || kwwVarC.e) {
             bzh bzhVarZ = lsr.z(mjl.a.k());

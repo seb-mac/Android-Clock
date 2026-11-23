@@ -68,7 +68,7 @@ public final class gvu {
         mjwVar.c = 1;
         kgtVarK.p();
         ((mjw) kgtVarK.b).i = a.ae(3);
-        ((czb) this.f).b((mjw) kgtVarK.m());
+        ((StopwatchEventLogger) this.f).b((mjw) kgtVarK.m());
     }
 
     public final void e(long j, Uri uri) {
@@ -107,7 +107,7 @@ public final class gvu {
                     Objects.requireNonNull(mkmVar);
                     mkoVar.c = mkmVar;
                     mkoVar.b = 2;
-                    ((czb) obj).g((mko) kgtVarK.m());
+                    ((StopwatchEventLogger) obj).g((mko) kgtVarK.m());
                 }
             }
         };
@@ -115,7 +115,7 @@ public final class gvu {
         dle.c(runnable);
     }
 
-    public gvu(gsr gsrVar, iqo iqoVar, fhr fhrVar, lst lstVar, lst lstVar2, lst lstVar3, lst lstVar4) {
+    public gvu(gsr gsrVar, iqo iqoVar, Clock fhrVar, lst lstVar, lst lstVar2, lst lstVar3, lst lstVar4) {
         this.a = gsrVar;
         this.c = iqoVar;
         this.e = fhrVar;
@@ -164,7 +164,7 @@ public final class gvu {
         this.c = lstVar7;
     }
 
-    public gvu(Context context, czb czbVar, bzi bziVar, fhr fhrVar, cop copVar, flw flwVar, ddd dddVar) {
+    public gvu(Context context, StopwatchEventLogger czbVar, bzi bziVar, Clock fhrVar, cop copVar, flw flwVar, ddd dddVar) {
         this.d = context;
         this.f = czbVar;
         this.g = bziVar;

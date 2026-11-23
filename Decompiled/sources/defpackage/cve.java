@@ -9,15 +9,15 @@ public final class cve extends ctw {
     public static final iwy b = iwy.h("com/android/deskclock/data/CitySearchModel");
     public static final String[] c = {"af", "ar", "az", "bg", "bs", "ca", "cs", "da", "de", "el", "en", "es", "et", "eu", "fa", "fi", "fr", "gl", "hi", "hr", "hu", "in", "is", "it", "iw", "ja", "ko", "lt", "lv", "ms", "nb", "nl", "pl", "pt", "ro", "ru", "sk", "sl", "sr", "sv", "sw", "te", "th", "tl", "tr", "uk", "vi", "zh"};
     public final Context d;
-    public final fhr e;
+    public final Clock e;
     public final Handler f;
     public dsr g;
     public cvd h;
-    public final czb i;
+    public final StopwatchEventLogger i;
     public final akc j;
     private hkz k;
 
-    public cve(cyr cyrVar, Context context, fhr fhrVar, akc akcVar, czb czbVar) {
+    public cve(cyr cyrVar, Context context, Clock fhrVar, akc akcVar, StopwatchEventLogger czbVar) {
         super(cyrVar);
         this.d = context;
         this.e = fhrVar;

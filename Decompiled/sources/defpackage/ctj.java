@@ -30,22 +30,22 @@ public final class ctj implements chk, cof, dhz, dfw, deh {
         }
     }
 
-    private final void A(dfv dfvVar) {
+    private final void A(StopwatchStateModel dfvVar) {
         kgt kgtVarK = ehl.a.k();
         boolean zAL = a.aL();
         kgtVarK.p();
         ((ehl) kgtVarK.b).g = zAL;
-        int i = dfvVar.b.f;
+        int i = dfvVar.stopwatchState.f;
         kgtVarK.p();
         ((ehl) kgtVarK.b).c = a.ae(i);
-        kgj kgjVarB = kjq.b(dfvVar.f);
+        kgj kgjVarB = kjq.b(dfvVar.accumulatedTime);
         kgtVarK.p();
         ehl ehlVar = (ehl) kgtVarK.b;
         Objects.requireNonNull(kgjVarB);
         ehlVar.d = kgjVarB;
         ehlVar.b |= 1;
-        if (dfvVar.f()) {
-            kis kisVarD = kjs.d(dfvVar.e);
+        if (dfvVar.isRunning()) {
+            kis kisVarD = kjs.d(dfvVar.lastStartWallClockTime);
             kgtVarK.p();
             ehl ehlVar2 = (ehl) kgtVarK.b;
             Objects.requireNonNull(kisVarD);
@@ -462,7 +462,7 @@ public final class ctj implements chk, cof, dhz, dfw, deh {
     }
 
     @Override // defpackage.dfw
-    public final void x(dfv dfvVar, dfv dfvVar2) {
+    public final void x(StopwatchStateModel dfvVar, StopwatchStateModel dfvVar2) {
         if (C()) {
             A(dfvVar2);
         }

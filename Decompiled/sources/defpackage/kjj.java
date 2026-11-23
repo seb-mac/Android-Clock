@@ -49,7 +49,7 @@ public final class kjj implements ListIterator, lxu {
 
     @Override // java.util.ListIterator, java.util.Iterator
     public final void remove() {
-        a.a();
+        a.getTime();
     }
 
     @Override // java.util.ListIterator

@@ -28,13 +28,13 @@ import defpackage.cud;
 import defpackage.cue;
 import defpackage.cvj;
 import defpackage.cwb;
-import defpackage.czb;
+import defpackage.StopwatchEventLogger;
 import defpackage.dlc;
 import defpackage.dmf;
 import defpackage.dmh;
 import defpackage.eif;
-import defpackage.fhr;
-import defpackage.g;
+import defpackage.Clock;
+import defpackage.StopwatchUtils;
 import defpackage.hpj;
 import defpackage.itt;
 import defpackage.iwv;
@@ -104,7 +104,7 @@ public class AlarmReceiver extends cgj {
         } else {
             i = 3;
         }
-        czb czbVar = cgzVar.d;
+        StopwatchEventLogger czbVar = cgzVar.d;
         ayu ayuVarY = lxg.y(mkd.a.k());
         ayuVarY.ap(i);
         kgt kgtVar = (kgt) ayuVarY.a;
@@ -131,7 +131,7 @@ public class AlarmReceiver extends cgj {
     }
 
     /* JADX WARN: Failed to restore switch over string. Please report as a decompilation issue */
-    public static void g(Context context, Intent intent, czb czbVar, fhr fhrVar, bzi bziVar, kqg kqgVar, cgz cgzVar, Optional optional) {
+    public static void g(Context context, Intent intent, StopwatchEventLogger czbVar, Clock fhrVar, bzi bziVar, kqg kqgVar, cgz cgzVar, Optional optional) {
         cua cuaVarI;
         cue cueVarT;
         cwb cwbVar = cwb.a;
@@ -235,7 +235,7 @@ public class AlarmReceiver extends cgj {
         return (optional.isEmpty() || intent == null || intent.getAction() == null || !TextUtils.equals("com.android.deskclock.action.UPDATE_ALARM_INSTANCES", intent.getAction()) || !intent.getBooleanExtra("com.android.deskclock.extra.TRIGGERING_ALARM", false)) ? false : true;
     }
 
-    private static boolean l(Context context, czb czbVar, kqg kqgVar, String str) {
+    private static boolean l(Context context, StopwatchEventLogger czbVar, kqg kqgVar, String str) {
         if (!kvy.a.cy().j()) {
             czbVar.r(3, true, str);
             return false;
@@ -261,7 +261,7 @@ public class AlarmReceiver extends cgj {
         boolean z3;
         boolean z4;
         if (z) {
-            if (!l(context, (czb) this.b.b(), this.e, str)) {
+            if (!l(context, (StopwatchEventLogger) this.b.b(), this.e, str)) {
                 z4 = true;
                 z3 = false;
                 z2 = false;
@@ -275,7 +275,7 @@ public class AlarmReceiver extends cgj {
                 z3 = false;
             }
         } else if (TextUtils.equals("com.android.deskclock.action.SET_INSTANCE_STATE", str) || TextUtils.equals("com.android.deskclock.action.HIDE_NOTIFICATION_INSTANCES", str)) {
-            czb czbVar = (czb) this.b.b();
+            StopwatchEventLogger czbVar = (StopwatchEventLogger) this.b.b();
             kqg kqgVar = this.e;
             if (!kvy.a.cy().l()) {
                 czbVar.r(3, false, str);
@@ -306,11 +306,11 @@ public class AlarmReceiver extends cgj {
         if (!z3) {
             if (z2) {
                 ((iwv) ((iwv) k.c()).j("com/android/deskclock/alarms/AlarmReceiver", "tryHandOffToExpeditedJob", 315, "AlarmReceiver.java")).u("AlarmJobService failed to schedule expedited job for %s intent; falling back to AlarmReceiver", true != z4 ? "non-firing" : "alarm firing");
-                ((czb) this.b.b()).r(4, z4, str);
+                ((StopwatchEventLogger) this.b.b()).r(4, z4, str);
             }
             return false;
         }
-        czb czbVar2 = (czb) this.b.b();
+        StopwatchEventLogger czbVar2 = (StopwatchEventLogger) this.b.b();
         kgt kgtVarK = mkd.a.k();
         kgtVarK.p();
         ((mkd) kgtVarK.b).b = 3;

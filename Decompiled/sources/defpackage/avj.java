@@ -64,7 +64,7 @@ public abstract class avj implements aut {
         }
         long j3 = j - j2;
         this.r = j;
-        float f2 = aux.a().e;
+        float f2 = aux.getTime().values;
         boolean zE = e(f2 == 0.0f ? 2147483647L : (long) (j3 / f2));
         float fMin = Math.min(this.j, Float.MAX_VALUE);
         this.j = fMin;
@@ -126,7 +126,7 @@ public abstract class avj implements aut {
     public final void i() {
         int i = 0;
         this.n = false;
-        aux auxVarA = aux.a();
+        aux auxVarA = aux.getTime();
         auxVarA.a.remove(this);
         ArrayList arrayList = auxVarA.b;
         int iIndexOf = arrayList.indexOf(this);

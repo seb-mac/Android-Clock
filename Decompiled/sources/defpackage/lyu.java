@@ -105,6 +105,6 @@ public final class lyu extends lyv implements Iterator, lva, lxu {
 
     @Override // java.util.Iterator
     public final void remove() {
-        a.a();
+        a.getTime();
     }
 }

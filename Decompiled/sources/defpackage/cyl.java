@@ -21,7 +21,7 @@ final class cyl extends AsyncTask {
     private final mmg d;
     private final long e;
 
-    public cyl(cyo cyoVar, fhr fhrVar, cyo cyoVar2, itt ittVar, mmg mmgVar) {
+    public cyl(cyo cyoVar, Clock fhrVar, cyo cyoVar2, itt ittVar, mmg mmgVar) {
         Objects.requireNonNull(cyoVar);
         this.a = cyoVar;
         this.b = cyoVar2;
@@ -50,7 +50,7 @@ final class cyl extends AsyncTask {
         try {
             try {
                 try {
-                    fhr fhrVar = cykVar.d;
+                    Clock fhrVar = cykVar.d;
                     ehs[] ehsVarArr = (ehs[]) Collection.EL.stream(ittVar2).filter(new cur(5)).map(new cdg(13)).toArray(new ckt(2));
                     int length = ehsVarArr.length;
                     if (length == 0) {

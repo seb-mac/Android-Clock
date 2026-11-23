@@ -143,19 +143,19 @@ public final class vc {
             builderAppendEncodedPath.appendQueryParameter("action", String.format(Locale.US, "/%s/%d/%s/%d/%s", "alarm", Long.valueOf(j2), "instance", Long.valueOf(cueVar.g), "dismiss"));
             j = j2;
         }
-        return hpj.a(context, 0, g.r(g.t(g.p(new Intent().setClassName(context, "com.android.deskclock.uridispatcher.InternalUriDispatcherActivity").setData(builderAppendEncodedPath.appendQueryParameter("action", String.format(Locale.US, "/%s/%d/%s", "alarm", Long.valueOf(j), "view")).build()), mkaVar), mlwVar), mlsVar), 201326592, 0);
+        return hpj.a(context, 0, StopwatchUtils.r(StopwatchUtils.t(StopwatchUtils.p(new Intent().setClassName(context, "com.android.deskclock.uridispatcher.InternalUriDispatcherActivity").setData(builderAppendEncodedPath.appendQueryParameter("action", String.format(Locale.US, "/%s/%d/%s", "alarm", Long.valueOf(j), "view")).build()), mkaVar), mlwVar), mlsVar), 201326592, 0);
     }
 
     public static PendingIntent h(Context context, mls mlsVar, mlw mlwVar, StopwatchEventSource mluVar) {
-        return hpj.a(context, 0, g.s(g.r(g.t(new Intent().setClassName(context, "com.android.deskclock.uridispatcher.InternalUriDispatcherActivity").setData(new Uri.Builder().scheme("clock-app").authority("com.google.android.deskclock").appendEncodedPath("stopwatch").appendEncodedPath("view").build()), mlwVar), mlsVar), mluVar), 201326592, 0);
+        return hpj.a(context, 0, StopwatchUtils.s(StopwatchUtils.r(StopwatchUtils.t(new Intent().setClassName(context, "com.android.deskclock.uridispatcher.InternalUriDispatcherActivity").setData(new Uri.Builder().scheme("clock-app").authority("com.google.android.deskclock").appendEncodedPath("stopwatch").appendEncodedPath("view").build()), mlwVar), mlsVar), mluVar), 201326592, 0);
     }
 
     public static PendingIntent i(Context context, dhy dhyVar, mly mlyVar, mls mlsVar, mlw mlwVar, int i) {
-        return hpj.a(context, i, g.r(g.t(g.u(new Intent().setClassName(context, "com.android.deskclock.uridispatcher.InternalUriDispatcherActivity").setData(new Uri.Builder().scheme("clock-app").authority("com.google.android.deskclock").appendEncodedPath("timer").appendEncodedPath(String.valueOf(dhyVar.e)).appendEncodedPath("view").build()), mlyVar), mlwVar), mlsVar), 201326592, 0);
+        return hpj.a(context, i, StopwatchUtils.r(StopwatchUtils.t(StopwatchUtils.u(new Intent().setClassName(context, "com.android.deskclock.uridispatcher.InternalUriDispatcherActivity").setData(new Uri.Builder().scheme("clock-app").authority("com.google.android.deskclock").appendEncodedPath("timer").appendEncodedPath(String.valueOf(dhyVar.e)).appendEncodedPath("view").build()), mlyVar), mlwVar), mlsVar), 201326592, 0);
     }
 
     public static PendingIntent j(Context context, mls mlsVar, mlw mlwVar) {
-        return hpj.a(context, 0, g.r(g.t(new Intent().setClassName(context, "com.android.deskclock.uridispatcher.InternalUriDispatcherActivity").setData(new Uri.Builder().scheme("clock-app").authority("com.google.android.deskclock").appendEncodedPath("clock").appendEncodedPath("view").build()), mlwVar), mlsVar), 201326592, 0);
+        return hpj.a(context, 0, StopwatchUtils.r(StopwatchUtils.t(new Intent().setClassName(context, "com.android.deskclock.uridispatcher.InternalUriDispatcherActivity").setData(new Uri.Builder().scheme("clock-app").authority("com.google.android.deskclock").appendEncodedPath("clock").appendEncodedPath("view").build()), mlwVar), mlsVar), 201326592, 0);
     }
 
     public static Uri k(dft dftVar) {

@@ -12,13 +12,13 @@ import java.util.function.Consumer;
 public final class fug implements ftx {
     public static final /* synthetic */ int a = 0;
     private final kqg b;
-    private final fhr c;
+    private final Clock c;
 
     static {
         iyf.h();
     }
 
-    public fug(kqg kqgVar, fhr fhrVar) {
+    public fug(kqg kqgVar, Clock fhrVar) {
         this.b = kqgVar;
         this.c = fhrVar;
     }

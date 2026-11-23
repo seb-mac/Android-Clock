@@ -18,6 +18,6 @@ public final class gsn implements ksl {
     @Override // defpackage.lst, defpackage.lss
     /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
     public final gxi b() {
-        return new gxi(((hft) this.a).a(), (fhr) this.b.b(), this.c, this.d);
+        return new gxi(((hft) this.a).a(), (Clock) this.b.b(), this.c, this.d);
     }
 }

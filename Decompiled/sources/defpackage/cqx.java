@@ -71,13 +71,13 @@ public final class cqx {
     public static Drawable g(Context context, TypedArray typedArray, int i) {
         int resourceId = typedArray.getResourceId(i, -1);
         if (resourceId != -1) {
-            return g.e(context, resourceId);
+            return StopwatchUtils.e(context, resourceId);
         }
         return null;
     }
 
     public static Drawable h(Context context, int i, int i2, PorterDuff.Mode mode) {
-        return i(g.e(context, i), f(context, i2), mode);
+        return i(StopwatchUtils.e(context, i), f(context, i2), mode);
     }
 
     public static Drawable i(Drawable drawable, ColorStateList colorStateList, PorterDuff.Mode mode) {

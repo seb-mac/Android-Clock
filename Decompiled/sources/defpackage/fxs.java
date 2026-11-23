@@ -342,9 +342,9 @@ public final class fxs extends au {
             flw flwVar = (flw) obj;
             Context contextA = ((hft) flwVar.f).a();
             mam mamVarA = ((ghb) flwVar.c).a();
-            ghx ghxVar = (ghx) flwVar.b.b();
+            ghx ghxVar = (ghx) flwVar.b.reset();
             Object obj2 = flwVar.e;
-            fxrVar.a = new ghj(contextA, mamVarA, ghxVar, cpz.a(), (gpc) flwVar.d.b(), str, str2);
+            fxrVar.a = new ghj(contextA, mamVarA, ghxVar, cpz.a(), (gpc) flwVar.d.reset(), str, str2);
             jsk jskVar2 = jspVar.c == 14 ? (jsk) jspVar.d : jsk.a;
             if ((jskVar2.b == 3 ? (jsy) jskVar2.c : jsy.a).d) {
                 ghj ghjVar = (ghj) fxrVar.a;

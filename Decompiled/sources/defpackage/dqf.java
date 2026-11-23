@@ -13,10 +13,10 @@ import java.util.List;
 /* JADX INFO: compiled from: PG */
 /* JADX INFO: loaded from: classes2.dex */
 public final class dqf extends ArrayAdapter {
-    private final fhr a;
+    private final Clock a;
     private final dep b;
 
-    public dqf(Context context, fhr fhrVar, dep depVar, List list) {
+    public dqf(Context context, Clock fhrVar, dep depVar, List list) {
         super(context, R.layout.alarm_row, list);
         this.a = fhrVar;
         this.b = depVar;
@@ -35,7 +35,7 @@ public final class dqf extends ArrayAdapter {
         if (cuaVar.H()) {
             string = dkt.a.i(cuaVar.i.i(context, this.b.i()));
         } else {
-            fhr fhrVar = this.a;
+            Clock fhrVar = this.a;
             string = gog.aj(fhrVar, cuaVar.B(ake.q(fhrVar), true)) ? context.getResources().getString(R.string.alarm_today) : context.getResources().getString(R.string.alarm_tomorrow);
         }
         ((TextView) view.findViewById(R.id.daysOfWeek)).setText(string);

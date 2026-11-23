@@ -90,7 +90,7 @@ abstract class ddy extends bcb implements ksg {
         Object objBV = bV();
         ded dedVar = (ded) this;
         ccs ccsVar = ((ccn) objBV).h;
-        dedVar.ao = (czb) ccsVar.I.b();
+        dedVar.ao = (StopwatchEventLogger) ccsVar.I.b();
         dedVar.am = (ddd) ccsVar.K.b();
         dedVar.an = (dep) ccsVar.aL.b();
         dedVar.aq = ((dme) ccsVar.aD).b();

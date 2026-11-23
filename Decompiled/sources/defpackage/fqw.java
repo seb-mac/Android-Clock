@@ -20,7 +20,7 @@ public final class fqw {
         a = lhm.ak(new String[]{"TooltipFragment", "PromoUiDialogFragment", "PermissionRequestFrag"});
     }
 
-    public fqw(Context context, lst lstVar, fof fofVar, fnl fnlVar, fvz fvzVar, fwc fwcVar, fwg fwgVar, fhr fhrVar) {
+    public fqw(Context context, lst lstVar, fof fofVar, fnl fnlVar, fvz fvzVar, fwc fwcVar, fwg fwgVar, Clock fhrVar) {
         lxj.d(fofVar, "promoEvalLogger");
         lxj.d(fnlVar, "clearcutLogger");
         lxj.d(fvzVar, "promoUiRenderer");

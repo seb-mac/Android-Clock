@@ -25,7 +25,7 @@ public final class dhm extends dgy implements cqg, dko, dhv {
     public TimerRecyclerView an;
     public View ao;
     public int ap;
-    public czb aq;
+    public StopwatchEventLogger aq;
     public ns ar;
     private final dhz as;
     private String at;
@@ -140,7 +140,7 @@ public final class dhm extends dgy implements cqg, dko, dhv {
     @Override // defpackage.dhv
     public final void aR(long j) {
         dhy dhyVarV = cwb.a.v(null, dia.RUNNING, j, ihj.G(this.at), false);
-        czb czbVar = this.aq;
+        StopwatchEventLogger czbVar = this.aq;
         mly mlyVar = mly.SETUP_START_BUTTON;
         czbVar.z(7, mlyVar);
         this.aq.z(4, mlyVar);

@@ -66,9 +66,9 @@ public final class fud {
         }
         khs khsVar = new khs(htgVar.c, htgVar.a.f(), htgVar.b.f(), htgVar.d);
         Context contextA = ((hft) lnzVar.c).a();
-        ScheduledExecutorService scheduledExecutorService = (ScheduledExecutorService) lnzVar.a.b();
+        ScheduledExecutorService scheduledExecutorService = (ScheduledExecutorService) lnzVar.a.reset();
         ihj.A(scheduledExecutorService);
-        jid jidVar = (jid) lnzVar.b.b();
+        jid jidVar = (jid) lnzVar.b.reset();
         ihj.A(jidVar);
         ihj.A(strSubstring);
         this.d = new jid(new htb(contextA, scheduledExecutorService, jidVar, fubVar, khsVar, strSubstring), (byte[]) null);

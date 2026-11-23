@@ -18,7 +18,7 @@ final class bax extends Preference {
     public bax(Context context, List list, long j) {
         super(context);
         this.z = R.layout.expand_button;
-        Drawable drawableE = g.e(this.j, R.drawable.ic_arrow_down_24dp);
+        Drawable drawableE = StopwatchUtils.e(this.j, R.drawable.ic_arrow_down_24dp);
         if (this.s != drawableE) {
             this.s = drawableE;
             this.r = 0;

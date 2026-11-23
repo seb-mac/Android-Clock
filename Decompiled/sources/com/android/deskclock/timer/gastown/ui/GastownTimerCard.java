@@ -17,7 +17,7 @@ import defpackage.bzi;
 import defpackage.cqx;
 import defpackage.cwb;
 import defpackage.cyh;
-import defpackage.czb;
+import defpackage.StopwatchEventLogger;
 import defpackage.dfy;
 import defpackage.dhy;
 import defpackage.dia;
@@ -44,7 +44,7 @@ public final class GastownTimerCard extends dix implements Choreographer.FrameCa
     public TextView ac;
     public Supplier ad;
     dii ae;
-    public czb af;
+    public StopwatchEventLogger af;
     public bzi ag;
     public lqv ah;
     public eif ai;

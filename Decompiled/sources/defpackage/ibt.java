@@ -311,7 +311,7 @@ public final /* synthetic */ class ibt {
     public static Drawable g(Context context, TypedArray typedArray, int i) {
         int resourceId;
         Drawable drawableE;
-        return (!typedArray.hasValue(i) || (resourceId = typedArray.getResourceId(i, 0)) == 0 || (drawableE = g.e(context, resourceId)) == null) ? typedArray.getDrawable(i) : drawableE;
+        return (!typedArray.hasValue(i) || (resourceId = typedArray.getResourceId(i, 0)) == 0 || (drawableE = StopwatchUtils.e(context, resourceId)) == null) ? typedArray.getDrawable(i) : drawableE;
     }
 
     public static boolean h(Context context) {

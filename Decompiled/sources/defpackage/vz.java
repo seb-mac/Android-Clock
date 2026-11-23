@@ -14,7 +14,7 @@ public final class vz {
     }
 
     public final int hashCode() {
-        return a.c(this.a);
+        return a.withBootCount(this.a);
     }
 
     public final String toString() {

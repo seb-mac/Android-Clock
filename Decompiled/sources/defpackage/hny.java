@@ -36,8 +36,8 @@ public final class hny implements hnz {
     }
 
     @Override // defpackage.hnz
-    public final fhr a() {
-        return (fhr) this.a.b();
+    public final Clock a() {
+        return (Clock) this.a.b();
     }
 
     @Override // defpackage.hnz

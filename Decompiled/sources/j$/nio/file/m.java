@@ -22,7 +22,7 @@ public final /* synthetic */ class m implements o {
             return ((n) openOption).a;
         }
         if (openOption instanceof l) {
-            return a.c((l) openOption);
+            return a.withBootCount((l) openOption);
         }
         return openOption instanceof z ? a.e((z) openOption) : new m(openOption);
     }

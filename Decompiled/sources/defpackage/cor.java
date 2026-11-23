@@ -44,7 +44,7 @@ public final class cor implements pe {
                     cmxVar.p = true;
                     SleepSoundActivity sleepSoundActivity = (SleepSoundActivity) bjVar2;
                     ccs ccsVar = cmxVar.bU().e().b;
-                    sleepSoundActivity.u = (czb) ccsVar.I.b();
+                    sleepSoundActivity.u = (StopwatchEventLogger) ccsVar.I.b();
                     sleepSoundActivity.t = (cop) ccsVar.af.b();
                     sleepSoundActivity.v = ((cot) ccsVar.aZ).b();
                     sleepSoundActivity.q = (cxi) ccsVar.ba.b();
@@ -65,7 +65,7 @@ public final class cor implements pe {
                     ringtonePickerActivity.H = (dlu) ccsVar2.aV.b();
                     ringtonePickerActivity.r = (cqb) ccsVar2.Q.b();
                     ringtonePickerActivity.K = (ns) ccsVar2.bp.b();
-                    ringtonePickerActivity.E = (czb) ccsVar2.I.b();
+                    ringtonePickerActivity.E = (StopwatchEventLogger) ccsVar2.I.b();
                     ringtonePickerActivity.s = (ctc) cclVar.d.b();
                     ringtonePickerActivity.D = (cop) ccsVar2.af.b();
                     ringtonePickerActivity.F = ((cot) ccsVar2.aZ).b();
@@ -95,7 +95,7 @@ public final class cor implements pe {
                 ddq ddqVar = (ddq) bjVar5;
                 if (!ddqVar.p) {
                     ddqVar.p = true;
-                    ((ScreensaverSettingsActivity) bjVar5).q = (czb) ddqVar.bU().e().b.I.b();
+                    ((ScreensaverSettingsActivity) bjVar5).q = (StopwatchEventLogger) ddqVar.bU().e().b.I.b();
                 }
                 break;
             case ard.STRING_FIELD_NUMBER /* 5 */:
@@ -122,7 +122,7 @@ public final class cor implements pe {
                 dhc dhcVar = (dhc) bjVar8;
                 if (!dhcVar.p) {
                     dhcVar.p = true;
-                    ((TitanCreateTimerActivity) bjVar8).r = (czb) dhcVar.bU().e().b.I.b();
+                    ((TitanCreateTimerActivity) bjVar8).r = (StopwatchEventLogger) dhcVar.bU().e().b.I.b();
                 }
                 break;
             case ard.BYTES_FIELD_NUMBER /* 8 */:
@@ -132,8 +132,8 @@ public final class cor implements pe {
                     dhdVar.p = true;
                     TitanViewTimersActivity titanViewTimersActivity = (TitanViewTimersActivity) bjVar9;
                     ccs ccsVar5 = dhdVar.bU().e().b;
-                    titanViewTimersActivity.s = (czb) ccsVar5.I.b();
-                    titanViewTimersActivity.t = new bzh((czb) ccsVar5.I.b());
+                    titanViewTimersActivity.s = (StopwatchEventLogger) ccsVar5.I.b();
+                    titanViewTimersActivity.t = new bzh((StopwatchEventLogger) ccsVar5.I.b());
                     titanViewTimersActivity.q = (cyb) ccsVar5.bu.b();
                 }
                 break;
@@ -154,12 +154,12 @@ public final class cor implements pe {
                     dkzVar.p = true;
                     ccs ccsVar7 = dkzVar.bU().e().b;
                     bzh bzhVar = ccsVar7.mz;
-                    fhr fhrVar = (fhr) ccsVar7.t.b();
-                    czb czbVar = (czb) ccsVar7.I.b();
+                    Clock fhrVar = (Clock) ccsVar7.t.b();
+                    StopwatchEventLogger czbVar = (StopwatchEventLogger) ccsVar7.I.b();
                     dme dmeVar = (dme) ccsVar7.aD;
                     lqv lqvVarA = dmeVar.b();
                     Context context = (Context) bzhVar.a;
-                    ((InternalUriDispatcherActivity) bjVar11).q = new dlb(iud.s(new cjl(context, fhrVar, czbVar, lqvVarA), new dgr(context, 1), new dgr(context, 2), new dgr(context, 0), new djx(context, (fhr) ccsVar7.t.b(), (czb) ccsVar7.I.b(), dmeVar.b(), (cyb) ccsVar7.bu.b()), new dgr(context, 3), new dmj[0]));
+                    ((InternalUriDispatcherActivity) bjVar11).q = new dlb(iud.s(new cjl(context, fhrVar, czbVar, lqvVarA), new dgr(context, 1), new dgr(context, 2), new dgr(context, 0), new djx(context, (Clock) ccsVar7.t.b(), (StopwatchEventLogger) ccsVar7.I.b(), dmeVar.b(), (cyb) ccsVar7.bu.b()), new dgr(context, 3), new dmj[0]));
                 }
                 break;
             default:
@@ -171,7 +171,7 @@ public final class cor implements pe {
                     CitySelectionActivity citySelectionActivity = (CitySelectionActivity) bjVar12;
                     ccpVarE3.c();
                     ccs ccsVar8 = ccpVarE3.b;
-                    citySelectionActivity.p = new dqm((fhr) ccsVar8.t.b(), ((cpv) ccsVar8.az).b());
+                    citySelectionActivity.p = new dqm((Clock) ccsVar8.t.b(), ((cpv) ccsVar8.az).b());
                     citySelectionActivity.t = ((cqh) ccsVar8.la).b();
                     citySelectionActivity.q = ksk.a(ccsVar8.fI);
                 }

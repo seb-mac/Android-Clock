@@ -9,7 +9,7 @@ import java.util.Map;
 /* JADX INFO: loaded from: classes2.dex */
 public final class geh implements ged {
     public static final iyf a = iyf.h();
-    public final fhr b;
+    public final Clock b;
     public final Context c;
     public final Map d;
     public final gdi e;
@@ -19,7 +19,7 @@ public final class geh implements ged {
     public final bzi i;
     private final lvf j;
 
-    public geh(fhr fhrVar, Context context, Map map, gdi gdiVar, kqg kqgVar, kqg kqgVar2, kqg kqgVar3, lvf lvfVar, bzi bziVar) {
+    public geh(Clock fhrVar, Context context, Map map, gdi gdiVar, kqg kqgVar, kqg kqgVar2, kqg kqgVar3, lvf lvfVar, bzi bziVar) {
         lxj.d(fhrVar, "clock");
         lxj.d(map, "jobMap");
         lxj.d(kqgVar, "clientStreamz");

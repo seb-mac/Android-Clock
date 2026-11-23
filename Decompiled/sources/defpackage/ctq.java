@@ -12,15 +12,15 @@ import com.android.alarmclock.StopwatchAppWidgetProvider;
 public final class ctq implements dfw, cqg {
     public static final iwy a = iwy.h("com/android/deskclock/controller/StopwatchAppWidgetController");
     public final Context b;
-    public final fhr c;
+    public final Clock c;
     public final cpu d;
     public final Resources e;
     public final ComponentName f;
     public final StopwatchController g;
-    public final czb h;
+    public final StopwatchEventLogger h;
     public final csa i;
 
-    public ctq(Context context, fhr fhrVar, czb czbVar, cpu cpuVar, csa csaVar, StopwatchController cxpVar) {
+    public ctq(Context context, Clock fhrVar, StopwatchEventLogger czbVar, cpu cpuVar, csa csaVar, StopwatchController cxpVar) {
         this.b = context;
         this.c = fhrVar;
         this.d = cpuVar;
@@ -46,8 +46,8 @@ public final class ctq implements dfw, cqg {
     }
 
     @Override // defpackage.dfw
-    public final void x(dfv dfvVar, dfv dfvVar2) {
-        if (a.I() && dfvVar.b != dfvVar2.b) {
+    public final void x(StopwatchStateModel dfvVar, StopwatchStateModel dfvVar2) {
+        if (a.I() && dfvVar.stopwatchState != dfvVar2.stopwatchState) {
             dlz.p(this.b, StopwatchAppWidgetProvider.class);
         }
     }

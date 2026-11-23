@@ -88,10 +88,10 @@ public final class and {
     public static /* synthetic */ ayk e(men menVar) {
         axo axoVar = new axo(lvg.a, new axs(menVar, (lva) null, 0));
         if (vg.m().n()) {
-            axoVar.j(menVar.b());
+            axoVar.j(menVar.reset());
             return axoVar;
         }
-        axoVar.h(menVar.b());
+        axoVar.h(menVar.reset());
         return axoVar;
     }
 

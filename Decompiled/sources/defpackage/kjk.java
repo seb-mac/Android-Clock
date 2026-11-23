@@ -26,6 +26,6 @@ public final class kjk implements Iterator, lxu {
 
     @Override // java.util.Iterator
     public final void remove() {
-        a.a();
+        a.getTime();
     }
 }

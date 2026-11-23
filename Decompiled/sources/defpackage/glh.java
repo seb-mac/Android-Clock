@@ -74,7 +74,7 @@ public final class glh implements ksl {
         gog gogVar = (gog) this.n.b();
         ksq ksqVar2 = this.p;
         kqg kqgVarA2 = ksk.a(this.o);
-        fhr fhrVar = (fhr) ksqVar2.b();
+        Clock fhrVar = (Clock) ksqVar2.b();
         ksq ksqVar3 = this.r;
         return new glg(iqoVarA, iqoVar, iqoVar2, lqvVar, lqvVarB, gmbVarB, gjhVar, lvfVarA, gogVarB, kqgVarA, gjiVar, gitVar, givVar, gogVar, kqgVarA2, fhrVar, cpz.a(), this.q, (iqo) ((ksm) ksqVar3).a, (gjb) this.s.b(), ((hft) this.t).a(), (gpc) this.u.b(), (iqo) ((ksm) this.v).a, ((glr) this.w).b(), this.x);
     }

@@ -120,9 +120,9 @@ public final class fur implements ksl {
                                 return;
                             }
                             if (!((iqo) khsVar.d).f()) {
-                                ((gwc) ((iqq) khsVar.c).a.b()).l();
+                                ((gwc) ((iqq) khsVar.c).a.reset()).l();
                             }
-                            ((gxy) ((iqq) khsVar.b).a.b()).a();
+                            ((gxy) ((iqq) khsVar.b).a.reset()).a();
                         }
                     }
                 };
@@ -139,7 +139,7 @@ public final class fur implements ksl {
                 khs khsVar = (khs) this.a.b();
                 jhc jhcVarC = fjl.c();
                 fjl.c();
-                return new lqv(lebVar, khsVar, jhcVarC, (fhr) this.c.b());
+                return new lqv(lebVar, khsVar, jhcVarC, (Clock) this.c.b());
         }
     }
 

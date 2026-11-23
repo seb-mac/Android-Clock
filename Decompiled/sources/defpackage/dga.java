@@ -14,7 +14,7 @@ public final class dga implements dfw {
     }
 
     @Override // defpackage.dfw
-    public final void x(dfv dfvVar, dfv dfvVar2) {
+    public final void x(StopwatchStateModel dfvVar, StopwatchStateModel dfvVar2) {
         if (this.b != 0) {
             lxj.d(dfvVar, "before");
             bg bgVar = this.a;
@@ -24,10 +24,10 @@ public final class dga implements dfw {
         lxj.d(dfvVar, "before");
         dgc dgcVar = (dgc) this.a;
         dgcVar.q(null);
-        if (dfvVar2.f() && !dfvVar.f()) {
+        if (dfvVar2.isRunning() && !dfvVar.isRunning()) {
             dgcVar.f();
         } else {
-            if (dfvVar2.f() || !dfvVar.f()) {
+            if (dfvVar2.isRunning() || !dfvVar.isRunning()) {
                 return;
             }
             dgcVar.p();

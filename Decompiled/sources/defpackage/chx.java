@@ -42,7 +42,7 @@ public final class chx extends cim implements dcd {
     public LocalTime aC;
     public dep aH;
     public cop aI;
-    public czb aJ;
+    public StopwatchEventLogger aJ;
     public gvu aK;
     public bzi aL;
     private View aM;
@@ -60,7 +60,7 @@ public final class chx extends cim implements dcd {
     private View aY;
     private View aZ;
     public cgg ak;
-    public fhr al;
+    public Clock al;
     public ddd am;
     public cpu an;
     public ctc ao;
@@ -403,7 +403,7 @@ public final class chx extends cim implements dcd {
         this.aS.setVisibility(0);
         Context contextBw = bw();
         cua cuaVar2 = this.az;
-        fhr fhrVar = this.al;
+        Clock fhrVar = this.al;
         if (cuaVar2.f) {
             LocalDate localDateC = cpu.c(cuaVar2.B(ake.q(fhrVar), true));
             LocalDate localDateO = ake.o(fhrVar);
@@ -636,7 +636,7 @@ public final class chx extends cim implements dcd {
             }
         }, 500L);
         int i = this.az.d == -1 ? 27 : 28;
-        czb czbVar = this.aJ;
+        StopwatchEventLogger czbVar = this.aJ;
         kgt kgtVarK = mjw.a.k();
         kgtVarK.p();
         mjw mjwVar = (mjw) kgtVarK.b;
@@ -709,7 +709,7 @@ public final class chx extends cim implements dcd {
 
     public final void aO() {
         this.br.b(this.aq.a(this.az));
-        czb czbVar = this.aJ;
+        StopwatchEventLogger czbVar = this.aJ;
         kgt kgtVarK = mjw.a.k();
         kgtVarK.p();
         mjw mjwVar = (mjw) kgtVarK.b;
@@ -738,7 +738,7 @@ public final class chx extends cim implements dcd {
             return;
         }
         this.aK.a(cuaVar);
-        czb czbVar = this.aJ;
+        StopwatchEventLogger czbVar = this.aJ;
         kgt kgtVarK = mjw.a.k();
         kgtVarK.p();
         mjw mjwVar = (mjw) kgtVarK.b;
@@ -799,7 +799,7 @@ public final class chx extends cim implements dcd {
             new cfu(gvuVar2, (Context) gvuVar2.d, j, z, localTimeOf, cpjVar, cpeVar, str, z2, uriA, cuaVar6.n, cuaVar6.o, cuaVar6.r).d();
         }
         int i = this.az.d == -1 ? 25 : 26;
-        czb czbVar = this.aJ;
+        StopwatchEventLogger czbVar = this.aJ;
         kgt kgtVarK = mjw.a.k();
         kgtVarK.p();
         mjw mjwVar = (mjw) kgtVarK.b;

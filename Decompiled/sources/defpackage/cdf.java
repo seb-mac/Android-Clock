@@ -23,11 +23,11 @@ public final class cdf extends cfe {
     private final int d;
     private final boolean e;
     private final Uri i;
-    private final fhr j;
-    private final czb k;
+    private final Clock j;
+    private final StopwatchEventLogger k;
     private final gog l;
 
-    public cdf(Activity activity, Intent intent, int i, int i2, czb czbVar, fhr fhrVar, gog gogVar) {
+    public cdf(Activity activity, Intent intent, int i, int i2, StopwatchEventLogger czbVar, Clock fhrVar, gog gogVar) {
         super(activity, true);
         this.a = intent;
         this.c = i;
@@ -68,7 +68,7 @@ public final class cdf extends cfe {
         mjv mjvVarV = g.v(g.C(intent), HandleSetApiCalls.p);
         boolean z = false;
         if (listK.isEmpty()) {
-            fhr fhrVar = this.j;
+            Clock fhrVar = this.j;
             UUID uuidJ = akf.j();
             Instant instantC = fhrVar.c();
             cty ctyVar = new cty();
@@ -86,7 +86,7 @@ public final class cdf extends cfe {
             ctyVar.b(instantC);
             ctyVar.d(instantC);
             cuaVarH = cwbVar.f(ctyVar);
-            czb czbVar = this.k;
+            StopwatchEventLogger czbVar = this.k;
             kgt kgtVarK = mjw.a.k();
             kgtVarK.p();
             mjw mjwVar = (mjw) kgtVarK.b;
@@ -97,7 +97,7 @@ public final class cdf extends cfe {
             czbVar.b((mjw) kgtVarK.m());
         } else {
             cuaVarH = cwbVar.h((cua) listK.get(0));
-            czb czbVar2 = this.k;
+            StopwatchEventLogger czbVar2 = this.k;
             kgt kgtVarK2 = mjw.a.k();
             kgtVarK2.p();
             mjw mjwVar2 = (mjw) kgtVarK2.b;

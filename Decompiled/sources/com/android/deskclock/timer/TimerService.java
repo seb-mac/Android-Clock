@@ -18,7 +18,7 @@ import defpackage.dha;
 import defpackage.dhz;
 import defpackage.dic;
 import defpackage.dlx;
-import defpackage.g;
+import defpackage.StopwatchUtils;
 import defpackage.gvu;
 import defpackage.iwv;
 import defpackage.iwy;
@@ -84,7 +84,7 @@ public final class TimerService extends dha implements dhz {
             int i3 = true != cwbVar.aD() ? 1 : 2;
             Uri uriF = ddz.f(this);
             dlx.c();
-            cwbVar.aa(g.m(uriC, dcxVar, dczVar, czdVar, 6, ((cwa) kkj.i(cwbVar.b, cwa.class)).q().h.e(), uriF, i3));
+            cwbVar.aa(StopwatchUtils.m(uriC, dcxVar, dczVar, czdVar, 6, ((cwa) kkj.i(cwbVar.b, cwa.class)).q().h.e(), uriF, i3));
             this.b.i(this);
             this.e = true;
         }

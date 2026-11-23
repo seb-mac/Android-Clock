@@ -144,14 +144,14 @@ public class WeekdaysSelector extends dpe {
                     if (compoundButton2.isChecked()) {
                         arrayList.add(dlo.a(WeekdaysSelector.i(compoundButton2)));
                         arrayList.add(dlo.b(WeekdaysSelector.h(compoundButton2)));
-                        arrayList.add(dlo.c(compoundButton2, weekdaysSelector.b));
+                        arrayList.add(dlo.withBootCount(compoundButton2, weekdaysSelector.b));
                     } else {
                         arrayList.add(dlo.a(WeekdaysSelector.h(compoundButton2)));
                         arrayList.add(dlo.b(WeekdaysSelector.i(compoundButton2)));
-                        arrayList.add(dlo.c(compoundButton2, weekdaysSelector.a));
+                        arrayList.add(dlo.withBootCount(compoundButton2, weekdaysSelector.a));
                     }
                     AnimatorSet animatorSet = new AnimatorSet();
-                    animatorSet.setDuration(dkt.a.c());
+                    animatorSet.setDuration(dkt.a.withBootCount());
                     animatorSet.playTogether(arrayList);
                     animatorSet.start();
                     weekdaysSelector.d[i2] = animatorSet;

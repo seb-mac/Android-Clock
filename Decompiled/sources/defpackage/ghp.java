@@ -17,7 +17,7 @@ public final class ghp implements ghm, emw {
     private final ezm d;
     private final Set e;
     private final Set f;
-    private final fhr g;
+    private final Clock g;
     private final mam h;
     private final lst i;
     private final Context j;
@@ -25,7 +25,7 @@ public final class ghp implements ghm, emw {
     private final Set l;
     private final AtomicBoolean m;
 
-    public ghp(goh gohVar, ezm ezmVar, Set set, Set set2, fhr fhrVar, gml gmlVar, mam mamVar, lst lstVar, Context context, gdi gdiVar) {
+    public ghp(goh gohVar, ezm ezmVar, Set set, Set set2, Clock fhrVar, gml gmlVar, mam mamVar, lst lstVar, Context context, gdi gdiVar) {
         lxj.d(set, "clientLogSourceNames");
         lxj.d(set2, "clientPrimesLogSourceNames");
         lxj.d(fhrVar, "clock");

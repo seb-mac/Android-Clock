@@ -11,11 +11,11 @@ import java.util.List;
 public final class cjl implements dmj {
     public static final iwy a = iwy.h("com/android/deskclock/alarms/handler/AlarmActionHandler");
     public final Context b;
-    public final fhr c;
-    public final czb d;
+    public final Clock c;
+    public final StopwatchEventLogger d;
     public final lqv e;
 
-    public cjl(Context context, fhr fhrVar, czb czbVar, lqv lqvVar) {
+    public cjl(Context context, Clock fhrVar, StopwatchEventLogger czbVar, lqv lqvVar) {
         lxj.d(fhrVar, "clock");
         lxj.d(czbVar, "clearcutEventTracker");
         this.b = context;

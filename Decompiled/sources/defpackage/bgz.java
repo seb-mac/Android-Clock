@@ -37,7 +37,7 @@ public class bgz extends bhb {
             if (objA == null) {
                 bhc bhcVar3 = new bhc(j5, this);
                 int i4 = -862048943;
-                int iC = a.c(j5) * (-862048943);
+                int iC = a.withBootCount(j5) * (-862048943);
                 int i5 = weVar.d;
                 int i6 = iC ^ (iC << 16);
                 int i7 = i6 >>> 7;
@@ -111,7 +111,7 @@ public class bgz extends bhb {
                                         int i23 = (i21 & 7) << 3;
                                         long j12 = (jArr4[i22] >> i23) & 255;
                                         if (j12 != 128 && j12 == 254) {
-                                            int iC2 = a.c(jArr5[i21]) * i12;
+                                            int iC2 = a.withBootCount(jArr5[i21]) * i12;
                                             int i24 = iC2 ^ (iC2 << 16);
                                             int i25 = i24 >>> 7;
                                             int iB2 = weVar.b(i25);
@@ -185,7 +185,7 @@ public class bgz extends bhb {
                             while (i33 < i31) {
                                 if (((jArr6[i33 >> 3] >> ((i33 & 7) << 3)) & j2) < j4) {
                                     long j18 = jArr7[i33];
-                                    int iC3 = a.c(j18) * i12;
+                                    int iC3 = a.withBootCount(j18) * i12;
                                     int i34 = iC3 ^ (iC3 << 16);
                                     int iB4 = weVar.b(i34 >>> 7);
                                     int i35 = iB4 >> 3;

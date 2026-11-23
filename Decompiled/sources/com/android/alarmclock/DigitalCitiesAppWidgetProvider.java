@@ -14,11 +14,11 @@ import defpackage.crx;
 import defpackage.csa;
 import defpackage.csi;
 import defpackage.cwb;
-import defpackage.czb;
+import defpackage.StopwatchEventLogger;
 import defpackage.dlx;
 import defpackage.dlz;
 import defpackage.dqr;
-import defpackage.fhr;
+import defpackage.Clock;
 import defpackage.ihj;
 import defpackage.ipj;
 import defpackage.itt;
@@ -70,7 +70,7 @@ public class DigitalCitiesAppWidgetProvider extends AppWidgetProvider {
                     iubVar.d(((dqr) iwjVarListIterator.next()).f);
                 }
                 Context context2 = csiVar.d;
-                fhr fhrVar = csiVar.e;
+                Clock fhrVar = csiVar.e;
                 dlz.l(context2, fhrVar, cls, length, iubVar.f(), csi.c);
                 int length2 = appWidgetIds.length;
                 int i3 = 0;
@@ -84,7 +84,7 @@ public class DigitalCitiesAppWidgetProvider extends AppWidgetProvider {
                     int i5 = 2;
                     crs crsVar = new crs(csiVar, new lew((Object) csaVar.c(i4), false), i5);
                     AppWidgetManager appWidgetManager = csiVar.f;
-                    czb czbVar = csiVar.g;
+                    StopwatchEventLogger czbVar = csiVar.g;
                     Context context3 = context2;
                     Optional optionalQ = dlz.q(context3, appWidgetManager, i4, crsVar, czbVar, 6);
                     crx crxVar = new crx(csiVar, i4, i5);

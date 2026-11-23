@@ -22,7 +22,7 @@ import defpackage.crw;
 import defpackage.crx;
 import defpackage.csa;
 import defpackage.ctq;
-import defpackage.dfv;
+import defpackage.StopwatchStateModel;
 import defpackage.dlx;
 import defpackage.dlz;
 import defpackage.hpj;
@@ -68,7 +68,7 @@ public class StopwatchAppWidgetProvider extends AppWidgetProvider {
                         String str;
                         int dimensionPixelSize;
                         StopwatchReceiver cxpVar;
-                        dfv dfvVar;
+                        StopwatchStateModel dfvVar;
                         int i2;
                         int i3;
                         int i4;
@@ -78,7 +78,7 @@ public class StopwatchAppWidgetProvider extends AppWidgetProvider {
                         ctq ctqVar2 = ctqVar;
                         StopwatchReceiver cxpVar2 = ctqVar2.g;
                         Size size = (Size) obj;
-                        dfv dfvVarB = cxpVar2.b();
+                        StopwatchStateModel dfvVarB = cxpVar2.reset();
                         int size2 = cxpVar2.c().size();
                         Resources resources = ctqVar2.e;
                         int iU = ibt.U(resources.getDimensionPixelSize(R.dimen.stopwatch_widget_max_size), size.getWidth(), size.getHeight());
@@ -86,15 +86,15 @@ public class StopwatchAppWidgetProvider extends AppWidgetProvider {
                         int iRound = Math.round((resources.getDimensionPixelOffset(R.dimen.stopwatch_widget_chrono_padding) * iU) / resources.getDimensionPixelSize(R.dimen.stopwatch_widget_default_size));
                         Context context2 = ctqVar2.b;
                         RemoteViews remoteViews = new RemoteViews(context2.getPackageName(), R.layout.stopwatch_appwidget);
-                        if (dfvVarB.f()) {
+                        if (dfvVarB.isRunning()) {
                             remoteViews.setImageViewResource(R.id.stopwatch_start_pause, R.drawable.gs_pause_fill1_vd_theme_24);
                         } else {
                             remoteViews.setImageViewResource(R.id.stopwatch_start_pause, R.drawable.gs_play_arrow_fill1_vd_theme_24);
                         }
-                        remoteViews.setContentDescription(R.id.stopwatch_start_pause, dfvVarB.f() ? resources.getString(R.string.stopwatch_widget_stop_button_content_description) : resources.getString(R.string.stopwatch_widget_start_button_content_description));
+                        remoteViews.setContentDescription(R.id.stopwatch_start_pause, dfvVarB.isRunning() ? resources.getString(R.string.stopwatch_widget_stop_button_content_description) : resources.getString(R.string.stopwatch_widget_start_button_content_description));
                         if (iU <= dimensionPixelSize2) {
-                            remoteViews.setViewVisibility(R.id.stopwatch_add_lap, true != dfvVarB.f() ? 8 : 0);
-                            remoteViews.setViewVisibility(R.id.stopwatch_reset, true != dfvVarB.d() ? 8 : 0);
+                            remoteViews.setViewVisibility(R.id.stopwatch_add_lap, true != dfvVarB.isRunning() ? 8 : 0);
+                            remoteViews.setViewVisibility(R.id.stopwatch_reset, true != dfvVarB.isPaused() ? 8 : 0);
                             remoteViews.setViewLayoutHeightDimen(R.id.stopwatch_start_pause, R.dimen.stopwatch_widget_start_pause_size_small);
                             remoteViews.setViewLayoutWidthDimen(R.id.stopwatch_start_pause, R.dimen.stopwatch_widget_start_pause_size_small);
                             remoteViews.setViewLayoutHeight(R.id.stopwatch_lap_textview, resources.getDimensionPixelSize(R.dimen.stopwatch_widget_start_pause_size_small), 0);
@@ -102,10 +102,10 @@ public class StopwatchAppWidgetProvider extends AppWidgetProvider {
                             remoteViews.setViewVisibility(R.id.stopwatch_reset, 0);
                             remoteViews.setViewLayoutHeightDimen(R.id.stopwatch_start_pause, R.dimen.stopwatch_widget_start_pause_size);
                             remoteViews.setViewLayoutWidthDimen(R.id.stopwatch_start_pause, R.dimen.stopwatch_widget_start_pause_size);
-                            remoteViews.setViewVisibility(R.id.stopwatch_add_lap, true != dfvVarB.e() ? 0 : 8);
+                            remoteViews.setViewVisibility(R.id.stopwatch_add_lap, true != dfvVarB.isReset() ? 0 : 8);
                             remoteViews.setViewLayoutHeight(R.id.stopwatch_lap_textview, resources.getDimensionPixelSize(R.dimen.stopwatch_widget_start_pause_size), 0);
                         }
-                        long hours = Duration.ofMillis(dfvVarB.a()).toHours();
+                        long hours = Duration.ofMillis(dfvVarB.getTime()).toHours();
                         if (hours > 99) {
                             str = "kkk:mm:ss";
                         } else {
@@ -121,9 +121,9 @@ public class StopwatchAppWidgetProvider extends AppWidgetProvider {
                         Chronometer chronometer = (Chronometer) viewInflate.findViewById(R.id.stopwatch_chrono);
                         chronometer.setPadding(iRound, iMax, iRound, iMax);
                         Size size3 = new Size(iU, iU);
-                        fhr fhrVar = ctqVar2.c;
+                        Clock fhrVar = ctqVar2.c;
                         dlv dlvVar = new dlv(fhrVar, chronometer, str);
-                        remoteViews.setTextViewTextSize(R.id.stopwatch_chrono, 0, dlz.a(resources.getDimensionPixelSize(R.dimen.stopwatch_widget_chrono_font_size_min), resources.getDimensionPixelSize(R.dimen.stopwatch_widget_chrono_font_size_max), new cto(chronometer, dlvVar.c(), size3, dlvVar.b(), 0)));
+                        remoteViews.setTextViewTextSize(R.id.stopwatch_chrono, 0, dlz.a(resources.getDimensionPixelSize(R.dimen.stopwatch_widget_chrono_font_size_min), resources.getDimensionPixelSize(R.dimen.stopwatch_widget_chrono_font_size_max), new cto(chronometer, dlvVar.withBootCount(), size3, dlvVar.reset(), 0)));
                         if (size2 > 0) {
                             int i8 = size2 + 1;
                             String string = context2.getString(R.string.sw_notification_lap_number, Integer.valueOf(i8));
@@ -199,14 +199,14 @@ public class StopwatchAppWidgetProvider extends AppWidgetProvider {
                         remoteViews.setOnClickPendingIntent(i3, ctqVar2.a(StopwatchReceiver.a(context2, "com.android.deskclock.action.LAP_STOPWATCH", mluVar)));
                         remoteViews.setOnClickPendingIntent(R.id.stopwatch_reset, ctqVar2.a(StopwatchReceiver.a(context2, "com.android.deskclock.action.RESET_STOPWATCH", mluVar)));
                         remoteViews.setOnClickResponse(R.id.stopwatch_start_pause, RemoteViews.RemoteResponse.fromPendingIntent(ctqVar2.a(StopwatchReceiver.a(context2, "com.android.deskclock.action.TOGGLE_STOPWATCH", mluVar))));
-                        if (!cxpVar.i() || !dfvVar.f()) {
+                        if (!cxpVar.i() || !dfvVar.isRunning()) {
                             remoteViews.setViewVisibility(i3, i4);
                         }
                         remoteViews.setViewPadding(R.id.stopwatch_chrono, iRound, 0, iRound, 0);
-                        remoteViews.setLong(R.id.stopwatch_chrono, "setBase", fhrVar.a() - dfvVar.a());
-                        remoteViews.setBoolean(R.id.stopwatch_chrono, "setStarted", dfvVar.f());
-                        if (!dfvVar.f()) {
-                            Duration durationOfMillis = Duration.ofMillis(dfvVar.a());
+                        remoteViews.setLong(R.id.stopwatch_chrono, "setBase", fhrVar.getTime() - dfvVar.getTime());
+                        remoteViews.setBoolean(R.id.stopwatch_chrono, "setStarted", dfvVar.isRunning());
+                        if (!dfvVar.isRunning()) {
+                            Duration durationOfMillis = Duration.ofMillis(dfvVar.getTime());
                             int hours2 = (int) durationOfMillis.toHours();
                             Duration durationMinusHours = durationOfMillis.minusHours(hours2);
                             int minutes = (int) durationMinusHours.toMinutes();
@@ -227,12 +227,12 @@ public class StopwatchAppWidgetProvider extends AppWidgetProvider {
                 }
             }
             int iA = csaVar.a(StopwatchAppWidgetProvider.class);
-            dfv dfvVarB = ctqVar.g.b();
+            StopwatchStateModel dfvVarB = ctqVar.g.b();
             Context context2 = ctqVar.b;
             AlarmManager alarmManager = (AlarmManager) context2.getSystemService(AlarmManager.class);
             Intent intentAddFlags = new Intent("com.android.deskclock.UPDATE_APP_WIDGET", null, context2, StopwatchAppWidgetProvider.class).addFlags(268435456);
-            long jA = dfvVarB.a();
-            if (iA > 0 && dfvVarB.f() && jA < 360000000) {
+            long jA = dfvVarB.getTime();
+            if (iA > 0 && dfvVarB.isRunning() && jA < 360000000) {
                 long epochMilli = ctqVar.c.c().toEpochMilli();
                 alarmManager.setExactAndAllowWhileIdle(1, (jA < 3600000 ? epochMilli + 3600000 : epochMilli + 360000000) - jA, hpj.c(context2, 0, intentAddFlags, 201326592));
             } else {

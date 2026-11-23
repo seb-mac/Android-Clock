@@ -80,7 +80,7 @@ public class ClockHandView extends View {
         valueAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: ilk
             @Override // android.animation.ValueAnimator.AnimatorUpdateListener
             public final void onAnimationUpdate(ValueAnimator valueAnimator2) {
-                this.a.c(((Float) valueAnimator2.getAnimatedValue()).floatValue(), true);
+                this.a.withBootCount(((Float) valueAnimator2.getAnimatedValue()).floatValue(), true);
             }
         });
         valueAnimator.addListener(new ill(this));

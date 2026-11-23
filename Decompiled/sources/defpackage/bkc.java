@@ -5,7 +5,7 @@ import android.widget.FrameLayout;
 
 /* JADX INFO: compiled from: PG */
 /* JADX INFO: loaded from: classes2.dex */
-final class bkc extends g {
+final class bkc extends StopwatchUtils {
     final /* synthetic */ bg a;
     final /* synthetic */ FrameLayout b;
 

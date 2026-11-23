@@ -142,6 +142,6 @@ public final class im extends CheckedTextView {
 
     @Override // android.widget.CheckedTextView
     public final void setCheckMarkDrawable(int i) {
-        setCheckMarkDrawable(g.e(getContext(), i));
+        setCheckMarkDrawable(StopwatchUtils.e(getContext(), i));
     }
 }

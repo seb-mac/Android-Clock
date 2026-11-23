@@ -9,7 +9,7 @@ public final class hmv extends bm {
     private final hkz c;
     private final hma d;
     private final hoc e;
-    private final fhr f;
+    private final Clock f;
 
     public hmv(int i, hnz hnzVar, hma hmaVar) {
         this.b = i;

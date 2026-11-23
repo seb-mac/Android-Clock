@@ -15,10 +15,10 @@ public final class dez extends chi {
     private final Context i;
     private final NotificationManager j;
     private final BroadcastReceiver k;
-    private final czb l;
+    private final StopwatchEventLogger l;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public dez(Context context, lvf lvfVar, mam mamVar, mam mamVar2, che cheVar, czb czbVar) {
+    public dez(Context context, lvf lvfVar, mam mamVar, mam mamVar2, che cheVar, StopwatchEventLogger czbVar) {
         Object objE;
         super(chj.SILENT_SETTING_ALARMS_BLOCKED_BY_DND, cheVar, mamVar2);
         lxj.d(lvfVar, "blockingCoroutineContext");

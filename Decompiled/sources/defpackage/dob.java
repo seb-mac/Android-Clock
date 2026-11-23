@@ -18,6 +18,6 @@ public final class dob implements ksl {
     @Override // defpackage.lst, defpackage.lss
     /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
     public final lqv b() {
-        return new lqv((SharedPreferences) this.a.b(), ((dme) this.b).b(), (czb) this.c.b());
+        return new lqv((SharedPreferences) this.a.b(), ((dme) this.b).b(), (StopwatchEventLogger) this.c.b());
     }
 }

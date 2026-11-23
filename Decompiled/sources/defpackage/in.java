@@ -53,16 +53,16 @@ public final class in {
         try {
             if (hpmVarC.x(1) && (iP2 = hpmVarC.p(1, 0)) != 0) {
                 try {
-                    compoundButton.setButtonDrawable(g.e(compoundButton.getContext(), iP2));
+                    compoundButton.setButtonDrawable(StopwatchUtils.e(compoundButton.getContext(), iP2));
                 } catch (Resources.NotFoundException unused) {
                     if (hpmVarC.x(0)) {
                         CompoundButton compoundButton2 = this.d;
-                        compoundButton2.setButtonDrawable(g.e(compoundButton2.getContext(), iP));
+                        compoundButton2.setButtonDrawable(StopwatchUtils.e(compoundButton2.getContext(), iP));
                     }
                 }
             } else if (hpmVarC.x(0) && (iP = hpmVarC.p(0, 0)) != 0) {
                 CompoundButton compoundButton3 = this.d;
-                compoundButton3.setButtonDrawable(g.e(compoundButton3.getContext(), iP));
+                compoundButton3.setButtonDrawable(StopwatchUtils.e(compoundButton3.getContext(), iP));
             }
             if (hpmVarC.x(2)) {
                 this.d.setButtonTintList(hpmVarC.q(2));

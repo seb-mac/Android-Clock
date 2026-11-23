@@ -72,7 +72,7 @@ public final class hr implements View.OnClickListener {
                 chxVar.aA = true;
                 chxVar.aD();
                 ((InputMethodManager) ((bg) obj).bw().getSystemService("input_method")).showSoftInput(chxVar.as, 1);
-                czb czbVar = chxVar.aJ;
+                StopwatchEventLogger czbVar = chxVar.aJ;
                 kgt kgtVarK = mjw.a.k();
                 kgtVarK.p();
                 mjw mjwVar = (mjw) kgtVarK.b;
@@ -98,7 +98,7 @@ public final class hr implements View.OnClickListener {
                 cua cuaVar = chxVar2.az;
                 if (cuaVar != null) {
                     chxVar2.az = cuaVar.p(null, null);
-                    czb czbVar2 = chxVar2.aJ;
+                    StopwatchEventLogger czbVar2 = chxVar2.aJ;
                     kgt kgtVarK2 = mjw.a.k();
                     kgtVarK2.p();
                     mjw mjwVar4 = (mjw) kgtVarK2.b;
@@ -138,7 +138,7 @@ public final class hr implements View.OnClickListener {
                 } else {
                     boolean zIsChecked = ((MaterialSwitch) view).isChecked();
                     if (zIsChecked != chxVar3.az.k) {
-                        czb czbVar3 = chxVar3.aJ;
+                        StopwatchEventLogger czbVar3 = chxVar3.aJ;
                         kgt kgtVarK3 = mjw.a.k();
                         kgtVarK3.p();
                         mjw mjwVar7 = (mjw) kgtVarK3.b;
@@ -177,7 +177,7 @@ public final class hr implements View.OnClickListener {
                     Context contextBw = ((bg) obj3).bw();
                     cua cuaVar2 = chxVar4.az;
                     phVar.b(new Intent(contextBw, (Class<?>) RingtonePickerActivity.class).putExtra("com.android.deskclock.extra.alarm_id", cuaVar2.d).putExtra("com.android.deskclock.extra.data_type", dcx.ALARM.name()).putExtra("com.android.deskclock.extra.ringtone_uri", cuaVar2.a()).putExtra("com.android.deskclock.extra.ringtone_haptics", cuaVar2.k).putExtra("com.android.deskclock.extra.title", R.string.alarm_sound).putExtra("com.android.deskclock.extra.update_storage", false));
-                    czb czbVar4 = chxVar4.aJ;
+                    StopwatchEventLogger czbVar4 = chxVar4.aJ;
                     kgt kgtVarK4 = mjw.a.k();
                     kgtVarK4.p();
                     mjw mjwVar10 = (mjw) kgtVarK4.b;
@@ -227,7 +227,7 @@ public final class hr implements View.OnClickListener {
                             cua cuaVar3 = chxVar7.az;
                             if (zIsChecked2 != cuaVar3.r) {
                                 chxVar7.az = cuaVar3.n(zIsChecked2);
-                                czb czbVar5 = chxVar7.aJ;
+                                StopwatchEventLogger czbVar5 = chxVar7.aJ;
                                 kgt kgtVarK5 = mjw.a.k();
                                 kgtVarK5.p();
                                 mjw mjwVar13 = (mjw) kgtVarK5.b;

@@ -88,7 +88,7 @@ public final /* synthetic */ class bdm extends lxi implements lws {
                 return new AlarmInstance(rwVar);
             case ard.LONG_FIELD_NUMBER /* 4 */:
                 Instant instant3 = (Instant) obj;
-                dfv dfvVar = (dfv) obj2;
+                StopwatchStateModel dfvVar = (StopwatchStateModel) obj2;
                 lxj.d(instant3, "p0");
                 lxj.d(dfvVar, "p1");
                 ckb ckbVar3 = (ckb) this.c;
@@ -103,9 +103,9 @@ public final /* synthetic */ class bdm extends lxi implements lws {
                 syVar.s(ckbVar3.f().c(dfvVar));
                 syVar.l(instant3.toEpochMilli());
                 syVar.p(dkt.F(czd.g, cza.d));
-                syVar.a(dfvVar.e, dfvVar.d, dfvVar.c);
-                syVar.b(dfvVar.b.e);
-                syVar.f = dfvVar.f;
+                syVar.a(dfvVar.lastStartWallClockTime, dfvVar.lastStartTime, dfvVar.bootCount);
+                syVar.b(dfvVar.stopwatchState.e);
+                syVar.f = dfvVar.accumulatedTime;
                 syVar.g = arrayList;
                 return new Stopwatch(syVar);
             case ard.STRING_FIELD_NUMBER /* 5 */:
@@ -197,7 +197,7 @@ public final /* synthetic */ class bdm extends lxi implements lws {
                 return new G3AlarmInstance(saVar);
             case 9:
                 Instant instant8 = (Instant) obj;
-                dfv dfvVar2 = (dfv) obj2;
+                StopwatchStateModel dfvVar2 = (StopwatchStateModel) obj2;
                 lxj.d(instant8, "p0");
                 lxj.d(dfvVar2, "p1");
                 ckd ckdVar3 = (ckd) this.c;
@@ -214,9 +214,9 @@ public final /* synthetic */ class bdm extends lxi implements lws {
                 skVar.s(ckdVar3.f().c(dfvVar2));
                 skVar.l(instant8.toEpochMilli());
                 skVar.p(dkt.F(czd.g, cza.d));
-                skVar.a(dfvVar2.e, dfvVar2.d, dfvVar2.c);
-                skVar.b(dfvVar2.b.e);
-                skVar.f = dfvVar2.f;
+                skVar.a(dfvVar2.lastStartWallClockTime, dfvVar2.lastStartTime, dfvVar2.bootCount);
+                skVar.b(dfvVar2.stopwatchState.e);
+                skVar.f = dfvVar2.accumulatedTime;
                 skVar.g = arrayList2;
                 return new G3Stopwatch(skVar);
             case 10:

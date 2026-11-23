@@ -5,7 +5,7 @@ import android.content.Context;
 /* JADX INFO: compiled from: PG */
 /* JADX INFO: loaded from: classes2.dex */
 public final class cxd extends cwm {
-    public cxd(Context context, fhr fhrVar, czb czbVar, cqj cqjVar, cxi cxiVar, ddd dddVar, flw flwVar, ns nsVar, cyr cyrVar) {
+    public cxd(Context context, Clock fhrVar, StopwatchEventLogger czbVar, cqj cqjVar, cxi cxiVar, ddd dddVar, flw flwVar, ns nsVar, cyr cyrVar) {
         super(cyrVar, context, fhrVar, dco.d, new cxc(0), czbVar, cqjVar, cxiVar, dddVar, flwVar, nsVar);
     }
 

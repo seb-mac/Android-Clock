@@ -9,11 +9,11 @@ import com.google.android.deskclock.debug.R;
 /* JADX INFO: compiled from: PG */
 /* JADX INFO: loaded from: classes2.dex */
 public final class cnb implements dpg {
-    private final fhr a;
+    private final Clock a;
     private final cqw b;
     private final gog c;
 
-    public cnb(fhr fhrVar, gog gogVar, cqw cqwVar) {
+    public cnb(Clock fhrVar, gog gogVar, cqw cqwVar) {
         this.a = fhrVar;
         this.c = gogVar;
         this.b = cqwVar;

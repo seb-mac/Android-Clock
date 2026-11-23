@@ -134,7 +134,7 @@ public final class LocalTime implements Temporal, j$.time.temporal.l, Comparable
     public final Temporal A(long j, ChronoUnit chronoUnit) {
         long j2;
         if (j == Long.MIN_VALUE) {
-            this = c(Long.MAX_VALUE, chronoUnit);
+            this = withBootCount(Long.MAX_VALUE, chronoUnit);
             j2 = 1;
         } else {
             j2 = -j;

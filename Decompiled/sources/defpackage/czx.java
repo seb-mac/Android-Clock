@@ -67,7 +67,7 @@ public final class czx extends lvs implements lws {
     public final lva c(Object obj, lva lvaVar) {
         int i = this.c;
         if (i == 0) {
-            return new czx((fhr) this.a, (cqj) this.b, lvaVar, 0);
+            return new czx((Clock) this.a, (cqj) this.b, lvaVar, 0);
         }
         if (i != 1) {
             return new czx((gbn) this.a, (gaz) this.b, lvaVar, 2);
@@ -76,7 +76,7 @@ public final class czx extends lvs implements lws {
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public czx(fhr fhrVar, cqj cqjVar, lva lvaVar, int i) {
+    public czx(Clock fhrVar, cqj cqjVar, lva lvaVar, int i) {
         super(2, lvaVar);
         this.c = i;
         this.a = fhrVar;

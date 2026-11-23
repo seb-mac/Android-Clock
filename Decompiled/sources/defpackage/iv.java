@@ -80,7 +80,7 @@ public class iv extends RadioButton {
 
     @Override // android.widget.CompoundButton
     public final void setButtonDrawable(int i) {
-        setButtonDrawable(g.e(getContext(), i));
+        setButtonDrawable(StopwatchUtils.e(getContext(), i));
     }
 
     @Override // android.widget.TextView

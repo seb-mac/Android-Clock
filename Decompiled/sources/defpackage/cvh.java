@@ -92,7 +92,7 @@ final class cvh extends SQLiteOpenHelper {
 
     @Override // android.database.sqlite.SQLiteOpenHelper
     public final void onDowngrade(SQLiteDatabase sQLiteDatabase, int i, int i2) {
-        czb czbVarAq = ((cvg) kkj.i(this.a.getApplicationContext(), cvg.class)).aq();
+        StopwatchEventLogger czbVarAq = ((cvg) kkj.i(this.a.getApplicationContext(), cvg.class)).aq();
         kgt kgtVarK = mjw.a.k();
         kgt kgtVarK2 = mju.a.k();
         kgtVarK2.p();
@@ -119,7 +119,7 @@ final class cvh extends SQLiteOpenHelper {
     public final void onUpgrade(SQLiteDatabase sQLiteDatabase, int i, int i2) {
         Uri uri;
         Context context = this.a;
-        czb czbVarAq = ((cvg) kkj.i(context.getApplicationContext(), cvg.class)).aq();
+        StopwatchEventLogger czbVarAq = ((cvg) kkj.i(context.getApplicationContext(), cvg.class)).aq();
         kgt kgtVarK = mjw.a.k();
         kgt kgtVarK2 = mju.a.k();
         kgtVarK2.p();
@@ -211,7 +211,7 @@ final class cvh extends SQLiteOpenHelper {
                     sQLiteDatabase.execSQL("ALTER TABLE alarm_templates ADD COLUMN weather_brief INTEGER NOT NULL DEFAULT 0;");
                     Cursor cursorQuery3 = sQLiteDatabase.query("alarm_templates", new String[]{"_id", "external_uuid"}, null, null, null, null, null);
                     try {
-                        fhr fhrVarT = ((cvg) kkj.i(this.a.getApplicationContext(), cvg.class)).t();
+                        Clock fhrVarT = ((cvg) kkj.i(this.a.getApplicationContext(), cvg.class)).t();
                         while (cursorQuery3.moveToNext()) {
                             long j2 = cursorQuery3.getLong(0);
                             String string3 = cursorQuery3.getString(1);

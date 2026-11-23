@@ -29,7 +29,7 @@ public final class ded extends ddy implements bbj, bbk {
     public cjn al = cjn.TAP;
     public ddd am;
     public dep an;
-    public czb ao;
+    public StopwatchEventLogger ao;
     public bzi ap;
     public lqv aq;
     public gog ar;
@@ -226,7 +226,7 @@ public final class ded extends ddy implements bbj, bbk {
                 break;
         }
         if (b == 0) {
-            czb czbVar = this.ao;
+            StopwatchEventLogger czbVar = this.ao;
             kgt kgtVarK = mlj.a.k();
             mlf mlfVar = mlf.a;
             kgtVarK.p();
@@ -246,7 +246,7 @@ public final class ded extends ddy implements bbj, bbk {
             if (!this.ap.g()) {
                 return false;
             }
-            czb czbVar2 = this.ao;
+            StopwatchEventLogger czbVar2 = this.ao;
             kgt kgtVarK2 = mlj.a.k();
             mlg mlgVar = mlg.a;
             kgtVarK2.p();
@@ -273,7 +273,7 @@ public final class ded extends ddy implements bbj, bbk {
             des.aB(this.al).r(F(), "ChooseAlarmDismissGestureDialogFragment");
             return true;
         }
-        czb czbVar3 = this.ao;
+        StopwatchEventLogger czbVar3 = this.ao;
         kgt kgtVarK3 = mlj.a.k();
         mlh mlhVar = mlh.a;
         kgtVarK3.p();

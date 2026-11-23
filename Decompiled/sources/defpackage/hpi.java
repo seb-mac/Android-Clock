@@ -81,7 +81,7 @@ public final class hpi implements ksl {
         lnz lnzVarAd = hmw.ad(contextA, hlrVarB, hgbVar, ksqVarC);
         leb lebVar = (leb) ksqVarC2.b();
         lnz lnzVarAd2 = hmw.ad(contextA, hlrVarB, hgbVar, ksqVarC);
-        fhr fhrVar = (fhr) ksqVarA.b();
+        Clock fhrVar = (Clock) ksqVarA.b();
         khs khsVar = new khs(null);
         ens ensVar = new ens((Object) null, (byte[]) null);
         ens ensVarAc = hmw.ac(contextA);

@@ -32,7 +32,7 @@ public final class cxz {
         throw new IllegalStateException("Timer Transaction already in progress");
     }
 
-    public final dhy b(fhr fhrVar, UUID uuid, long j, String str, boolean z) {
+    public final dhy b(Clock fhrVar, UUID uuid, long j, String str, boolean z) {
         if (this.g) {
             throw new IllegalStateException("Transaction is already marked as successful");
         }
@@ -41,7 +41,7 @@ public final class cxz {
         }
         int i = this.f;
         this.f = i + 1;
-        dhy dhyVar = new dhy(fhrVar, i, uuid, dia.RESET, -1, j, j, Long.MIN_VALUE, Long.MIN_VALUE, Long.MIN_VALUE, j, str, z, daq.b);
+        dhy dhyVar = new dhy(fhrVar, i, uuid, dia.RESET, -1, j, j, Long.MIN_VALUE, Long.MIN_VALUE, Long.MIN_VALUE, j, str, z, StopwatchNotificationState.b);
         this.d.add(dhyVar);
         SharedPreferences.Editor editor = this.b;
         int i2 = dhyVar.e;

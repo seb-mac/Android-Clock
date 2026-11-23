@@ -21,7 +21,7 @@ import java.util.TimeZone;
 public final class dre extends drf {
     public static final /* synthetic */ int B = 0;
     public final dep A;
-    private final fhr C;
+    private final Clock C;
     private final cpu D;
     private final Optional E;
     private final TextView F;
@@ -38,7 +38,7 @@ public final class dre extends drf {
     public final amd v;
     public final amd w;
 
-    public dre(fhr fhrVar, dep depVar, cpu cpuVar, Optional optional, View view) {
+    public dre(Clock fhrVar, dep depVar, cpu cpuVar, Optional optional, View view) {
         super(view);
         this.C = fhrVar;
         this.A = depVar;

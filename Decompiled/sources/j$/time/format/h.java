@@ -137,7 +137,7 @@ public final class h implements f {
         switch (this.a) {
             case 0:
                 p pVar = new p();
-                pVar.a(a.f);
+                pVar.a(a.accumulatedTime);
                 pVar.c('T');
                 j$.time.temporal.a aVar = j$.time.temporal.a.HOUR_OF_DAY;
                 pVar.g(aVar, 2);

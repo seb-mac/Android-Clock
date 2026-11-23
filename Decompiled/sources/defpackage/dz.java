@@ -94,7 +94,7 @@ public final class dz implements pe {
                     cdrVar.t = true;
                     AlarmSelectionActivity alarmSelectionActivity = (AlarmSelectionActivity) olVar3;
                     ccs ccsVar = cdrVar.bU().e().b;
-                    alarmSelectionActivity.r = (czb) ccsVar.I.b();
+                    alarmSelectionActivity.r = (StopwatchEventLogger) ccsVar.I.b();
                     ksq ksqVar = ccsVar.r;
                     ksq ksqVar2 = ccsVar.t;
                     ksq ksqVar3 = ccsVar.aA;
@@ -119,7 +119,7 @@ public final class dz implements pe {
                     ccp ccpVarE = cdtVar.bU().e();
                     DeskClock deskClock = (DeskClock) olVar5;
                     ccs ccsVar2 = ccpVarE.b;
-                    deskClock.H = (czb) ccsVar2.I.b();
+                    deskClock.H = (StopwatchEventLogger) ccsVar2.I.b();
                     ccl cclVar = ccpVarE.c;
                     deskClock.p = (dky) cclVar.c.b();
                     deskClock.q = (cqb) ccsVar2.Q.b();
@@ -127,7 +127,7 @@ public final class dz implements pe {
                     deskClock.K = ccpVarE.c();
                     deskClock.L = ((deu) ccsVar2.fM).b();
                     deskClock.J = ((dqu) ccsVar2.aT).b();
-                    deskClock.s = (fhr) ccsVar2.t.b();
+                    deskClock.s = (Clock) ccsVar2.t.b();
                     deskClock.I = (cpg) cclVar.h.b();
                     deskClock.t = new ddo(cclVar.a(), ccsVar2.K(), 0);
                     deskClock.u = new ceq(cclVar.a());
@@ -170,8 +170,8 @@ public final class dz implements pe {
                     cdzVar.t = true;
                     HandleApiCalls handleApiCalls = (HandleApiCalls) olVar9;
                     ccs ccsVar3 = cdzVar.bU().e().b;
-                    handleApiCalls.r = (czb) ccsVar3.I.b();
-                    handleApiCalls.q = (fhr) ccsVar3.t.b();
+                    handleApiCalls.r = (StopwatchEventLogger) ccsVar3.I.b();
+                    handleApiCalls.q = (Clock) ccsVar3.t.b();
                     handleApiCalls.s = ((dqi) ccsVar3.R).b();
                 }
                 break;
@@ -190,8 +190,8 @@ public final class dz implements pe {
                     cebVar.u = true;
                     HandleSetApiCalls handleSetApiCalls = (HandleSetApiCalls) olVar11;
                     ccs ccsVar4 = cebVar.bU().e().b;
-                    handleSetApiCalls.s = (czb) ccsVar4.I.b();
-                    handleSetApiCalls.r = (fhr) ccsVar4.t.b();
+                    handleSetApiCalls.s = (StopwatchEventLogger) ccsVar4.I.b();
+                    handleSetApiCalls.r = (Clock) ccsVar4.t.b();
                     handleSetApiCalls.t = ((dlf) ccsVar4.aA).b();
                 }
                 break;
@@ -202,7 +202,7 @@ public final class dz implements pe {
                     cecVar.r = true;
                     HandleShortcuts handleShortcuts = (HandleShortcuts) olVar12;
                     ccs ccsVar5 = cecVar.bU().e().b;
-                    handleShortcuts.q = (czb) ccsVar5.I.b();
+                    handleShortcuts.q = (StopwatchEventLogger) ccsVar5.I.b();
                     handleShortcuts.p = (StopwatchController) ccsVar5.al.b();
                 }
                 break;
@@ -213,15 +213,15 @@ public final class dz implements pe {
                     cedVar.y = true;
                     HandleUris handleUris = (HandleUris) olVar13;
                     ccs ccsVar6 = cedVar.bU().e().b;
-                    handleUris.q = (fhr) ccsVar6.t.b();
-                    handleUris.v = (czb) ccsVar6.I.b();
+                    handleUris.q = (Clock) ccsVar6.t.b();
+                    handleUris.v = (StopwatchEventLogger) ccsVar6.I.b();
                     handleUris.x = ((dme) ccsVar6.aD).b();
                     handleUris.u = (cop) ccsVar6.af.b();
                     handleUris.r = (StopwatchController) ccsVar6.al.b();
                     handleUris.s = (ddd) ccsVar6.K.b();
                     handleUris.w = ((dqi) ccsVar6.R).b();
                     bzh bzhVar = ccsVar6.mz;
-                    handleUris.t = new cyy((Context) bzhVar.a, (czb) ccsVar6.I.b(), (cqj) ccsVar6.bq.b(), (lvf) ccsVar6.p.b(), (lvf) ccsVar6.E.b(), (lvf) ccsVar6.ah.b());
+                    handleUris.t = new cyy((Context) bzhVar.a, (StopwatchEventLogger) ccsVar6.I.b(), (cqj) ccsVar6.bq.b(), (lvf) ccsVar6.p.b(), (lvf) ccsVar6.E.b(), (lvf) ccsVar6.ah.b());
                 }
                 break;
             case 14:
@@ -231,12 +231,12 @@ public final class dz implements pe {
                     cefVar.p = true;
                     ScreensaverActivity screensaverActivity = (ScreensaverActivity) olVar14;
                     ccs ccsVar7 = cefVar.bU().e().b;
-                    screensaverActivity.u = (fhr) ccsVar7.t.b();
+                    screensaverActivity.u = (Clock) ccsVar7.t.b();
                     screensaverActivity.z = ((dlf) ccsVar7.aA).b();
                     screensaverActivity.x = (dlu) ccsVar7.aV.b();
                     screensaverActivity.A = ccsVar7.aO();
                     screensaverActivity.y = new bzh(ccsVar7.aO(), (byte[]) null);
-                    screensaverActivity.w = (czb) ccsVar7.I.b();
+                    screensaverActivity.w = (StopwatchEventLogger) ccsVar7.I.b();
                     screensaverActivity.v = new dds((Context) ccsVar7.mz.a);
                 }
                 break;
@@ -247,7 +247,7 @@ public final class dz implements pe {
                     cglVar.w = true;
                     DismissAlarmStartRoutineActivity dismissAlarmStartRoutineActivity = (DismissAlarmStartRoutineActivity) olVar15;
                     ccs ccsVar8 = cglVar.bU().e().b;
-                    dismissAlarmStartRoutineActivity.u = (czb) ccsVar8.I.b();
+                    dismissAlarmStartRoutineActivity.u = (StopwatchEventLogger) ccsVar8.I.b();
                     dismissAlarmStartRoutineActivity.v = (dlu) ccsVar8.aV.b();
                 }
                 break;
@@ -258,7 +258,7 @@ public final class dz implements pe {
                     cgmVar.p = true;
                     TitanViewAlarmActivity titanViewAlarmActivity = (TitanViewAlarmActivity) olVar16;
                     ccs ccsVar9 = cgmVar.bU().e().b;
-                    titanViewAlarmActivity.r = (fhr) ccsVar9.t.b();
+                    titanViewAlarmActivity.r = (Clock) ccsVar9.t.b();
                     titanViewAlarmActivity.s = ((cpv) ccsVar9.az).b();
                     ((dlf) ccsVar9.aA).b();
                     titanViewAlarmActivity.u = (dlu) ccsVar9.aV.b();
@@ -294,7 +294,7 @@ public final class dz implements pe {
                     cmsVar.y = true;
                     BedtimeMorningOnboardingActivity bedtimeMorningOnboardingActivity = (BedtimeMorningOnboardingActivity) olVar19;
                     ccs ccsVar11 = cmsVar.bU().e().b;
-                    bedtimeMorningOnboardingActivity.w = (czb) ccsVar11.I.b();
+                    bedtimeMorningOnboardingActivity.w = (StopwatchEventLogger) ccsVar11.I.b();
                     bedtimeMorningOnboardingActivity.x = (ns) ccsVar11.bp.b();
                     bedtimeMorningOnboardingActivity.u = (cop) ccsVar11.af.b();
                     bedtimeMorningOnboardingActivity.p = (cxi) ccsVar11.ba.b();
@@ -310,7 +310,7 @@ public final class dz implements pe {
                     cmuVar.w = true;
                     BedtimeNightOnboardingActivity bedtimeNightOnboardingActivity = (BedtimeNightOnboardingActivity) olVar20;
                     ccs ccsVar12 = cmuVar.bU().e().b;
-                    bedtimeNightOnboardingActivity.t = (czb) ccsVar12.I.b();
+                    bedtimeNightOnboardingActivity.t = (StopwatchEventLogger) ccsVar12.I.b();
                     bedtimeNightOnboardingActivity.u = (ns) ccsVar12.bp.b();
                     bedtimeNightOnboardingActivity.v = ((dlf) ccsVar12.aA).b();
                     bedtimeNightOnboardingActivity.r = (cop) ccsVar12.af.b();

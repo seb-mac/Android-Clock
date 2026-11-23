@@ -5,8 +5,8 @@ import android.content.Intent;
 import defpackage.cmk;
 import defpackage.cmv;
 import defpackage.cop;
-import defpackage.czb;
-import defpackage.g;
+import defpackage.StopwatchEventLogger;
+import defpackage.StopwatchUtils;
 import defpackage.kkq;
 import defpackage.mkt;
 
@@ -14,7 +14,7 @@ import defpackage.mkt;
 /* JADX INFO: loaded from: classes2.dex */
 public class BedtimeReceiver extends cmv {
     public cop a;
-    public czb b;
+    public StopwatchEventLogger b;
 
     /* JADX WARN: Failed to restore switch over string. Please report as a decompilation issue */
     @Override // defpackage.cmv, android.content.BroadcastReceiver
@@ -28,7 +28,7 @@ public class BedtimeReceiver extends cmv {
             }
         }
         String action = intent.getAction();
-        mkt mktVarX = g.x(g.E(intent), mkt.INTENT);
+        mkt mktVarX = StopwatchUtils.x(StopwatchUtils.E(intent), mkt.INTENT);
         int i = this.a.b().x;
         switch (action.hashCode()) {
             case -1977535864:

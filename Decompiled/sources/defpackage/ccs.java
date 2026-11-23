@@ -22,7 +22,7 @@ import java.util.concurrent.ExecutorService;
 
 /* JADX INFO: compiled from: PG */
 /* JADX INFO: loaded from: classes2.dex */
-public final class ccs implements cbq, cfj, cgt, cks, cky, clg, cmk, cnk, cqz, cro, crv, cti, cwa, cub, cwd, cwl, cwe, cws, czp, dan, dat, dby, ddw, dfd, dfs, dhn, dks, dmu, dod, dol, dpb, ehq, eii, ggn, hbn, kql, kqw, krt, kse {
+public final class ccs implements cbq, cfj, cgt, cks, cky, clg, cmk, cnk, cqz, cro, crv, cti, cwa, cub, cwd, cwl, cwe, cws, czp, dan, dat, dby, ddw, dfd, StopwatchReceiverCallback, dhn, dks, dmu, dod, dol, dpb, ehq, eii, ggn, hbn, kql, kqw, krt, kse {
     ksq A;
     ksq B;
     ksq C;
@@ -2374,7 +2374,7 @@ public final class ccs implements cbq, cfj, cgt, cks, cky, clg, cmk, cnk, cqz, c
 
     @Override // defpackage.czp, defpackage.dpb
     public final Optional I() {
-        return czi.c(Optional.of(cpz.c(new g())));
+        return czi.c(Optional.of(cpz.c(new StopwatchUtils())));
     }
 
     @Override // defpackage.dks
@@ -2469,7 +2469,7 @@ public final class ccs implements cbq, cfj, cgt, cks, cky, clg, cmk, cnk, cqz, c
 
     @Override // defpackage.cmk
     public final void X(BedtimeReceiver bedtimeReceiver) {
-        bedtimeReceiver.b = (czb) this.I.b();
+        bedtimeReceiver.b = (StopwatchEventLogger) this.I.b();
         bedtimeReceiver.a = (cop) this.af.b();
     }
 
@@ -2577,20 +2577,20 @@ public final class ccs implements cbq, cfj, cgt, cks, cky, clg, cmk, cnk, cqz, c
 
     @Override // defpackage.dfs
     public final void aa(StopwatchReceiver stopwatchReceiver) {
-        stopwatchReceiver.eventLogger = (czb) this.I.b();
+        stopwatchReceiver.eventLogger = (StopwatchEventLogger) this.I.b();
         stopwatchReceiver.stopwatchController = (StopwatchReceiver) this.al.b();
     }
 
     @Override // defpackage.dhn
     public final void ab(TimerReceiver timerReceiver) {
-        timerReceiver.e = (czb) this.I.b();
-        timerReceiver.c = (fhr) this.t.b();
+        timerReceiver.e = (StopwatchEventLogger) this.I.b();
+        timerReceiver.c = (Clock) this.t.b();
         timerReceiver.d = (cyb) this.bu.b();
     }
 
     @Override // defpackage.dod
     public final void ac(WeatherReceiver weatherReceiver) {
-        weatherReceiver.c = (fhr) this.t.b();
+        weatherReceiver.c = (Clock) this.t.b();
     }
 
     @Override // defpackage.cgt, defpackage.ckx, defpackage.cwa, defpackage.dat
@@ -2646,13 +2646,13 @@ public final class ccs implements cbq, cfj, cgt, cks, cky, clg, cmk, cnk, cqz, c
     }
 
     @Override // defpackage.cgt, defpackage.crv, defpackage.cwa, defpackage.ddw
-    public final czb ap() {
-        return (czb) this.I.b();
+    public final StopwatchEventLogger ap() {
+        return (StopwatchEventLogger) this.I.b();
     }
 
     @Override // defpackage.ckx, defpackage.cvg
-    public final czb aq() {
-        return (czb) this.I.b();
+    public final StopwatchEventLogger aq() {
+        return (StopwatchEventLogger) this.I.b();
     }
 
     @Override // defpackage.dks
@@ -2857,8 +2857,8 @@ public final class ccs implements cbq, cfj, cgt, cks, cky, clg, cmk, cnk, cqz, c
     }
 
     @Override // defpackage.ckx, defpackage.cqz, defpackage.cro, defpackage.crv, defpackage.cvg
-    public final fhr t() {
-        return (fhr) this.t.b();
+    public final Clock t() {
+        return (Clock) this.t.b();
     }
 
     @Override // defpackage.ggn

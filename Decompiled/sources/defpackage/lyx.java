@@ -11,7 +11,7 @@ public final class lyx implements Iterator, lxu {
     /* JADX WARN: Type inference failed for: r1v1, types: [java.lang.Object, lyt] */
     public lyx(lyy lyyVar) {
         this.a = lyyVar;
-        this.b = lyyVar.a.a();
+        this.b = lyyVar.a.getTime();
     }
 
     @Override // java.util.Iterator

@@ -8,10 +8,10 @@ import j$.util.Optional;
 /* JADX INFO: loaded from: classes2.dex */
 final class dmx extends chf {
     public final dna b;
-    public final czb c;
+    public final StopwatchEventLogger c;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public dmx(dna dnaVar, czb czbVar) {
+    public dmx(dna dnaVar, StopwatchEventLogger czbVar) {
         super(chj.ALARM_SYNC_WATCH_DISCONNECTED);
         lxj.d(czbVar, "clearcutEventTracker");
         this.b = dnaVar;

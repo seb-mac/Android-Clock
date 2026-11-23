@@ -41,9 +41,9 @@ abstract class cmq extends ccx {
         cmdVar.e = (cqb) ccsVar.Q.b();
         ccnVar.j.c();
         cmdVar.f = (ctc) cclVar.d.b();
-        cmdVar.aj = (fhr) ccsVar.t.b();
+        cmdVar.aj = (Clock) ccsVar.t.b();
         cmdVar.ak = ccsVar.I();
-        cmdVar.at = (czb) ccsVar.I.b();
+        cmdVar.at = (StopwatchEventLogger) ccsVar.I.b();
         ksq ksqVar = ccsVar.Q;
         ksq ksqVar2 = ccsVar.I;
         ksq ksqVar3 = ccsVar.t;
@@ -51,8 +51,8 @@ abstract class cmq extends ccx {
         ksq ksqVar5 = ccsVar.af;
         ksq ksqVar6 = ccsVar.ay;
         cmdVar.au = new dri(new csn(ksqVar, ksqVar2, ksqVar3, ksqVar4, ksqVar5, ksqVar6), 1);
-        cmdVar.av = new cnf((cqb) ccsVar.Q.b(), (fhr) ccsVar.t.b(), ((cpv) ccsVar.az).b(), new cns((Context) bzhVar.a, (jhb) ccsVar.D.b(), ((dqi) ccsVar.R).b(), (bzh) ccsVar.bI.b(), ccsVar.e()), (cop) ksqVar5.b(), 1);
-        cmdVar.al = new cnb((fhr) ccsVar.t.b(), ((dlf) ksqVar4).b(), (cqw) ksqVar6.b());
+        cmdVar.av = new cnf((cqb) ccsVar.Q.b(), (Clock) ccsVar.t.b(), ((cpv) ccsVar.az).b(), new cns((Context) bzhVar.a, (jhb) ccsVar.D.b(), ((dqi) ccsVar.R).b(), (bzh) ccsVar.bI.b(), ccsVar.e()), (cop) ksqVar5.b(), 1);
+        cmdVar.al = new cnb((Clock) ccsVar.t.b(), ((dlf) ksqVar4).b(), (cqw) ksqVar6.b());
         cmdVar.as = (cop) ksqVar5.b();
         cmdVar.am = (cxi) ccsVar.ba.b();
         cmdVar.an = (ddd) ccsVar.K.b();

@@ -23,7 +23,7 @@ public final class ctc implements axp, dkf, cof, dqs, dko, deh {
     public View f;
     public View g;
     public final cop h;
-    public final czb i;
+    public final StopwatchEventLogger i;
     public bzh j;
     public bzh k;
     public bzh l;
@@ -38,7 +38,7 @@ public final class ctc implements axp, dkf, cof, dqs, dko, deh {
     private final dep u;
     private final csa v;
 
-    public ctc(Context context, czb czbVar, cqb cqbVar, dkp dkpVar, dep depVar, cku ckuVar, csa csaVar, cop copVar, lqv lqvVar) {
+    public ctc(Context context, StopwatchEventLogger czbVar, cqb cqbVar, dkp dkpVar, dep depVar, cku ckuVar, csa csaVar, cop copVar, lqv lqvVar) {
         this.b = hyn.b(context);
         this.i = czbVar;
         this.t = dkpVar;
@@ -400,7 +400,7 @@ public final class ctc implements axp, dkf, cof, dqs, dko, deh {
             while (it2.hasNext()) {
                 ((ckz) it2.next()).w();
             }
-            czb czbVar = this.i;
+            StopwatchEventLogger czbVar = this.i;
             kgt kgtVarK = mjw.a.k();
             kgtVarK.p();
             mjw mjwVar = (mjw) kgtVarK.b;

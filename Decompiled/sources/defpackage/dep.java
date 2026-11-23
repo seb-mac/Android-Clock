@@ -14,15 +14,15 @@ public final class dep implements cqg {
     public final Optional a;
     public final ddd b;
     public final dem c;
-    public final czb d;
+    public final StopwatchEventLogger d;
     public final bzi e;
     public final lqv f;
-    private final fhr g;
+    private final Clock g;
     private final lst h;
     private final List i = new CopyOnWriteArrayList();
     private final SharedPreferences.OnSharedPreferenceChangeListener j;
 
-    public dep(SharedPreferences sharedPreferences, fhr fhrVar, czb czbVar, Optional optional, ddd dddVar, lqv lqvVar, lst lstVar, dem demVar, bzi bziVar) {
+    public dep(SharedPreferences sharedPreferences, Clock fhrVar, StopwatchEventLogger czbVar, Optional optional, ddd dddVar, lqv lqvVar, lst lstVar, dem demVar, bzi bziVar) {
         deo deoVar = new deo(this);
         this.j = deoVar;
         this.g = fhrVar;

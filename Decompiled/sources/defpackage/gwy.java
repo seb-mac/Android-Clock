@@ -102,7 +102,7 @@ public final class gwy implements gtv {
                             ippVar2.d(l);
                             l.getClass();
                             if (gxcVar.n <= 9000 && gxcVar.g != 0) {
-                                gvl gvlVar = (gvl) gxiVar.b.b();
+                                gvl gvlVar = (gvl) gxiVar.b.reset();
                                 String strReplace = ((gxn) lstVar.b()).b.replace("%PACKAGE_NAME%", ((Context) gxiVar.d).getPackageName());
                                 ippVar2.d(strReplace);
                                 gvlVar.a(strReplace);

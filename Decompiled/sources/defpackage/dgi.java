@@ -47,7 +47,7 @@ public final class dgi extends fk {
             lxj.a(context);
             int i2 = ((dgo) dgqVar).a;
             dgi dgiVar = dggVar.w;
-            long jA = dgiVar.e.b().a();
+            long jA = dgiVar.e.b().getTime();
             Integer numValueOf = Integer.valueOf(i2);
             String string = context.getString(R.string.gastown_stopwatch_lap_number, numValueOf);
             lxj.c(string, "getString(...)");

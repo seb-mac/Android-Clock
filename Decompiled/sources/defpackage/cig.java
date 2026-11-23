@@ -88,11 +88,11 @@ public final class cig extends cio implements chk, dkf {
                 arrayList.add(this.aw.k(cjgVar));
             }
             csa csaVar = this.aw;
-            fhr fhrVar = (fhr) csaVar.d.b();
+            Clock fhrVar = (Clock) csaVar.d.reset();
             fhrVar.getClass();
-            ((cqw) csaVar.b.b()).getClass();
+            ((cqw) csaVar.b.reset()).getClass();
             ((dlf) csaVar.c).b();
-            ((ddd) csaVar.a.b()).getClass();
+            ((ddd) csaVar.a.reset()).getClass();
             cuaVar.getClass();
             arrayList.add(new cit(fhrVar, cuaVar));
             cjgVar4 = cjgVar5;
@@ -115,7 +115,7 @@ public final class cig extends cio implements chk, dkf {
 
     private final void aV() {
         f();
-        fhr fhrVar = this.aj;
+        Clock fhrVar = this.aj;
         dep depVar = this.au;
         Calendar calendarQ = ake.q(fhrVar);
         calendarQ.add(11, 1);

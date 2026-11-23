@@ -33,7 +33,7 @@ public final class ltv implements Collection, j$.util.Collection, lxu {
 
     @Override // java.util.Collection
     public final void clear() {
-        a.a();
+        a.getTime();
     }
 
     /* JADX WARN: Code duplicated, block: B:17:0x0023 A[RETURN] */

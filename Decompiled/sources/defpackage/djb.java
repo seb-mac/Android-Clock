@@ -87,6 +87,6 @@ public class djb extends bg implements ksg {
             return;
         }
         this.e = true;
-        ((dje) this).d = (czb) ((ccn) bV()).h.I.b();
+        ((dje) this).d = (StopwatchEventLogger) ((ccn) bV()).h.I.b();
     }
 }

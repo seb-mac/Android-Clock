@@ -27,29 +27,29 @@ public final class ckc implements ksl {
     public final /* synthetic */ Object b() {
         switch (this.e) {
             case 0:
-                return new ckb((ddd) this.a.b(), (fhr) this.b.b(), (StopwatchController) this.c.b(), (Optional) ((ksm) this.d).a);
+                return new ckb((ddd) this.a.b(), (Clock) this.b.b(), (StopwatchController) this.c.b(), (Optional) ((ksm) this.d).a);
             case 1:
-                return new chy((dlu) this.b.b(), (fhr) this.d.b(), (ddd) this.c.b(), (mam) this.a.b());
+                return new chy((dlu) this.b.b(), (Clock) this.d.b(), (ddd) this.c.b(), (mam) this.a.b());
             case 2:
-                return new ckd((ddd) this.a.b(), (fhr) this.b.b(), (StopwatchController) this.c.b(), (Optional) ((ksm) this.d).a);
+                return new ckd((ddd) this.a.b(), (Clock) this.b.b(), (StopwatchController) this.c.b(), (Optional) ((ksm) this.d).a);
             case ard.INTEGER_FIELD_NUMBER /* 3 */:
                 return new ckz(((hft) this.d).a(), (lvf) this.a.b(), (csa) this.c.b(), (cop) this.b.b());
             case ard.LONG_FIELD_NUMBER /* 4 */:
-                return new crt(((hft) this.a).a(), (fhr) this.d.b(), (czb) this.b.b(), (csa) this.c.b());
+                return new crt(((hft) this.a).a(), (Clock) this.d.b(), (StopwatchEventLogger) this.b.b(), (csa) this.c.b());
             case ard.STRING_FIELD_NUMBER /* 5 */:
                 return new ctu(((hft) this.d).a(), (cqb) this.a.b(), ((dqi) this.c).b(), ((kss) this.b).b());
             case ard.STRING_SET_FIELD_NUMBER /* 6 */:
                 return new daa(((hft) this.d).a(), ksk.a(this.b), (StopwatchController) this.c.b(), (dao) this.a.b());
             case ard.DOUBLE_FIELD_NUMBER /* 7 */:
-                return new dfl(((hft) this.c).a(), (che) this.d.b(), (mam) this.b.b(), (czb) this.a.b());
+                return new dfl(((hft) this.c).a(), (che) this.d.b(), (mam) this.b.b(), (StopwatchEventLogger) this.a.b());
             case ard.BYTES_FIELD_NUMBER /* 8 */:
-                return new dfp(((hft) this.c).a(), (che) this.d.b(), (mam) this.b.b(), (czb) this.a.b());
+                return new dfp(((hft) this.c).a(), (che) this.d.b(), (mam) this.b.b(), (StopwatchEventLogger) this.a.b());
             case 9:
-                return new dfq(((dek) this.b).b(), (SharedPreferences) this.c.b(), (lvf) this.d.b(), (czb) this.a.b());
+                return new dfq(((dek) this.b).b(), (SharedPreferences) this.c.b(), (lvf) this.d.b(), (StopwatchEventLogger) this.a.b());
             case 10:
-                return new dna(((hft) this.c).a(), (che) this.d.b(), (mam) this.b.b(), (czb) this.a.b());
+                return new dna(((hft) this.c).a(), (che) this.d.b(), (mam) this.b.b(), (StopwatchEventLogger) this.a.b());
             case 11:
-                return new dnm((SharedPreferences) this.a.b(), (czb) this.b.b(), (fcp) this.d.b(), (dmr) this.c.b());
+                return new dnm((SharedPreferences) this.a.b(), (StopwatchEventLogger) this.b.b(), (fcp) this.d.b(), (dmr) this.c.b());
             case 12:
                 return new fxd((fwa) this.a.b(), ((ghb) this.b).a(), (fwf) this.c.b(), (fnl) this.d.b());
             case 13:
@@ -57,7 +57,7 @@ public final class ckc implements ksl {
             case 14:
                 return new fya(((hft) this.a).a(), (fwa) this.c.b(), ((ghb) this.b).a(), (fnl) this.d.b());
             case 15:
-                return new flw((fhr) this.b.b(), cpz.a(), ((ghe) this.d).b(), (gno) this.c.b(), (gpl) this.a.b());
+                return new flw((Clock) this.b.b(), cpz.a(), ((ghe) this.d).b(), (gno) this.c.b(), (gpl) this.a.b());
             case 16:
                 Context contextA = ((hft) this.b).a();
                 lvf lvfVarA = ((gha) this.a).a();

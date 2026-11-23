@@ -108,7 +108,7 @@ public final class dji implements ksl {
                 ezm ezmVarB = ((ghs) ghqVar.b).b();
                 Set set = (Set) ((ksm) ghqVar.c).a;
                 Set set2 = (Set) ((ksm) ghqVar.d).a;
-                fhr fhrVar = (fhr) ghqVar.e.b();
+                Clock fhrVar = (Clock) ghqVar.e.b();
                 mam mamVarA = ((ghb) ghqVar.f).a();
                 lst lstVar = ghqVar.g;
                 Context contextA4 = ((hft) ghqVar.h).a();

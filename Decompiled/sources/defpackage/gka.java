@@ -68,7 +68,7 @@ public final class gka implements ksl {
         lvf lvfVarA2 = ((gha) this.f).a();
         iqo iqoVar = (iqo) ((ksm) this.g).a;
         ksq ksqVar6 = this.h;
-        return new gjz(gnmVarB, lqvVarB, gogVarB, kqgVarA2, lvfVarA, lvfVarA2, iqoVar, cpz.a(), (gpc) ksqVar6.b(), ((hft) this.i).a(), (fhr) this.j.b(), (iqo) ((ksm) this.k).a, ((glr) this.l).b(), this.m);
+        return new gjz(gnmVarB, lqvVarB, gogVarB, kqgVarA2, lvfVarA, lvfVarA2, iqoVar, cpz.a(), (gpc) ksqVar6.b(), ((hft) this.i).a(), (Clock) this.j.b(), (iqo) ((ksm) this.k).a, ((glr) this.l).b(), this.m);
     }
 
     public gka(ksq ksqVar, ksq ksqVar2, ksq ksqVar3, ksq ksqVar4, ksq ksqVar5, ksq ksqVar6, ksq ksqVar7, ksq ksqVar8, ksq ksqVar9, ksq ksqVar10, ksq ksqVar11, ksq ksqVar12, ksq ksqVar13, int i, byte[] bArr) {

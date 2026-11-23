@@ -15,10 +15,10 @@ public final class dfl extends chi {
     public volatile boolean f;
     private final iwy g;
     private final Set h;
-    private final czb i;
+    private final StopwatchEventLogger i;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public dfl(Context context, che cheVar, mam mamVar, czb czbVar) {
+    public dfl(Context context, che cheVar, mam mamVar, StopwatchEventLogger czbVar) {
         super(chj.SILENT_SETTING_SILENT_RINGTONE, cheVar, mamVar);
         lxj.d(cheVar, "bannerPreferences");
         lxj.d(mamVar, "backgroundScope");

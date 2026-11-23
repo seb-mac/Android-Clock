@@ -48,7 +48,7 @@ public final class ltz implements List, Serializable, RandomAccess, j$.util.List
 
     @Override // java.util.List, java.util.Collection
     public final void clear() {
-        a.a();
+        a.getTime();
     }
 
     @Override // java.util.List, java.util.Collection

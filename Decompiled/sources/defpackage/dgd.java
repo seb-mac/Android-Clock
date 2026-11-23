@@ -10,7 +10,7 @@ final class dgd implements dfw {
     }
 
     @Override // defpackage.dfw
-    public final void x(dfv dfvVar, dfv dfvVar2) {
+    public final void x(StopwatchStateModel dfvVar, StopwatchStateModel dfvVar2) {
         lxj.d(dfvVar, "before");
         dge dgeVar = this.a;
         dgeVar.aQ(dgeVar.K());

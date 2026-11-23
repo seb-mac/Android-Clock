@@ -15,7 +15,7 @@ public final class dhy {
     public static final Comparator a;
     static final Comparator b;
     public static final Comparator c;
-    public final fhr d;
+    public final Clock d;
     public final int e;
     public final UUID f;
     public final dia g;
@@ -28,7 +28,7 @@ public final class dhy {
     public final long n;
     public final String o;
     public final boolean p;
-    public final daq q;
+    public final StopwatchNotificationState q;
 
     static {
         Comparator comparatorComparingInt = Comparator$CC.comparingInt(new ctx(3));
@@ -37,7 +37,7 @@ public final class dhy {
         c = new dqq(1, null);
     }
 
-    public dhy(fhr fhrVar, int i, UUID uuid, dia diaVar, int i2, long j, long j2, long j3, long j4, long j5, long j6, String str, boolean z, daq daqVar) {
+    public dhy(Clock fhrVar, int i, UUID uuid, dia diaVar, int i2, long j, long j2, long j3, long j4, long j5, long j6, String str, boolean z, StopwatchNotificationState daqVar) {
         this.d = fhrVar;
         this.e = i;
         this.f = uuid;
@@ -76,7 +76,7 @@ public final class dhy {
         if (diaVar == dia.PAUSED || diaVar == dia.RESET) {
             return this.n;
         }
-        fhr fhrVar = this.d;
+        Clock fhrVar = this.d;
         return this.n - Math.max(0L, fhrVar.a() - this.m);
     }
 
@@ -113,8 +113,8 @@ public final class dhy {
             return this;
         }
         long jMin = Math.min(0L, c());
-        fhr fhrVar = this.d;
-        return new dhy(fhrVar, this.e, this.f, diaVar2, this.h, this.i, this.j, this.k, fhrVar.c().toEpochMilli(), fhrVar.a(), jMin, this.o, this.p, daq.b);
+        Clock fhrVar = this.d;
+        return new dhy(fhrVar, this.e, this.f, diaVar2, this.h, this.i, this.j, this.k, fhrVar.c().toEpochMilli(), fhrVar.a(), jMin, this.o, this.p, StopwatchNotificationState.b);
     }
 
     public final dhy g() {
@@ -126,7 +126,7 @@ public final class dhy {
         if (diaVar == dia.EXPIRED || diaVar == dia.MISSED) {
             return h();
         }
-        return new dhy(this.d, this.e, this.f, diaVar2, this.h, this.i, this.j, this.k, Long.MIN_VALUE, Long.MIN_VALUE, c(), this.o, this.p, daq.b);
+        return new dhy(this.d, this.e, this.f, diaVar2, this.h, this.i, this.j, this.k, Long.MIN_VALUE, Long.MIN_VALUE, c(), this.o, this.p, StopwatchNotificationState.b);
     }
 
     public final dhy h() {
@@ -135,12 +135,12 @@ public final class dhy {
         if (diaVar == diaVar2) {
             return this;
         }
-        fhr fhrVar = this.d;
+        Clock fhrVar = this.d;
         int i = this.e;
         UUID uuid = this.f;
         int i2 = this.h;
         long j = this.i;
-        return new dhy(fhrVar, i, uuid, diaVar2, i2, j, j, Long.MIN_VALUE, Long.MIN_VALUE, Long.MIN_VALUE, j, this.o, this.p, daq.b);
+        return new dhy(fhrVar, i, uuid, diaVar2, i2, j, j, Long.MIN_VALUE, Long.MIN_VALUE, Long.MIN_VALUE, j, this.o, this.p, StopwatchNotificationState.b);
     }
 
     public final int hashCode() {
@@ -162,7 +162,7 @@ public final class dhy {
                     diaVar = dia.RUNNING;
                 }
                 dia diaVar2 = diaVar;
-                fhr fhrVar = this.d;
+                Clock fhrVar = this.d;
                 return new dhy(fhrVar, this.e, this.f, diaVar2, this.h, this.i, j2, this.k, fhrVar.c().toEpochMilli(), fhrVar.a(), j, this.o, this.p, this.q);
             }
         }
@@ -175,14 +175,14 @@ public final class dhy {
         if (diaVar == diaVar2 || diaVar == dia.EXPIRED || diaVar == dia.MISSED) {
             return this;
         }
-        fhr fhrVar = this.d;
+        Clock fhrVar = this.d;
         long epochMilli = fhrVar.c().toEpochMilli();
-        return new dhy(fhrVar, this.e, this.f, diaVar2, this.h, this.i, this.j, diaVar == dia.RESET ? epochMilli : this.k, epochMilli, fhrVar.a(), this.n, this.o, this.p, daq.b);
+        return new dhy(fhrVar, this.e, this.f, diaVar2, this.h, this.i, this.j, diaVar == dia.RESET ? epochMilli : this.k, epochMilli, fhrVar.a(), this.n, this.o, this.p, StopwatchNotificationState.b);
     }
 
     public final dhy l() {
-        daq daqVar = this.q;
-        daq daqVar2 = daq.a;
+        StopwatchNotificationState daqVar = this.q;
+        StopwatchNotificationState daqVar2 = StopwatchNotificationState.a;
         return daqVar == daqVar2 ? this : new dhy(this.d, this.e, this.f, this.g, this.h, this.i, this.j, this.k, this.l, this.m, this.n, this.o, this.p, daqVar2);
     }
 
@@ -216,7 +216,7 @@ public final class dhy {
     }
 
     public final boolean p() {
-        return this.q == daq.a;
+        return this.q == StopwatchNotificationState.a;
     }
 
     public final boolean q() {

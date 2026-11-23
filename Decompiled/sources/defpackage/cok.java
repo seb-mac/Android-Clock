@@ -14,14 +14,14 @@ import java.util.Map;
 final class cok extends AsyncTask {
     private final Context a;
     private final cop b;
-    private final fhr c;
+    private final Clock c;
     private final long d;
     private final long e;
     private final long f;
     private final boolean g = kvy.f();
-    private final czb h;
+    private final StopwatchEventLogger h;
 
-    public cok(Context context, cop copVar, fhr fhrVar, long j, long j2, czb czbVar) {
+    public cok(Context context, cop copVar, Clock fhrVar, long j, long j2, StopwatchEventLogger czbVar) {
         this.a = context;
         this.b = copVar;
         this.c = fhrVar;

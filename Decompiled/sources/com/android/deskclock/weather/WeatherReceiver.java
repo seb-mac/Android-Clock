@@ -5,7 +5,7 @@ import android.content.Intent;
 import defpackage.cwb;
 import defpackage.doc;
 import defpackage.dod;
-import defpackage.fhr;
+import defpackage.Clock;
 import defpackage.iud;
 import defpackage.kkq;
 import defpackage.mmg;
@@ -16,7 +16,7 @@ import j$.time.Duration;
 public class WeatherReceiver extends doc {
     public static final /* synthetic */ int d = 0;
     private static final iud e = iud.p("com.android.deskclock.action.WEATHER_DATA_UPDATE", "com.android.deskclock.action.WEATHER_RUNTIME_DATA_UPDATE", "com.android.deskclock.action.WEATHER_TIMED_UPDATE");
-    public fhr c;
+    public Clock c;
 
     /* JADX WARN: Code duplicated, block: B:38:0x007e  */
     @Override // defpackage.doc, android.content.BroadcastReceiver

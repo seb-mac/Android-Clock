@@ -11,7 +11,7 @@ import java.util.Map;
 /* JADX INFO: compiled from: PG */
 /* JADX INFO: loaded from: classes2.dex */
 public final class cvd {
-    public final fhr a;
+    public final Clock a;
     public final String b;
     public final Map c;
     public boolean d;
@@ -19,7 +19,7 @@ public final class cvd {
     public final /* synthetic */ cve f;
     private final CitySelectionActivity g;
 
-    public cvd(cve cveVar, fhr fhrVar, String str, CitySelectionActivity citySelectionActivity) {
+    public cvd(cve cveVar, Clock fhrVar, String str, CitySelectionActivity citySelectionActivity) {
         Objects.requireNonNull(cveVar);
         this.f = cveVar;
         this.c = new LinkedHashMap(5);
@@ -71,7 +71,7 @@ public final class cvd {
             long j = this.e;
             kww kwwVarC = kub.c();
             if (kwwVarC.b || kwwVarC.e) {
-                czb czbVar = cveVar.i;
+                StopwatchEventLogger czbVar = cveVar.i;
                 long jA = czbVar.d.a() - j;
                 bzh bzhVarZ = lsr.z(mjl.a.k());
                 ayu ayuVarU = lxg.u(mkv.a.k());

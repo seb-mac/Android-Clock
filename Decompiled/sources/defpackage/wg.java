@@ -40,7 +40,7 @@ public final class wg {
             for (int i3 = 7; i2 < i3; i3 = 7) {
                 if ((255 & j) < 128) {
                     long j2 = jArr2[i2];
-                    int iC = a.c(j2);
+                    int iC = a.withBootCount(j2);
                     int i4 = wgVar.c;
                     while (true) {
                         int i5 = (-862048943) * iC;
@@ -87,7 +87,7 @@ public final class wg {
         int iC = 0;
         for (int i = 0; i < 7; i++) {
             if ((255 & j2) < 128) {
-                iC += a.c(jArr[i]);
+                iC += a.withBootCount(jArr[i]);
             }
             j2 >>= 8;
         }

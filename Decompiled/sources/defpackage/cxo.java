@@ -13,7 +13,7 @@ public final class cxo extends cwm {
     public static final iwy u = iwy.h("com/android/deskclock/data/SpotifyMusicModel");
     private List v;
 
-    public cxo(Context context, fhr fhrVar, czb czbVar, cqj cqjVar, cxi cxiVar, ddd dddVar, flw flwVar, ns nsVar, cyr cyrVar) {
+    public cxo(Context context, Clock fhrVar, StopwatchEventLogger czbVar, cqj cqjVar, cxi cxiVar, ddd dddVar, flw flwVar, ns nsVar, cyr cyrVar) {
         super(cyrVar, context, fhrVar, dco.b, new cxc(2), czbVar, cqjVar, cxiVar, dddVar, flwVar, nsVar);
     }
 

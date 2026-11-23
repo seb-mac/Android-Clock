@@ -169,7 +169,7 @@ public final class gfd implements gdt {
     @Override // defpackage.gdt
     public final Object a(Intent intent, gcq gcqVar, long j, lva lvaVar) {
         gen genVarA = gen.a(intent);
-        long jA = ((fhr) this.f.b()).a();
+        long jA = ((Clock) this.f.b()).a();
         ggp ggpVar = (ggp) this.d.b();
         ggq ggqVarN = ((flw) this.e.b()).n(34);
         jxn jxnVarB = genVarA.b();

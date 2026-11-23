@@ -11,13 +11,13 @@ import j$.util.Optional;
 public final class drg extends drf {
     public static final /* synthetic */ int t = 0;
     private final View A;
-    private final czb B;
+    private final StopwatchEventLogger B;
     private final gog C;
-    private final fhr u;
+    private final Clock u;
     private final ctc v;
     private final Optional w;
 
-    public drg(View view, fhr fhrVar, gog gogVar, ctc ctcVar, czb czbVar, Optional optional) {
+    public drg(View view, Clock fhrVar, gog gogVar, ctc ctcVar, StopwatchEventLogger czbVar, Optional optional) {
         super(view);
         this.u = fhrVar;
         this.C = gogVar;
@@ -50,7 +50,7 @@ public final class drg extends drf {
     protected final /* bridge */ /* synthetic */ void bF(dpf dpfVar) {
         View view = this.a;
         drp.aT(view, this.B, this.v);
-        fhr fhrVar = this.u;
+        Clock fhrVar = this.u;
         drp.aS(view, fhrVar);
         Context context = view.getContext();
         context.getString(R.string.abbrev_wday_month_day_no_year);

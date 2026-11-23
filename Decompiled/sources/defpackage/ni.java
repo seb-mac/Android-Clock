@@ -213,7 +213,7 @@ public final /* synthetic */ class ni implements Runnable {
                 ((anp) this.a).f(0);
                 return;
             case 12:
-                Object obj2 = ((aux) this.a).h.a;
+                Object obj2 = ((aux) this.a).h.clock;
                 long jUptimeMillis2 = SystemClock.uptimeMillis();
                 long jUptimeMillis3 = SystemClock.uptimeMillis();
                 int i7 = 0;

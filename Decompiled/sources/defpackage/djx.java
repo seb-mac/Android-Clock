@@ -14,12 +14,12 @@ import java.util.UUID;
 public final class djx implements dmj {
     private static final iwy a = iwy.h("com/android/deskclock/timer/handler/TimerActionHandler");
     private final Context b;
-    private final fhr c;
+    private final Clock c;
     private final cyb d;
-    private final czb e;
+    private final StopwatchEventLogger e;
     private final lqv f;
 
-    public djx(Context context, fhr fhrVar, czb czbVar, lqv lqvVar, cyb cybVar) {
+    public djx(Context context, Clock fhrVar, StopwatchEventLogger czbVar, lqv lqvVar, cyb cybVar) {
         lxj.d(fhrVar, "clock");
         lxj.d(czbVar, "clearcutEventTracker");
         lxj.d(cybVar, "timerModel");
@@ -71,7 +71,7 @@ public final class djx implements dmj {
             lwoVar.a(null);
             return;
         }
-        czb czbVar = this.e;
+        StopwatchEventLogger czbVar = this.e;
         mly mlyVar = dmkVar.f;
         czbVar.z(7, mlyVar);
         String strAo = eif.ao(uri, "ui", "headless");

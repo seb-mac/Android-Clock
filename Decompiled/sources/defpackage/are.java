@@ -140,11 +140,11 @@ public final /* synthetic */ class are implements lwo {
                 return ltl.a;
             case 19:
                 iwy iwyVar = cjz.a;
-                lxj.d((dfv) obj, "it");
+                lxj.d((StopwatchStateModel) obj, "it");
                 return "0";
             default:
                 iwy iwyVar2 = cjz.a;
-                lxj.d((dfv) obj, "it");
+                lxj.d((StopwatchStateModel) obj, "it");
                 Uri uriO = vc.o();
                 lxj.c(uriO, "getStopwatchUri(...)");
                 return uriO;

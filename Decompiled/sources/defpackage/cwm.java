@@ -51,7 +51,7 @@ public abstract class cwm extends cwx {
     public db f;
     public dcr g;
     public ddc h;
-    final czb i;
+    final StopwatchEventLogger i;
     final cqj j;
     public dl k;
     private final Map u;
@@ -60,7 +60,7 @@ public abstract class cwm extends cwx {
     private dsr x;
     private final ns y;
 
-    public cwm(cyr cyrVar, Context context, fhr fhrVar, dco dcoVar, dda ddaVar, czb czbVar, cqj cqjVar, cxi cxiVar, ddd dddVar, flw flwVar, ns nsVar) {
+    public cwm(cyr cyrVar, Context context, Clock fhrVar, dco dcoVar, dda ddaVar, StopwatchEventLogger czbVar, cqj cqjVar, cxi cxiVar, ddd dddVar, flw flwVar, ns nsVar) {
         super(cyrVar, context, fhrVar, dcoVar, new dcp(dcoVar, 1, 1, 1, 1, 1), czbVar, flwVar);
         this.u = new ArrayMap();
         this.v = new WeakHashMap(100);
@@ -88,7 +88,7 @@ public abstract class cwm extends cwx {
         if (iY == 2) {
             int iZ = 3;
             if (iY2 == 3) {
-                czb czbVar = this.i;
+                StopwatchEventLogger czbVar = this.i;
                 lxj.d(mjnVar, "musicProvider");
                 czbVar.I(mjnVar, 4, 3, 0, iL, 0);
                 return;

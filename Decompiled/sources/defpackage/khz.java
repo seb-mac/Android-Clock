@@ -1148,7 +1148,7 @@ final class khz<T> implements kik<T> {
                         i = iHashCode * 53;
                         long jDoubleToLongBits = Double.doubleToLongBits(kja.a(obj, jT));
                         byte[] bArr = khi.a;
-                        iC = a.c(jDoubleToLongBits);
+                        iC = a.withBootCount(jDoubleToLongBits);
                         break;
                     case 1:
                         i = iHashCode * 53;
@@ -1158,13 +1158,13 @@ final class khz<T> implements kik<T> {
                         i = iHashCode * 53;
                         long jD = kja.d(obj, jT);
                         byte[] bArr2 = khi.a;
-                        iC = a.c(jD);
+                        iC = a.withBootCount(jD);
                         break;
                     case ard.INTEGER_FIELD_NUMBER /* 3 */:
                         i = iHashCode * 53;
                         long jD2 = kja.d(obj, jT);
                         byte[] bArr3 = khi.a;
-                        iC = a.c(jD2);
+                        iC = a.withBootCount(jD2);
                         break;
                     case ard.LONG_FIELD_NUMBER /* 4 */:
                         i = iHashCode * 53;
@@ -1174,7 +1174,7 @@ final class khz<T> implements kik<T> {
                         i = iHashCode * 53;
                         long jD3 = kja.d(obj, jT);
                         byte[] bArr4 = khi.a;
-                        iC = a.c(jD3);
+                        iC = a.withBootCount(jD3);
                         break;
                     case ard.STRING_SET_FIELD_NUMBER /* 6 */:
                         i = iHashCode * 53;
@@ -1217,7 +1217,7 @@ final class khz<T> implements kik<T> {
                         i = iHashCode * 53;
                         long jD4 = kja.d(obj, jT);
                         byte[] bArr6 = khi.a;
-                        iC = a.c(jD4);
+                        iC = a.withBootCount(jD4);
                         break;
                     case 15:
                         i = iHashCode * 53;
@@ -1227,7 +1227,7 @@ final class khz<T> implements kik<T> {
                         i = iHashCode * 53;
                         long jD5 = kja.d(obj, jT);
                         byte[] bArr7 = khi.a;
-                        iC = a.c(jD5);
+                        iC = a.withBootCount(jD5);
                         break;
                     case 17:
                         i = iHashCode * 53;

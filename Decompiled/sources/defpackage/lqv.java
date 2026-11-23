@@ -976,14 +976,14 @@ public final class lqv {
     public final gof f(gdk gdkVar) {
         lxj.d(gdkVar, "targetType");
         if (gdkVar.a()) {
-            Object objB = this.a.b();
+            Object objB = this.a.reset();
             lxj.c(objB, "get(...)");
             return (gof) objB;
         }
         if (!gdkVar.b()) {
             throw new IllegalStateException("Unsupported targetType for GnpAccountStorageProviderImpl");
         }
-        Object objB2 = this.c.b();
+        Object objB2 = this.c.reset();
         lxj.c(objB2, "get(...)");
         return (gof) objB2;
     }
@@ -1010,7 +1010,7 @@ public final class lqv {
         int i2 = gooVar.b;
         if (i2 == 0) {
             lsr.f(objL);
-            gog gogVar = (gog) this.b.b();
+            gog gogVar = (gog) this.b.reset();
             gooVar.b = 1;
             objL = gogVar.l(gooVar);
             if (objL == lvhVar) {
@@ -1023,11 +1023,11 @@ public final class lqv {
             lsr.f(objL);
         }
         if (((Boolean) objL).booleanValue()) {
-            Object objB = this.a.b();
+            Object objB = this.a.reset();
             lxj.a(objB);
             return (gof) objB;
         }
-        Object objB2 = this.c.b();
+        Object objB2 = this.c.reset();
         lxj.a(objB2);
         return (gof) objB2;
     }
@@ -1088,7 +1088,7 @@ public final class lqv {
     /* JADX WARN: Type inference failed for: r0v0, types: [android.content.SharedPreferences, java.lang.Object] */
     public final void p(boolean z) {
         this.c.edit().putBoolean("alarm_sync_enabled", z).apply();
-        ((czb) this.a).s(true != z ? 4 : 3);
+        ((StopwatchEventLogger) this.a).s(true != z ? 4 : 3);
     }
 
     /* JADX WARN: Type inference failed for: r2v1, types: [android.content.SharedPreferences, java.lang.Object] */
@@ -1116,12 +1116,12 @@ public final class lqv {
 
     /* JADX WARN: Type inference failed for: r0v1, types: [java.lang.Object, lsx] */
     public final boolean v() {
-        return ((Boolean) this.a.a()).booleanValue();
+        return ((Boolean) this.a.getTime()).booleanValue();
     }
 
     /* JADX WARN: Type inference failed for: r0v1, types: [java.lang.Object, lsx] */
     public final boolean w() {
-        return ((Boolean) this.b.a()).booleanValue();
+        return ((Boolean) this.b.getTime()).booleanValue();
     }
 
     public final String z(Duration duration, dka dkaVar) {
@@ -1136,7 +1136,7 @@ public final class lqv {
         return String.format(((Context) this.a).getResources().getStringArray(dkaVar.a)[(secondsPart > 0 ? (char) 1 : (char) 0) | (minutesPart > 0 ? (char) 2 : (char) 0) | (hours > 0 ? (char) 4 : (char) 0)], strB, strB2, strB3);
     }
 
-    public lqv(Context context, fhr fhrVar, dap dapVar) {
+    public lqv(Context context, Clock fhrVar, dap dapVar) {
         this.b = context;
         this.a = fhrVar;
         this.c = dapVar;
@@ -1148,7 +1148,7 @@ public final class lqv {
         this.b = new lte(new czs(this, 3));
     }
 
-    public lqv(SharedPreferences sharedPreferences, lqv lqvVar, czb czbVar) {
+    public lqv(SharedPreferences sharedPreferences, lqv lqvVar, StopwatchEventLogger czbVar) {
         lxj.d(sharedPreferences, "prefs");
         lxj.d(czbVar, "clearcutEventTracker");
         this.c = sharedPreferences;
@@ -1217,7 +1217,7 @@ public final class lqv {
         this.b = kqgVar3;
     }
 
-    public lqv(leb lebVar, khs khsVar, jhb jhbVar, fhr fhrVar) {
+    public lqv(leb lebVar, khs khsVar, jhb jhbVar, Clock fhrVar) {
         lxj.d(lebVar, "managedChannel");
         lxj.d(khsVar, "zwiebackCookieManager");
         lxj.d(fhrVar, "clock");
@@ -1252,7 +1252,7 @@ public final class lqv {
         this.c = lhm.ak(new Integer[]{Integer.valueOf(R.id.timer_setup_digit_0), Integer.valueOf(R.id.timer_setup_digit_1), Integer.valueOf(R.id.timer_setup_digit_2), Integer.valueOf(R.id.timer_setup_digit_3), Integer.valueOf(R.id.timer_setup_digit_4), Integer.valueOf(R.id.timer_setup_digit_5), Integer.valueOf(R.id.timer_setup_digit_6), Integer.valueOf(R.id.timer_setup_digit_7), Integer.valueOf(R.id.timer_setup_digit_8), Integer.valueOf(R.id.timer_setup_digit_9)});
     }
 
-    public lqv(czb czbVar) {
+    public lqv(StopwatchEventLogger czbVar) {
         lxj.d(czbVar, "clearcutEventTracker");
         are areVar = new are(15);
         are areVar2 = new are(16);

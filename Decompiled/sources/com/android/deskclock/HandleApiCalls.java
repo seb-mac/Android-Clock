@@ -9,14 +9,14 @@ import defpackage.cdd;
 import defpackage.cde;
 import defpackage.cdz;
 import defpackage.cwb;
-import defpackage.czb;
+import defpackage.StopwatchEventLogger;
 import defpackage.dhy;
 import defpackage.dkr;
 import defpackage.dkt;
 import defpackage.dlx;
 import defpackage.eif;
-import defpackage.fhr;
-import defpackage.g;
+import defpackage.Clock;
+import defpackage.StopwatchUtils;
 import defpackage.iwv;
 import defpackage.iwy;
 import defpackage.mka;
@@ -27,8 +27,8 @@ import java.util.List;
 /* JADX INFO: compiled from: PG */
 /* JADX INFO: loaded from: classes2.dex */
 public class HandleApiCalls extends cdz {
-    public fhr q;
-    public czb r;
+    public Clock q;
+    public StopwatchEventLogger r;
     public bzi s;
     private static final iwy u = iwy.h("com/android/deskclock/HandleApiCalls");
     private static final mlw v = mlw.INTENT;

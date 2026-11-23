@@ -144,7 +144,7 @@ public final /* synthetic */ class coy implements Runnable {
                                     ckuVar.g(5);
                                 } else {
                                     ckuVar.c(string);
-                                    czb czbVar = ckuVar.g;
+                                    StopwatchEventLogger czbVar = ckuVar.g;
                                     kgt kgtVarK = mjw.a.k();
                                     kgt kgtVarK2 = mju.a.k();
                                     kgtVarK2.p();
@@ -209,7 +209,7 @@ public final /* synthetic */ class coy implements Runnable {
                     i = 7;
                 }
                 int iL = ddz.l(dczVar);
-                czb czbVar2 = cxaVar.h;
+                StopwatchEventLogger czbVar2 = cxaVar.h;
                 cwx cwxVar = cxaVar.b;
                 mjn mjnVar = cwxVar.n.g;
                 lxj.d(mjnVar, "musicProvider");
@@ -289,7 +289,7 @@ public final /* synthetic */ class coy implements Runnable {
                         return;
                     }
                 }
-                czb czbVar3 = cxaVar2.h;
+                StopwatchEventLogger czbVar3 = cxaVar2.h;
                 czbVar3.H(mjnVar2, iL2, 7);
                 if (iY != 3) {
                     cxaVar2.c(13);
@@ -330,11 +330,11 @@ public final /* synthetic */ class coy implements Runnable {
                 dbaVar.u.start();
                 return;
             case 14:
-                this.a.a();
+                this.a.getTime();
                 return;
             case 15:
                 dgc dgcVar = (dgc) this.a;
-                long jA = dgcVar.e().a();
+                long jA = dgcVar.e().getTime();
                 for (dgg dggVar : dgcVar.e) {
                     TextView textView = dggVar.t;
                     gog gogVar = dggVar.w.f;

@@ -8,11 +8,11 @@ public final class dfq extends azg implements SharedPreferences.OnSharedPreferen
     public final lvf a;
     public final ayk b;
     public final mfo c;
-    public final czb d;
+    public final StopwatchEventLogger d;
     public final gog e;
     private final SharedPreferences f;
 
-    public dfq(gog gogVar, SharedPreferences sharedPreferences, lvf lvfVar, czb czbVar) {
+    public dfq(gog gogVar, SharedPreferences sharedPreferences, lvf lvfVar, StopwatchEventLogger czbVar) {
         lxj.d(sharedPreferences, "prefs");
         lxj.d(lvfVar, "backgroundContext");
         lxj.d(czbVar, "clearcutEventTracker");

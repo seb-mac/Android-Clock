@@ -8,10 +8,10 @@ import java.util.UUID;
 /* JADX INFO: loaded from: classes2.dex */
 public final class fox implements fof {
     private static final iyf a = iyf.h();
-    private final fhr b;
+    private final Clock b;
     private final gog c;
 
-    public fox(gog gogVar, fhr fhrVar) {
+    public fox(gog gogVar, Clock fhrVar) {
         lxj.d(gogVar, "evalResultStore");
         lxj.d(fhrVar, "clock");
         this.c = gogVar;

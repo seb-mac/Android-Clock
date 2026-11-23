@@ -31,7 +31,7 @@ final class gzq extends haf {
         had hadVar = this.d;
         if (!zH) {
             gzn gznVar = this.e;
-            long epochMilli = Instant.ofEpochMilli(this.f.a.a()).toEpochMilli() - gznVar.b;
+            long epochMilli = Instant.ofEpochMilli(this.f.a.getTime()).toEpochMilli() - gznVar.b;
             if (epochMilli >= 14400000) {
                 long j = epochMilli / 14400000;
                 long jMin = Math.min(j, 15L);

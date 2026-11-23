@@ -16,7 +16,7 @@ public final class gzs {
         this.a = flwVar.k(executor, kqgVar, lstVar);
     }
 
-    public gzs(Context context, fhr fhrVar, lst lstVar) {
+    public gzs(Context context, Clock fhrVar, lst lstVar) {
         this.a = context;
         this.b = fhrVar;
         this.c = lstVar;

@@ -20,7 +20,7 @@ public final class edj {
                 } else {
                     context3 = context2;
                 }
-                return g.e(context3, i);
+                return StopwatchUtils.e(context3, i);
             }
         } catch (Resources.NotFoundException unused) {
         } catch (IllegalStateException e) {

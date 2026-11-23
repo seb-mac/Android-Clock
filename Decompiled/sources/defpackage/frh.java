@@ -103,7 +103,7 @@ public final class frh implements ksl {
         kqg kqgVarA11 = ksk.a(ksqVar11);
         kqg kqgVarA12 = ksk.a(ksqVar10);
         kqg kqgVarA13 = ksk.a(ksqVar9);
-        fhr fhrVar = (fhr) ksqVar8.b();
+        Clock fhrVar = (Clock) ksqVar8.b();
         ((ghb) this.A).a();
         return new frg(gogVar, kqgVarA, kqgVarA2, iqoVarA, gogVar2, gogVar3, fpuVarB, setB, kqgVarA3, fmtVar, setB2, this.l, kqgVarA4, kqgVarA5, kqgVarA6, fofVar, iqoVarA2, kqgVarA7, kqgVarA8, gogVarB, kqgVarA9, kqgVarA10, kqgVarA11, kqgVarA12, kqgVarA13, fhrVar);
     }

@@ -118,7 +118,7 @@ final class dyb implements dxa, dvx {
                     File file = this.h;
                     dxb dxbVar3 = this.b;
                     this.j = eakVar.b(file, dxbVar3.e, dxbVar3.f, dxbVar3.h);
-                    if (this.j != null && dxbVar3.g(this.j.a.a())) {
+                    if (this.j != null && dxbVar3.g(this.j.a.getTime())) {
                         this.j.a.f(dxbVar3.n, this);
                         z = true;
                     }

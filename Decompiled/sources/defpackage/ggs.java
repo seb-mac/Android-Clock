@@ -38,7 +38,7 @@ public final class ggs implements ggq {
     public int y;
     public final int z;
 
-    public ggs(fhr fhrVar, int i, int i2, int i3, Throwable th, gdi gdiVar, ghg ghgVar, gno gnoVar, gpl gplVar) {
+    public ggs(Clock fhrVar, int i, int i2, int i3, Throwable th, gdi gdiVar, ghg ghgVar, gno gnoVar, gpl gplVar) {
         lxj.d(fhrVar, "clock");
         lxj.d(gnoVar, "targetCreatorHelper");
         lxj.d(gplVar, "requestUtil");

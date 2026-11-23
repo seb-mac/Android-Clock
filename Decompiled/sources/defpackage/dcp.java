@@ -117,7 +117,7 @@ public final class dcp {
     }
 
     public final String toString() {
-        return String.format("MusicProviderStatus {provider=%s, appState=%s, searchAPI=%s, browseAPI=%s, fireAPI=%s, accountType=%s}", this.a, g.o(this.b), g.n(this.c), g.n(this.d), g.n(this.e), g.k(this.f));
+        return String.format("MusicProviderStatus {provider=%s, appState=%s, searchAPI=%s, browseAPI=%s, fireAPI=%s, accountType=%s}", this.a, StopwatchUtils.o(this.b), StopwatchUtils.n(this.c), StopwatchUtils.n(this.d), StopwatchUtils.n(this.e), StopwatchUtils.k(this.f));
     }
 
     public final boolean u() {

@@ -64,7 +64,7 @@ public final class gua implements ksl {
             case 12:
                 return new iwd((gvg) this.a.b());
             default:
-                return new lpv((fhr) this.a.b());
+                return new lpv((Clock) this.a.b());
         }
     }
 }

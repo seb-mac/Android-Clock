@@ -17,7 +17,7 @@ import java.util.Iterator;
 /* JADX INFO: loaded from: classes2.dex */
 public abstract class ccx extends cdv implements dqc, dqe {
     public final dkr a;
-    public fhr aj;
+    public Clock aj;
     protected Optional ak;
     private Bundle al;
     private View am;

@@ -11,7 +11,7 @@ public final class cmz extends cmw {
     public static final iwy aj = iwy.h("com/android/deskclock/bedtime/ReminderDialogFragment");
     public int ak = -1;
     public cop al;
-    public czb am;
+    public StopwatchEventLogger am;
 
     public static final cmz aD(mkt mktVar) {
         cmz cmzVar = new cmz();

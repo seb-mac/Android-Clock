@@ -30,7 +30,7 @@ public final class fpp implements ksl {
         kqg kqgVarA2 = ksk.a(ksqVar2);
         lvf lvfVarA = ((gha) ksqVar).a();
         Context contextA = ((hft) this.d).a();
-        fhr fhrVar = (fhr) this.f.b();
+        Clock fhrVar = (Clock) this.f.b();
         cpz.a();
         return new fpo(kqgVarA, kqgVarA2, lvfVarA, contextA, ((ksi) this.e).a, fhrVar);
     }

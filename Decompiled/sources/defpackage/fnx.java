@@ -49,7 +49,7 @@ public final class fnx implements ksl {
             ksq ksqVar3 = this.g;
             ksq ksqVar4 = this.h;
             ksq ksqVar5 = this.i;
-            return new fnw(gogVar, str, contextA, kqgVarA, gdiVarA, iqoVarA, this.f, ksk.a(ksqVar3), ksk.a(ksqVar4), ((glv) ksqVar5).b(), (fhr) this.j.b());
+            return new fnw(gogVar, str, contextA, kqgVarA, gdiVarA, iqoVarA, this.f, ksk.a(ksqVar3), ksk.a(ksqVar4), ((glv) ksqVar5).b(), (Clock) this.j.b());
         }
         if (i != 1) {
             if (i == 2) {

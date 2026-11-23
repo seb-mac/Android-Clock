@@ -17,7 +17,7 @@ public final class cdl extends cfe {
     private final cop d;
     private final lqv e;
 
-    public cdl(Context context, lqv lqvVar, String str, Uri uri, mjv mjvVar, czb czbVar, cop copVar) {
+    public cdl(Context context, lqv lqvVar, String str, Uri uri, mjv mjvVar, StopwatchEventLogger czbVar, cop copVar) {
         int iAn;
         int iAn2;
         super(context, true);

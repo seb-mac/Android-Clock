@@ -23,7 +23,7 @@ import defpackage.cwb;
 import defpackage.dep;
 import defpackage.dkt;
 import defpackage.dlu;
-import defpackage.fhr;
+import defpackage.Clock;
 import defpackage.gdn;
 import defpackage.gog;
 import defpackage.hr;
@@ -41,7 +41,7 @@ public class TitanViewAlarmActivity extends cgm implements chk {
     private int B;
     private int C;
     public long q = -1;
-    public fhr r;
+    public Clock r;
     public cpu s;
     public dep t;
     public dlu u;

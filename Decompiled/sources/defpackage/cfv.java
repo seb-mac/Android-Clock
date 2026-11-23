@@ -27,7 +27,7 @@ public final class cfv extends cfe {
         mjv mjvVar = mjv.SNACKBAR;
         kgtVarK.p();
         ((mjw) kgtVarK.b).g = mjvVar.a();
-        ((czb) this.b.f).b((mjw) kgtVarK.m());
+        ((StopwatchEventLogger) this.b.f).b((mjw) kgtVarK.m());
         return (cua) cwb.aQ(new cvk(cwb.a, this.a, 4));
     }
 

@@ -171,7 +171,7 @@ public final class daa implements chk, cpb, cqi, dfw, dhz, deh {
     }
 
     @Override // defpackage.dfw
-    public final void x(dfv dfvVar, dfv dfvVar2) {
+    public final void x(StopwatchStateModel dfvVar, StopwatchStateModel dfvVar2) {
         if (this.c.b()) {
             u();
         }

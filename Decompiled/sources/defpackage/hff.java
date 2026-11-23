@@ -33,7 +33,7 @@ public final class hff implements ksl {
         this.m = ksqVar13;
     }
 
-    public static hfe c(hgb hgbVar, hlx hlxVar, leb lebVar, lnz lnzVar, fhr fhrVar, Object obj, ens ensVar, ens ensVar2, Object obj2, Object obj3, lbx lbxVar, ens ensVar3, hgd hgdVar, kkg kkgVar) {
+    public static hfe c(hgb hgbVar, hlx hlxVar, leb lebVar, lnz lnzVar, Clock fhrVar, Object obj, ens ensVar, ens ensVar2, Object obj2, Object obj3, lbx lbxVar, ens ensVar3, hgd hgdVar, kkg kkgVar) {
         return new hfe(hgbVar, hlxVar, lebVar, lnzVar, fhrVar, (khs) obj, ensVar, ensVar2, (hfj) obj2, (hfl) obj3, lbxVar, ensVar3, hgdVar, kkgVar);
     }
 
@@ -44,7 +44,7 @@ public final class hff implements ksl {
         hlx hlxVar = (hlx) this.b.b();
         leb lebVar = (leb) this.c.b();
         lnz lnzVar = (lnz) this.d.b();
-        fhr fhrVar = (fhr) this.e.b();
+        Clock fhrVar = (Clock) this.e.b();
         khs khsVar = new khs(null);
         Object obj = ((ksm) this.m).a;
         return c(hgbVar, hlxVar, lebVar, lnzVar, fhrVar, khsVar, ((hew) this.f).b(), ((hfg) this.g).b(), this.h.b(), ((hfm) this.i).b(), ((fzu) this.j).b(), ((hex) this.k).b(), (hgd) ((ksm) this.l).a, (kkg) obj);

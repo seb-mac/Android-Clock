@@ -11,11 +11,11 @@ public final class dqn extends dph implements View.OnClickListener {
     public static final /* synthetic */ int t = 0;
     private final TextView A;
     private final ImageView B;
-    private final fhr u;
+    private final Clock u;
     private final cpu v;
     private final TextView w;
 
-    public dqn(View view, fhr fhrVar, cpu cpuVar) {
+    public dqn(View view, Clock fhrVar, cpu cpuVar) {
         super(view);
         this.u = fhrVar;
         this.v = cpuVar;

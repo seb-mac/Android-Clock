@@ -23,7 +23,7 @@ public final class lua implements Map, Serializable, j$.util.Map, lxu {
 
     @Override // java.util.Map
     public final void clear() {
-        a.a();
+        a.getTime();
     }
 
     @Override // java.util.Map, j$.util.Map

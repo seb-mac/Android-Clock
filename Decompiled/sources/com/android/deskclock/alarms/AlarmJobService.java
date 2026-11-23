@@ -10,7 +10,7 @@ import android.content.Intent;
 import defpackage.ayl;
 import defpackage.ayu;
 import defpackage.cgi;
-import defpackage.czb;
+import defpackage.StopwatchEventLogger;
 import defpackage.iwy;
 import defpackage.kqg;
 import defpackage.kta;
@@ -79,7 +79,7 @@ public final class AlarmJobService extends cgi {
     public final boolean onStartJob(JobParameters jobParameters) {
         mam mamVar;
         lxj.d(jobParameters, "jobParameters");
-        czb czbVar = (czb) a().b();
+        StopwatchEventLogger czbVar = (StopwatchEventLogger) a().b();
         ayu ayuVarY = lxg.y(mkd.a.k());
         ayuVarY.ap(7);
         czbVar.e(ayuVarY.am());
@@ -102,7 +102,7 @@ public final class AlarmJobService extends cgi {
 
     @Override // android.app.job.JobService
     public final boolean onStopJob(JobParameters jobParameters) {
-        czb czbVar = (czb) a().b();
+        StopwatchEventLogger czbVar = (StopwatchEventLogger) a().b();
         ayu ayuVarY = lxg.y(mkd.a.k());
         ayuVarY.ap(8);
         czbVar.e(ayuVarY.am());

@@ -68,7 +68,7 @@ final class dwx implements dxa, dvx {
                     File file = this.h;
                     dxb dxbVar = this.b;
                     this.i = eakVar.b(file, dxbVar.e, dxbVar.f, dxbVar.h);
-                    if (this.i != null && dxbVar.g(this.i.a.a())) {
+                    if (this.i != null && dxbVar.g(this.i.a.getTime())) {
                         this.i.a.f(dxbVar.n, this);
                         z = true;
                     }

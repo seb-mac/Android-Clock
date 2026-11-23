@@ -41,7 +41,7 @@ public abstract class dgm extends ccx {
         dgeVar.e = (cqb) ccsVar.Q.b();
         ccnVar.j.c();
         dgeVar.f = (ctc) cclVar.d.b();
-        dgeVar.aj = (fhr) ccsVar.t.b();
+        dgeVar.aj = (Clock) ccsVar.t.b();
         dgeVar.ak = ccsVar.I();
         dgeVar.ao = ((dgj) ccnVar.a).b();
         dgeVar.al = (jhc) ccsVar.av.b();

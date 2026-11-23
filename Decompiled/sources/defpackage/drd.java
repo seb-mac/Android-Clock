@@ -8,12 +8,12 @@ import j$.util.Optional;
 /* JADX INFO: compiled from: PG */
 /* JADX INFO: loaded from: classes2.dex */
 final class drd implements dpg {
-    private final fhr a;
+    private final Clock a;
     private final cpu b;
     private final Optional c;
     private final dep d;
 
-    public drd(fhr fhrVar, dep depVar, cpu cpuVar, Optional optional) {
+    public drd(Clock fhrVar, dep depVar, cpu cpuVar, Optional optional) {
         this.a = fhrVar;
         this.d = depVar;
         this.b = cpuVar;

@@ -7,7 +7,7 @@ import com.android.deskclock.AlarmInitJobService;
 import defpackage.bzh;
 import defpackage.cdp;
 import defpackage.ceh;
-import defpackage.czb;
+import defpackage.StopwatchEventLogger;
 import defpackage.iwv;
 import defpackage.iwy;
 import defpackage.kqg;
@@ -65,7 +65,7 @@ public final class AlarmInitJobService extends cdp {
     @Override // android.app.job.JobService
     public final boolean onStartJob(final JobParameters jobParameters) {
         lxj.d(jobParameters, "jobParameters");
-        czb czbVar = (czb) a().b();
+        StopwatchEventLogger czbVar = (StopwatchEventLogger) a().b();
         bzh bzhVarW = lxg.w(mjy.a.k());
         bzhVarW.Z(5);
         czbVar.c(bzhVarW.X());
@@ -145,7 +145,7 @@ public final class AlarmInitJobService extends cdp {
                                 lxj.d(jobWorkItemM42m, "completedWorkItem");
                                 jobParameters2.getJobId();
                                 AlarmInitJobService alarmInitJobService = this.a;
-                                czb czbVar2 = (czb) alarmInitJobService.a().b();
+                                StopwatchEventLogger czbVar2 = (StopwatchEventLogger) alarmInitJobService.a().b();
                                 bzh bzhVarW2 = lxg.w(mjy.a.k());
                                 bzhVarW2.Z(7);
                                 Intent intent2 = jobWorkItemM42m.getIntent();
@@ -189,7 +189,7 @@ public final class AlarmInitJobService extends cdp {
 
     @Override // android.app.job.JobService
     public final boolean onStopJob(JobParameters jobParameters) {
-        czb czbVar = (czb) a().b();
+        StopwatchEventLogger czbVar = (StopwatchEventLogger) a().b();
         bzh bzhVarW = lxg.w(mjy.a.k());
         bzhVarW.Z(6);
         czbVar.c(bzhVarW.X());

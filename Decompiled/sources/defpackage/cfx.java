@@ -32,7 +32,7 @@ public final class cfx extends cfe {
         ((mjw) kgtVarK.b).g = mjvVar.a();
         mjw mjwVar2 = (mjw) kgtVarK.m();
         gvu gvuVar = this.b;
-        ((czb) gvuVar.f).b(mjwVar2);
+        ((StopwatchEventLogger) gvuVar.f).b(mjwVar2);
         cty ctyVar = this.a;
         UUID uuidJ = akf.j();
         Instant instantC = gvuVar.e.c();

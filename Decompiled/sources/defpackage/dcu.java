@@ -47,9 +47,9 @@ public final class dcu {
         int i2 = this.d;
         if (i != i2) {
             sb.append(" vibration:");
-            sb.append((Object) g.l(i));
+            sb.append((Object) StopwatchUtils.l(i));
             sb.append("->");
-            sb.append((Object) g.l(i2));
+            sb.append((Object) StopwatchUtils.l(i2));
         }
         sb.append(" }");
         return sb.toString();

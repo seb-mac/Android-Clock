@@ -10,7 +10,7 @@ import com.google.android.deskclock.debug.R;
 import com.google.android.material.button.MaterialButton;
 import defpackage.ccf;
 import defpackage.cwb;
-import defpackage.czb;
+import defpackage.StopwatchEventLogger;
 import defpackage.dhc;
 import defpackage.dhv;
 import defpackage.dhw;
@@ -18,7 +18,7 @@ import defpackage.dia;
 import defpackage.dpc;
 import defpackage.dqd;
 import defpackage.dqe;
-import defpackage.g;
+import defpackage.StopwatchUtils;
 import defpackage.mly;
 import j$.time.Duration;
 
@@ -26,7 +26,7 @@ import j$.time.Duration;
 /* JADX INFO: loaded from: classes2.dex */
 public class TitanCreateTimerActivity extends dhc implements dqe, dhv {
     public TimerSetupView q;
-    public czb r;
+    public StopwatchEventLogger r;
     private dqd s;
     private String t;
 
@@ -58,7 +58,7 @@ public class TitanCreateTimerActivity extends dhc implements dqe, dhv {
             return;
         }
         cwb.a.v(null, dia.RUNNING, this.q.e(), this.t, false);
-        czb czbVar = this.r;
+        StopwatchEventLogger czbVar = this.r;
         mly mlyVar = mly.TITAN_CREATE_TIMER_ACTIVITY;
         czbVar.z(7, mlyVar);
         this.r.z(4, mlyVar);

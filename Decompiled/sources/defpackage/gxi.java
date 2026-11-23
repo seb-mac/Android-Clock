@@ -13,7 +13,7 @@ public final class gxi {
     public final Object c;
     public final Object d;
 
-    public gxi(Context context, fhr fhrVar, lst lstVar) {
+    public gxi(Context context, Clock fhrVar, lst lstVar) {
         this.b = new HashSet();
         this.d = context;
         this.c = fhrVar;
@@ -82,14 +82,14 @@ public final class gxi {
         this.c = kqgVar2;
     }
 
-    public gxi(String str, kqo kqoVar, fhr fhrVar, lst lstVar) {
+    public gxi(String str, kqo kqoVar, Clock fhrVar, lst lstVar) {
         this.b = str;
         this.c = kqoVar;
         this.d = fhrVar;
         this.a = lstVar;
     }
 
-    public gxi(Context context, fhr fhrVar, lst lstVar, lst lstVar2) {
+    public gxi(Context context, Clock fhrVar, lst lstVar, lst lstVar2) {
         this.d = context;
         this.c = fhrVar;
         this.b = lstVar;

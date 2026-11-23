@@ -29,7 +29,7 @@ public interface crv {
 
     ckz ao();
 
-    czb ap();
+    StopwatchEventLogger ap();
 
     csa av();
 
@@ -47,5 +47,5 @@ public interface crv {
 
     ctu n();
 
-    fhr t();
+    Clock t();
 }

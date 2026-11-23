@@ -44,7 +44,7 @@ public final class cep implements ksl {
             case ard.LONG_FIELD_NUMBER /* 4 */:
                 return new ckf(this.b, this.a);
             case ard.STRING_FIELD_NUMBER /* 5 */:
-                return new csa((SharedPreferences) this.b.b(), (czb) this.a.b(), new ckp());
+                return new csa((SharedPreferences) this.b.b(), (StopwatchEventLogger) this.a.b(), new ckp());
             case ard.STRING_SET_FIELD_NUMBER /* 6 */:
                 return new lqv(((hft) this.b).a(), this.a);
             case ard.DOUBLE_FIELD_NUMBER /* 7 */:
@@ -78,7 +78,7 @@ public final class cep implements ksl {
             case 14:
                 return new czz(ksk.a(this.b), (mam) this.a.b());
             case 15:
-                return new das(((hft) this.b).a(), (fhr) this.a.b());
+                return new das(((hft) this.b).a(), (Clock) this.a.b());
             case 16:
                 return new gog((bg) ((ksm) this.b).a, (cqw) this.a.b(), (byte[]) null);
             case 17:
@@ -86,9 +86,9 @@ public final class cep implements ksl {
             case 18:
                 return new lqv((bg) ((ksm) this.b).a, (cqw) this.a.b());
             case 19:
-                return new djt((cyb) this.b.b(), (czb) this.a.b());
+                return new djt((cyb) this.b.b(), (StopwatchEventLogger) this.a.b());
             default:
-                return new dkp((SharedPreferences) this.b.b(), (czb) this.a.b());
+                return new dkp((SharedPreferences) this.b.b(), (StopwatchEventLogger) this.a.b());
         }
     }
 

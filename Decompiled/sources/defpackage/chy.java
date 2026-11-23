@@ -7,7 +7,7 @@ import android.os.Handler;
 public final class chy extends azg implements chk {
     private final dlu a;
 
-    public chy(dlu dluVar, fhr fhrVar, ddd dddVar, mam mamVar) {
+    public chy(dlu dluVar, Clock fhrVar, ddd dddVar, mam mamVar) {
         lxj.d(dluVar, "alarmChangeReactor");
         lxj.d(fhrVar, "clock");
         lxj.d(dddVar, "ringtoneSettingsManager");

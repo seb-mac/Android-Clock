@@ -30,7 +30,7 @@ public final class cmd extends cmq implements cof, dkh, cqa, dko {
     public ImageView aq;
     public RecyclerView ar;
     public cop as;
-    public czb at;
+    public StopwatchEventLogger at;
     public dri au;
     public cnf av;
     public cpg aw;

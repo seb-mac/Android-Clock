@@ -14,6 +14,6 @@ public final class fmz implements ksl {
     @Override // defpackage.lst, defpackage.lss
     /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
     public final gog b() {
-        return new gog((fty) this.a.b(), (fhr) this.b.b());
+        return new gog((fty) this.a.b(), (Clock) this.b.b());
     }
 }

@@ -37,13 +37,13 @@ public final class cxe implements ksl {
             case 2:
                 return new cyr(this.a, this.b, this.c, this.d, this.e, this.f, this.g, this.h, (byte[]) null, (byte[]) null);
             case ard.INTEGER_FIELD_NUMBER /* 3 */:
-                return new cyk(((hft) this.h).a(), (jhb) this.c.b(), (jhb) this.d.b(), (fhr) this.a.b(), (cqj) this.g.b(), ((dme) this.e).b(), ((dqi) this.f).b(), (ehr) this.b.b());
+                return new cyk(((hft) this.h).a(), (jhb) this.c.b(), (jhb) this.d.b(), (Clock) this.a.b(), (cqj) this.g.b(), ((dme) this.e).b(), ((dqi) this.f).b(), (ehr) this.b.b());
             case ard.LONG_FIELD_NUMBER /* 4 */:
                 return new cyr(this.a, this.b, this.c, this.d, this.e, this.f, this.g, this.h);
             case ard.STRING_FIELD_NUMBER /* 5 */:
-                return new czg(((hft) this.d).a(), (jhb) this.g.b(), (jhb) this.b.b(), ((czh) this.e).b(), (czb) this.h.b(), this.f, this.a, this.c);
+                return new czg(((hft) this.d).a(), (jhb) this.g.b(), (jhb) this.b.b(), ((czh) this.e).b(), (StopwatchEventLogger) this.h.b(), this.f, this.a, this.c);
             case ard.STRING_SET_FIELD_NUMBER /* 6 */:
-                return new dfi(((hft) this.e).a(), (che) this.b.b(), (mam) this.c.b(), (mam) this.h.b(), (jhc) this.a.b(), (mam) this.f.b(), (fhr) this.g.b(), (czb) this.d.b());
+                return new dfi(((hft) this.e).a(), (che) this.b.b(), (mam) this.c.b(), (mam) this.h.b(), (jhc) this.a.b(), (mam) this.f.b(), (Clock) this.g.b(), (StopwatchEventLogger) this.d.b());
             case ard.DOUBLE_FIELD_NUMBER /* 7 */:
                 ThreadFactory threadFactory = (ThreadFactory) this.d.b();
                 jhc jhcVar = (jhc) this.a.b();
@@ -60,7 +60,7 @@ public final class cxe implements ksl {
                 fkk fkkVar = new fkk("Lite", iMax, ((Boolean) iqoVar2.d(false)).booleanValue(), fkm.a);
                 return new gdf(ibt.C(fis.a(iqoVar, flx.h(fkkVar, fjsVarB, bzhVarB.D(flx.i(fkkVar.a, new fix(threadFactory, 0))), flx.K(bzhVar, fkkVar), fjxVarB))), jhcVar, 1);
             case ard.BYTES_FIELD_NUMBER /* 8 */:
-                return new geh((fhr) this.b.b(), ((hft) this.h).a(), ((kso) this.g).b(), cpz.a(), ksk.a(this.c), ksk.a(this.d), ksk.a(this.f), ((gha) this.e).a(), ((gpk) this.a).b());
+                return new geh((Clock) this.b.b(), ((hft) this.h).a(), ((kso) this.g).b(), cpz.a(), ksk.a(this.c), ksk.a(this.d), ksk.a(this.f), ((gha) this.e).a(), ((gpk) this.a).b());
             default:
                 return new gpz(((hft) this.a).a(), cpz.a(), (iqo) ((ksm) this.f).a, ((cbu) this.d).a(), (iqo) ((ksm) this.h).a, ((gnr) this.c).b(), (jhb) this.e.b(), this.g, (gpc) this.b.b());
         }

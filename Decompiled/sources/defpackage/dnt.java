@@ -30,19 +30,19 @@ public final class dnt extends ctw implements chk, cpb, cqi {
     public static final iwy b = iwy.h("com/android/deskclock/wearable/alarmsync/data/WearableAlarmSyncModel");
     public final Executor c;
     public final SharedPreferences d;
-    public final fhr e;
+    public final Clock e;
     public final dmr f;
     public final dnm g;
     public final List h;
     public boolean i;
     public final dep j;
-    public final czb k;
+    public final StopwatchEventLogger k;
     public final gvu l;
     public final lqv m;
     private final fco n;
     private final ddd o;
 
-    public dnt(SharedPreferences sharedPreferences, fhr fhrVar, fco fcoVar, gvu gvuVar, dlu dluVar, czb czbVar, cqj cqjVar, lqv lqvVar, dmr dmrVar, dnm dnmVar, lqv lqvVar2, ddd dddVar, dep depVar, cyr cyrVar) {
+    public dnt(SharedPreferences sharedPreferences, Clock fhrVar, fco fcoVar, gvu gvuVar, dlu dluVar, StopwatchEventLogger czbVar, cqj cqjVar, lqv lqvVar, dmr dmrVar, dnm dnmVar, lqv lqvVar2, ddd dddVar, dep depVar, cyr cyrVar) {
         super(cyrVar);
         this.h = new ArrayList();
         this.i = false;
@@ -314,7 +314,7 @@ public final class dnt extends ctw implements chk, cpb, cqi {
         } catch (khn e4) {
             ((iwv) ((iwv) ((iwv) b.b()).i(e4)).j("com/android/deskclock/wearable/alarmsync/data/WearableAlarmSyncModel", "getSyncedDeviceState", (char) 425, "WearableAlarmSyncModel.java")).r("Failed to parse message ");
         }
-        czb czbVar = this.k;
+        StopwatchEventLogger czbVar = this.k;
         kww kwwVarC = kub.c();
         if (kwwVarC.b || kwwVarC.q) {
             bzh bzhVarZ = lsr.z(mjl.a.k());
@@ -414,7 +414,7 @@ public final class dnt extends ctw implements chk, cpb, cqi {
                 break;
             }
             this.g.c((dnf) it.next());
-            czb czbVar = this.k;
+            StopwatchEventLogger czbVar = this.k;
             kgt kgtVarK = mko.a.k();
             kgtVarK.p();
             ((mko) kgtVarK.b).d = a.ae(3);
@@ -436,7 +436,7 @@ public final class dnt extends ctw implements chk, cpb, cqi {
         Iterator it2 = list2.iterator();
         while (it2.hasNext()) {
             this.g.c((dnf) it2.next());
-            czb czbVar2 = this.k;
+            StopwatchEventLogger czbVar2 = this.k;
             kgt kgtVarK3 = mko.a.k();
             kgtVarK3.p();
             ((mko) kgtVarK3.b).d = a.ae(3);
@@ -466,7 +466,7 @@ public final class dnt extends ctw implements chk, cpb, cqi {
                 dnfVarA = dnf.a(dnfVarA.a, dnfVarA.b, dnfVarA.c, dnfVarA.d, dnfVarA.e, dnfVarA.f, dnfVarA.g, dnfVarA.h, dnfVarA.i, dnfVarA.j, dnfVarA.k, epochMilli, dnfVarA.m, dnfVarA.n, strA, true);
             }
             dnmVar.c(dnfVarA);
-            czb czbVar3 = this.k;
+            StopwatchEventLogger czbVar3 = this.k;
             kgt kgtVarK5 = mko.a.k();
             kgtVarK5.p();
             ((mko) kgtVarK5.b).d = a.ae(3);

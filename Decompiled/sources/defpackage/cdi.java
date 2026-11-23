@@ -15,7 +15,7 @@ import java.util.function.Predicate;
 /* JADX INFO: compiled from: PG */
 /* JADX INFO: loaded from: classes2.dex */
 public final class cdi extends cfe {
-    private final fhr a;
+    private final Clock a;
     private final Uri b;
     private final UUID c;
     private final int d;
@@ -27,7 +27,7 @@ public final class cdi extends cfe {
     private final cpe m;
     private final lqv n;
 
-    public cdi(Context context, lqv lqvVar, ddd dddVar, fhr fhrVar, Uri uri, mjv mjvVar, czb czbVar) {
+    public cdi(Context context, lqv lqvVar, ddd dddVar, Clock fhrVar, Uri uri, mjv mjvVar, StopwatchEventLogger czbVar) {
         super(context, true);
         this.a = fhrVar;
         this.n = lqvVar;

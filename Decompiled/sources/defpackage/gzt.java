@@ -16,6 +16,6 @@ public final class gzt implements ksl {
     @Override // defpackage.lst, defpackage.lss
     /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
     public final gzs b() {
-        return new gzs(((hft) this.a).a(), (fhr) this.b.b(), this.c);
+        return new gzs(((hft) this.a).a(), (Clock) this.b.b(), this.c);
     }
 }

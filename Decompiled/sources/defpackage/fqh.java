@@ -23,6 +23,6 @@ public final class fqh implements ksl {
         lxj.d(bzhVar, "factory");
         lxj.d(setB, "predicates");
         gog gogVar = (gog) bzhVar.a;
-        return new fqa(setB, (fnl) gogVar.a.b(), (fof) gogVar.b.b());
+        return new fqa(setB, (fnl) gogVar.a.reset(), (fof) gogVar.b.reset());
     }
 }

@@ -18,6 +18,6 @@ public final class giz implements ksl {
     @Override // defpackage.lst, defpackage.lss
     /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
     public final giy b() {
-        return new giy(((hft) this.a).a(), (Class) this.b.b(), cpz.a(), (gpc) this.c.b(), (fhr) this.d.b());
+        return new giy(((hft) this.a).a(), (Class) this.b.b(), cpz.a(), (gpc) this.c.b(), (Clock) this.d.b());
     }
 }

@@ -12,7 +12,7 @@ import java.util.Set;
 public final class hfe {
     public final hlx a;
     public final leb b;
-    public final fhr c;
+    public final Clock c;
     public final hfj d;
     public final hfl e;
     public final hgd f;
@@ -26,7 +26,7 @@ public final class hfe {
     private final hgb n;
     private final ens o;
 
-    public hfe(hgb hgbVar, hlx hlxVar, leb lebVar, lnz lnzVar, fhr fhrVar, khs khsVar, ens ensVar, ens ensVar2, hfj hfjVar, hfl hflVar, lbx lbxVar, ens ensVar3, hgd hgdVar, kkg kkgVar) {
+    public hfe(hgb hgbVar, hlx hlxVar, leb lebVar, lnz lnzVar, Clock fhrVar, khs khsVar, ens ensVar, ens ensVar2, hfj hfjVar, hfl hflVar, lbx lbxVar, ens ensVar3, hgd hgdVar, kkg kkgVar) {
         this.n = hgbVar;
         this.a = hlxVar;
         this.b = lebVar;
@@ -52,7 +52,7 @@ public final class hfe {
         if (list.isEmpty()) {
             return eif.r(new eqo(new Status(9012, "Place fields must not be empty.", null, null)));
         }
-        fhr fhrVar = this.c;
+        Clock fhrVar = this.c;
         ens ensVar = this.j;
         long jA = fhrVar.a();
         ArrayList arrayList = new ArrayList(hfi.a(list));

@@ -38,7 +38,7 @@ public final class LocationDocument {
     }
 
     public final int hashCode() {
-        int iHashCode = (((((((this.a.hashCode() * 31) + this.b.hashCode()) * 31) + a.c(this.c)) * 31) + eif.e(this.d)) * 31) + eif.e(this.e);
+        int iHashCode = (((((((this.a.hashCode() * 31) + this.b.hashCode()) * 31) + a.withBootCount(this.c)) * 31) + eif.e(this.d)) * 31) + eif.e(this.e);
         G3AttributionInfo g3AttributionInfo = this.f;
         return (iHashCode * 31) + (g3AttributionInfo == null ? 0 : g3AttributionInfo.hashCode());
     }

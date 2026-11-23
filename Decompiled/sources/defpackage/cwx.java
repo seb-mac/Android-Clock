@@ -17,9 +17,9 @@ public abstract class cwx extends ctw {
     private static final iwy b = iwy.h("com/android/deskclock/data/MusicModelDelegate");
     private boolean c;
     private boolean d;
-    private final czb e;
+    private final StopwatchEventLogger e;
     public final Context l;
-    final fhr m;
+    final Clock m;
     public final dco n;
     final UserManager o;
     public final cxa p;
@@ -28,7 +28,7 @@ public abstract class cwx extends ctw {
     public dcp s;
     public dcm t;
 
-    protected cwx(cyr cyrVar, Context context, fhr fhrVar, dco dcoVar, dcp dcpVar, czb czbVar, flw flwVar) {
+    protected cwx(cyr cyrVar, Context context, Clock fhrVar, dco dcoVar, dcp dcpVar, StopwatchEventLogger czbVar, flw flwVar) {
         super(cyrVar);
         this.q = new CopyOnWriteArrayList();
         this.r = new CopyOnWriteArrayList();
@@ -86,32 +86,32 @@ public abstract class cwx extends ctw {
                 int i = dcpVar2.b;
                 int i2 = dcpVar3.b;
                 if (i != i2) {
-                    Objects.toString(g.o(i));
-                    Objects.toString(g.o(i2));
+                    Objects.toString(StopwatchUtils.o(i));
+                    Objects.toString(StopwatchUtils.o(i2));
                 }
                 int i3 = dcpVar2.f;
                 int i4 = dcpVar3.f;
                 if (i3 != i4) {
-                    Objects.toString(g.k(i3));
-                    Objects.toString(g.k(i4));
+                    Objects.toString(StopwatchUtils.k(i3));
+                    Objects.toString(StopwatchUtils.k(i4));
                 }
                 int i5 = dcpVar2.c;
                 int i6 = dcpVar3.c;
                 if (i5 != i6) {
-                    Objects.toString(g.n(i5));
-                    Objects.toString(g.n(i6));
+                    Objects.toString(StopwatchUtils.n(i5));
+                    Objects.toString(StopwatchUtils.n(i6));
                 }
                 int i7 = dcpVar2.d;
                 int i8 = dcpVar3.d;
                 if (i7 != i8) {
-                    Objects.toString(g.n(i7));
-                    Objects.toString(g.n(i8));
+                    Objects.toString(StopwatchUtils.n(i7));
+                    Objects.toString(StopwatchUtils.n(i8));
                 }
                 int i9 = dcpVar2.e;
                 int i10 = dcpVar3.e;
                 if (i9 != i10) {
-                    Objects.toString(g.n(i9));
-                    Objects.toString(g.n(i10));
+                    Objects.toString(StopwatchUtils.n(i9));
+                    Objects.toString(StopwatchUtils.n(i10));
                 }
                 cxa cxaVar = this.p;
                 dcp dcpVar4 = this.s;

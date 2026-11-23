@@ -6,15 +6,15 @@ import defpackage.cwa;
 import defpackage.cwb;
 import defpackage.cxz;
 import defpackage.cyb;
-import defpackage.czb;
+import defpackage.StopwatchEventLogger;
 import defpackage.dgz;
 import defpackage.dhn;
 import defpackage.dhy;
 import defpackage.dia;
 import defpackage.dic;
 import defpackage.dlx;
-import defpackage.fhr;
-import defpackage.g;
+import defpackage.Clock;
+import defpackage.StopwatchUtils;
 import defpackage.iwj;
 import defpackage.iwv;
 import defpackage.iwy;
@@ -29,9 +29,9 @@ import java.util.Collections;
 public class TimerReceiver extends dgz {
     private static final iwy f = iwy.h("com/android/deskclock/timer/TimerReceiver");
     private static final mly g = mly.TIMER_RECEIVER;
-    public fhr c;
+    public Clock c;
     public cyb d;
-    public czb e;
+    public StopwatchEventLogger e;
 
     public static Intent a(Context context, int i) {
         return new Intent(context, (Class<?>) TimerReceiver.class).setAction("com.android.deskclock.action.ADD_MINUTE_TIMER").addFlags(268435456).putExtra("com.android.deskclock.extra.TIMER_ID", i);

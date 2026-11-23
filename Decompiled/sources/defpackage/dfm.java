@@ -8,10 +8,10 @@ import com.google.android.deskclock.debug.R;
 /* JADX INFO: loaded from: classes2.dex */
 public final class dfm extends chf {
     public final dfp b;
-    public final czb c;
+    public final StopwatchEventLogger c;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public dfm(dfp dfpVar, czb czbVar) {
+    public dfm(dfp dfpVar, StopwatchEventLogger czbVar) {
         super(chj.SILENT_SETTING_VIBRATION_DISABLED);
         lxj.d(czbVar, "clearcutEventTracker");
         this.b = dfpVar;

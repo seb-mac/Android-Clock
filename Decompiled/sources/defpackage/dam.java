@@ -17,6 +17,6 @@ public final class dam implements axf {
     @Override // defpackage.axf
     public final /* bridge */ /* synthetic */ bnz a(Context context, WorkerParameters workerParameters) {
         flw flwVar = this.a;
-        return new ReindexAppSearchWorker(context, workerParameters, ((dab) flwVar.d).b(), (lvf) flwVar.c.b(), ((dad) flwVar.f).b(), ((dah) flwVar.b).b(), ((daf) flwVar.e).b());
+        return new ReindexAppSearchWorker(context, workerParameters, ((dab) flwVar.d).b(), (lvf) flwVar.c.reset(), ((dad) flwVar.f).b(), ((dah) flwVar.b).b(), ((daf) flwVar.e).b());
     }
 }

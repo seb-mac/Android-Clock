@@ -41,9 +41,9 @@ public final class cfb implements SharedPreferences.OnSharedPreferenceChangeList
     public cus j;
     public final Set k;
     public volatile cjn l;
-    public final czb m;
+    public final StopwatchEventLogger m;
     public final bzi n;
-    private final fhr o;
+    private final Clock o;
     private final cku p;
     private final Handler q;
     private Drawable r;
@@ -56,7 +56,7 @@ public final class cfb implements SharedPreferences.OnSharedPreferenceChangeList
     private final cop y;
     private final dlu z;
 
-    public cfb(Context context, jhb jhbVar, czb czbVar, fhr fhrVar, lqv lqvVar, bzi bziVar, gog gogVar, dlu dluVar, cku ckuVar, cop copVar, Set set, gog gogVar2, SharedPreferences sharedPreferences, Intent intent, Bundle bundle) {
+    public cfb(Context context, jhb jhbVar, StopwatchEventLogger czbVar, Clock fhrVar, lqv lqvVar, bzi bziVar, gog gogVar, dlu dluVar, cku ckuVar, cop copVar, Set set, gog gogVar2, SharedPreferences sharedPreferences, Intent intent, Bundle bundle) {
         cwb cwbVar = cwb.a;
         this.c = cwbVar;
         this.d = new ArrayList();
@@ -174,7 +174,7 @@ public final class cfb implements SharedPreferences.OnSharedPreferenceChangeList
                 int i2 = resources.getDisplayMetrics().heightPixels * 3;
                 try {
                     this.r = new BitmapDrawable(resources, Bitmap.createScaledBitmap(bitmapDecodeResource, i, i2, true));
-                    czb czbVar = this.m;
+                    StopwatchEventLogger czbVar = this.m;
                     kgt kgtVarK = mjz.a.k();
                     kgtVarK.p();
                     ((mjz) kgtVarK.b).b = a.ab(3);
@@ -182,7 +182,7 @@ public final class cfb implements SharedPreferences.OnSharedPreferenceChangeList
                     bitmapDecodeResource.getWidth();
                     bitmapDecodeResource.getHeight();
                 } catch (Throwable unused) {
-                    czb czbVar2 = this.m;
+                    StopwatchEventLogger czbVar2 = this.m;
                     kgt kgtVarK2 = mjz.a.k();
                     kgtVarK2.p();
                     ((mjz) kgtVarK2.b).b = a.ab(4);
@@ -198,7 +198,7 @@ public final class cfb implements SharedPreferences.OnSharedPreferenceChangeList
                     this.r = new BitmapDrawable(resources, bitmapDecodeResource);
                 }
             } catch (Throwable th) {
-                czb czbVar3 = this.m;
+                StopwatchEventLogger czbVar3 = this.m;
                 kgt kgtVarK3 = mjz.a.k();
                 kgtVarK3.p();
                 ((mjz) kgtVarK3.b).b = a.ab(4);

@@ -49,7 +49,7 @@ public final class dge extends dgm {
         return null;
     }
 
-    public final dfv aP() {
+    public final StopwatchStateModel aP() {
         return aO().b();
     }
 
@@ -57,10 +57,10 @@ public final class dge extends dgm {
         int i = akm.a;
         TextView textView = (TextView) aki.b(view, R.id.stopwatch_time_text);
         gog gogVarAR = aR();
-        Duration durationOfMillis = Duration.ofMillis(aP().a());
+        Duration durationOfMillis = Duration.ofMillis(aP().getTime());
         lxj.c(durationOfMillis, "ofMillis(...)");
         textView.setText(gogVarAR.ao(durationOfMillis));
-        if (!aP().f()) {
+        if (!aP().isRunning()) {
             aS();
             textView.setTextColor(ian.U(textView, R.attr.colorOnSurfaceVariant, -1));
             return;
@@ -71,7 +71,7 @@ public final class dge extends dgm {
         Duration duration = dfx.a;
         long millis = dfx.a.toMillis();
         TimeUnit timeUnit = TimeUnit.MILLISECONDS;
-        fhr fhrVar = this.aj;
+        Clock fhrVar = this.aj;
         jhc jhcVar = this.al;
         if (jhcVar == null) {
             lxj.f("uiScheduledExecutor");

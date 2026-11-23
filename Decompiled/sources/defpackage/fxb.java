@@ -40,10 +40,10 @@ public final class fxb implements ksl {
     public final /* synthetic */ Object b() {
         int i = this.l;
         if (i == 0) {
-            return new fxa(((hft) this.a).a(), (String) this.b.b(), (gog) this.c.b(), (fnl) this.d.b(), this.e, (Set) ((ksm) this.f).a, this.g, ((fnk) this.h).b(), ((gha) this.i).a(), ((ghb) this.j).a(), (fhr) this.k.b());
+            return new fxa(((hft) this.a).a(), (String) this.b.b(), (gog) this.c.b(), (fnl) this.d.b(), this.e, (Set) ((ksm) this.f).a, this.g, ((fnk) this.h).b(), ((gha) this.i).a(), ((ghb) this.j).a(), (Clock) this.k.b());
         }
         if (i == 1) {
-            return new cop(((hft) this.f).a(), (SharedPreferences) this.c.b(), (fhr) this.a.b(), (cqj) this.b.b(), (dap) this.h.b(), (ddd) this.g.b(), (czb) this.k.b(), ((cnt) this.d).b(), ((coq) this.e).b(), ksk.a(this.j), ksk.a(this.i));
+            return new cop(((hft) this.f).a(), (SharedPreferences) this.c.b(), (Clock) this.a.b(), (cqj) this.b.b(), (dap) this.h.b(), (ddd) this.g.b(), (StopwatchEventLogger) this.k.b(), ((cnt) this.d).b(), ((coq) this.e).b(), ksk.a(this.j), ksk.a(this.i));
         }
         if (i == 2) {
             return new gfd(this.j, this.d, this.b, this.a, this.i, ((hft) this.f).a(), this.k, this.c, this.g, this.h, ((gha) this.e).a());

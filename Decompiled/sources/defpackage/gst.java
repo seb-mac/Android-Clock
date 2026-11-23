@@ -26,7 +26,7 @@ final class gst implements gsp {
             kgt kgtVarK = gsg.a.k();
             kgt kgtVarK2 = gsh.a.k();
             gss gssVar = (gss) this.a;
-            fhr fhrVar = gssVar.a;
+            Clock fhrVar = gssVar.a;
             kis kisVarD = kjs.d(fhrVar.c().toEpochMilli() - (fhrVar.a() - Process.getStartElapsedRealtime()));
             kgtVarK2.p();
             gsh gshVar = (gsh) kgtVarK2.b;

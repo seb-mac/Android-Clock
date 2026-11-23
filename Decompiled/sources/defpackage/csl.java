@@ -41,9 +41,9 @@ public final /* synthetic */ class csl implements Function {
         long j = this.a;
         Object obj3 = this.c;
         try {
-            fhr fhrVar = ((cso) obj3).c;
+            Clock fhrVar = ((cso) obj3).c;
             long jA = fhrVar.a();
-            czb czbVar = ((cso) obj3).e;
+            StopwatchEventLogger czbVar = ((cso) obj3).e;
             czbVar.u(5, 3, Long.valueOf(jA - j));
             int i = 0;
             for (int i2 : iArr) {

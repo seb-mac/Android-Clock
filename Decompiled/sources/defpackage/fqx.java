@@ -26,6 +26,6 @@ public final class fqx implements ksl {
     @Override // defpackage.lst, defpackage.lss
     /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
     public final fqw b() {
-        return new fqw(((hft) this.a).a(), this.b, (fof) this.c.b(), (fnl) this.d.b(), (fvz) this.e.b(), (fwc) this.f.b(), (fwg) this.g.b(), (fhr) this.h.b());
+        return new fqw(((hft) this.a).a(), this.b, (fof) this.c.b(), (fnl) this.d.b(), (fvz) this.e.b(), (fwc) this.f.b(), (fwg) this.g.b(), (Clock) this.h.b());
     }
 }

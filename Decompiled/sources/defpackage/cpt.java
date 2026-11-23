@@ -119,7 +119,7 @@ public final /* synthetic */ class cpt implements Function {
                 cyj cyjVar = (cyj) obj3;
                 Optional optional = (Optional) cyjVar.b.get(str2);
                 if (optional != null && !optional.isEmpty()) {
-                    fhr fhrVar = cyjVar.a;
+                    Clock fhrVar = cyjVar.a;
                     eht ehtVar = (eht) optional.get();
                     return cyk.a(fhrVar, dqrVar3, ehtVar, ehtVar.a);
                 }

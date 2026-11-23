@@ -26,6 +26,6 @@ public final class gir implements ksl {
     @Override // defpackage.lst, defpackage.lss
     /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
     public final giq b() {
-        return new giq(((hft) this.a).a(), (fco) this.b.b(), (eme) this.c.b(), (fhr) this.d.b(), cpz.a(), (gpc) this.e.b(), ((ghb) this.f).a(), ((gha) this.g).a(), (epk) this.h.b());
+        return new giq(((hft) this.a).a(), (fco) this.b.b(), (eme) this.c.b(), (Clock) this.d.b(), cpz.a(), (gpc) this.e.b(), ((ghb) this.f).a(), ((gha) this.g).a(), (epk) this.h.b());
     }
 }

@@ -29,7 +29,7 @@ public final class dft {
     }
 
     public final int hashCode() {
-        return (((this.a * 31) + a.c(this.b)) * 31) + a.c(this.c);
+        return (((this.a * 31) + a.withBootCount(this.b)) * 31) + a.withBootCount(this.c);
     }
 
     public final String toString() {

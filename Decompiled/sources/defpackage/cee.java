@@ -34,10 +34,10 @@ public class cee extends DreamService implements ksg {
             this.c = true;
             Screensaver screensaver = (Screensaver) this;
             ccs ccsVar = ((ccr) bV()).c;
-            screensaver.e = (fhr) ccsVar.t.b();
+            screensaver.e = (Clock) ccsVar.t.b();
             screensaver.k = ccsVar.aO();
             screensaver.i = new bzh(ccsVar.aO(), (byte[]) null);
-            screensaver.g = (czb) ccsVar.I.b();
+            screensaver.g = (StopwatchEventLogger) ccsVar.I.b();
             screensaver.f = (cqb) ccsVar.Q.b();
             screensaver.j = ((dlf) ccsVar.aA).b();
             screensaver.h = (dlu) ccsVar.aV.b();

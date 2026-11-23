@@ -20,6 +20,6 @@ public final class cye implements ksl {
     @Override // defpackage.lst, defpackage.lss
     /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
     public final cyd b() {
-        return new cyd(((hft) this.a).a(), (fhr) this.b.b(), (dap) this.c.b(), ((dkb) this.d).b(), ((czi) this.e).a());
+        return new cyd(((hft) this.a).a(), (Clock) this.b.b(), (dap) this.c.b(), ((dkb) this.d).b(), ((czi) this.e).a());
     }
 }

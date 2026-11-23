@@ -30,7 +30,7 @@ public final class dgn implements dfw, dko, axp {
         Window window;
         StopwatchController cxpVar = this.c;
         boolean z = this.b.c;
-        if (cxpVar.b().f()) {
+        if (cxpVar.b().isRunning()) {
             ccx ccxVar = this.d;
             if (ccxVar.aC() && z) {
                 bj bjVarD = ccxVar.D();
@@ -91,9 +91,9 @@ public final class dgn implements dfw, dko, axp {
     }
 
     @Override // defpackage.dfw
-    public final void x(dfv dfvVar, dfv dfvVar2) {
+    public final void x(StopwatchStateModel dfvVar, StopwatchStateModel dfvVar2) {
         lxj.d(dfvVar, "before");
-        if (dfvVar2.e() || this.b.c) {
+        if (dfvVar2.isReset() || this.b.c) {
             g();
         }
     }

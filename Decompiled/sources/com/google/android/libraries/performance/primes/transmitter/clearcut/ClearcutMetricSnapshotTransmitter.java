@@ -101,7 +101,7 @@ public class ClearcutMetricSnapshotTransmitter implements hal {
             } else {
                 str = (i2 & 1024) != 0 ? "TRACE" : "UNKNOWN";
             }
-            numValueOf = Integer.valueOf(jbqVar.b(a.aT(str2, str, "_"), StandardCharsets.UTF_8).a());
+            numValueOf = Integer.valueOf(jbqVar.b(a.aT(str2, str, "_"), StandardCharsets.UTF_8).getTime());
         }
         final Integer num = numValueOf;
         if (this.e == null) {
@@ -424,7 +424,7 @@ public class ClearcutMetricSnapshotTransmitter implements hal {
                                 List list = emy.m;
                                 emv emvVar = new emv(context2, str3);
                                 emvVar.a(enq.b);
-                                emy emyVarB = emvVar.b();
+                                emy emyVarB = emvVar.reset();
                                 clearcutMetricSnapshotTransmitter.c = emyVarB;
                                 emyVar = emyVarB;
                             }
@@ -437,7 +437,7 @@ public class ClearcutMetricSnapshotTransmitter implements hal {
                             emyVar = clearcutMetricSnapshotTransmitter.b;
                             if (emyVar == null) {
                                 List list2 = emy.m;
-                                emy emyVarB2 = new emv(context2, str3).b();
+                                emy emyVarB2 = new emv(context2, str3).reset();
                                 clearcutMetricSnapshotTransmitter.b = emyVarB2;
                                 emyVar = emyVarB2;
                             }
@@ -455,7 +455,7 @@ public class ClearcutMetricSnapshotTransmitter implements hal {
                 if (!harVar2.d) {
                     String str4 = harVar2.e;
                     if (!ihj.H(str4)) {
-                        if (emxVarG.a.d()) {
+                        if (emxVarG.a.isPaused()) {
                             throw new IllegalStateException("setZwiebackCookieOverride forbidden on deidentified logger");
                         }
                         kgv kgvVar2 = emxVarG.l;
@@ -482,7 +482,7 @@ public class ClearcutMetricSnapshotTransmitter implements hal {
                         emxVarG.f(ibt.X(khdVar));
                     }
                 }
-                return flx.e(emxVarG.c());
+                return flx.e(emxVarG.withBootCount());
             }
         }, jfw.INSTANCE);
     }

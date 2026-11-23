@@ -51,7 +51,7 @@ public final class cbp extends cfe {
         }
         if (AlarmInitReceiver.c(str) || str.equals("android.intent.action.TIME_SET") || str.equals("android.intent.action.TIMEZONE_CHANGED")) {
             cxm cxmVar = (cxm) cwb.a.c.g;
-            fhr fhrVar = cxmVar.d;
+            Clock fhrVar = cxmVar.d;
             long jA = fhrVar.a();
             long epochMilli = fhrVar.c().toEpochMilli();
             cxmVar.c.edit().putLong("key_pre_elapsed_real_time", jA).putLong("key_pre_system_time", epochMilli).putString("key_pre_zone_id", ZoneId.systemDefault().getId()).apply();

@@ -32,14 +32,14 @@ import java.util.concurrent.Executor;
 public final class csu implements chk, dqs, cqg, cpo, deh {
     public static final iwy a = iwy.h("com/android/deskclock/controller/LegacyDigitalAppWidgetController");
     public final Context b;
-    public final fhr c;
+    public final Clock c;
     public final cpu d;
     public final Executor e;
     public final dep f;
     public final csa g;
-    private final czb h;
+    private final StopwatchEventLogger h;
 
-    public csu(Context context, fhr fhrVar, czb czbVar, cpu cpuVar, csa csaVar, dep depVar, jhb jhbVar) {
+    public csu(Context context, Clock fhrVar, StopwatchEventLogger czbVar, cpu cpuVar, csa csaVar, dep depVar, jhb jhbVar) {
         this.b = context;
         this.c = fhrVar;
         this.h = czbVar;
@@ -109,7 +109,7 @@ public final class csu implements chk, dqs, cqg, cpo, deh {
         return (AlarmManager) context.getSystemService("alarm");
     }
 
-    private static RemoteViews v(Context context, fhr fhrVar, AppWidgetManager appWidgetManager, int i, Bundle bundle, boolean z, String str) {
+    private static RemoteViews v(Context context, Clock fhrVar, AppWidgetManager appWidgetManager, int i, Bundle bundle, boolean z, String str) {
         int i2;
         RemoteViews remoteViews = new RemoteViews(context.getPackageName(), R.layout.digital_widget);
         mls mlsVar = mls.LEGACY_DIGITAL_CLOCK_WIDGET;
@@ -304,9 +304,9 @@ public final class csu implements chk, dqs, cqg, cpo, deh {
     public final void u(AppWidgetManager appWidgetManager, int[] iArr, String str, BroadcastReceiver.PendingResult pendingResult, long j) {
         AppWidgetManager appWidgetManager2 = appWidgetManager;
         try {
-            fhr fhrVar = this.c;
+            Clock fhrVar = this.c;
             long jA = fhrVar.a() - j;
-            czb czbVar = this.h;
+            StopwatchEventLogger czbVar = this.h;
             czbVar.u(9, 3, Long.valueOf(jA));
             for (int i : iArr) {
                 this.g.h(i, ckq.TRANSPARENT);

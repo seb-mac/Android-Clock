@@ -24,12 +24,12 @@ import java.util.List;
 /* JADX INFO: loaded from: classes2.dex */
 final class cyd {
     private final Context a;
-    private final fhr b;
+    private final Clock b;
     private final dap c;
     private final Optional d;
     private final lqv e;
 
-    public cyd(Context context, fhr fhrVar, dap dapVar, lqv lqvVar, Optional optional) {
+    public cyd(Context context, Clock fhrVar, dap dapVar, lqv lqvVar, Optional optional) {
         this.a = context;
         this.b = fhrVar;
         this.c = dapVar;

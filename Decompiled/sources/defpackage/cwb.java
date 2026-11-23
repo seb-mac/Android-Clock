@@ -818,7 +818,7 @@ public final class cwb {
             throw new IllegalArgumentException("Cannot set the visibility of the SYSTEM provider");
         }
         cww cwwVar = (cww) obj;
-        czb czbVar = cwwVar.i;
+        StopwatchEventLogger czbVar = cwwVar.i;
         mjn mjnVar = dcoVar.g;
         lxj.d(mjnVar, "musicProvider");
         czbVar.I(mjnVar, true != z ? 9 : 8, 0, 0, 0, 0);

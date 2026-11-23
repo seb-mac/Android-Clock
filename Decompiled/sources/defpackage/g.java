@@ -6,7 +6,6 @@ import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
-import android.os.LocaleList;
 import android.os.Parcel;
 import android.os.Parcelable;
 import android.util.Log;
@@ -15,55 +14,41 @@ import android.view.ViewGroup;
 import android.view.ViewParent;
 
 /* JADX INFO: compiled from: PG */
-/* JADX INFO: loaded from: classes2.dex */
+/* JADX INFO: loaded from: /tmp/decompiler/274cb208df984d4291f9efc5984e8eab/classes.dex */
 public class g {
     public g() {
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r1v2, types: [java.lang.Object] */
-    /* JADX WARN: Type inference failed for: r1v3 */
-    /* JADX WARN: Type inference failed for: r1v4 */
-    /* JADX WARN: Type inference failed for: r2v0, types: [java.lang.Object, mlw] */
-    /* JADX WARN: Type inference failed for: r2v1 */
-    /* JADX WARN: Type inference failed for: r2v3 */
-    public static Object A(String str, Object mlwVar) {
-        Object ValueOf = null;
+    public static mlw A(String str, mlw mlwVar) {
+        mlw mlwVarValueOf;
         lxj.d(mlwVar, "default");
         if (str == null) {
-            ValueOf = mlwVar;
+            mlwVarValueOf = mlwVar;
         } else {
             try {
-                ValueOf = Enum.valueOf(mlw.class, str);
+                mlwVarValueOf = Enum.valueOf(mlw.class, str);
             } catch (IllegalArgumentException unused) {
             }
         }
-        lxj.a(ValueOf);
-        mlwVar = ValueOf;
-        return (Object) mlwVar;
+        lxj.a(mlwVarValueOf);
+        mlwVar = mlwVarValueOf;
+        return mlwVar;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r1v2, types: [java.lang.Object] */
-    /* JADX WARN: Type inference failed for: r1v3 */
-    /* JADX WARN: Type inference failed for: r1v4 */
-    /* JADX WARN: Type inference failed for: r2v0, types: [java.lang.Object, mly] */
-    /* JADX WARN: Type inference failed for: r2v1 */
-    /* JADX WARN: Type inference failed for: r2v3 */
-    public static mly B(String str, Object mlyVar) {
-        Object ValueOf = null;
+    public static mly B(String str, mly mlyVar) {
+        mly mlyVarValueOf;
         lxj.d(mlyVar, "default");
         if (str == null) {
-            ValueOf = mlyVar;
+            mlyVarValueOf = mlyVar;
         } else {
             try {
-                ValueOf = Enum.valueOf(mly.class, str);
+                mlyVarValueOf = Enum.valueOf(mly.class, str);
             } catch (IllegalArgumentException unused) {
             }
         }
-        lxj.a(ValueOf);
-        mlyVar = ValueOf;
-        return (Object) mlyVar;
+        lxj.a(mlyVarValueOf);
+        mlyVar = mlyVarValueOf;
+        return mlyVar;
     }
 
     public static String C(Intent intent) {
@@ -132,12 +117,12 @@ public class g {
         editorEdit.apply();
     }
 
-    public static void N(SharedPreferences sharedPreferences, dfv dfvVar) {
+    public static void N(SharedPreferences sharedPreferences, StopwatchStateModel dfvVar) {
         SharedPreferences.Editor editorEdit = sharedPreferences.edit();
-        if (dfvVar.e()) {
+        if (dfvVar.isReset()) {
             editorEdit.remove("sw_state").remove("sw_boot_count").remove("sw_start_time").remove("sw_wall_clock_time").remove("sw_accum_time").remove("sw_notification_state");
         } else {
-            editorEdit.putInt("sw_state", dfvVar.b.ordinal()).putInt("sw_boot_count", dfvVar.c).putLong("sw_start_time", dfvVar.d).putLong("sw_wall_clock_time", dfvVar.e).putLong("sw_accum_time", dfvVar.f).putInt("sw_notification_state", dfvVar.g.ordinal());
+            editorEdit.putInt("sw_state", dfvVar.stopwatchState.ordinal()).putInt("sw_boot_count", dfvVar.bootCount).putLong("sw_start_time", dfvVar.lastStartTime).putLong("sw_wall_clock_time", dfvVar.lastStartWallClockTime).putLong("sw_accum_time", dfvVar.accumulatedTime).putInt("sw_notification_state", dfvVar.notificationState.ordinal());
         }
         editorEdit.apply();
     }
@@ -148,13 +133,13 @@ public class g {
                 return "NONE";
             case 2:
                 return "SIMPLE";
-            case ard.INTEGER_FIELD_NUMBER /* 3 */:
+            case 3:
                 return "CHOICE";
-            case ard.LONG_FIELD_NUMBER /* 4 */:
+            case 4:
                 return "PLURAL";
-            case ard.STRING_FIELD_NUMBER /* 5 */:
+            case 5:
                 return "SELECT";
-            case ard.STRING_SET_FIELD_NUMBER /* 6 */:
+            case 6:
                 return "SELECTORDINAL";
             default:
                 return "null";
@@ -170,11 +155,11 @@ public class g {
     }
 
     public static ahp f(Configuration configuration) {
-        return ahp.c(configuration.getLocales().toLanguageTags());
+        return ahp.c(ExternalSyntheticApiModelOutline0.m(ExternalSyntheticApiModelOutline0.m(configuration)));
     }
 
     public static void g(Configuration configuration, ahp ahpVar) {
-        configuration.setLocales(LocaleList.forLanguageTags(ahpVar.e()));
+        ExternalSyntheticApiModelOutline0.m(configuration, ExternalSyntheticApiModelOutline0.m(ahpVar.e()));
     }
 
     public static Object h(Parcel parcel, Parcelable.Creator creator) {
@@ -259,8 +244,8 @@ public class g {
     }
 
     public static dcs m(Uri uri, dcx dcxVar, dcz dczVar, czd czdVar, int i, long j, Uri uri2, int i2) {
-        if (dczVar == dcz.FIRE || dczVar == dcz.BROWSE) {
-            return new dcs(uri, dcxVar, dczVar, czdVar, i, null, i2, j, uri2, false, 0L);
+        if (dczVar == dcz.a || dczVar == dcz.b) {
+            return new dcs(uri, dcxVar, dczVar, czdVar, i, (cwt) null, i2, j, uri2, false, 0L);
         }
         throw new IllegalArgumentException("Unexpected connection type: ".concat(dczVar.toString()));
     }
@@ -278,17 +263,17 @@ public class g {
                 return "UNKNOWN";
             case 2:
                 return "UNINSTALLED";
-            case ard.INTEGER_FIELD_NUMBER /* 3 */:
+            case 3:
                 return "UNUSABLE_VERSION";
-            case ard.LONG_FIELD_NUMBER /* 4 */:
+            case 4:
                 return "NO_NETWORK";
-            case ard.STRING_FIELD_NUMBER /* 5 */:
+            case 5:
                 return "UNREACHABLE";
-            case ard.STRING_SET_FIELD_NUMBER /* 6 */:
+            case 6:
                 return "NOT_LOGGED_IN";
-            case ard.DOUBLE_FIELD_NUMBER /* 7 */:
+            case 7:
                 return "UNAUTHORIZED";
-            case ard.BYTES_FIELD_NUMBER /* 8 */:
+            case 8:
                 return "REQUIRES_PREMIUM";
             case 9:
                 return "OFFLINE";
@@ -319,7 +304,7 @@ public class g {
         return intentPutExtra;
     }
 
-    public static Intent s(Intent intent, Object mluVar) {
+    public static Intent s(Intent intent, mlu mluVar) {
         lxj.d(intent, "<this>");
         Intent intentPutExtra = intent.putExtra("com.android.deskclock.extra.STOPWATCH_EVENT_SOURCE", mluVar.name());
         lxj.c(intentPutExtra, "putExtra(...)");
@@ -341,118 +326,83 @@ public class g {
         return intentPutExtra;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r1v2, types: [java.lang.Object] */
-    /* JADX WARN: Type inference failed for: r1v3 */
-    /* JADX WARN: Type inference failed for: r1v4 */
-    /* JADX WARN: Type inference failed for: r2v0, types: [java.lang.Object, mjv] */
-    /* JADX WARN: Type inference failed for: r2v1 */
-    /* JADX WARN: Type inference failed for: r2v3 */
     public static mjv v(String str, mjv mjvVar) {
-        Object ValueOf;
+        mjv mjvVarValueOf;
         lxj.d(mjvVar, "default");
         if (str == null) {
-            ValueOf = mjvVar;
+            mjvVarValueOf = mjvVar;
         } else {
             try {
-                ValueOf = Enum.valueOf(mjv.class, str);
+                mjvVarValueOf = Enum.valueOf(mjv.class, str);
             } catch (IllegalArgumentException unused) {
             }
         }
-        lxj.a(ValueOf);
-        mjvVar = ValueOf;
-        return (mjv) mjvVar;
+        lxj.a(mjvVarValueOf);
+        mjvVar = mjvVarValueOf;
+        return mjvVar;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r1v2, types: [java.lang.Object] */
-    /* JADX WARN: Type inference failed for: r1v3 */
-    /* JADX WARN: Type inference failed for: r1v4 */
-    /* JADX WARN: Type inference failed for: r2v0, types: [java.lang.Object, mka] */
-    /* JADX WARN: Type inference failed for: r2v1 */
-    /* JADX WARN: Type inference failed for: r2v3 */
     public static mka w(String str, mka mkaVar) {
-        Object ValueOf;
+        mka mkaVarValueOf;
         lxj.d(mkaVar, "default");
         if (str == null) {
-            ValueOf = mkaVar;
+            mkaVarValueOf = mkaVar;
         } else {
             try {
-                ValueOf = Enum.valueOf(mka.class, str);
+                mkaVarValueOf = Enum.valueOf(mka.class, str);
             } catch (IllegalArgumentException unused) {
             }
         }
-        lxj.a(ValueOf);
-        mkaVar = ValueOf;
-        return (mka) mkaVar;
+        lxj.a(mkaVarValueOf);
+        mkaVar = mkaVarValueOf;
+        return mkaVar;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r1v2, types: [java.lang.Object] */
-    /* JADX WARN: Type inference failed for: r1v3 */
-    /* JADX WARN: Type inference failed for: r1v4 */
-    /* JADX WARN: Type inference failed for: r2v0, types: [mkt] */
-    /* JADX WARN: Type inference failed for: r2v1 */
-    /* JADX WARN: Type inference failed for: r2v3 */
     public static mkt x(String str, mkt mktVar) {
-        Object ValueOf;
+        mkt mktVarValueOf;
         if (str == null) {
-            ValueOf = mktVar;
+            mktVarValueOf = mktVar;
         } else {
             try {
-                ValueOf = Enum.valueOf(mkt.class, str);
+                mktVarValueOf = Enum.valueOf(mkt.class, str);
             } catch (IllegalArgumentException unused) {
             }
         }
-        lxj.a(ValueOf);
-        mktVar = ValueOf;
-        return (mkt) mktVar;
+        lxj.a(mktVarValueOf);
+        mktVar = mktVarValueOf;
+        return mktVar;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r1v2, types: [java.lang.Object] */
-    /* JADX WARN: Type inference failed for: r1v3 */
-    /* JADX WARN: Type inference failed for: r1v4 */
-    /* JADX WARN: Type inference failed for: r2v0, types: [java.lang.Object, mls] */
-    /* JADX WARN: Type inference failed for: r2v1 */
-    /* JADX WARN: Type inference failed for: r2v3 */
-    public static Object y(String str, Object mlsVar) {
-        Object ValueOf = null;
+    public static mls y(String str, mls mlsVar) {
+        mls mlsVarValueOf;
         lxj.d(mlsVar, "default");
         if (str == null) {
-            ValueOf = mlsVar;
+            mlsVarValueOf = mlsVar;
         } else {
             try {
-                ValueOf = Enum.valueOf(mls.class, str);
+                mlsVarValueOf = Enum.valueOf(mls.class, str);
             } catch (IllegalArgumentException unused) {
             }
         }
-        lxj.a(ValueOf);
-        mlsVar = ValueOf;
-        return (Object) mlsVar;
+        lxj.a(mlsVarValueOf);
+        mlsVar = mlsVarValueOf;
+        return mlsVar;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r1v2, types: [java.lang.Object] */
-    /* JADX WARN: Type inference failed for: r1v3 */
-    /* JADX WARN: Type inference failed for: r1v4 */
-    /* JADX WARN: Type inference failed for: r2v0, types: [java.lang.Object, mlu] */
-    /* JADX WARN: Type inference failed for: r2v1 */
-    /* JADX WARN: Type inference failed for: r2v3 */
-    public static Object z(String str, Object mluVar) {
-        Object ValueOf;
+    public static mlu z(String str, mlu mluVar) {
+        mlu mluVarValueOf;
         lxj.d(mluVar, "default");
         if (str == null) {
-            ValueOf = mluVar;
+            mluVarValueOf = mluVar;
         } else {
             try {
-                ValueOf = Enum.valueOf(Object.class, str);
+                mluVarValueOf = Enum.valueOf(mlu.class, str);
             } catch (IllegalArgumentException unused) {
             }
         }
-        lxj.a(ValueOf);
-        mluVar = ValueOf;
-        return (Object) mluVar;
+        lxj.a(mluVarValueOf);
+        mluVar = mluVarValueOf;
+        return mluVar;
     }
 
     public void c(cc ccVar, bg bgVar) {

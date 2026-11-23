@@ -5,16 +5,16 @@ import j$.util.Objects;
 
 /* JADX INFO: compiled from: PG */
 /* JADX INFO: loaded from: classes2.dex */
-public final class czb {
+public final class StopwatchEventLogger {
     public static final iwy a = iwy.h("com/android/deskclock/events/clearcut/impl/ClearcutEventTrackerImpl");
     public final Context b;
     public final emy c;
-    public final fhr d;
+    public final Clock d;
     public final fco e;
     private final mam f;
     private final lsx g;
 
-    public czb(Context context, mam mamVar, emy emyVar, fco fcoVar, fhr fhrVar) {
+    public StopwatchEventLogger(Context context, mam mamVar, emy emyVar, fco fcoVar, Clock fhrVar) {
         lxj.d(mamVar, "lightweightScope");
         lxj.d(emyVar, "clearcutLogger");
         lxj.d(fcoVar, "usageReportingClient");
@@ -54,9 +54,9 @@ public final class czb {
             ayuVarS.ac(i);
             kgt kgtVar = (kgt) ayuVarS.a;
             kgtVar.p();
-            ((mma) kgtVar.b).f = a.ab(i2);
+            ((mma) kgtVar.b).f = defpackage.a.ab(i2);
             kgtVar.p();
-            ((mma) kgtVar.b).g = a.ad(i3);
+            ((mma) kgtVar.b).g = defpackage.a.ad(i3);
             bzhVarZ.ai(ayuVarS.Z());
             a(bzhVarZ.aa());
         }
@@ -90,7 +90,7 @@ public final class czb {
             mmhVar.b |= 1;
             kgtVar.p();
             mmh mmhVar2 = (mmh) kgtVar.b;
-            mmhVar2.f = a.ab(i);
+            mmhVar2.f = defpackage.a.ab(i);
             mmhVar2.b |= 4;
             kgj kgjVarB = kjq.b(jA);
             lxj.c(kgjVarB, "fromMillis(...)");
@@ -115,7 +115,7 @@ public final class czb {
             kgt kgtVar = (kgt) ayuVarAi.a;
             kgtVar.p();
             mmh mmhVar = (mmh) kgtVar.b;
-            mmhVar.h = a.ad(i);
+            mmhVar.h = defpackage.a.ad(i);
             mmhVar.b |= 16;
             if (i2 != 0) {
                 ayuVarAi.Y(i2);
@@ -197,7 +197,7 @@ public final class czb {
             }
             if (i2 != 0) {
                 kgtVarK.p();
-                ((mkc) kgtVarK.b).k = a.ae(i2);
+                ((mkc) kgtVarK.b).k = defpackage.a.ae(i2);
             }
             if (kgjVar != null) {
                 kgtVarK.p();
@@ -260,7 +260,7 @@ public final class czb {
             if (i2 != 0) {
                 kgtVar.p();
                 mll mllVar2 = (mll) kgtVar.b;
-                mllVar2.f = a.ab(i2);
+                mllVar2.f = defpackage.a.ab(i2);
                 mllVar2.b |= 1;
             }
             if (i5 != 0) {
@@ -542,14 +542,14 @@ public final class czb {
             bzhVarZ.ad(ayuVarX.ak());
             a(bzhVarZ.aa());
             int i = mkoVar.d;
-            int iS = a.S(i);
+            int iS = defpackage.a.S(i);
             if (iS != 0 && iS == 3) {
                 int i2 = (mkoVar.b == 2 ? (mkm) mkoVar.c : mkm.a).b;
                 int i3 = (mkoVar.b == 2 ? (mkm) mkoVar.c : mkm.a).c;
                 int i4 = mkoVar.e;
                 return;
             }
-            int iS2 = a.S(i);
+            int iS2 = defpackage.a.S(i);
             if (iS2 == 0 || iS2 != 4) {
                 return;
             }
@@ -676,7 +676,7 @@ public final class czb {
             kgt kgtVarK = mjx.a.k();
             lxj.d(kgtVarK, "builder");
             kgtVarK.p();
-            ((mjx) kgtVarK.b).b = a.ac(i);
+            ((mjx) kgtVarK.b).b = defpackage.a.ac(i);
             kgy kgyVarK = kgtVarK.m();
             lxj.c(kgyVarK, "build(...)");
             mjx mjxVar = (mjx) kgyVarK;
@@ -759,9 +759,9 @@ public final class czb {
             kgt kgtVarK = mkq.a.k();
             lxj.d(kgtVarK, "builder");
             kgtVarK.p();
-            ((mkq) kgtVarK.b).b = a.ad(i);
+            ((mkq) kgtVarK.b).b = defpackage.a.ad(i);
             kgtVarK.p();
-            ((mkq) kgtVarK.b).c = a.ab(i2);
+            ((mkq) kgtVarK.b).c = defpackage.a.ab(i2);
             kgy kgyVarK = kgtVarK.m();
             lxj.c(kgyVarK, "build(...)");
             mkq mkqVar = (mkq) kgyVarK;
@@ -846,7 +846,7 @@ public final class czb {
             kgt kgtVarK = mlk.a.k();
             lxj.d(kgtVarK, "builder");
             kgtVarK.p();
-            ((mlk) kgtVarK.b).c = a.ad(i);
+            ((mlk) kgtVarK.b).c = defpackage.a.ad(i);
             kgj kgjVarB = kjq.b(jA);
             lxj.c(kgjVarB, "fromMillis(...)");
             lxj.d(kgjVarB, "value");

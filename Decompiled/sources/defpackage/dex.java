@@ -9,11 +9,11 @@ import com.google.android.deskclock.debug.R;
 /* JADX INFO: loaded from: classes2.dex */
 public final class dex extends chf {
     public static final iwy b = iwy.h("com/android/deskclock/settings/silentsetting/donotdisturb/DoNotDisturbBannerItem");
-    public final czb c;
+    public final StopwatchEventLogger c;
     private final Context d;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public dex(Context context, czb czbVar) {
+    public dex(Context context, StopwatchEventLogger czbVar) {
         super(chj.SILENT_SETTING_ALARMS_BLOCKED_BY_DND);
         lxj.d(czbVar, "clearcutEventTracker");
         this.d = context;

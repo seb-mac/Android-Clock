@@ -26,7 +26,7 @@ public final class gsy implements gsp {
     public final boolean a(kgt kgtVar) {
         gvu gvuVar = this.a;
         int i = 0;
-        if (((Boolean) gvuVar.d.b()).booleanValue()) {
+        if (((Boolean) gvuVar.d.reset()).booleanValue()) {
             iqo iqoVar = (iqo) gvuVar.c;
             if (iqoVar.f()) {
                 int i2 = 0;
@@ -57,10 +57,10 @@ public final class gsy implements gsp {
                 Objects.requireNonNull(kisVarE);
                 gsjVar2.d = kisVarE;
                 gsjVar2.b |= 1;
-                if (((Boolean) gvuVar.b.b()).booleanValue()) {
+                if (((Boolean) gvuVar.b.reset()).booleanValue()) {
                     itt ittVarA = ((gzg) iqoVar.b()).a();
-                    long jLongValue = ((Long) gvuVar.g.b()).longValue();
-                    long jLongValue2 = ((Long) gvuVar.f.b()).longValue();
+                    long jLongValue = ((Long) gvuVar.g.reset()).longValue();
+                    long jLongValue2 = ((Long) gvuVar.f.reset()).longValue();
                     Stream map = Collection.EL.stream(ittVarA).map(new dni(18));
                     int i3 = itt.d;
                     itt ittVarA2 = gtc.a((List) map.collect(isd.a), jLongValue, jLongValue2);
@@ -89,8 +89,8 @@ public final class gsy implements gsp {
                     }
                 } else {
                     itt ittVarB = ((gzg) iqoVar.b()).b();
-                    long jLongValue3 = ((Long) gvuVar.g.b()).longValue();
-                    long jLongValue4 = ((Long) gvuVar.f.b()).longValue();
+                    long jLongValue3 = ((Long) gvuVar.g.reset()).longValue();
+                    long jLongValue4 = ((Long) gvuVar.f.reset()).longValue();
                     Stream map2 = Collection.EL.stream(ittVarB).map(new dni(16));
                     int i4 = itt.d;
                     itt ittVarA3 = gtc.a((List) map2.collect(isd.a), jLongValue3, jLongValue4);

@@ -105,7 +105,7 @@ public final /* synthetic */ class cih implements lwd {
             case 16:
                 return ((cqj) this.a).a.getPackageManager();
             case 17:
-                return flq.a(((czb) this.a).b, new mjm());
+                return flq.a(((StopwatchEventLogger) this.a).b, new mjm());
             case 18:
                 return (HorizontalScrollView) ((GastownWeekdaysSelector) this.a).findViewById(R.id.day_buttons_scroll_view);
             case 19:

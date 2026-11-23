@@ -10,9 +10,9 @@ import defpackage.chl;
 import defpackage.cud;
 import defpackage.cue;
 import defpackage.cus;
-import defpackage.czb;
+import defpackage.StopwatchEventLogger;
 import defpackage.dlu;
-import defpackage.g;
+import defpackage.StopwatchUtils;
 import defpackage.iwy;
 import defpackage.mka;
 
@@ -24,7 +24,7 @@ public final class DismissAlarmStartRoutineActivity extends cgl implements chk {
     public long r;
     public cud s;
     public mka t;
-    public czb u;
+    public StopwatchEventLogger u;
     public dlu v;
 
     public static Intent s(Context context, cue cueVar, mka mkaVar) {

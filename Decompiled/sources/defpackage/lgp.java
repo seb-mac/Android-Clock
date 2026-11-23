@@ -46,6 +46,6 @@ final class lgp extends lgs {
     public final void e(Parcel parcel) throws lfn {
         lei leiVarL = lhk.l(parcel, this.c);
         this.f.d();
-        this.g.c(leiVarL);
+        this.g.withBootCount(leiVarL);
     }
 }

@@ -1,6 +1,8 @@
 {
     "java.project.referencedLibraries": [
-        "lib/**/*.jar",
-        "c:\\Users\\sebma\\AppData\\Local\\Android\\Sdk\\platforms\\android-37.0\\android.jar"
+        "c:\\Users\\sebma\\AppData\\Local\\Android\\Sdk\\platforms\\android-36\\android.jar"
+    ],
+    "java.project.sourcePaths": [
+        "sources"
     ]
 }

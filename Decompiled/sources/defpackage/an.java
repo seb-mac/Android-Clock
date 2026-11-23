@@ -32,7 +32,7 @@ public final class an extends AnimatorListenerAdapter {
         if (this.c || this.d.i == 3) {
             int i = this.d.i;
             lxj.a(view);
-            g.j(i, view, viewGroup);
+            StopwatchUtils.j(i, view, viewGroup);
         }
         ao aoVar = this.e;
         aoVar.a.a.f(aoVar);

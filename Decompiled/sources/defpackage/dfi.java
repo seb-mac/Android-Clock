@@ -21,14 +21,14 @@ public final class dfi extends chi {
     public final mam i;
     public final jhc j;
     public final mam k;
-    public final fhr l;
+    public final Clock l;
     public final AudioManager m;
     public final lsx n;
     public volatile mas o;
     public volatile boolean p;
     private final Set r;
     private final dfh s;
-    private final czb t;
+    private final StopwatchEventLogger t;
 
     static {
         Uri uriWithAppendedPath = Uri.withAppendedPath(Settings.System.CONTENT_URI, "volume_alarm_speaker");
@@ -40,7 +40,7 @@ public final class dfi extends chi {
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public dfi(Context context, che cheVar, mam mamVar, mam mamVar2, jhc jhcVar, mam mamVar3, fhr fhrVar, czb czbVar) {
+    public dfi(Context context, che cheVar, mam mamVar, mam mamVar2, jhc jhcVar, mam mamVar3, Clock fhrVar, StopwatchEventLogger czbVar) {
         AudioManager audioManager;
         super(chj.SILENT_SETTING_LOW_VOLUME, cheVar, mamVar);
         lxj.d(cheVar, "bannerPreferences");

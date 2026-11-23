@@ -7,5 +7,5 @@ public interface cqz {
 
     cpr f();
 
-    fhr t();
+    Clock t();
 }

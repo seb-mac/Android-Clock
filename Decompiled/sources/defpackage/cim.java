@@ -49,13 +49,13 @@ class cim extends hxf implements ksg {
         chx chxVar = (chx) this;
         ccn ccnVar = (ccn) objBV;
         ccs ccsVar = ccnVar.h;
-        chxVar.aJ = (czb) ccsVar.I.b();
+        chxVar.aJ = (StopwatchEventLogger) ccsVar.I.b();
         chxVar.aK = ((cgc) ccsVar.kM).b();
         bzh bzhVar = ccsVar.mz;
-        fhr fhrVar = (fhr) ccsVar.t.b();
+        Clock fhrVar = (Clock) ccsVar.t.b();
         ksq ksqVar = ccsVar.aL;
         chxVar.ak = new cgg((Context) bzhVar.a, fhrVar, (dep) ksqVar.b());
-        chxVar.al = (fhr) ccsVar.t.b();
+        chxVar.al = (Clock) ccsVar.t.b();
         ((dlf) ccsVar.aA).b();
         chxVar.am = (ddd) ccsVar.K.b();
         chxVar.an = ((cpv) ccsVar.az).b();

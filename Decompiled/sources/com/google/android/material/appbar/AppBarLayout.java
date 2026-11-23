@@ -666,7 +666,7 @@ public class AppBarLayout extends LinearLayout implements ade {
                         if (!list.isEmpty()) {
                             for (hvl hvlVar : list) {
                                 if (ihnVar3.C() != null) {
-                                    hvlVar.a();
+                                    hvlVar.getTime();
                                 }
                             }
                         }
@@ -676,7 +676,7 @@ public class AppBarLayout extends LinearLayout implements ade {
                         }
                         Iterator it = linkedHashSet.iterator();
                         while (it.hasNext()) {
-                            ((hvm) it.next()).a();
+                            ((hvm) it.next()).getTime();
                         }
                     }
                 };

@@ -42,7 +42,7 @@ public final /* synthetic */ class cjx implements lws {
         mbu mbuVar = null;
         if (i == 0) {
             Instant instant = (Instant) obj;
-            dfv dfvVar = (dfv) obj2;
+            StopwatchStateModel dfvVar = (StopwatchStateModel) obj2;
             iwy iwyVar = cjz.a;
             lxj.d(instant, "time");
             if (dfvVar == null) {

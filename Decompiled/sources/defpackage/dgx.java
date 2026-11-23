@@ -40,7 +40,7 @@ public class dgx extends MotionLayout implements ksg {
         TimerCard timerCard = (TimerCard) this;
         cct cctVar = (cct) objBV;
         ccs ccsVar = cctVar.a;
-        timerCard.ag = (czb) ccsVar.I.b();
+        timerCard.ag = (StopwatchEventLogger) ccsVar.I.b();
         timerCard.ai = cctVar.a();
         timerCard.aj = ((dkb) ccsVar.bd).b();
     }

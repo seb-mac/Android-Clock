@@ -24,7 +24,7 @@ public final class gtw implements ksl {
             case 0:
                 return new bzi(((hft) this.a).a(), (gtz) this.b.b());
             case 1:
-                return new gss((fhr) this.a.b(), this.b);
+                return new gss((Clock) this.a.b(), this.b);
             case 2:
                 return new kqo(((gto) this.b).b(), ((hft) this.a).a());
             case ard.INTEGER_FIELD_NUMBER /* 3 */:
@@ -60,7 +60,7 @@ public final class gtw implements ksl {
             case 11:
                 return new gzn((Random) ((iqo) ((ksm) this.b).a).d((Random) this.a.b()));
             case 12:
-                return new lew((fhr) this.a.b(), (iqo) ((ksm) this.b).a);
+                return new lew((Clock) this.a.b(), (iqo) ((ksm) this.b).a);
             case 13:
                 return new hfj((Context) this.a.b(), (leb) this.b.b());
             case 14:
@@ -73,11 +73,11 @@ public final class gtw implements ksl {
                 lxj.d(hlrVar, "clientProfile");
                 return new hod(hluVarA, hlrVar);
             case 16:
-                return new khs((Context) this.b.b(), fjl.c(), (fhr) this.a.b());
+                return new khs((Context) this.b.b(), fjl.c(), (Clock) this.a.b());
             case 17:
                 return new hpa((iqo) ((ksm) this.a).a, ((kso) this.b).b());
             case 18:
-                return new hpf(this.b, (fhr) this.a.b());
+                return new hpf(this.b, (Clock) this.a.b());
             case 19:
                 ksq ksqVar = this.a;
                 kqo kqoVarB = ((inp) this.b).b();

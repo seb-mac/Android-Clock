@@ -139,7 +139,7 @@ public final class ayl extends lvs implements lws {
             case ard.STRING_SET_FIELD_NUMBER /* 6 */:
                 return new ayl((JobParameters) this.c, (AlarmJobService) this.b, lvaVar, 6);
             case ard.DOUBLE_FIELD_NUMBER /* 7 */:
-                return new ayl((czb) this.c, (mjl) this.b, lvaVar, 7);
+                return new ayl((StopwatchEventLogger) this.c, (mjl) this.b, lvaVar, 7);
             case ard.BYTES_FIELD_NUMBER /* 8 */:
                 return new ayl((ddk) this.b, (Uri) this.c, lvaVar, 8);
             case 9:
@@ -194,7 +194,7 @@ public final class ayl extends lvs implements lws {
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public ayl(czb czbVar, mjl mjlVar, lva lvaVar, int i) {
+    public ayl(StopwatchEventLogger czbVar, mjl mjlVar, lva lvaVar, int i) {
         super(2, lvaVar);
         this.d = i;
         this.c = czbVar;

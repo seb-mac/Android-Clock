@@ -30,7 +30,7 @@ public final class cpz implements ksl {
         return new gdi(gdh.a, Build.MANUFACTURER + " " + Build.MODEL, ivx.b, new gdg(null));
     }
 
-    public static Optional c(g gVar) {
+    public static Optional c(StopwatchUtils gVar) {
         Optional optionalEmpty;
         if (kwe.a.cy().e()) {
             optionalEmpty = Optional.of(gVar);
@@ -94,7 +94,7 @@ public final class cpz implements ksl {
                 hmw.E(iudVarS);
                 return iudVarS;
             case 13:
-                return c(new g());
+                return c(new StopwatchUtils());
             case 14:
                 return a();
             case 15:

@@ -7,13 +7,13 @@ import j$.util.Optional;
 /* JADX INFO: compiled from: PG */
 /* JADX INFO: loaded from: classes2.dex */
 public final class cdk extends cfe {
-    private final fhr a;
+    private final Clock a;
     private final String b;
     private final long c;
     private final mka d;
-    private final czb e;
+    private final StopwatchEventLogger e;
 
-    public cdk(Context context, fhr fhrVar, String str, long j, mka mkaVar, czb czbVar) {
+    public cdk(Context context, Clock fhrVar, String str, long j, mka mkaVar, StopwatchEventLogger czbVar) {
         super(context, true);
         this.a = fhrVar;
         this.b = str;

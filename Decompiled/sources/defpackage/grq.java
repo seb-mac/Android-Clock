@@ -43,11 +43,11 @@ public final class grq implements ksl {
             case ard.STRING_SET_FIELD_NUMBER /* 6 */:
                 return new gvc(((hft) this.a).a());
             case ard.DOUBLE_FIELD_NUMBER /* 7 */:
-                return new Random(((fhr) this.a.b()).a());
+                return new Random(((Clock) this.a.b()).a());
             case ard.BYTES_FIELD_NUMBER /* 8 */:
-                return (fhr) ((cbu) this.a).a().d(new fhu());
+                return (Clock) ((cbu) this.a).a().d(new fhu());
             case 9:
-                return new grw((fhr) this.a.b());
+                return new grw((Clock) this.a.b());
             case 10:
                 return Boolean.valueOf(kzp.a.cy().g(((hft) this.a).a()));
             case 11:

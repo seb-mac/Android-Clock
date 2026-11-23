@@ -9,7 +9,7 @@ import java.util.concurrent.Future;
 /* JADX INFO: compiled from: PG */
 /* JADX INFO: loaded from: classes2.dex */
 public final class cyj {
-    public final fhr a;
+    public final Clock a;
     public final Map b;
     public ExecutionException c;
     public Optional d;
@@ -17,7 +17,7 @@ public final class cyj {
     public ehu f;
     public ExecutionException g;
 
-    public cyj(fhr fhrVar, Future future, Future future2, Future future3) {
+    public cyj(Clock fhrVar, Future future, Future future2, Future future3) {
         HashMap map = new HashMap();
         this.b = map;
         this.d = Optional.empty();

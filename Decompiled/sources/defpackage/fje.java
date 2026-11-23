@@ -11,10 +11,10 @@ import java.util.concurrent.TimeUnit;
 /* JADX INFO: compiled from: PG */
 /* JADX INFO: loaded from: classes2.dex */
 final class fje extends jew implements AutoCloseable, jhc {
-    public final fhr a;
+    public final Clock a;
     public final Handler b;
 
-    public fje(fhr fhrVar, Handler handler) {
+    public fje(Clock fhrVar, Handler handler) {
         this.a = fhrVar;
         this.b = handler;
     }
@@ -29,7 +29,7 @@ final class fje extends jew implements AutoCloseable, jhc {
     }
 
     private final jha i(Runnable runnable, long j, long j2, TimeUnit timeUnit, boolean z) {
-        fhr fhrVar = this.a;
+        Clock fhrVar = this.a;
         long millis = timeUnit.toMillis(j);
         fjc fjcVar = new fjc(this, runnable, fhrVar.a() + millis, timeUnit.toMillis(j2), z);
         this.b.postDelayed(fjcVar, millis);
@@ -65,7 +65,7 @@ final class fje extends jew implements AutoCloseable, jhc {
     @Override // java.util.concurrent.ScheduledExecutorService
     /* JADX INFO: renamed from: f */
     public final jha schedule(Callable callable, long j, TimeUnit timeUnit) {
-        fhr fhrVar = this.a;
+        Clock fhrVar = this.a;
         long millis = timeUnit.toMillis(j);
         fjd fjdVar = new fjd(this, callable, fhrVar.a() + millis);
         this.b.postDelayed(fjdVar, millis);

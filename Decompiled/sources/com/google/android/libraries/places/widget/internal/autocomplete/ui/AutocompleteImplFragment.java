@@ -18,7 +18,7 @@ import defpackage.bg;
 import defpackage.cre;
 import defpackage.dea;
 import defpackage.dmw;
-import defpackage.fhr;
+import defpackage.Clock;
 import defpackage.hip;
 import defpackage.hka;
 import defpackage.hkz;
@@ -47,7 +47,7 @@ import defpackage.lpv;
 /* JADX INFO: loaded from: classes2.dex */
 public final class AutocompleteImplFragment extends bg {
     public hmk a;
-    private final fhr aj;
+    private final Clock aj;
     private RecyclerView ak;
     private View al;
     private View am;
@@ -67,7 +67,7 @@ public final class AutocompleteImplFragment extends bg {
     private final hma e;
     private final hoc f;
 
-    private AutocompleteImplFragment(int i, hkz hkzVar, hma hmaVar, hoc hocVar, fhr fhrVar) {
+    private AutocompleteImplFragment(int i, hkz hkzVar, hma hmaVar, hoc hocVar, Clock fhrVar) {
         super(i);
         this.aw = new cre(this, 6);
         this.d = hkzVar;
@@ -303,7 +303,7 @@ public final class AutocompleteImplFragment extends bg {
         }
     }
 
-    public /* synthetic */ AutocompleteImplFragment(int i, hkz hkzVar, hma hmaVar, hoc hocVar, fhr fhrVar, hmw hmwVar) {
+    public /* synthetic */ AutocompleteImplFragment(int i, hkz hkzVar, hma hmaVar, hoc hocVar, Clock fhrVar, hmw hmwVar) {
         this(i, hkzVar, hmaVar, hocVar, fhrVar);
     }
 }

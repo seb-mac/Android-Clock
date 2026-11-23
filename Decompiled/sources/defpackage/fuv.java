@@ -8,7 +8,7 @@ public final class fuv implements ftz {
     private final ftx a;
     private final fua b;
     private final fmt c;
-    private final fhr d;
+    private final Clock d;
     private final Set e;
     private final goh f;
     private final gog g;
@@ -18,7 +18,7 @@ public final class fuv implements ftz {
         iyf.h();
     }
 
-    public fuv(ftx ftxVar, fua fuaVar, fmt fmtVar, fhr fhrVar, Set set, gog gogVar, lqv lqvVar, goh gohVar) {
+    public fuv(ftx ftxVar, fua fuaVar, fmt fmtVar, Clock fhrVar, Set set, gog gogVar, lqv lqvVar, goh gohVar) {
         lxj.d(ftxVar, "clearcutEventsStore");
         lxj.d(fuaVar, "visualElementEventsStore");
         lxj.d(fmtVar, "accountManager");

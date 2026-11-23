@@ -298,7 +298,7 @@ public final class dxd implements Runnable, Comparable, dwz, egw {
                                                                                                     boolean z4 = z;
                                                                                                     dxqVar.h = z4;
                                                                                                     dxp<dxo> dxpVarB = dxpVar.b();
-                                                                                                    dxqVar.e(dxpVarB.a() + (z4 ? 1 : 0));
+                                                                                                    dxqVar.e(dxpVarB.getTime() + (z4 ? 1 : 0));
                                                                                                     dxqVar.d.c(dxqVar, dxqVar.e, dxqVar.k);
                                                                                                     for (dxo dxoVar : dxpVarB) {
                                                                                                         dxoVar.b.execute(new cxv(dxqVar, dxoVar.a, 6, (byte[]) null));
@@ -396,7 +396,7 @@ public final class dxd implements Runnable, Comparable, dwz, egw {
                                                                                                 boolean z5 = z;
                                                                                                 dxqVar.h = z5;
                                                                                                 dxp<dxo> dxpVarB2 = dxpVar.b();
-                                                                                                dxqVar.e(dxpVarB2.a() + (z5 ? 1 : 0));
+                                                                                                dxqVar.e(dxpVarB2.getTime() + (z5 ? 1 : 0));
                                                                                                 dxqVar.d.c(dxqVar, dxqVar.e, dxqVar.k);
                                                                                                 while (r0.hasNext()) {
                                                                                                     dxoVar.b.execute(new cxv(dxqVar, dxoVar.a, 6, (byte[]) null));
@@ -597,7 +597,7 @@ public final class dxd implements Runnable, Comparable, dwz, egw {
                 boolean z6 = z;
                 dxqVar.h = z6;
                 dxp<dxo> dxpVarB3 = dxpVar.b();
-                dxqVar.e(dxpVarB3.a() + (z6 ? 1 : 0));
+                dxqVar.e(dxpVarB3.getTime() + (z6 ? 1 : 0));
                 dxqVar.d.c(dxqVar, dxqVar.e, dxqVar.k);
                 while (r0.hasNext()) {
                     dxoVar.b.execute(new cxv(dxqVar, dxoVar.a, 6, (byte[]) null));
@@ -650,7 +650,7 @@ public final class dxd implements Runnable, Comparable, dwz, egw {
                 dxqVar.j = true;
                 dvl dvlVar = dxqVar.e;
                 dxp<dxo> dxpVarB = dxpVar.b();
-                dxqVar.e(dxpVarB.a() + 1);
+                dxqVar.e(dxpVarB.getTime() + 1);
                 dxqVar.d.c(dxqVar, dvlVar, null);
                 for (dxo dxoVar : dxpVarB) {
                     dxoVar.b.execute(new cxv(dxqVar, dxoVar.a, 5));

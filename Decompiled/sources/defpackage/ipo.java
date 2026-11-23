@@ -12,9 +12,9 @@ public final class ipo implements Runnable {
     final /* synthetic */ jhc d;
     final /* synthetic */ long e;
     final /* synthetic */ long f;
-    final /* synthetic */ fhr g;
+    final /* synthetic */ Clock g;
 
-    public ipo(jhj jhjVar, Runnable runnable, AtomicReference atomicReference, jhc jhcVar, long j, long j2, fhr fhrVar) {
+    public ipo(jhj jhjVar, Runnable runnable, AtomicReference atomicReference, jhc jhcVar, long j, long j2, Clock fhrVar) {
         this.a = jhjVar;
         this.b = runnable;
         this.c = atomicReference;

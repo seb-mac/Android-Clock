@@ -10,9 +10,9 @@ import java.util.Deque;
 public final class cxa {
     public static final iwy a = iwy.h("com/android/deskclock/data/MusicProviderRequestQueue");
     public final cwx b;
-    public final fhr c;
+    public final Clock c;
     public cwz f;
-    public final czb h;
+    public final StopwatchEventLogger h;
     public final flw i;
     public final Handler d = new Handler(Looper.getMainLooper());
     private final Deque j = new ArrayDeque();
@@ -20,7 +20,7 @@ public final class cxa {
     private final Runnable k = new coy(this, 9);
     public long g = -1;
 
-    public cxa(cwx cwxVar, fhr fhrVar, czb czbVar, flw flwVar) {
+    public cxa(cwx cwxVar, Clock fhrVar, StopwatchEventLogger czbVar, flw flwVar) {
         this.b = cwxVar;
         this.c = fhrVar;
         this.h = czbVar;

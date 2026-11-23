@@ -65,10 +65,10 @@ public final class gzb extends hmw implements gtn, gvg {
                 hqh.b();
                 Context context2 = (Context) gzsVar.a;
                 if (fmd.h(context2)) {
-                    long j2 = fmd.h(context2) ? ((SharedPreferences) gzsVar.c.b()).getLong("primes.packageMetric.lastSendTime", -1L) : -1L;
-                    long jA = gzsVar.b.a();
+                    long j2 = fmd.h(context2) ? ((SharedPreferences) gzsVar.c.reset()).getLong("primes.packageMetric.lastSendTime", -1L) : -1L;
+                    long jA = gzsVar.b.getTime();
                     if (jA < j2) {
-                        ((SharedPreferences) gzsVar.c.b()).edit().remove("primes.packageMetric.lastSendTime").commit();
+                        ((SharedPreferences) gzsVar.c.reset()).edit().remove("primes.packageMetric.lastSendTime").commit();
                         j2 = -1;
                     }
                     if (j2 != -1 && jA <= j2 + j) {
@@ -184,7 +184,7 @@ public final class gzb extends hmw implements gtn, gvg {
                 mowVar.b |= 128;
                 gzs gzsVar2 = gzbVar.e;
                 if (fmd.h((Context) gzsVar2.a)) {
-                    ((SharedPreferences) gzsVar2.c.b()).edit().putLong("primes.packageMetric.lastSendTime", gzsVar2.b.a()).commit();
+                    ((SharedPreferences) gzsVar2.c.reset()).edit().putLong("primes.packageMetric.lastSendTime", gzsVar2.b.getTime()).commit();
                 }
                 gve gveVar = gzbVar.b;
                 gva gvaVarA = gvb.a();

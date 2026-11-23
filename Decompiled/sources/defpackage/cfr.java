@@ -45,6 +45,6 @@ public final class cfr extends cfe {
         ctk ctkVar = new ctk(str);
         ctkVar.g = 500L;
         crwVar.c(ctkVar);
-        ((czb) this.b.f).F(20, null, null, null, null, null, null, null, 4, null);
+        ((StopwatchEventLogger) this.b.f).F(20, null, null, null, null, null, null, null, 4, null);
     }
 }

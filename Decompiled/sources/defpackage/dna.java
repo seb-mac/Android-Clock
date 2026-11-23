@@ -13,10 +13,10 @@ public final class dna extends chi implements dne {
     public static final iwy e = iwy.h("com/android/deskclock/wearable/alarmsync/banner/WatchDisconnectedBannerProvider");
     public final Context f;
     private final Set g;
-    private final czb h;
+    private final StopwatchEventLogger h;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public dna(Context context, che cheVar, mam mamVar, czb czbVar) {
+    public dna(Context context, che cheVar, mam mamVar, StopwatchEventLogger czbVar) {
         super(chj.ALARM_SYNC_WATCH_DISCONNECTED, cheVar, mamVar);
         lxj.d(cheVar, "bannerPreferences");
         lxj.d(mamVar, "backgroundScope");

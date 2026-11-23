@@ -140,11 +140,11 @@ public final class dlz {
         }
     }
 
-    public static void k(Context context, fhr fhrVar, Class cls, int i) {
+    public static void k(Context context, Clock fhrVar, Class cls, int i) {
         l(context, fhrVar, cls, i, new iwd(TimeZone.getDefault()), itt.q(a));
     }
 
-    public static void l(Context context, fhr fhrVar, Class cls, int i, iud iudVar, itt ittVar) {
+    public static void l(Context context, Clock fhrVar, Class cls, int i, iud iudVar, itt ittVar) {
         if (i == 0) {
             j(context, cls);
         } else {
@@ -164,7 +164,7 @@ public final class dlz {
         }
     }
 
-    public static void n(Context context, fhr fhrVar, Class cls, iud iudVar, itt ittVar) {
+    public static void n(Context context, Clock fhrVar, Class cls, iud iudVar, itt ittVar) {
         Calendar calendarI = i(ake.q(fhrVar).getTime(), iudVar, ittVar);
         ClipData clipData = hpj.a;
         PendingIntent pendingIntentS = s(context, cls, 201326592);
@@ -191,7 +191,7 @@ public final class dlz {
         }
     }
 
-    public static Optional q(Context context, AppWidgetManager appWidgetManager, int i, Function function, czb czbVar, int i2) {
+    public static Optional q(Context context, AppWidgetManager appWidgetManager, int i, Function function, StopwatchEventLogger czbVar, int i2) {
         ArrayList parcelableArrayList;
         Bundle appWidgetOptions = appWidgetManager.getAppWidgetOptions(i);
         SizeF sizeFH = h(appWidgetOptions, true);

@@ -162,7 +162,7 @@ public final class khr extends kfl implements RandomAccess, khg, kid {
         for (int i = 0; i < this.c; i++) {
             long j = this.b[i];
             byte[] bArr = khi.a;
-            iC = (iC * 31) + a.c(j);
+            iC = (iC * 31) + a.withBootCount(j);
         }
         return iC;
     }

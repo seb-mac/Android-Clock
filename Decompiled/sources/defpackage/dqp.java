@@ -16,7 +16,7 @@ public final class dqp extends dqj {
     }
 
     @Override // defpackage.dqj
-    public final CharSequence b(fhr fhrVar, String str) {
+    public final CharSequence b(Clock fhrVar, String str) {
         throw new UnsupportedOperationException("Cannot call getTimeText from Offline Dialog");
     }
 

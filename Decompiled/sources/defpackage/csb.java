@@ -33,16 +33,16 @@ public final class csb implements chk, cqg, cqi, cpo, ckr {
     public static final iwy a = iwy.h("com/android/deskclock/controller/DigitalAppWidgetController");
     final LruCache b = new LruCache(20);
     public final Context c;
-    public final fhr d;
+    public final Clock d;
     public AppWidgetManager e;
     public final csa f;
     public final gog g;
     private final String h;
     private final Executor i;
-    private final czb j;
+    private final StopwatchEventLogger j;
     private final lqv k;
 
-    public csb(Context context, lqv lqvVar, fhr fhrVar, czb czbVar, csa csaVar, gog gogVar, jhb jhbVar) {
+    public csb(Context context, lqv lqvVar, Clock fhrVar, StopwatchEventLogger czbVar, csa csaVar, gog gogVar, jhb jhbVar) {
         this.c = context;
         this.h = context.getPackageName();
         this.k = lqvVar;
@@ -108,7 +108,7 @@ public final class csb implements chk, cqg, cqi, cpo, ckr {
         textClock.setFormat12Hour(h(true));
         textClock.setFormat24Hour(h(false));
         textView2.setText(str);
-        fhr fhrVar = this.d;
+        Clock fhrVar = this.d;
         csa csaVar = new csa(viewInflate, new dlv(fhrVar, textClock), new dlv(fhrVar, textView, i()), str);
         Resources resources = context.getResources();
         int dimensionPixelSize = resources.getDimensionPixelSize(R.dimen.digital_widget_min_clock_font_size);
@@ -146,12 +146,12 @@ public final class csb implements chk, cqg, cqi, cpo, ckr {
         try {
             int i = 0;
             for (int i2 : iArr) {
-                fhr fhrVar = this.d;
+                Clock fhrVar = this.d;
                 long jA = fhrVar.a();
                 csk cskVar = new csk(this, new lew((Object) this.f.c(i2), false), str, 1);
                 Context context = this.c;
                 AppWidgetManager appWidgetManager = this.e;
-                czb czbVar = this.j;
+                StopwatchEventLogger czbVar = this.j;
                 Optional optionalQ = dlz.q(context, appWidgetManager, i2, cskVar, czbVar, 4);
                 crx crxVar = new crx(this, i2, i);
                 if (true == optionalQ.isPresent()) {

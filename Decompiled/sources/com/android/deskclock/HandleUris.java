@@ -16,13 +16,13 @@ import defpackage.cwb;
 import defpackage.StopwatchController;
 import defpackage.cyw;
 import defpackage.cyy;
-import defpackage.czb;
+import defpackage.StopwatchEventLogger;
 import defpackage.ddd;
 import defpackage.dhy;
 import defpackage.dkr;
 import defpackage.dkt;
 import defpackage.eif;
-import defpackage.fhr;
+import defpackage.Clock;
 import defpackage.iwy;
 import defpackage.lqv;
 import defpackage.lxj;
@@ -37,12 +37,12 @@ import java.util.UUID;
 /* JADX INFO: compiled from: PG */
 /* JADX INFO: loaded from: classes2.dex */
 public final class HandleUris extends ced {
-    public fhr q;
+    public Clock q;
     public StopwatchController r;
     public ddd s;
     public cyy t;
     public cop u;
-    public czb v;
+    public StopwatchEventLogger v;
     public bzi w;
     public lqv x;
     public static final iwy p = iwy.h("com/android/deskclock/HandleUris");

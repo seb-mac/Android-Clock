@@ -48,7 +48,7 @@ class cmr extends hxf implements ksg {
         Object objBV = bV();
         cmf cmfVar = (cmf) this;
         ccs ccsVar = ((ccn) objBV).h;
-        cmfVar.av = (czb) ccsVar.I.b();
+        cmfVar.av = (StopwatchEventLogger) ccsVar.I.b();
         cmfVar.ak = (ddd) ccsVar.K.b();
         cmfVar.al = ((cox) ccsVar.bM).b();
         cmfVar.am = (cku) ccsVar.aC.b();

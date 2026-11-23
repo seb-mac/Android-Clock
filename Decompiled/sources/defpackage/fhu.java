@@ -5,7 +5,7 @@ import j$.time.Instant;
 
 /* JADX INFO: compiled from: PG */
 /* JADX INFO: loaded from: classes2.dex */
-public final class fhu implements fhr {
+public final class fhu implements Clock {
     @Override // defpackage.fhr
     public final long a() {
         return SystemClock.elapsedRealtime();

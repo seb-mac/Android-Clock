@@ -7,10 +7,10 @@ import j$.util.Objects;
 public final class fqy implements fqq {
     public static final iyf a = iyf.h();
     private final fqn b;
-    private final fhr c;
+    private final Clock c;
     private final jge d = new jge();
 
-    public fqy(frg frgVar, fhr fhrVar) {
+    public fqy(frg frgVar, Clock fhrVar) {
         this.b = frgVar;
         this.c = fhrVar;
     }

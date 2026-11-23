@@ -28,26 +28,33 @@ import java.util.concurrent.CopyOnWriteArrayList;
 /* JADX INFO: loaded from: classes2.dex */
 public final class StopwatchController implements cpb, cqg, cqa, cqi, cpo {
     private final dgs a;
-    private final fhr b;
-    private final SharedPreferences c;
+    private final Clock clock;
+    private final SharedPreferences sharedPreferences;
     private final cqb d;
     private final dap e;
     private final lst f;
     private final List g = new CopyOnWriteArrayList();
-    private dfv h;
+    private StopwatchStateModel stopwatchStateModel;
     private List i;
     private final lqv j;
     private final lqv k;
 
-    public StopwatchController(SharedPreferences sharedPreferences, fhr fhrVar, cqb cqbVar, dap dapVar, dgs dgsVar, lqv lqvVar, lqv lqvVar2, lst lstVar) {
-        this.b = fhrVar;
-        this.c = sharedPreferences;
+    public StopwatchController(SharedPreferences sharedPreferences, Clock clock, cqb cqbVar, dap dapVar, dgs dgsVar, lqv lqvVar, lqv lqvVar2, lst lstVar) {
+        this.clock = clock;
+        this.sharedPreferences = sharedPreferences;
         this.d = cqbVar;
         this.e = dapVar;
         this.a = dgsVar;
         this.k = lqvVar;
         this.j = lqvVar2;
         this.f = lstVar;
+    }
+
+    public static Intent a(Context context, String action, StopwatchEventSource eventSource) {
+        Intent intent = new Intent(context, StopwatchReceiver.class);
+        intent.setAction(action);
+        intent.putExtra("com.android.deskclock.extra.EVENT_SOURCE", eventSource);
+        return intent;
     }
 
     private final List l() {
@@ -59,16 +66,16 @@ public final class StopwatchController implements cpb, cqg, cqa, cqi, cpo {
 
     private final List m() {
         if (this.i == null) {
-            SharedPreferences sharedPreferences = this.c;
+            SharedPreferences sharedPreferences = this.sharedPreferences;
             int i = sharedPreferences.getInt("sw_lap_num", 0);
             ArrayList arrayList = new ArrayList(i);
             int i2 = 1;
             long j = 0;
             while (i2 <= i) {
-                long j2 = sharedPreferences.getLong(a.aW(i2, "sw_lap_time_"), 0L);
+                long j2 = sharedPreferences.getLong(defpackage.a.aW(i2, "sw_lap_time_"), 0L);
                 long j3 = j2 - j;
                 if (!dft.a(j3)) {
-                    g.M(sharedPreferences);
+                    defpackage.g.M(sharedPreferences);
                     arrayList.clear();
                     break;
                 }
@@ -85,16 +92,16 @@ public final class StopwatchController implements cpb, cqg, cqa, cqi, cpo {
     /* JADX WARN: Type inference failed for: r14v0, types: [dap, java.lang.Object] */
     /* JADX WARN: Type inference failed for: r1v4, types: [fhr, java.lang.Object] */
     private final void n() {
-        dfv dfvVarB = b();
+        StopwatchStateModel stopwatchStateModel = b();
         boolean zI = i();
         int size = c().size();
-        if (dfvVarB.e() || this.d.c) {
+        if (stopwatchStateModel.isReset() || this.d.c) {
             dap dapVar = this.e;
             dapVar.z();
             dapVar.q(2147483642);
             return;
         }
-        if (dfvVarB.g == daq.a) {
+        if (stopwatchStateModel.notificationState == StopwatchNotificationState.SUPPRESS) {
             return;
         }
         lqv lqvVar = this.j;
@@ -109,13 +116,13 @@ public final class StopwatchController implements cpb, cqg, cqa, cqi, cpo {
         afnVar.p = true;
         afnVar.k(pendingIntentC);
         afnVar.g = pendingIntentH;
-        afnVar.d(16, dfvVarB.d());
+        afnVar.d(16, stopwatchStateModel.isPaused());
         afnVar.i = 2;
         afnVar.m = r14.j();
         afnVar.p(2131231707);
         afnVar.u = cqx.c(context);
-        boolean zF = dfvVarB.f();
-        long jA = dfvVarB.a();
+        boolean zF = stopwatchStateModel.isRunning();
+        long jA = stopwatchStateModel.getTime();
         ArrayList arrayList = new ArrayList(2);
         if (zF) {
             Intent intentA = StopwatchController.a(context, "com.android.deskclock.action.PAUSE_STOPWATCH", mluVar);
@@ -134,15 +141,15 @@ public final class StopwatchController implements cpb, cqg, cqa, cqi, cpo {
         for (int i = 0; i < size2; i++) {
             afnVar.f((afl) arrayList.get(i));
         }
-        long jA2 = lqvVar.a.a() - jA;
-        if (a.aN()) {
+        long jA2 = ((java.util.Date) lqvVar.a).getTime() - jA;
+        if (defpackage.a.aN()) {
             afx afxVar = zF ? new afx(Long.valueOf(jA2), null, false) : new afx(null, (Duration) Objects.requireNonNull(Duration.ofMillis(jA)), false);
             afy afyVar = size > 0 ? new afy(afxVar, lqv.F(resources, size)) : new afy(afxVar, resources.getString(R.string.sw_notification_label));
             aga agaVar = new aga();
             agaVar.f(afyVar);
             afnVar.q(agaVar);
-            if (a.aL()) {
-                a.aJ(afnVar);
+            if (defpackage.a.aL()) {
+                defpackage.a.aJ(afnVar);
             }
         } else {
             RemoteViews remoteViews = new RemoteViews(context.getPackageName(), true != zF ? R.layout.chronometer_notif_content_stopped : R.layout.chronometer_notif_content_running);
@@ -178,31 +185,30 @@ public final class StopwatchController implements cpb, cqg, cqa, cqi, cpo {
         n();
     }
 
-    public final dfv b() {
-        dfv dfvVar = this.h;
+    public final StopwatchStateModel b() {
+        StopwatchStateModel dfvVar = this.stopwatchStateModel;
         if (dfvVar != null) {
             return dfvVar;
         }
-        fhr fhrVar = this.b;
-        SharedPreferences sharedPreferences = this.c;
-        dfv dfvVar2 = new dfv(fhrVar, dfu.values()[sharedPreferences.getInt("sw_state", dfu.RESET.ordinal())], sharedPreferences.getInt("sw_boot_count", -1), sharedPreferences.getLong("sw_start_time", Long.MIN_VALUE), sharedPreferences.getLong("sw_wall_clock_time", Long.MIN_VALUE), sharedPreferences.getLong("sw_accum_time", 0L), daq.values()[sharedPreferences.getInt("sw_notification_state", daq.b.ordinal())]);
-        if (dfvVar2.a() < 0) {
-            g.M(sharedPreferences);
-            dfvVar2 = dfvVar2.b();
-            g.N(sharedPreferences, dfvVar2);
+        Clock fhrVar = this.clock;
+        SharedPreferences sharedPreferences = this.sharedPreferences;
+        StopwatchStateModel dfvVar2 = new StopwatchStateModel(fhrVar, StopwatchState.values()[sharedPreferences.getInt("sw_state", StopwatchState.RESET.ordinal())], sharedPreferences.getInt("sw_boot_count", -1), sharedPreferences.getLong("sw_start_time", Long.MIN_VALUE), sharedPreferences.getLong("sw_wall_clock_time", Long.MIN_VALUE), sharedPreferences.getLong("sw_accum_time", 0L), StopwatchNotificationState.values()[sharedPreferences.getInt("sw_notification_state", StopwatchNotificationState.GENERATE.ordinal())]);
+        if (dfvVar2.getTime() < 0) {
+            defpackage.g.M(sharedPreferences);
+            dfvVar2 = dfvVar2.reset();
         }
-        this.h = dfvVar2;
+        this.stopwatchStateModel = dfvVar2;
         return dfvVar2;
     }
 
     @Override // defpackage.cpb
     public final void bR() {
-        dfv dfvVarC = b().c(this.k.G());
-        if (dfvVarC.f()) {
-            fhr fhrVar = dfvVarC.a;
+        StopwatchStateModel dfvVarC = b().withBootCount(this.k.G());
+        if (dfvVarC.isRunning()) {
+            Clock fhrVar = dfvVarC.clock;
             long jA = fhrVar.a();
             long epochMilli = fhrVar.c().toEpochMilli();
-            dfvVarC = new dfv(fhrVar, dfvVarC.b, dfvVarC.c, jA, epochMilli, dfvVarC.f + Math.max(0L, epochMilli - dfvVarC.e), dfvVarC.g);
+            dfvVarC = new StopwatchStateModel(fhrVar, dfvVarC.stopwatchState, dfvVarC.bootCount, jA, epochMilli, dfvVarC.accumulatedTime + Math.max(0L, epochMilli - dfvVarC.lastStartWallClockTime), dfvVarC.notificationState);
         }
         k(dfvVarC);
     }
@@ -217,9 +223,9 @@ public final class StopwatchController implements cpb, cqg, cqa, cqi, cpo {
 
     public final void e() {
         dlx.c();
-        dfv dfvVarB = b();
-        if (dfvVarB.f()) {
-            dfvVarB = new dfv(dfvVarB.a, dfu.PAUSED, dfvVarB.c, Long.MIN_VALUE, Long.MIN_VALUE, dfvVarB.a(), daq.b);
+        StopwatchStateModel dfvVarB = b();
+        if (dfvVarB.isRunning()) {
+            dfvVarB = new StopwatchStateModel(dfvVarB.clock, StopwatchState.PAUSED, dfvVarB.bootCount, Long.MIN_VALUE, Long.MIN_VALUE, dfvVarB.getTime(), StopwatchNotificationState.GENERATE);
         }
         k(dfvVarB);
     }
@@ -230,15 +236,15 @@ public final class StopwatchController implements cpb, cqg, cqa, cqi, cpo {
 
     public final void g() {
         dlx.c();
-        k(b().b());
+        k(b().reset());
     }
 
     public final void h() {
         dlx.c();
-        dfv dfvVarB = b();
-        if (!dfvVarB.f()) {
-            fhr fhrVar = dfvVarB.a;
-            dfvVarB = new dfv(fhrVar, dfu.RUNNING, dfvVarB.c, fhrVar.a(), fhrVar.c().toEpochMilli(), dfvVarB.a(), daq.b);
+        StopwatchStateModel dfvVarB = b();
+        if (!dfvVarB.isRunning()) {
+            Clock fhrVar = dfvVarB.clock;
+            dfvVarB = new StopwatchStateModel(fhrVar, StopwatchState.RUNNING, dfvVarB.bootCount, fhrVar.a(), fhrVar.c().toEpochMilli(), dfvVarB.getTime(), StopwatchNotificationState.GENERATE);
         }
         k(dfvVarB);
     }
@@ -250,14 +256,14 @@ public final class StopwatchController implements cpb, cqg, cqa, cqi, cpo {
 
     public final void j() {
         dlx.c();
-        dfv dfvVarB = b();
-        if (dfvVarB.f() && i()) {
-            long jA = dfvVarB.a();
+        StopwatchStateModel dfvVarB = b();
+        if (dfvVarB.isRunning() && i()) {
+            long jA = dfvVarB.getTime();
             List listM = m();
             int size = listM.size() + 1;
             long j = jA - (listM.isEmpty() ? 0L : ((dft) listM.get(0)).c);
             if (dft.a(j)) {
-                this.c.edit().putInt("sw_lap_num", size).putLong(a.aW(size, "sw_lap_time_"), jA).apply();
+                this.sharedPreferences.edit().putInt("sw_lap_num", size).putLong(defpackage.a.aW(size, "sw_lap_time_"), jA).apply();
                 listM.add(0, new dft(size, j, jA));
                 if (!this.d.c) {
                     n();
@@ -272,25 +278,25 @@ public final class StopwatchController implements cpb, cqg, cqa, cqi, cpo {
 
     /* JADX WARN: Type inference failed for: r5v14, types: [java.lang.Object, lwo] */
     /* JADX WARN: Type inference failed for: r5v25, types: [java.lang.Object, lwo] */
-    public final void k(dfv dfvVar) {
-        dfv dfvVarB = b();
+    public final void k(StopwatchStateModel dfvVar) {
+        StopwatchStateModel dfvVarB = b();
         if (dfvVarB != dfvVar) {
-            dfv dfvVarC = dfvVar.c(this.k.G());
-            SharedPreferences sharedPreferences = this.c;
-            g.N(sharedPreferences, dfvVarC);
-            this.h = dfvVarC;
+            StopwatchStateModel dfvVarC = dfvVar.withBootCount(this.k.G());
+            SharedPreferences sharedPreferences = this.sharedPreferences;
+            defpackage.g.N(sharedPreferences, dfvVarC);
+            this.stopwatchStateModel = dfvVarC;
             if (!this.d.c) {
                 n();
             }
-            if (dfvVarC.e()) {
-                g.M(sharedPreferences);
+            if (dfvVarC.isReset()) {
+                defpackage.g.M(sharedPreferences);
                 m().clear();
             }
             Iterator it = l().iterator();
             while (it.hasNext()) {
                 ((dfw) it.next()).x(dfvVarB, dfvVarC);
             }
-            if (dfvVarC.f() && !dfvVarB.f()) {
+            if (dfvVarC.isRunning() && !dfvVarB.isRunning()) {
                 dgs dgsVar = this.a;
                 try {
                     Optional optional = dgsVar.b;
@@ -298,7 +304,7 @@ public final class StopwatchController implements cpb, cqg, cqa, cqi, cpo {
                         Optional optional2 = dgsVar.c;
                         cci cciVar = new cci(new ddr(7), 11);
                         optional2.isPresent();
-                        cciVar.a.a(optional2.get());
+                        ((lwo) cciVar.a).a(optional2.get());
                         return;
                     }
                     return;
@@ -307,7 +313,7 @@ public final class StopwatchController implements cpb, cqg, cqa, cqi, cpo {
                     return;
                 }
             }
-            if (dfvVarC.d() && dfvVarB.f()) {
+            if (dfvVarC.isPaused() && dfvVarB.isRunning()) {
                 dgs dgsVar2 = this.a;
                 try {
                     Optional optional3 = dgsVar2.b;
@@ -317,7 +323,7 @@ public final class StopwatchController implements cpb, cqg, cqa, cqi, cpo {
                     Optional optional4 = dgsVar2.c;
                     cci cciVar2 = new cci(new ddr(6), 10);
                     optional4.isPresent();
-                    cciVar2.a.a(optional4.get());
+                    ((lwo) cciVar2.a).a(optional4.get());
                 } catch (Throwable th2) {
                     ((iwv) ((iwv) dgs.a.b()).i(th2).j("com/android/deskclock/stopwatch/shortcut/StopwatchShortcutManager", "logPauseStopwatch", 48, "StopwatchShortcutManager.kt")).r("Failed to log pause stopwatch shortcut usage");
                 }
@@ -336,14 +342,14 @@ public final class StopwatchController implements cpb, cqg, cqa, cqi, cpo {
 
     @Override // defpackage.cpo
     public final void y() {
-        dfv dfvVarB = b();
-        if (dfvVarB.f()) {
-            fhr fhrVar = dfvVarB.a;
+        StopwatchStateModel dfvVarB = b();
+        if (dfvVarB.isRunning()) {
+            Clock fhrVar = dfvVarB.clock;
             long jA = fhrVar.a();
             long epochMilli = fhrVar.c().toEpochMilli();
-            long j = jA - dfvVarB.d;
+            long j = jA - dfvVarB.lastStartTime;
             if (j >= 0) {
-                dfvVarB = new dfv(fhrVar, dfvVarB.b, dfvVarB.c, jA, epochMilli, dfvVarB.f + j, dfvVarB.g);
+                dfvVarB = new StopwatchStateModel(fhrVar, dfvVarB.stopwatchState, dfvVarB.bootCount, jA, epochMilli, dfvVarB.accumulatedTime + j, dfvVarB.notificationState);
             }
         }
         k(dfvVarB);

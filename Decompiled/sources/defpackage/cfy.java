@@ -39,7 +39,7 @@ public final class cfy extends cfe {
         mjw mjwVar3 = (mjw) kgtVarK.b;
         mjwVar3.b |= 1;
         mjwVar3.e = cuaVarI.p;
-        ((czb) gvuVar.f).b((mjw) kgtVarK.m());
+        ((StopwatchEventLogger) gvuVar.f).b((mjw) kgtVarK.m());
         return cwbVar.h(cuaVarI);
     }
 

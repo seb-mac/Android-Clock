@@ -22,7 +22,7 @@ import defpackage.chl;
 import defpackage.chm;
 import defpackage.cus;
 import defpackage.cwb;
-import defpackage.czb;
+import defpackage.StopwatchEventLogger;
 import defpackage.ddr;
 import defpackage.dds;
 import defpackage.dkt;
@@ -30,7 +30,7 @@ import defpackage.dlr;
 import defpackage.dls;
 import defpackage.dlu;
 import defpackage.eif;
-import defpackage.fhr;
+import defpackage.Clock;
 import defpackage.gog;
 import defpackage.iwv;
 import defpackage.lxj;
@@ -50,9 +50,9 @@ public class ScreensaverActivity extends cef implements chk {
     public String r;
     public View s;
     public dlr t;
-    public fhr u;
+    public Clock u;
     public dds v;
-    public czb w;
+    public StopwatchEventLogger w;
     public dlu x;
     public bzh y;
     public gog z;
@@ -116,7 +116,7 @@ public class ScreensaverActivity extends cef implements chk {
         if (stringExtra == null) {
             stringExtra = null;
         }
-        czb czbVar = this.w;
+        StopwatchEventLogger czbVar = this.w;
         Enum r0 = mln.UNKNOWN_SOURCE;
         if (stringExtra == null) {
             enumValueOf = r0;

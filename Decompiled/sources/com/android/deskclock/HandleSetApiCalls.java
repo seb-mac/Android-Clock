@@ -8,7 +8,7 @@ import com.google.android.deskclock.debug.R;
 import defpackage.cdf;
 import defpackage.ceb;
 import defpackage.cwb;
-import defpackage.czb;
+import defpackage.StopwatchEventLogger;
 import defpackage.dhm;
 import defpackage.dhy;
 import defpackage.dia;
@@ -16,8 +16,8 @@ import defpackage.dkr;
 import defpackage.dkt;
 import defpackage.dlx;
 import defpackage.eif;
-import defpackage.fhr;
-import defpackage.g;
+import defpackage.Clock;
+import defpackage.StopwatchUtils;
 import defpackage.gog;
 import defpackage.iwv;
 import defpackage.iwy;
@@ -28,8 +28,8 @@ import defpackage.mly;
 /* JADX INFO: compiled from: PG */
 /* JADX INFO: loaded from: classes2.dex */
 public class HandleSetApiCalls extends ceb {
-    public fhr r;
-    public czb s;
+    public Clock r;
+    public StopwatchEventLogger s;
     public gog t;
     private static final iwy v = iwy.h("com/android/deskclock/HandleSetApiCalls");
     public static final mjv p = mjv.OTHER_INTENT;

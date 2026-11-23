@@ -28,7 +28,7 @@ final class ghz {
     public final int hashCode() {
         int iHashCode = this.a.hashCode() * 31;
         Long l = this.c;
-        return ((iHashCode + a.c(this.b)) * 31) + (l == null ? 0 : l.hashCode());
+        return ((iHashCode + a.withBootCount(this.b)) * 31) + (l == null ? 0 : l.hashCode());
     }
 
     public final String toString() {

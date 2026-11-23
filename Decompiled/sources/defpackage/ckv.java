@@ -31,13 +31,13 @@ public final class ckv implements ksl {
     public final /* synthetic */ Object b() {
         switch (this.h) {
             case 0:
-                return new cku(((hft) this.a).a(), (SharedPreferences) this.b.b(), (fhr) this.c.b(), (cqb) this.d.b(), (dap) this.e.b(), (czb) this.f.b(), ((ckw) this.g).b());
+                return new cku(((hft) this.a).a(), (SharedPreferences) this.b.b(), (Clock) this.c.b(), (cqb) this.d.b(), (dap) this.e.b(), (StopwatchEventLogger) this.f.b(), ((ckw) this.g).b());
             case 1:
-                return new cjv(((hft) this.d).a(), (czb) this.c.b(), (fhr) this.a.b(), (cke) this.f.b(), (cjw) this.g.b(), (cyb) this.b.b(), (StopwatchController) this.e.b());
+                return new cjv(((hft) this.d).a(), (StopwatchEventLogger) this.c.b(), (Clock) this.a.b(), (cke) this.f.b(), (cjw) this.g.b(), (cyb) this.b.b(), (StopwatchController) this.e.b());
             case 2:
-                return new csb(((hft) this.a).a(), ((dme) this.e).b(), (fhr) this.c.b(), (czb) this.f.b(), (csa) this.b.b(), ((dma) this.d).b(), (jhb) this.g.b());
+                return new csb(((hft) this.a).a(), ((dme) this.e).b(), (Clock) this.c.b(), (StopwatchEventLogger) this.f.b(), (csa) this.b.b(), ((dma) this.d).b(), (jhb) this.g.b());
             case ard.INTEGER_FIELD_NUMBER /* 3 */:
-                return new csu(((hft) this.a).a(), (fhr) this.c.b(), (czb) this.f.b(), ((cpv) this.d).b(), (csa) this.b.b(), (dep) this.e.b(), (jhb) this.g.b());
+                return new csu(((hft) this.a).a(), (Clock) this.c.b(), (StopwatchEventLogger) this.f.b(), ((cpv) this.d).b(), (csa) this.b.b(), (dep) this.e.b(), (jhb) this.g.b());
             case ard.LONG_FIELD_NUMBER /* 4 */:
                 return new fwu(((gha) this.g).a(), (String) this.d.b(), (fof) this.e.b(), (fnl) this.c.b(), (fwf) this.b.b(), this.f, (ghm) this.a.b());
             case ard.STRING_FIELD_NUMBER /* 5 */:
@@ -50,9 +50,9 @@ public final class ckv implements ksl {
                 ksq ksqVar4 = this.d;
                 return new fzf(jhbVar, this.c, kqgVarA, str, ksk.a(ksqVar3), ksk.a(ksqVar4), new gqj(), ((hft) this.f).a());
             case ard.STRING_SET_FIELD_NUMBER /* 6 */:
-                return new gqg(((ggg) this.b).b(), (ghx) this.g.b(), (jhb) this.c.b(), ((gha) this.f).a(), ((gqh) this.d).b(), (bzi) this.e.b(), new ewg(), (fhr) this.a.b());
+                return new gqg(((ggg) this.b).b(), (ghx) this.g.b(), (jhb) this.c.b(), ((gha) this.f).a(), ((gqh) this.d).b(), (bzi) this.e.b(), new ewg(), (Clock) this.a.b());
             case ard.DOUBLE_FIELD_NUMBER /* 7 */:
-                return new gvu((gsr) this.d.b(), (iqo) ((ksm) this.g).a, (fhr) this.f.b(), this.a, this.b, this.e, this.c);
+                return new gvu((gsr) this.d.b(), (iqo) ((ksm) this.g).a, (Clock) this.f.b(), this.a, this.b, this.e, this.c);
             case ard.BYTES_FIELD_NUMBER /* 8 */:
                 flw flwVarB = ((gvf) this.d).b();
                 Context contextA = ((hft) this.g).a();

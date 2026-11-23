@@ -20,7 +20,7 @@ public class dqj extends dpf {
         return R.layout.city_list_item;
     }
 
-    public CharSequence b(fhr fhrVar, String str) {
+    public CharSequence b(Clock fhrVar, String str) {
         Object obj = this.g;
         Calendar calendarQ = ake.q(fhrVar);
         calendarQ.setTimeZone(((dqr) obj).f);

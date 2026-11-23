@@ -12,6 +12,6 @@ public final class cen implements ksl {
     @Override // defpackage.lst, defpackage.lss
     /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
     public final lqv b() {
-        return new lqv((czb) this.a.b());
+        return new lqv((StopwatchEventLogger) this.a.b());
     }
 }

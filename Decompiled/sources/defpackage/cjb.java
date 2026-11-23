@@ -7,14 +7,14 @@ import android.view.ViewGroup;
 /* JADX INFO: compiled from: PG */
 /* JADX INFO: loaded from: classes2.dex */
 public final class cjb implements dpg {
-    private final fhr a;
+    private final Clock a;
     private final cpu b;
     private final cku c;
     private final dep d;
     private final gvu e;
     private final gog f;
 
-    public cjb(fhr fhrVar, gvu gvuVar, cku ckuVar, cpu cpuVar, gog gogVar, dep depVar) {
+    public cjb(Clock fhrVar, gvu gvuVar, cku ckuVar, cpu cpuVar, gog gogVar, dep depVar) {
         this.e = gvuVar;
         this.a = fhrVar;
         this.b = cpuVar;

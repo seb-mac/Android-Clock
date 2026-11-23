@@ -35,7 +35,7 @@ public final class cxy extends cwx {
     public final cpg y;
     public final flw z;
 
-    public cxy(Context context, fhr fhrVar, czb czbVar, cqj cqjVar, cxi cxiVar, flw flwVar, ddk ddkVar, ddd dddVar, cpg cpgVar, cyr cyrVar, dco dcoVar) {
+    public cxy(Context context, Clock fhrVar, StopwatchEventLogger czbVar, cqj cqjVar, cxi cxiVar, flw flwVar, ddk ddkVar, ddd dddVar, cpg cpgVar, cyr cyrVar, dco dcoVar) {
         super(cyrVar, context, fhrVar, dcoVar, new dcp(dcoVar, 1, 1, 1, 1, 1).d(), czbVar, flwVar);
         this.u = 0L;
         HandlerThread handlerThread = new HandlerThread(dcoVar.toString().concat(" Ringtone Player Thread"));

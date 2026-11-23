@@ -25,11 +25,11 @@ public final class ctf implements cpb, cqg, cqi, dfw {
         dlx.e(new cte(this, this.c.b(), 0));
     }
 
-    public final ShortcutInfo a(dfv dfvVar) {
-        String strF = dkt.F(czd.g, dfvVar.f() ? cza.b : cza.d);
+    public final ShortcutInfo a(StopwatchStateModel dfvVar) {
+        String strF = dkt.F(czd.g, dfvVar.isRunning() ? cza.b : cza.d);
         Context context = this.b;
         ShortcutInfo.Builder rank = new ShortcutInfo.Builder(context, strF).setIcon(Icon.createWithResource(context, R.drawable.stopwatch_shortcut)).setActivity(new ComponentName(context, (Class<?>) DeskClock.class)).setRank(2);
-        if (dfvVar.f()) {
+        if (dfvVar.isRunning()) {
             rank.setIntent(new Intent(context, (Class<?>) HandleShortcuts.class).setAction("com.android.deskclock.action.PAUSE_STOPWATCH").addFlags(268435456)).setShortLabel(context.getString(R.string.shortcut_pause_stopwatch_short)).setLongLabel(context.getString(R.string.shortcut_pause_stopwatch_long));
         } else {
             rank.setIntent(new Intent(context, (Class<?>) HandleShortcuts.class).setAction("com.android.deskclock.action.START_STOPWATCH").addFlags(268435456)).setShortLabel(context.getString(R.string.shortcut_start_stopwatch_short)).setLongLabel(context.getString(R.string.shortcut_start_stopwatch_long));
@@ -57,7 +57,7 @@ public final class ctf implements cpb, cqg, cqi, dfw {
     }
 
     @Override // defpackage.dfw
-    public final void x(dfv dfvVar, dfv dfvVar2) {
+    public final void x(StopwatchStateModel dfvVar, StopwatchStateModel dfvVar2) {
         dlx.e(new cte(this, dfvVar2, 1));
     }
 

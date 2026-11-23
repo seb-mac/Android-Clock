@@ -41,9 +41,9 @@ abstract class dgy extends ccx {
         dhmVar.e = (cqb) ccsVar.Q.b();
         ccnVar.j.c();
         dhmVar.f = (ctc) cclVar.d.b();
-        dhmVar.aj = (fhr) ccsVar.t.b();
+        dhmVar.aj = (Clock) ccsVar.t.b();
         dhmVar.ak = ccsVar.I();
-        dhmVar.aq = (czb) ccsVar.I.b();
+        dhmVar.aq = (StopwatchEventLogger) ccsVar.I.b();
         dhmVar.ar = (ns) ccsVar.bp.b();
         dhmVar.al = (cyb) ccsVar.bu.b();
     }

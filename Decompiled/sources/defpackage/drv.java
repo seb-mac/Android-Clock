@@ -8,7 +8,7 @@ import j$.util.Objects;
 
 /* JADX INFO: compiled from: PG */
 /* JADX INFO: loaded from: classes2.dex */
-final class drv extends g {
+final class drv extends StopwatchUtils {
     final /* synthetic */ Activity a;
     final /* synthetic */ drw b;
 

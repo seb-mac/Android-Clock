@@ -115,7 +115,7 @@ public final /* synthetic */ class hes implements fan {
             Objects.requireNonNull(jdlVar4);
             jdfVar3.f = jdlVar4;
             jdfVar3.b |= 64;
-            String strA = lnzVar.b.a();
+            String strA = lnzVar.b.getTime();
             kgtVarF.p();
             jdf jdfVar4 = (jdf) kgtVarF.b;
             Objects.requireNonNull(strA);
@@ -184,7 +184,7 @@ public final /* synthetic */ class hes implements fan {
             Objects.requireNonNull(jdlVar8);
             jdfVar7.f = jdlVar8;
             jdfVar7.b |= 64;
-            String strA2 = lnzVar2.b.a();
+            String strA2 = lnzVar2.b.getTime();
             kgtVarF2.p();
             jdf jdfVar8 = (jdf) kgtVarF2.b;
             Objects.requireNonNull(strA2);
@@ -241,7 +241,7 @@ public final /* synthetic */ class hes implements fan {
             Objects.requireNonNull(jdlVar12);
             jdfVar12.f = jdlVar12;
             jdfVar12.b |= 64;
-            String strA3 = lnzVar3.b.a();
+            String strA3 = lnzVar3.b.getTime();
             kgtVarF3.p();
             jdf jdfVar13 = (jdf) kgtVarF3.b;
             Objects.requireNonNull(strA3);
@@ -289,7 +289,7 @@ public final /* synthetic */ class hes implements fan {
         Objects.requireNonNull(jdlVar16);
         jdfVar16.f = jdlVar16;
         jdfVar16.b |= 64;
-        String strA4 = lnzVar4.b.a();
+        String strA4 = lnzVar4.b.getTime();
         kgtVarF4.p();
         jdf jdfVar17 = (jdf) kgtVarF4.b;
         Objects.requireNonNull(strA4);

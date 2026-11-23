@@ -7,10 +7,10 @@ import android.view.ViewGroup;
 /* JADX INFO: compiled from: PG */
 /* JADX INFO: loaded from: classes2.dex */
 public final class dqm implements dpg {
-    private final fhr a;
+    private final Clock a;
     private final cpu b;
 
-    public dqm(fhr fhrVar, cpu cpuVar) {
+    public dqm(Clock fhrVar, cpu cpuVar) {
         this.a = fhrVar;
         this.b = cpuVar;
     }

@@ -40,7 +40,7 @@ public class dix extends MotionLayout implements ksg {
         GastownTimerCard gastownTimerCard = (GastownTimerCard) this;
         cct cctVar = (cct) objBV;
         ccs ccsVar = cctVar.a;
-        gastownTimerCard.af = (czb) ccsVar.I.b();
+        gastownTimerCard.af = (StopwatchEventLogger) ccsVar.I.b();
         gastownTimerCard.ag = cctVar.a();
         gastownTimerCard.ah = ((dkb) ccsVar.bd).b();
     }

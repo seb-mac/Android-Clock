@@ -22,11 +22,11 @@ public final class cha implements ksl {
     public final /* synthetic */ Object b() {
         switch (this.d) {
             case 0:
-                return new cgz(((hft) this.a).a(), (fhr) this.b.b(), (czb) this.c.b());
+                return new cgz(((hft) this.a).a(), (Clock) this.b.b(), (StopwatchEventLogger) this.c.b());
             case 1:
                 return new cem(((kry) this.c).b(), ((cen) this.a).b(), (Optional) this.b.b());
             case 2:
-                return new cil(this.c, (czb) this.a.b(), (lvf) this.b.b());
+                return new cil(this.c, (StopwatchEventLogger) this.a.b(), (lvf) this.b.b());
             case ard.INTEGER_FIELD_NUMBER /* 3 */:
                 return new cqb(((hft) this.c).a(), ((czi) this.a).a(), this.b);
             case ard.LONG_FIELD_NUMBER /* 4 */:
@@ -37,7 +37,7 @@ public final class cha implements ksl {
                 return new ctn(((hft) this.c).a(), (cqb) this.b.b(), ((czi) this.a).a());
             case ard.DOUBLE_FIELD_NUMBER /* 7 */:
                 final cqj cqjVar = (cqj) this.a.b();
-                final fhr fhrVar = (fhr) this.b.b();
+                final Clock fhrVar = (Clock) this.b.b();
                 final mam mamVar = (mam) this.c.b();
                 lxj.d(cqjVar, "packageMonitorManager");
                 lxj.d(fhrVar, "clock");
@@ -64,7 +64,7 @@ public final class cha implements ksl {
             case 12:
                 return new dmr((fcp) this.a.b(), (fcp) this.b.b(), ((dob) this.c).b());
             case 13:
-                return new dnb(((hft) this.a).a(), (czb) this.b.b(), ((dob) this.c).b());
+                return new dnb(((hft) this.a).a(), (StopwatchEventLogger) this.b.b(), ((dob) this.c).b());
             case 14:
                 return new fim(((fiq) this.b).b().C(((fhv) this.a).a()), this.c);
             case 15:

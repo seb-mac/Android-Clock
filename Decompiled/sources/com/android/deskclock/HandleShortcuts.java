@@ -5,7 +5,7 @@ import android.os.Bundle;
 import defpackage.a;
 import defpackage.cec;
 import defpackage.StopwatchController;
-import defpackage.czb;
+import defpackage.StopwatchEventLogger;
 import defpackage.dkr;
 import defpackage.dkt;
 import defpackage.iwv;
@@ -19,7 +19,7 @@ public class HandleShortcuts extends cec {
     private static final iwy s = iwy.h("com/android/deskclock/HandleShortcuts");
     private static final mlw t = mlw.SHORTCUT;
     public StopwatchController p;
-    public czb q;
+    public StopwatchEventLogger q;
 
     @Override // defpackage.cec, defpackage.cpa, defpackage.bj, defpackage.ol, defpackage.cu, android.app.Activity
     protected final void onCreate(Bundle bundle) {

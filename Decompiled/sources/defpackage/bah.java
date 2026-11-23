@@ -29,7 +29,7 @@ public final class bah {
     }
 
     public final int hashCode() {
-        return (((((((Float.floatToIntBits(this.c) * 31) + Float.floatToIntBits(this.d)) * 31) + Float.floatToIntBits(this.b)) * 31) + this.a) * 31) + a.c(this.e);
+        return (((((((Float.floatToIntBits(this.c) * 31) + Float.floatToIntBits(this.d)) * 31) + Float.floatToIntBits(this.b)) * 31) + this.a) * 31) + a.withBootCount(this.e);
     }
 
     public final String toString() {

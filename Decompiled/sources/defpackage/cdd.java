@@ -12,12 +12,12 @@ public final class cdd extends cfe {
     final /* synthetic */ HandleApiCalls a;
     private final Intent b;
     private final Activity c;
-    private final fhr d;
+    private final Clock d;
     private final Context e;
     private String i;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public cdd(HandleApiCalls handleApiCalls, Intent intent, Activity activity, fhr fhrVar) {
+    public cdd(HandleApiCalls handleApiCalls, Intent intent, Activity activity, Clock fhrVar) {
         super(activity, true);
         Objects.requireNonNull(handleApiCalls);
         this.a = handleApiCalls;

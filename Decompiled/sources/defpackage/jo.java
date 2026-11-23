@@ -219,7 +219,7 @@ public class jo extends TextView {
     @Override // android.widget.TextView
     public final void setCompoundDrawablesRelativeWithIntrinsicBounds(int i, int i2, int i3, int i4) {
         Context context = getContext();
-        setCompoundDrawablesRelativeWithIntrinsicBounds(i != 0 ? g.e(context, i) : null, i2 != 0 ? g.e(context, i2) : null, i3 != 0 ? g.e(context, i3) : null, i4 != 0 ? g.e(context, i4) : null);
+        setCompoundDrawablesRelativeWithIntrinsicBounds(i != 0 ? StopwatchUtils.e(context, i) : null, i2 != 0 ? StopwatchUtils.e(context, i2) : null, i3 != 0 ? StopwatchUtils.e(context, i3) : null, i4 != 0 ? StopwatchUtils.e(context, i4) : null);
         jk jkVar = this.b;
         if (jkVar != null) {
             jkVar.a();
@@ -229,7 +229,7 @@ public class jo extends TextView {
     @Override // android.widget.TextView
     public final void setCompoundDrawablesWithIntrinsicBounds(int i, int i2, int i3, int i4) {
         Context context = getContext();
-        setCompoundDrawablesWithIntrinsicBounds(i != 0 ? g.e(context, i) : null, i2 != 0 ? g.e(context, i2) : null, i3 != 0 ? g.e(context, i3) : null, i4 != 0 ? g.e(context, i4) : null);
+        setCompoundDrawablesWithIntrinsicBounds(i != 0 ? StopwatchUtils.e(context, i) : null, i2 != 0 ? StopwatchUtils.e(context, i2) : null, i3 != 0 ? StopwatchUtils.e(context, i3) : null, i4 != 0 ? StopwatchUtils.e(context, i4) : null);
         jk jkVar = this.b;
         if (jkVar != null) {
             jkVar.a();

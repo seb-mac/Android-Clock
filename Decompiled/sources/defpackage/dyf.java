@@ -90,7 +90,7 @@ final class dyf implements dxa, dwz {
                             if (dyxVarC.a(dwyVar) != null) {
                                 this.d = dwyVar;
                                 this.f = new dwx(Collections.singletonList(this.g.b), dxbVar, this);
-                                this.g.a.d();
+                                this.g.a.isPaused();
                             } else {
                                 if (Log.isLoggable("SourceGenerator", 3)) {
                                     Log.d("SourceGenerator", "Attempt to write: " + String.valueOf(this.d) + ", data: " + String.valueOf(obj) + " to the disk cache failed, maybe the disk cache is disabled? Trying to decode the data directly...");
@@ -112,7 +112,7 @@ final class dyf implements dxa, dwz {
                     }
                     z2 = false;
                     if (!z2) {
-                        this.g.a.d();
+                        this.g.a.isPaused();
                     }
                     throw th;
                 } catch (IOException e) {
@@ -147,7 +147,7 @@ final class dyf implements dxa, dwz {
             int i3 = this.e;
             this.e = i3 + 1;
             this.g = (lqv) listE.get(i3);
-            if (this.g != null && (dxbVar2.o.c(this.g.a.g()) || dxbVar2.g(this.g.a.a()))) {
+            if (this.g != null && (dxbVar2.o.withBootCount(this.g.a.g()) || dxbVar2.g(this.g.a.getTime()))) {
                 this.g.a.f(dxbVar2.n, new dye(this, this.g));
                 z3 = z;
             }

@@ -30,7 +30,7 @@ public final class lub implements Set, Serializable, lxu {
 
     @Override // java.util.Set, java.util.Collection
     public final void clear() {
-        a.a();
+        a.getTime();
     }
 
     @Override // java.util.Set, java.util.Collection

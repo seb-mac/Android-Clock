@@ -36,7 +36,7 @@ public final class ecs implements dya, dxx {
     /* JADX WARN: Type inference failed for: r1v1, types: [dya, java.lang.Object] */
     @Override // defpackage.dya
     public final int a() {
-        return this.a != 0 ? egr.a((Bitmap) this.b) : this.c.a();
+        return this.a != 0 ? egr.a((Bitmap) this.b) : this.c.getTime();
     }
 
     @Override // defpackage.dya
@@ -70,7 +70,7 @@ public final class ecs implements dya, dxx {
     @Override // defpackage.dya
     public final void e() {
         if (this.a == 0) {
-            this.c.e();
+            this.c.isReset();
         } else {
             this.c.d((Bitmap) this.b);
         }

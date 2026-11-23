@@ -149,7 +149,7 @@ public final class atc extends arm implements RandomAccess, ast, ats {
         for (int i = 0; i < this.a; i++) {
             long j = this.c[i];
             Charset charset = asu.a;
-            iC = (iC * 31) + a.c(j);
+            iC = (iC * 31) + a.withBootCount(j);
         }
         return iC;
     }

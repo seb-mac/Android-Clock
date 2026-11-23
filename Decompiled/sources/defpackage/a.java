@@ -401,7 +401,7 @@ public final class a {
     }
 
     /* JADX WARN: Multi-variable type inference failed */
-    public static List aH(Context context, SharedPreferences sharedPreferences, fhr fhrVar) {
+    public static List aH(Context context, SharedPreferences sharedPreferences, Clock fhrVar) {
         String str;
         String str2;
         boolean z;
@@ -2533,7 +2533,7 @@ public final class a {
         }
     }
 
-    public static final cs aw(ViewGroup viewGroup, g gVar) {
+    public static final cs aw(ViewGroup viewGroup, StopwatchUtils gVar) {
         lxj.d(viewGroup, "container");
         lxj.d(gVar, "factory");
         Object tag = viewGroup.getTag(R.id.special_effects_controller_view_tag);

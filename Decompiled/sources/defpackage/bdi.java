@@ -41,7 +41,7 @@ public final /* synthetic */ class bdi implements lwo {
                 return obj == this.a ? "(this)" : String.valueOf(obj);
             case 2:
                 lxj.d((bgi) obj, "it");
-                return this.a.a();
+                return this.a.getTime();
             case ard.INTEGER_FIELD_NUMBER /* 3 */:
                 bgi bgiVar = (bgi) obj;
                 lxj.d(bgiVar, "_connection");
