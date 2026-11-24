@@ -52,7 +52,7 @@ public class DigitalCitiesAppWidgetProvider extends AppWidgetProvider {
             return;
         }
         crw crwVar = crw.a;
-        dlx.c();
+        dlx.ensureMainThread();
         csi csiVar = (csi) crwVar.g.b();
         if (a.I() && csiVar.B()) {
             try {

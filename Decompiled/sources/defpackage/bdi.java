@@ -163,7 +163,7 @@ public final /* synthetic */ class bdi implements lwo {
                 if (kisVar2 == null) {
                     kisVar2 = kis.a;
                 }
-                return Boolean.valueOf(millis + (((long) kisVar2.c) / 1000000) < ((gog) this.a).a.c().toEpochMilli());
+                return Boolean.valueOf(millis + (((long) kisVar2.c) / 1000000) < ((gog) this.a).a.ensureMainThread().toEpochMilli());
             case 18:
                 fux fuxVar = (fux) obj;
                 lxj.a(fuxVar);

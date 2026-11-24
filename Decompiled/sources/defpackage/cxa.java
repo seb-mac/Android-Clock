@@ -28,7 +28,7 @@ public final class cxa {
     }
 
     private final void d() {
-        dlx.c();
+        dlx.ensureMainThread();
         if (this.f != null) {
             throw new IllegalStateException("Attempted to process next request during current request");
         }
@@ -45,7 +45,7 @@ public final class cxa {
     /* JADX WARN: Code duplicated, block: B:63:? A[SYNTHETIC] */
     public final void a(cwz cwzVar) {
         int iOrdinal;
-        dlx.c();
+        dlx.ensureMainThread();
         Deque deque = this.j;
         cwz cwzVar2 = (cwz) deque.peekLast();
         int iOrdinal2 = cwzVar.a.ordinal();

@@ -56,7 +56,7 @@ public final /* synthetic */ class csy implements View.OnClickListener {
                     int i3 = 5;
                     List<SizeF> listAsList = Arrays.asList(new SizeF(50.0f, 50.0f), new SizeF(75.0f, 75.0f), new SizeF(100.0f, 100.0f), new SizeF(150.0f, 150.0f), new SizeF(200.0f, 200.0f), new SizeF(250.0f, 250.0f), new SizeF(300.0f, 300.0f), new SizeF(350.0f, 350.0f));
                     crw crwVar = crw.a;
-                    dlx.c();
+                    dlx.ensureMainThread();
                     crt crtVar = crwVar.j;
                     if (crtVar.b()) {
                         HashMap mapQ = iao.q(listAsList.size());
@@ -84,7 +84,7 @@ public final /* synthetic */ class csy implements View.OnClickListener {
                 if (appWidgetManager2.isRequestPinAppWidgetSupported()) {
                     List<SizeF> listAsList2 = Arrays.asList(new SizeF(150.0f, 150.0f));
                     crw crwVar2 = crw.a;
-                    dlx.c();
+                    dlx.ensureMainThread();
                     csi csiVar = (csi) crwVar2.g.b();
                     if (csiVar.B()) {
                         HashMap mapQ2 = iao.q(listAsList2.size());
@@ -130,7 +130,7 @@ public final /* synthetic */ class csy implements View.OnClickListener {
                 Object obj = this.a;
                 cwb cwbVar = cwb.a;
                 dco dcoVar = (dco) ((daz) ((dph) obj).x).g;
-                dlx.c();
+                dlx.ensureMainThread();
                 ((cww) cwbVar.c.h).d(dcoVar).x();
                 break;
             case ard.BYTES_FIELD_NUMBER /* 8 */:

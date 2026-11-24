@@ -38,7 +38,7 @@ public final class dti extends dso {
         }
         if (dstVar != null) {
             JSONObject jSONObject = (JSONObject) obj;
-            dlx.c();
+            dlx.ensureMainThread();
             try {
                 ((cvb) dstVar).d(new dqr(((cvb) dstVar).a, ((cvb) dstVar).d, ((cvb) dstVar).b, ((cvb) dstVar).c, DesugarTimeZone.getTimeZone(jSONObject.getString("timeZoneId")), doe.a, ((cvb) dstVar).e.a.c()));
             } catch (JSONException e) {

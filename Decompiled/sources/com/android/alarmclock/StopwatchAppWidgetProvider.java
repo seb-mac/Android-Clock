@@ -44,7 +44,7 @@ public class StopwatchAppWidgetProvider extends AppWidgetProvider {
             return;
         }
         crw crwVar = crw.a;
-        dlx.c();
+        dlx.ensureMainThread();
         final ctq ctqVar = crwVar.k;
         AppWidgetManager appWidgetManager = AppWidgetManager.getInstance(ctqVar.b);
         if (appWidgetManager == null) {
@@ -79,7 +79,7 @@ public class StopwatchAppWidgetProvider extends AppWidgetProvider {
                         StopwatchReceiver cxpVar2 = ctqVar2.g;
                         Size size = (Size) obj;
                         StopwatchStateModel dfvVarB = cxpVar2.reset();
-                        int size2 = cxpVar2.c().size();
+                        int size2 = cxpVar2.ensureMainThread().size();
                         Resources resources = ctqVar2.e;
                         int iU = ibt.U(resources.getDimensionPixelSize(R.dimen.stopwatch_widget_max_size), size.getWidth(), size.getHeight());
                         int dimensionPixelSize2 = resources.getDimensionPixelSize(R.dimen.stopwatch_widget_small_layout_size);

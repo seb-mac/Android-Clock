@@ -32,7 +32,7 @@ public final class cbs implements fhq {
     public final RemoteViews c(int i, Size size) {
         cko ckoVarB = cko.b(i);
         crw crwVar = crw.a;
-        dlx.c();
+        dlx.ensureMainThread();
         RemoteViews remoteViewsA = crwVar.j.a(ckoVarB, false, size);
         int i2 = ckoVarB.f;
         String str = this.b;

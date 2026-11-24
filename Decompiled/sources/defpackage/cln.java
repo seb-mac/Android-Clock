@@ -102,14 +102,14 @@ public final class cln {
                             clnVar.e.aq(true);
                         }
                     } else {
-                        dlx.c();
+                        dlx.ensureMainThread();
                         depVar = ((cuw) cwbVar2.c.b).g;
                         if (!depVar.e.g()) {
                             depVar.c.d(timeZone2);
                         }
                     }
                 } else {
-                    dlx.c();
+                    dlx.ensureMainThread();
                     depVar = ((cuw) cwbVar2.c.b).g;
                     if (!depVar.e.g()) {
                         depVar.c.d(timeZone2);
@@ -124,17 +124,17 @@ public final class cln {
                 long j4 = j;
                 int i4 = i3;
                 sharedPreferences.edit().putString("auto_silence", String.valueOf(i2)).apply();
-                dlx.c();
+                dlx.ensureMainThread();
                 ((cun) cwbVar2.c.c).l.c.b.edit().putString("snooze_duration", String.valueOf(i4)).apply();
-                dlx.c();
+                dlx.ensureMainThread();
                 ((cun) cwbVar2.c.c).l.c.b.edit().putString("alarm_crescendo_duration", String.valueOf(j4 / 1000)).apply();
-                dlx.c();
+                dlx.ensureMainThread();
                 ((cun) cwbVar2.c.c).l.c.b.edit().putString("volume_button_setting", String.valueOf(cjoVar2.ordinal())).apply();
                 depVar2.n(cpiVar2);
                 clnVar.b.i(uri);
-                dlx.c();
+                dlx.ensureMainThread();
                 ((cwa) kkj.i(cwbVar2.b, cwa.class)).q().h.c.b.edit().putString("timer_crescendo_duration", String.valueOf(j3 / 1000)).apply();
-                dlx.c();
+                dlx.ensureMainThread();
                 ((cwa) kkj.i(cwbVar2.b, cwa.class)).q().h.c.b.edit().putBoolean("timer_vibrate", z6).apply();
                 Optional optional = clnVar.a;
                 cci cciVar = new cci(cpdVar3, 3);

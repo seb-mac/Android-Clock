@@ -46,7 +46,7 @@ public class AnalogAppWidgetProvider extends AppWidgetProvider {
             int i = 0;
             if (!a.I()) {
                 crw crwVar = crw.a;
-                dlx.c();
+                dlx.ensureMainThread();
                 csr csrVar = crwVar.f;
                 Context context2 = csrVar.b;
                 AppWidgetManager appWidgetManager = AppWidgetManager.getInstance(context2);
@@ -72,7 +72,7 @@ public class AnalogAppWidgetProvider extends AppWidgetProvider {
                 return;
             }
             crw crwVar2 = crw.a;
-            dlx.c();
+            dlx.ensureMainThread();
             crt crtVar = crwVar2.j;
             ihj.s(a.I());
             if (crtVar.b()) {

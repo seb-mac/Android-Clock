@@ -9,13 +9,13 @@ public final class ddb extends dh {
     public lpv d;
 
     public ddb(lpv lpvVar) {
-        dlx.c();
+        dlx.ensureMainThread();
         this.d = lpvVar;
     }
 
     @Override // defpackage.dh
     public final void a(MediaMetadataCompat mediaMetadataCompat) {
-        dlx.c();
+        dlx.ensureMainThread();
         lpv lpvVar = this.d;
         if (lpvVar != null) {
             lpvVar.k(mediaMetadataCompat);
@@ -24,7 +24,7 @@ public final class ddb extends dh {
 
     @Override // defpackage.dh
     public final void b(PlaybackStateCompat playbackStateCompat) {
-        dlx.c();
+        dlx.ensureMainThread();
         lpv lpvVar = this.d;
         if (lpvVar != null) {
             lpvVar.l(playbackStateCompat);
@@ -33,7 +33,7 @@ public final class ddb extends dh {
 
     @Override // defpackage.dh
     public final void c() {
-        dlx.c();
+        dlx.ensureMainThread();
         lpv lpvVar = this.d;
         if (lpvVar != null) {
             cwx cwxVar = (cwx) lpvVar.a;
@@ -43,7 +43,7 @@ public final class ddb extends dh {
 
     @Override // defpackage.dh
     public final void d() {
-        dlx.c();
+        dlx.ensureMainThread();
         lpv lpvVar = this.d;
         if (lpvVar != null) {
             Object obj = lpvVar.a;

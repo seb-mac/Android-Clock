@@ -214,7 +214,7 @@ public final /* synthetic */ class eih implements jfi {
                     throw e2;
                 }
             case 18:
-                return this.a.c();
+                return this.a.ensureMainThread();
             case 19:
                 hsh hshVar = (hsh) this.a;
                 hshVar.c((Uri) ibt.O(hshVar.a), obj);

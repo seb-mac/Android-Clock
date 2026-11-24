@@ -18,11 +18,11 @@ public final class ccj implements cqa {
         dkt dktVar = dkt.a;
         dkr dkrVarG = dktVar.g();
         if (!z) {
-            dlx.c();
+            dlx.ensureMainThread();
             ((dkp) dktVar.c.b()).f = dkrVarG;
             return;
         }
-        dlx.c();
+        dlx.ensureMainThread();
         dkr dkrVar = ((dkp) dktVar.c.b()).f;
         if (dkrVar == null || dkrVar == dkrVarG) {
             return;

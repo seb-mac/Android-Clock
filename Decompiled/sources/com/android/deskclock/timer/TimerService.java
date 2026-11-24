@@ -83,7 +83,7 @@ public final class TimerService extends dha implements dhz {
             }
             int i3 = true != cwbVar.aD() ? 1 : 2;
             Uri uriF = ddz.f(this);
-            dlx.c();
+            dlx.ensureMainThread();
             cwbVar.aa(StopwatchUtils.m(uriC, dcxVar, dczVar, czdVar, 6, ((cwa) kkj.i(cwbVar.b, cwa.class)).q().h.e(), uriF, i3));
             this.b.i(this);
             this.e = true;

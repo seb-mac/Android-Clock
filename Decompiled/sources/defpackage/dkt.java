@@ -43,32 +43,32 @@ public final class dkt {
     }
 
     public final boolean C() {
-        dlx.c();
+        dlx.ensureMainThread();
         return ((dke) this.f.b()).c;
     }
 
     public final boolean D() {
-        dlx.c();
+        dlx.ensureMainThread();
         return ((dke) this.f.b()).d;
     }
 
     public final int E() {
-        dlx.c();
+        dlx.ensureMainThread();
         return ((lqn) this.d.b()).a;
     }
 
     public final int a() {
-        dlx.c();
+        dlx.ensureMainThread();
         return dkp.e();
     }
 
     public final long b() {
-        dlx.c();
+        dlx.ensureMainThread();
         return this.b.getResources().getInteger(R.integer.config_longAnimTime);
     }
 
     public final long c() {
-        dlx.c();
+        dlx.ensureMainThread();
         return this.b.getResources().getInteger(R.integer.config_shortAnimTime);
     }
 
@@ -77,12 +77,12 @@ public final class dkt {
     }
 
     public final dco e() {
-        dlx.c();
+        dlx.ensureMainThread();
         return ((dkk) this.h.b()).e;
     }
 
     public final dkn f() {
-        dlx.c();
+        dlx.ensureMainThread();
         dkk dkkVar = (dkk) this.h.b();
         if (dkkVar.c == null) {
             dkkVar.c = new dkn(dkkVar.a);
@@ -95,7 +95,7 @@ public final class dkt {
     }
 
     public final dkr h(int i) {
-        dlx.c();
+        dlx.ensureMainThread();
         if (TextUtils.getLayoutDirectionFromLocale(Locale.getDefault()) == 1) {
             i = (dkp.e() - i) - 1;
         }
@@ -108,57 +108,57 @@ public final class dkt {
     }
 
     public final void j(dkf dkfVar) {
-        dlx.c();
+        dlx.ensureMainThread();
         ((dke) this.f.b()).f.add(dkfVar);
     }
 
     public final void k(dkh dkhVar) {
-        dlx.c();
+        dlx.ensureMainThread();
         ((dki) this.g.b()).b.add(dkhVar);
     }
 
     public final void l(Runnable runnable) {
-        dlx.c();
+        dlx.ensureMainThread();
         ((cpr) this.e.b()).c(runnable, 4, 100L);
     }
 
     public final void m(Runnable runnable, long j) {
-        dlx.c();
+        dlx.ensureMainThread();
         ((cpr) this.e.b()).c(runnable, 1, j);
     }
 
     public final void n(dkl dklVar) {
-        dlx.c();
+        dlx.ensureMainThread();
         ((dkk) this.h.b()).b.add(dklVar);
     }
 
     public final void o(dko dkoVar) {
-        dlx.c();
+        dlx.ensureMainThread();
         ((dkp) this.c.b()).b(dkoVar);
     }
 
     public final void p(dkf dkfVar) {
-        dlx.c();
+        dlx.ensureMainThread();
         ((dke) this.f.b()).f.remove(dkfVar);
     }
 
     public final void q(Runnable runnable) {
-        dlx.c();
+        dlx.ensureMainThread();
         ((cpr) this.e.b()).b(runnable);
     }
 
     public final void r(dkl dklVar) {
-        dlx.c();
+        dlx.ensureMainThread();
         ((dkk) this.h.b()).b.remove(dklVar);
     }
 
     public final void s(dko dkoVar) {
-        dlx.c();
+        dlx.ensureMainThread();
         ((dkp) this.c.b()).c(dkoVar);
     }
 
     public final void t(dkq dkqVar, boolean z) {
-        dlx.c();
+        dlx.ensureMainThread();
         dki dkiVar = (dki) this.g.b();
         SharedPreferences sharedPreferences = dkiVar.a;
         List listA = dkg.a(sharedPreferences);
@@ -192,12 +192,12 @@ public final class dkt {
     }
 
     public final void u(cua cuaVar) {
-        dlx.c();
+        dlx.ensureMainThread();
         ((dke) this.f.b()).a = cuaVar;
     }
 
     public final void v(long j) {
-        dlx.c();
+        dlx.ensureMainThread();
         dke dkeVar = (dke) this.f.b();
         if (j != dkeVar.b) {
             dkeVar.b = j;
@@ -209,12 +209,12 @@ public final class dkt {
     }
 
     public final void w(boolean z) {
-        dlx.c();
+        dlx.ensureMainThread();
         ((dke) this.f.b()).d = z;
     }
 
     public final void x(dkr dkrVar, mlw mlwVar) {
-        dlx.c();
+        dlx.ensureMainThread();
         dkp dkpVar = (dkp) this.c.b();
         dkr dkrVarA = dkpVar.a();
         if (dkrVarA != dkrVar) {
@@ -247,7 +247,7 @@ public final class dkt {
     }
 
     public final void y(boolean z) {
-        dlx.c();
+        dlx.ensureMainThread();
         dke dkeVar = (dke) this.f.b();
         if (dkeVar.c != z) {
             dkeVar.c = z;
@@ -259,7 +259,7 @@ public final class dkt {
     }
 
     public final void z(dco dcoVar) {
-        dlx.c();
+        dlx.ensureMainThread();
         dkk dkkVar = (dkk) this.h.b();
         dco dcoVar2 = dkkVar.e;
         dkkVar.e = dcoVar;

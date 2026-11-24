@@ -60,7 +60,7 @@ public class TimerReceiver extends dgz {
             case -2057684721:
                 if (action.equals("com.android.deskclock.action.RESET_MISSED_TIMERS")) {
                     cwb cwbVar = cwb.a;
-                    dlx.c();
+                    dlx.ensureMainThread();
                     cyb cybVarQ = ((cwa) kkj.i(cwbVar.b, cwa.class)).q();
                     cxz cxzVarA = cxz.a(cybVarQ.d, cybVarQ.g());
                     try {
@@ -88,7 +88,7 @@ public class TimerReceiver extends dgz {
                 if (action.equals("com.android.deskclock.action.SUPPRESS_MISSED_TIMER_NOTIFICATION")) {
                     this.e.z(14, mlyVarB);
                     cwb cwbVar2 = cwb.a;
-                    dlx.c();
+                    dlx.ensureMainThread();
                     cyb cybVarQ2 = ((cwa) kkj.i(cwbVar2.b, cwa.class)).q();
                     cxz cxzVarA2 = cxz.a(cybVarQ2.d, cybVarQ2.g());
                     try {
@@ -126,7 +126,7 @@ public class TimerReceiver extends dgz {
             case 870094030:
                 if (action.equals("com.android.deskclock.action.UPDATE_NOTIFICATION")) {
                     cwb cwbVar3 = cwb.a;
-                    dlx.c();
+                    dlx.ensureMainThread();
                     cyb cybVarQ3 = ((cwa) kkj.i(cwbVar3.b, cwa.class)).q();
                     cybVarQ3.n(new dic(Collections.EMPTY_LIST), cybVarQ3.g());
                     return;
@@ -135,7 +135,7 @@ public class TimerReceiver extends dgz {
             case 1775954148:
                 if (action.equals("com.android.deskclock.action.RESET_UNEXPIRED_TIMERS")) {
                     cwb cwbVar4 = cwb.a;
-                    dlx.c();
+                    dlx.ensureMainThread();
                     cyb cybVarQ4 = ((cwa) kkj.i(cwbVar4.b, cwa.class)).q();
                     cxz cxzVarA4 = cxz.a(cybVarQ4.d, cybVarQ4.g());
                     try {
@@ -184,7 +184,7 @@ public class TimerReceiver extends dgz {
                     } else if (epochMilli > 5000 + jD) {
                         ((iwv) ((iwv) f.c()).j("com/android/deskclock/timer/TimerReceiver", "onReceive", 279, "TimerReceiver.java")).y("Expected timer to expire at %s but changed state late at %s", Instant.ofEpochMilli(jD), Instant.ofEpochMilli(epochMilli));
                     }
-                    dlx.c();
+                    dlx.ensureMainThread();
                     ((cwa) kkj.i(cwbVar5.b, cwa.class)).q().l(dhyVarW.f());
                     return;
                 }

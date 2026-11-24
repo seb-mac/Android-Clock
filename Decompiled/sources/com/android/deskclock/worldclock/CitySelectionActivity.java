@@ -82,9 +82,9 @@ public class CitySelectionActivity extends dqo implements TextWatcher, dpi, cqg 
         this.B.ab();
         boolean z = this.z && Boolean.TRUE.equals(this.y);
         cwb cwbVar = cwb.a;
-        dlx.c();
+        dlx.ensureMainThread();
         cve cveVarA = cwbVar.c.a();
-        dlx.c();
+        dlx.ensureMainThread();
         cveVarA.f.removeCallbacksAndMessages(null);
         cvd cvdVar = cveVarA.h;
         if (cvdVar != null) {

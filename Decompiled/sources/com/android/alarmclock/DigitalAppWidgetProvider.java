@@ -44,7 +44,7 @@ public class DigitalAppWidgetProvider extends AppWidgetProvider {
             if (a.I()) {
                 crw crwVar = crw.a;
                 BroadcastReceiver.PendingResult pendingResultGoAsync = goAsync();
-                dlx.c();
+                dlx.ensureMainThread();
                 csb csbVar = crwVar.i;
                 ihj.s(a.I());
                 long jA = csbVar.d.a();
@@ -78,7 +78,7 @@ public class DigitalAppWidgetProvider extends AppWidgetProvider {
             }
             crw crwVar2 = crw.a;
             BroadcastReceiver.PendingResult pendingResultGoAsync2 = goAsync();
-            dlx.c();
+            dlx.ensureMainThread();
             csu csuVar = crwVar2.e;
             long jA2 = csuVar.c.a();
             Context context2 = csuVar.b;

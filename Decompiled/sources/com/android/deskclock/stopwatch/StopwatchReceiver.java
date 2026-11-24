@@ -17,11 +17,11 @@ import defpackage.StopwatchEventSource;
 /* JADX INFO: loaded from: classes2.dex */
 public final class StopwatchReceiver extends StopwatchReceiverBase { // Stopwatch event receiver
     private static final StopwatchEventSource e = StopwatchEventSource.STOPWATCH_RECEIVER;
-    public StopwatchReceiver stopwatchController;
+    public StopwatchController stopwatchController;
     public StopwatchEventLogger eventLogger;
 
     public static Intent a(Context context, String action, StopwatchEventSource eventSource) {
-        return StopwatchUtils.s(new Intent(context, (Class<?>) StopwatchReceiver.class).setAction(action).addFlags(268435456), eventSource);
+        return StopwatchUtils.s(new Intent(context, StopwatchReceiver.class).setAction(action).addFlags(268435456), eventSource);
     }
 
     /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
@@ -67,7 +67,7 @@ public final class StopwatchReceiver extends StopwatchReceiverBase { // Stopwatc
                 }
             case "com.android.deskclock.action.SUPPRESS_STOPWATCH_NOTIFICATION":
                 StopwatchReceiver stopwatchController = this.stopwatchController;
-                dlx.c();
+                dlx.ensureMainThread();
                 StopwatchStateModel stopwatchState = stopwatchController.reset();
                 StopwatchNotificationState notificationState = stopwatchState.notificationState;
                 StopwatchNotificationState suppressedNotifactionState = StopwatchNotificationState.a;

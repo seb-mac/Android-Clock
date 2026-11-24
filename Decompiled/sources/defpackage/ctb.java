@@ -23,7 +23,7 @@ public final class ctb extends csq implements dpi {
         View viewInflate = bjVarD.getLayoutInflater().inflate(R.layout.music_dialog, (ViewGroup) null);
         ((Button) viewInflate.findViewById(R.id.dismiss)).setOnClickListener(new csy(this, 3));
         cwb cwbVar = cwb.a;
-        dlx.c();
+        dlx.ensureMainThread();
         List<dco> listK = ((cxg) cwbVar.c.d).k();
         ArrayList arrayList = new ArrayList(listK.size());
         boolean z = false;

@@ -11,7 +11,7 @@ public final class ccy extends cdc {
     public final RemoteViews c(int i, Size size) {
         ckq ckqVarB = ckq.b(i);
         crw crwVar = crw.a;
-        dlx.c();
+        dlx.ensureMainThread();
         csb csbVar = crwVar.i;
         return csbVar.f(new lew((Object) ckqVarB, true), false, csbVar.c.getString(R.string.digital_widgets_preview_alarm), size);
     }

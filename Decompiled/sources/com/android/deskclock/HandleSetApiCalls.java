@@ -41,7 +41,7 @@ public class HandleSetApiCalls extends ceb {
     }
 
     public static void t(Activity activity, String str) {
-        dlx.c();
+        dlx.ensureMainThread();
         if (activity.isFinishing() || activity.isDestroyed()) {
             return;
         }
@@ -50,7 +50,7 @@ public class HandleSetApiCalls extends ceb {
     }
 
     private static void v(Activity activity, String str) {
-        dlx.c();
+        dlx.ensureMainThread();
         if (activity.isFinishing() || activity.isDestroyed()) {
             return;
         }

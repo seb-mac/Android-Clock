@@ -39,7 +39,7 @@ final class cfw extends cfe {
         gvu gvuVar = this.e;
         ((StopwatchEventLogger) gvuVar.f).b(mjwVar2);
         UUID uuidJ = akf.j();
-        Instant instantC = gvuVar.e.c();
+        Instant instantC = gvuVar.e.ensureMainThread();
         cty ctyVar = new cty();
         ctyVar.c(uuidJ);
         ctyVar.a = true;

@@ -111,7 +111,7 @@ public final class StopwatchController implements cpb, cqg, cqa, cqi, cpo {
         Resources resources = context.getResources();
         PendingIntent pendingIntentH = vc.h(context, mls.NOTIFICATION, mlw.NOTIFICATION, mluVar);
         PendingIntent pendingIntentC = hpj.c(context, 0, StopwatchController.a(context, "com.android.deskclock.action.SUPPRESS_STOPWATCH_NOTIFICATION", mluVar), 201326592);
-        Object r14 = lqvVar.c;
+        dap r14 = (dap) lqvVar.c;
         afn afnVar = new afn(context, r14.i());
         afnVar.p = true;
         afnVar.k(pendingIntentC);
@@ -222,7 +222,7 @@ public final class StopwatchController implements cpb, cqg, cqa, cqi, cpo {
     }
 
     public final void e() {
-        dlx.c();
+        dlx.ensureMainThread();
         StopwatchStateModel dfvVarB = b();
         if (dfvVarB.isRunning()) {
             dfvVarB = new StopwatchStateModel(dfvVarB.clock, StopwatchState.PAUSED, dfvVarB.bootCount, Long.MIN_VALUE, Long.MIN_VALUE, dfvVarB.getTime(), StopwatchNotificationState.GENERATE);
@@ -235,12 +235,12 @@ public final class StopwatchController implements cpb, cqg, cqa, cqi, cpo {
     }
 
     public final void g() {
-        dlx.c();
+        dlx.ensureMainThread();
         k(b().reset());
     }
 
     public final void h() {
-        dlx.c();
+        dlx.ensureMainThread();
         StopwatchStateModel dfvVarB = b();
         if (!dfvVarB.isRunning()) {
             Clock fhrVar = dfvVarB.clock;
@@ -250,12 +250,12 @@ public final class StopwatchController implements cpb, cqg, cqa, cqi, cpo {
     }
 
     public final boolean i() {
-        dlx.c();
+        dlx.ensureMainThread();
         return c().size() < 98;
     }
 
     public final void j() {
-        dlx.c();
+        dlx.ensureMainThread();
         StopwatchStateModel dfvVarB = b();
         if (dfvVarB.isRunning() && i()) {
             long jA = dfvVarB.getTime();
@@ -316,11 +316,11 @@ public final class StopwatchController implements cpb, cqg, cqa, cqi, cpo {
             if (dfvVarC.isPaused() && dfvVarB.isRunning()) {
                 dgs dgsVar2 = this.a;
                 try {
-                    Optional optional3 = dgsVar2.b;
+                    Optional<?> optional3 = dgsVar2.b;
                     if (optional3.isEmpty() || !((UserManager) optional3.get()).isUserUnlocked()) {
                         return;
                     }
-                    Optional optional4 = dgsVar2.c;
+                    Optional<?> optional4 = dgsVar2.c;
                     cci cciVar2 = new cci(new ddr(6), 10);
                     optional4.isPresent();
                     ((lwo) cciVar2.a).a(optional4.get());

@@ -36,7 +36,7 @@ public class DigitalStackedAppWidgetProvider extends AppWidgetProvider {
         }
         crw crwVar = crw.a;
         BroadcastReceiver.PendingResult pendingResultGoAsync = goAsync();
-        dlx.c();
+        dlx.ensureMainThread();
         cso csoVar = crwVar.h;
         bzh bzhVar = new bzh(pendingResultGoAsync);
         ihj.s(a.I());

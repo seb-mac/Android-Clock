@@ -57,7 +57,7 @@ public final class cyo extends ctw implements chk, dqs, cqi, cpo, ckr {
     }
 
     private final Handler o() {
-        dlx.c();
+        dlx.ensureMainThread();
         Handler handler = this.l;
         if (handler != null) {
             return handler;
@@ -68,7 +68,7 @@ public final class cyo extends ctw implements chk, dqs, cqi, cpo, ckr {
     }
 
     private final void p() {
-        dlx.c();
+        dlx.ensureMainThread();
         if (this.b == null) {
             this.b = Executors.newSingleThreadExecutor();
         }
@@ -138,7 +138,7 @@ public final class cyo extends ctw implements chk, dqs, cqi, cpo, ckr {
     }
 
     public final void j(mmg mmgVar) {
-        dlx.c();
+        dlx.ensureMainThread();
         if (h().c != 1) {
             return;
         }

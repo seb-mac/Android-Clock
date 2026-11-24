@@ -300,7 +300,7 @@ public final class cmd extends cmq implements cof, dkh, cqa, dko {
         this.e.c(this);
         dkt dktVar = dkt.a;
         dktVar.s(this);
-        dlx.c();
+        dlx.ensureMainThread();
         ((dki) dktVar.g.b()).b.remove(this);
         bja bjaVar = this.ap;
         if (bjaVar != null && (biwVar = this.aA) != null) {
@@ -390,7 +390,7 @@ public final class cmd extends cmq implements cof, dkh, cqa, dko {
         dktVar.o(this);
         dktVar.k(this);
         aV(this.as.b());
-        dlx.c();
+        dlx.ensureMainThread();
         ((dki) dktVar.g.b()).a();
     }
 

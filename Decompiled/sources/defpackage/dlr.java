@@ -44,7 +44,7 @@ public final class dlr implements Runnable {
 
     @Override // java.lang.Runnable
     public final void run() {
-        dlx.c();
+        dlx.ensureMainThread();
         View view = this.d;
         int paddingLeft = view.getPaddingLeft();
         float f = paddingLeft;

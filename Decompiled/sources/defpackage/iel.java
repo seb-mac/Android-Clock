@@ -22,7 +22,7 @@ final class iel implements gs {
         if (this.a.d != null) {
             int i = ((gw) menuItem).a;
             dkt dktVar = dkt.a;
-            dlx.c();
+            dlx.ensureMainThread();
             for (dkr dkrVar : dkr.values()) {
                 if (dkrVar.f == i) {
                     dktVar.x(dkrVar, mlw.TAP);

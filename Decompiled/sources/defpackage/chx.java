@@ -588,7 +588,7 @@ public final class chx extends cim implements dcd {
                         ctcVar.p.t(new csx(ctcVar, i2));
                         ctcVar.p.s(new ciw(ctcVar, context, 10));
                         ctcVar.p.u();
-                        dlx.c();
+                        dlx.ensureMainThread();
                         ((cxg) cwbVar.c.d).k = true;
                     }
                     ctc ctcVar2 = chxVar.ao;

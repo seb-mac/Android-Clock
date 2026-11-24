@@ -326,7 +326,7 @@ public class DeskClock extends cdt implements dqc {
         appBarLayout.p(true);
         AppBarLayout appBarLayout2 = this.B;
         dkt dktVar = dkt.a;
-        dlx.c();
+        dlx.ensureMainThread();
         appBarLayout2.m(!((dkp) dktVar.c.b()).d(dktVar.g()), true);
         Drawable background = this.B.getBackground();
         int i10 = 0;
@@ -355,7 +355,7 @@ public class DeskClock extends cdt implements dqc {
         if (iHashCode == -1201514634) {
             if (str.equals("VERTICAL")) {
                 i = 2;
-                dlx.c();
+                dlx.ensureMainThread();
                 ((lqn) dktVar.d.b()).a = i;
                 z = getResources().getBoolean(R.bool.showTabLabel);
                 ien ienVar2 = this.E;
@@ -510,7 +510,7 @@ public class DeskClock extends cdt implements dqc {
                 dktVar.o(this.O);
                 this.p.h(this.P);
                 lpv lpvVar = this.S;
-                dlx.c();
+                dlx.ensureMainThread();
                 ((dkp) dktVar.c.b()).c.add(lpvVar);
                 this.q.b(this.Q);
                 if (bundle == null) {
@@ -519,7 +519,7 @@ public class DeskClock extends cdt implements dqc {
                 }
                 B(getIntent());
                 cwb cwbVar = cwb.a;
-                dlx.c();
+                dlx.ensureMainThread();
                 cxgVar = (cxg) cwbVar.c.d;
                 if (!cxgVar.j) {
                     cxgVar.j = true;
@@ -576,7 +576,7 @@ public class DeskClock extends cdt implements dqc {
         }
         if (iHashCode == 1872721956 && str.equals("HORIZONTAL")) {
             i = 1;
-            dlx.c();
+            dlx.ensureMainThread();
             ((lqn) dktVar.d.b()).a = i;
             z = getResources().getBoolean(R.bool.showTabLabel);
             ien ienVar3 = this.E;
@@ -730,7 +730,7 @@ public class DeskClock extends cdt implements dqc {
             dktVar.o(this.O);
             this.p.h(this.P);
             lpv lpvVar2 = this.S;
-            dlx.c();
+            dlx.ensureMainThread();
             ((dkp) dktVar.c.b()).c.add(lpvVar2);
             this.q.b(this.Q);
             if (bundle == null) {
@@ -739,7 +739,7 @@ public class DeskClock extends cdt implements dqc {
             }
             B(getIntent());
             cwb cwbVar2 = cwb.a;
-            dlx.c();
+            dlx.ensureMainThread();
             cxgVar = (cxg) cwbVar2.c.d;
             if (!cxgVar.j) {
                 cxgVar.j = true;
@@ -785,7 +785,7 @@ public class DeskClock extends cdt implements dqc {
                 if (isFinishing() || isDestroyed()) {
                     z4 = 0;
                 } else {
-                    dlx.c();
+                    dlx.ensureMainThread();
                     itt ittVarD = ((cuw) cwbVar2.c.b).d();
                     int size2 = ittVarD.size();
                     int i13 = 0;
@@ -869,7 +869,7 @@ public class DeskClock extends cdt implements dqc {
         this.A.a();
         dkt dktVar = dkt.a;
         dktVar.s(this.O);
-        dlx.c();
+        dlx.ensureMainThread();
         ((dkp) dktVar.c.b()).c.remove(this.S);
         this.q.c(this.Q);
         crw.a.a(null);

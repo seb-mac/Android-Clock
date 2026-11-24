@@ -591,7 +591,7 @@ public final class GastownAlarmActivity extends cin implements View.OnClickListe
         animator.setInterpolator(new axh());
         ObjectAnimator objectAnimatorOfFloat = ObjectAnimator.ofFloat(view, (Property<View, Float>) View.ALPHA, 0.0f);
         dkt dktVar = dkt.a;
-        dlx.c();
+        dlx.ensureMainThread();
         objectAnimatorOfFloat.setDuration(dktVar.b.getResources().getInteger(android.R.integer.config_mediumAnimTime));
         AnimatorSet animatorSet = new AnimatorSet();
         animatorSet.playSequentially(animator, objectAnimatorOfFloat);

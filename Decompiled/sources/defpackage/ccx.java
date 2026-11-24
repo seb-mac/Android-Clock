@@ -210,7 +210,7 @@ public abstract class ccx extends cdv implements dqc, dqe {
 
     public final void r(boolean z) {
         dkt dktVar = dkt.a;
-        dlx.c();
+        dlx.ensureMainThread();
         dkp dkpVar = (dkp) dktVar.c.b();
         dkr dkrVar = this.a;
         if (dkpVar.d(dkrVar) != z) {

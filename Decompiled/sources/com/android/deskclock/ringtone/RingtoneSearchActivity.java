@@ -156,7 +156,7 @@ public class RingtoneSearchActivity extends day implements TextWatcher, azw, dkm
         this.A.u(dbjVar2);
         dco dcoVar = dbjVar2.a;
         cwb cwbVar = cwb.a;
-        dlx.c();
+        dlx.ensureMainThread();
         ((cww) cwbVar.c.h).d(dcoVar).e(3);
         cwbVar.ap(dcoVar);
     }
@@ -247,7 +247,7 @@ public class RingtoneSearchActivity extends day implements TextWatcher, azw, dkm
         dos.a(viewGroup, this.z, textView, false);
         this.F = new gog((LinearProgressIndicator) findViewById(R.id.progress_bar));
         dkt dktVar = dkt.a;
-        dlx.c();
+        dlx.ensureMainThread();
         dkk dkkVar = (dkk) dktVar.h.b();
         if (dkkVar.d == null) {
             dkkVar.d = new dkn(dkkVar.a);

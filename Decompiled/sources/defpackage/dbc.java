@@ -163,7 +163,7 @@ public final class dbc extends bae implements dcd, dcq, dkl, cqa, cof, cqg, chk 
             this.a.b(this);
             this.q.f(this);
             cwb cwbVar = this.j;
-            dlx.c();
+            dlx.ensureMainThread();
             ((cww) cwbVar.c.h).e.add(this);
             this.v.E(this);
             dkt.a.n(this);
@@ -216,7 +216,7 @@ public final class dbc extends bae implements dcd, dcq, dkl, cqa, cof, cqg, chk 
         }
         daz dazVarN = n(dcoVarE);
         dcx dcxVar = this.l;
-        dlx.c();
+        dlx.ensureMainThread();
         ((cww) cwbVar.c.h).d(dcoVarE).r(dazVarN, dcxVar, uriA);
         set.add(dcoVarE);
     }
@@ -248,7 +248,7 @@ public final class dbc extends bae implements dcd, dcq, dkl, cqa, cof, cqg, chk 
     public final void k() {
         this.a.c(this);
         this.q.j(this);
-        dlx.c();
+        dlx.ensureMainThread();
         cwb cwbVar = this.j;
         ((cww) cwbVar.c.h).e.remove(this);
         this.v.F(this);

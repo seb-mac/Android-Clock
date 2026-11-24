@@ -51,7 +51,7 @@ public final class gsy implements gsp {
                 gsj gsjVar = (gsj) kgtVarK.b;
                 gsjVar.e = 1;
                 gsjVar.b |= 2;
-                kis kisVarE = kkj.e(gvuVar.e.c());
+                kis kisVarE = kkj.e(gvuVar.e.ensureMainThread());
                 kgtVarK.p();
                 gsj gsjVar2 = (gsj) kgtVarK.b;
                 Objects.requireNonNull(kisVarE);

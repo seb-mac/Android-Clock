@@ -85,7 +85,7 @@ public final class ctc implements axp, dkf, cof, dqs, dko, deh {
     public final void B() {
         cwb cwbVar = cwb.a;
         if (a.I() && this.c.c && !cwbVar.D().isEmpty()) {
-            dlx.c();
+            dlx.ensureMainThread();
             cxg cxgVar = (cxg) cwbVar.c.d;
             if (cxgVar.k || cxgVar.p() || this.v.a(DigitalCitiesAppWidgetProvider.class) != 0 || dkt.a.g() != dkr.CLOCKS) {
                 return;
@@ -99,7 +99,7 @@ public final class ctc implements axp, dkf, cof, dqs, dko, deh {
             ctkVar.a(R.string.try_now, new csy(this, 1));
             crw.a.c(ctkVar);
             this.i.N(6, 7);
-            dlx.c();
+            dlx.ensureMainThread();
             cxg cxgVar2 = (cxg) cwbVar.c.d;
             a.aG(cxgVar2.g);
             cxgVar2.k = true;
@@ -299,7 +299,7 @@ public final class ctc implements axp, dkf, cof, dqs, dko, deh {
         if (this.f == null || !this.c.c) {
             return;
         }
-        dlx.c();
+        dlx.ensureMainThread();
         cxg cxgVar = (cxg) cwbVar.c.d;
         if (cxgVar.k || cxgVar.g.getBoolean("cough_and_snore_promo_shown", false) || !kvy.f() || !cxgVar.h.a(425827L)) {
             return;
@@ -315,7 +315,7 @@ public final class ctc implements axp, dkf, cof, dqs, dko, deh {
         }
         if (cobVar.d == cnz.d) {
             z(R.string.bedtime_cough_snore_promo_tooltip, mkt.COUGH_AND_SNORE_PROMO, mlw.COUGH_AND_SNORE_PROMO);
-            dlx.c();
+            dlx.ensureMainThread();
             cxg cxgVar2 = (cxg) cwbVar.c.d;
             cxgVar2.g.edit().putBoolean("cough_and_snore_promo_shown", true).apply();
             cxgVar2.k = true;
@@ -341,7 +341,7 @@ public final class ctc implements axp, dkf, cof, dqs, dko, deh {
             dkr dkrVarG = dkt.a.g();
             if (dkrVarG != dkr.ALARMS) {
                 if (dkrVarG != dkr.TIMERS) {
-                    dlx.c();
+                    dlx.ensureMainThread();
                     cxgVar = (cxg) cwbVar.c.d;
                     if (cxgVar.k) {
                         return;
@@ -351,10 +351,10 @@ public final class ctc implements axp, dkf, cof, dqs, dko, deh {
                 }
                 return;
             }
-            dlx.c();
+            dlx.ensureMainThread();
             cxg cxgVar2 = (cxg) cwbVar.c.d;
             if (!cxgVar2.k && cxgVar2.j() == null && cxgVar2.m) {
-                dlx.c();
+                dlx.ensureMainThread();
                 Object obj = cwbVar.c.d;
                 uri = cxg.c;
                 i = R.string.alarm_promo;
@@ -362,12 +362,12 @@ public final class ctc implements axp, dkf, cof, dqs, dko, deh {
                 if (dkrVarG != dkr.TIMERS) {
                     return;
                 }
-                dlx.c();
+                dlx.ensureMainThread();
                 cxgVar = (cxg) cwbVar.c.d;
                 if (cxgVar.k || cxgVar.j() != null || !cxgVar.n) {
                     return;
                 }
-                dlx.c();
+                dlx.ensureMainThread();
                 Object obj2 = cwbVar.c.d;
                 uri = cxg.b;
                 i = R.string.timer_promo;
@@ -381,7 +381,7 @@ public final class ctc implements axp, dkf, cof, dqs, dko, deh {
             ctkVar.a(R.string.try_now, new cta(this, uri, dkrVarG, 1));
             crw.a.c(ctkVar);
             if (dkrVarG == dkr.TIMERS) {
-                dlx.c();
+                dlx.ensureMainThread();
                 cxg cxgVar3 = (cxg) cwbVar.c.d;
                 a.aF(cxgVar3.g);
                 cxgVar3.k = true;
@@ -392,7 +392,7 @@ public final class ctc implements axp, dkf, cof, dqs, dko, deh {
                 this.i.P(17);
                 return;
             }
-            dlx.c();
+            dlx.ensureMainThread();
             cxg cxgVar4 = (cxg) cwbVar.c.d;
             a.aC(cxgVar4.g);
             cxgVar4.k = true;
@@ -422,7 +422,7 @@ public final class ctc implements axp, dkf, cof, dqs, dko, deh {
     public final void y() {
         cwb cwbVar = cwb.a;
         if (a.I() && this.c.c) {
-            dlx.c();
+            dlx.ensureMainThread();
             cxg cxgVar = (cxg) cwbVar.c.d;
             if (!cxgVar.k && !cxgVar.m() && this.u.g() == cpd.a && this.v.a(AnalogAppWidgetProvider.class) == 0 && dkt.a.g() == dkr.CLOCKS) {
                 ctk ctkVar = new ctk(this.b.getString(R.string.analog_clock_widget_promo));
@@ -434,7 +434,7 @@ public final class ctc implements axp, dkf, cof, dqs, dko, deh {
                 ctkVar.a(R.string.try_now, new csy(this, 0));
                 crw.a.c(ctkVar);
                 this.i.N(3, 7);
-                dlx.c();
+                dlx.ensureMainThread();
                 cxg cxgVar2 = (cxg) cwbVar.c.d;
                 a.aD(cxgVar2.g);
                 cxgVar2.k = true;
