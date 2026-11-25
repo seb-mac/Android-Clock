@@ -16,21 +16,21 @@ public final class cli implements Runnable {
     @Override // java.lang.Runnable
     public final void run() {
         cwb cwbVar = cwb.a;
-        dlx.c();
+        dlx.ensureMainThread();
         this.a = ((cxg) cwbVar.c.d).d();
-        dlx.c();
+        dlx.ensureMainThread();
         this.b = ((cxg) cwbVar.c.d).e();
-        dlx.c();
+        dlx.ensureMainThread();
         this.c = ((cxg) cwbVar.c.d).l();
-        dlx.c();
+        dlx.ensureMainThread();
         this.d = ((cxg) cwbVar.c.d).o();
-        dlx.c();
+        dlx.ensureMainThread();
         this.e = ((cxg) cwbVar.c.d).n();
         this.f = cwbVar.b(dco.b);
         this.g = cwbVar.b(dco.e);
-        dlx.c();
+        dlx.ensureMainThread();
         this.h = ((cxg) cwbVar.c.d).p();
-        dlx.c();
+        dlx.ensureMainThread();
         this.i = ((cxg) cwbVar.c.d).m();
     }
 }

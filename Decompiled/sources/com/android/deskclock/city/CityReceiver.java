@@ -14,7 +14,7 @@ public class CityReceiver extends BroadcastReceiver {
     public final void onReceive(Context context, Intent intent) {
         if ("com.android.deskclock.action.CITY_TIMED_UPDATE".equals(intent.getAction())) {
             cwb cwbVar = cwb.a;
-            dlx.c();
+            dlx.ensureMainThread();
             ((cuw) cwbVar.c.b).m();
         }
     }

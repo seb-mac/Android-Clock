@@ -52,7 +52,7 @@ public final class dcb extends bae implements dcj, dcq, cqa {
         arrayList.add(new dbg(dcoVar, this.o));
         cwb cwbVar = cwb.a;
         if (cwbVar.t(dcoVar).f == 2) {
-            dlx.c();
+            dlx.ensureMainThread();
             cxg cxgVar = (cxg) cwbVar.c.d;
             if (cxgVar.h(dcoVar) < cxgVar.l[dcoVar.ordinal()]) {
                 this.j.add(new dbj(dcoVar));
@@ -113,7 +113,7 @@ public final class dcb extends bae implements dcj, dcq, cqa {
         if (cwbVar.t(dcoVar).i()) {
             String str = this.l;
             dcx dcxVar = this.o;
-            dlx.c();
+            dlx.ensureMainThread();
             ((cww) cwbVar.c.h).d(dcoVar).y(str, this, dcxVar);
         }
     }

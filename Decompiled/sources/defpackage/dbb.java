@@ -30,7 +30,7 @@ final class dbb extends BroadcastReceiver {
         int size = ittVarC.size();
         for (int i = 0; i < size; i++) {
             dco dcoVar = (dco) ittVarC.get(i);
-            dlx.c();
+            dlx.ensureMainThread();
             if (listAsList.contains(dcoVar.b(cwbVar.b))) {
                 cwbVar.ao(dcoVar, true);
                 if (dbcVar.a.c) {

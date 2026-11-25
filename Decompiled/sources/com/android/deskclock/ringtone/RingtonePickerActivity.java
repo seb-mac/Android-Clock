@@ -532,12 +532,12 @@ public class RingtonePickerActivity extends dax implements dkm, dpi, ijo, dkl, d
         super.onResume();
         if (this.x != dcx.TIMER) {
             cwb cwbVar = cwb.a;
-            dlx.c();
+            dlx.ensureMainThread();
             cxg cxgVar = (cxg) cwbVar.c.d;
             if (cxgVar.q(cxgVar.d())) {
                 try {
                     new ctb().q(bK(), "music");
-                    dlx.c();
+                    dlx.ensureMainThread();
                     Object obj = cwbVar.c.d;
                     a.az(((cxg) obj).g, cxg.i(((cxg) obj).k()));
                     Iterator it = ((cxg) obj).i.iterator();

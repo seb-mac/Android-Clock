@@ -67,7 +67,7 @@ public final class dgg extends mq {
             return j;
         }
         StopwatchController cxpVar = dgiVar.e;
-        dlx.c();
+        dlx.ensureMainThread();
         return Math.max(0L, j - ((dft) cxpVar.c().get(0)).c);
     }
 }

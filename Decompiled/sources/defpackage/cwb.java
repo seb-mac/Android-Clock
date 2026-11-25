@@ -58,7 +58,7 @@ public final class cwb {
     }
 
     public final itt C(dcx dcxVar) {
-        dlx.c();
+        dlx.ensureMainThread();
         Object obj = this.c.h;
         if (dcxVar == dcx.TIMER) {
             return itt.q(dco.a);
@@ -77,12 +77,12 @@ public final class cwb {
     }
 
     public final CharSequence F() {
-        dlx.c();
+        dlx.ensureMainThread();
         return ((cxg) this.c.d).j();
     }
 
     public final String G(dco dcoVar) {
-        dlx.c();
+        dlx.ensureMainThread();
         cwx cwxVarD = ((cww) this.c.h).d(dcoVar);
         Context context = cwxVarD.l;
         String string = context.getString(cwxVarD.n.l);
@@ -111,7 +111,7 @@ public final class cwb {
     }
 
     public final String H(dco dcoVar) {
-        dlx.c();
+        dlx.ensureMainThread();
         cww cwwVar = (cww) this.c.h;
         dcp dcpVar = cwwVar.d(dcoVar).s;
         Context context = cwwVar.c;
@@ -144,7 +144,7 @@ public final class cwb {
     }
 
     public final String I() {
-        dlx.c();
+        dlx.ensureMainThread();
         cyb cybVarQ = ((cwa) kkj.i(this.b, cwa.class)).q();
         if (cybVarQ.g == null) {
             ddd dddVar = cybVarQ.f;
@@ -165,7 +165,7 @@ public final class cwb {
 
     public final String J(doe doeVar) {
         int i;
-        dlx.c();
+        dlx.ensureMainThread();
         Object obj = this.c.e;
         eia eiaVar = doeVar.a(cpf.DAY).d;
         cyo cyoVar = (cyo) obj;
@@ -393,12 +393,12 @@ public final class cwb {
     }
 
     public final List L() {
-        dlx.c();
+        dlx.ensureMainThread();
         return ((dnt) this.c.f).j();
     }
 
     public final List M() {
-        dlx.c();
+        dlx.ensureMainThread();
         return ((cwa) kkj.i(this.b, cwa.class)).q().g().b;
     }
 
@@ -411,28 +411,28 @@ public final class cwb {
     }
 
     public final void P(dqs dqsVar) {
-        dlx.c();
+        dlx.ensureMainThread();
         ((cuw) this.c.b).h(dqsVar);
     }
 
     public final void Q(dco dcoVar, dcl dclVar) {
-        dlx.c();
+        dlx.ensureMainThread();
         ((cww) this.c.h).e(dcoVar, dclVar);
     }
 
     public final void R(dco dcoVar, dcq dcqVar) {
-        dlx.c();
+        dlx.ensureMainThread();
         ((cww) this.c.h).d(dcoVar).C(dcqVar);
     }
 
     public final void S(dhy dhyVar) {
-        dlx.c();
+        dlx.ensureMainThread();
         ((cwa) kkj.i(this.b, cwa.class)).q().l(dhyVar.e(60000L));
     }
 
     /* JADX WARN: Type inference failed for: r1v1, types: [java.lang.Object, java.util.Collection] */
     public final void T(chk chkVar, chm... chmVarArr) {
-        dlx.c();
+        dlx.ensureMainThread();
         Object obj = this.c.c;
         ArraySet arraySet = new ArraySet(Arrays.asList(chmVarArr));
         cun cunVar = (cun) obj;
@@ -446,7 +446,7 @@ public final class cwb {
     }
 
     public final void U(dco dcoVar, dcz dczVar, dce dceVar, dch dchVar) {
-        dlx.c();
+        dlx.ensureMainThread();
         Object obj = this.c.h;
         if (dceVar.b()) {
             ((cww) obj).d(dcoVar).q(dczVar, dceVar, dchVar);
@@ -456,7 +456,7 @@ public final class cwb {
     }
 
     public final void V(mmg mmgVar) {
-        dlx.c();
+        dlx.ensureMainThread();
         ((cyo) this.c.e).j(mmgVar);
     }
 
@@ -468,22 +468,22 @@ public final class cwb {
     }
 
     public final void X(dhy dhyVar) {
-        dlx.c();
+        dlx.ensureMainThread();
         ((cwa) kkj.i(this.b, cwa.class)).q().l(dhyVar.g());
     }
 
     public final void Y(dco dcoVar, dcz dczVar) {
-        dlx.c();
+        dlx.ensureMainThread();
         ((cww) this.c.h).h(dcoVar, dczVar);
     }
 
     public final void Z(dco dcoVar, dcz dczVar) {
-        dlx.c();
+        dlx.ensureMainThread();
         ((cww) this.c.h).i(dcoVar, dczVar);
     }
 
     public final int a(dco dcoVar) {
-        dlx.c();
+        dlx.ensureMainThread();
         cwx cwxVarD = ((cww) this.c.h).d(dcoVar);
         if (cwxVarD.s.u()) {
             return R.drawable.ic_get_app;
@@ -514,7 +514,7 @@ public final class cwb {
     }
 
     public final void aB() {
-        dlx.c();
+        dlx.ensureMainThread();
         Object obj = this.c.f;
         cwb cwbVar = a;
         final String str = ((dmq) cwbVar.E().orElse(dmq.a)).b;
@@ -550,7 +550,7 @@ public final class cwb {
     }
 
     public final boolean aC() {
-        dlx.c();
+        dlx.ensureMainThread();
         Object obj = this.c.e;
         jam.i(TimeUnit.SECONDS, "time unit");
         kvy.i();
@@ -564,32 +564,32 @@ public final class cwb {
     }
 
     public final boolean aE(dco dcoVar) {
-        dlx.c();
+        dlx.ensureMainThread();
         return ((cww) this.c.h).o(dcoVar);
     }
 
     public final boolean aF() {
-        dlx.c();
+        dlx.ensureMainThread();
         return Arrays.binarySearch(cve.c, this.c.a().d.getResources().getConfiguration().getLocales().get(0).getLanguage()) >= 0;
     }
 
     public final boolean aG(dco dcoVar) {
-        dlx.c();
+        dlx.ensureMainThread();
         return ((cww) this.c.h).n(dcoVar);
     }
 
     public final boolean aH() {
-        dlx.c();
+        dlx.ensureMainThread();
         return ((cyo) this.c.e).l();
     }
 
     public final boolean aI() {
-        dlx.c();
+        dlx.ensureMainThread();
         return ((cyo) this.c.e).m();
     }
 
     public final boolean aJ() {
-        dlx.c();
+        dlx.ensureMainThread();
         return ((cyo) this.c.e).n();
     }
 
@@ -598,23 +598,23 @@ public final class cwb {
     }
 
     public final boolean aL() {
-        dlx.c();
+        dlx.ensureMainThread();
         return ((cxg) this.c.d).r();
     }
 
     public final boolean aM(cua cuaVar) {
-        dlx.c();
+        dlx.ensureMainThread();
         return cuaVar.r && y().a == ehu.c;
     }
 
     public final boolean aN() {
-        dlx.c();
+        dlx.ensureMainThread();
         cxg cxgVar = (cxg) this.c.d;
         return (cxgVar.k || cxgVar.j() != null || cxgVar.r() || cxgVar.g.getBoolean("weather_brief_promo_shown", false)) ? false : true;
     }
 
     public final boolean aO() {
-        dlx.c();
+        dlx.ensureMainThread();
         cxg cxgVar = (cxg) this.c.d;
         return !cxgVar.k && ((long) cxgVar.g.getInt("weather_promo_shown_count", 0)) < kvy.a.cy().f();
     }
@@ -624,12 +624,12 @@ public final class cwb {
     }
 
     public final void aR(dhy dhyVar, mly mlyVar) {
-        dlx.c();
+        dlx.ensureMainThread();
         ((cwa) kkj.i(this.b, cwa.class)).q().o(dhyVar, true, mlyVar);
     }
 
     public final void aS(dhy dhyVar, mly mlyVar) {
-        dlx.c();
+        dlx.ensureMainThread();
         ((cwa) kkj.i(this.b, cwa.class)).q().o(dhyVar, false, mlyVar);
     }
 
@@ -638,9 +638,9 @@ public final class cwb {
         dhy dhyVarF;
         long j;
         long j2;
-        dlx.c();
+        dlx.ensureMainThread();
         cyb cybVarQ = ((cwa) kkj.i(this.b, cwa.class)).q();
-        dlx.c();
+        dlx.ensureMainThread();
         if (optional.isPresent()) {
             String strAu = eif.au((String) optional.get());
             if (TextUtils.equals(dhyVar.o, strAu)) {
@@ -694,17 +694,17 @@ public final class cwb {
     }
 
     public final void aU(dco dcoVar, int i) {
-        dlx.c();
+        dlx.ensureMainThread();
         ((cww) this.c.h).d(dcoVar).G(i);
     }
 
     public final void aa(dcs dcsVar) {
-        dlx.c();
+        dlx.ensureMainThread();
         ((cww) this.c.h).j(dcsVar);
     }
 
     public final void ab(dcy dcyVar) {
-        dlx.c();
+        dlx.ensureMainThread();
         ((cww) this.c.h).k(dcyVar);
     }
 
@@ -713,22 +713,22 @@ public final class cwb {
     }
 
     public final void ad(dqs dqsVar) {
-        dlx.c();
+        dlx.ensureMainThread();
         ((cuw) this.c.b).d.remove(dqsVar);
     }
 
     public final void ae(dco dcoVar, dcl dclVar) {
-        dlx.c();
+        dlx.ensureMainThread();
         ((cww) this.c.h).l(dcoVar, dclVar);
     }
 
     public final void af(dco dcoVar, dcq dcqVar) {
-        dlx.c();
+        dlx.ensureMainThread();
         ((cww) this.c.h).d(dcoVar).q.remove(dcqVar);
     }
 
     public final void ag(dhy dhyVar) {
-        dlx.c();
+        dlx.ensureMainThread();
         cyb cybVarQ = ((cwa) kkj.i(this.b, cwa.class)).q();
         cxz cxzVarA = cxz.a(cybVarQ.d, cybVarQ.g());
         try {
@@ -740,13 +740,13 @@ public final class cwb {
     }
 
     public final void ah() {
-        dlx.c();
+        dlx.ensureMainThread();
         new cvx(this, this.b).d();
     }
 
     /* JADX WARN: Multi-variable type inference failed */
     public final void ai(mly mlyVar) {
-        dlx.c();
+        dlx.ensureMainThread();
         cyb cybVarQ = ((cwa) kkj.i(this.b, cwa.class)).q();
         cxz cxzVarA = cxz.a(cybVarQ.d, cybVarQ.g());
         try {
@@ -764,7 +764,7 @@ public final class cwb {
     }
 
     public final void aj(dco dcoVar, int i) {
-        dlx.c();
+        dlx.ensureMainThread();
         SharedPreferences sharedPreferences = ((cxg) this.c.d).g;
         if (i > a.ay(sharedPreferences, dcoVar)) {
             a.aB(sharedPreferences, dcoVar, i);
@@ -789,17 +789,17 @@ public final class cwb {
     }
 
     public final void al(dcz dczVar, dci dciVar) {
-        dlx.c();
+        dlx.ensureMainThread();
         ((cww) this.c.h).d(dciVar.a()).t(dczVar, dciVar);
     }
 
     public final void am() {
-        dlx.c();
+        dlx.ensureMainThread();
         ((dnt) this.c.f).g.c.edit().putBoolean("alarm_sync_promotion_shown", true).apply();
     }
 
     public final void an() {
-        dlx.c();
+        dlx.ensureMainThread();
         cxg cxgVar = (cxg) this.c.d;
         a.aA(cxgVar.g, cxg.i(cxgVar.k()));
         cxgVar.k = true;
@@ -811,7 +811,7 @@ public final class cwb {
     }
 
     public final void ao(dco dcoVar, boolean z) {
-        dlx.c();
+        dlx.ensureMainThread();
         Object obj = this.c.h;
         dco dcoVar2 = dco.a;
         if (dcoVar == dcoVar2) {
@@ -859,20 +859,20 @@ public final class cwb {
     }
 
     public final void ap(dco dcoVar) {
-        dlx.c();
+        dlx.ensureMainThread();
         cxg cxgVar = (cxg) this.c.d;
         a.aB(cxgVar.g, dcoVar, cxgVar.l[dcoVar.ordinal()]);
     }
 
     public final void aq() {
-        dlx.c();
+        dlx.ensureMainThread();
         cxg cxgVar = (cxg) this.c.d;
         cxgVar.g.edit().putBoolean("privacy_promo_shown", true).apply();
         cxgVar.k = true;
     }
 
     public final void ar() {
-        dlx.c();
+        dlx.ensureMainThread();
         cxg cxgVar = (cxg) this.c.d;
         a.aE(cxgVar.g);
         cxgVar.k = true;
@@ -883,12 +883,12 @@ public final class cwb {
     }
 
     public final void as(List list) {
-        dlx.c();
+        dlx.ensureMainThread();
         ((cuw) this.c.b).l(list);
     }
 
     public final void at(int i, int i2) {
-        dlx.c();
+        dlx.ensureMainThread();
         cny cnyVarB = aP().b();
         if (i == cnyVarB.d && i2 == cnyVarB.e) {
             ((iwv) ((iwv) d.c()).j("com/android/deskclock/data/DataModel", "setWakeup", 1227, "DataModel.java")).u("Cannot update wakeup time to be identical to bedtime: %s", cnyVarB);
@@ -898,29 +898,29 @@ public final class cwb {
     }
 
     public final void au(boolean z) {
-        dlx.c();
+        dlx.ensureMainThread();
         new cvu(this, this.b, z).d();
     }
 
     public final void av(cpj cpjVar) {
-        dlx.c();
+        dlx.ensureMainThread();
         new cvw(this, this.b, cpjVar).d();
     }
 
     public final void aw() {
-        dlx.c();
+        dlx.ensureMainThread();
         cxg cxgVar = (cxg) this.c.d;
         cxgVar.g.edit().putBoolean("weather_brief_promo_shown", true).apply();
         cxgVar.k = true;
     }
 
     public final void ax(dhy dhyVar) {
-        dlx.c();
+        dlx.ensureMainThread();
         ((cwa) kkj.i(this.b, cwa.class)).q().l(dhyVar.c() <= 0 ? dhyVar.f() : dhyVar.k());
     }
 
     public final void ay() {
-        dlx.c();
+        dlx.ensureMainThread();
         ((cwa) kkj.i(this.b, cwa.class)).aL().p(false);
         aB();
         Object obj = this.c.f;
@@ -929,7 +929,7 @@ public final class cwb {
     }
 
     public final void az(dmq dmqVar) {
-        dlx.c();
+        dlx.ensureMainThread();
         if (((cwa) kkj.i(this.b, cwa.class)).aL().s()) {
             ay();
         }
@@ -941,7 +941,7 @@ public final class cwb {
     }
 
     public final int b(dco dcoVar) {
-        dlx.c();
+        dlx.ensureMainThread();
         return ((cxg) this.c.d).h(dcoVar);
     }
 
@@ -950,7 +950,7 @@ public final class cwb {
     }
 
     public final long d() {
-        dlx.c();
+        dlx.ensureMainThread();
         return ((cun) this.c.c).l.d();
     }
 
@@ -1047,32 +1047,32 @@ public final class cwb {
     }
 
     public final dcm s(dco dcoVar) {
-        dlx.c();
+        dlx.ensureMainThread();
         return ((cww) this.c.h).d(dcoVar).t;
     }
 
     public final dcp t(dco dcoVar) {
-        dlx.c();
+        dlx.ensureMainThread();
         return ((cww) this.c.h).d(dcoVar).s;
     }
 
     public final dhy u(UUID uuid, dia diaVar, long j, String str, boolean z) {
-        dlx.c();
+        dlx.ensureMainThread();
         return ((cwa) kkj.i(this.b, cwa.class)).q().c(uuid, diaVar, j, str, z);
     }
 
     public final dhy v(UUID uuid, dia diaVar, long j, String str, boolean z) {
-        dlx.c();
+        dlx.ensureMainThread();
         return ((cwa) kkj.i(this.b, cwa.class)).q().d(uuid, diaVar, j, str, z);
     }
 
     public final dhy w(int i) {
-        dlx.c();
+        dlx.ensureMainThread();
         return ((cwa) kkj.i(this.b, cwa.class)).q().e(i);
     }
 
     public final dhy x(UUID uuid) {
-        dlx.c();
+        dlx.ensureMainThread();
         return ((cwa) kkj.i(this.b, cwa.class)).q().f(uuid);
     }
 
@@ -1081,7 +1081,7 @@ public final class cwb {
     }
 
     public final dqr z() {
-        dlx.c();
+        dlx.ensureMainThread();
         cuw cuwVar = (cuw) this.c.b;
         if (cuwVar.f == null) {
             String string = cuwVar.b.getString(R.string.home_label);

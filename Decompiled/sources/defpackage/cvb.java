@@ -23,7 +23,7 @@ public final class cvb implements fat, fas, dst, dss {
 
     @Override // defpackage.dss
     public final void a(dsw dswVar) {
-        dlx.c();
+        dlx.ensureMainThread();
         ((iwv) ((iwv) ((iwv) cve.b.b()).i(dswVar)).j("com/android/deskclock/data/CitySearchModel$SearchRequest$PlacesCallback", "onErrorResponse", (char) 451, "CitySearchModel.java")).r("Error getting TimeZone");
         d(null);
     }
@@ -37,7 +37,7 @@ public final class cvb implements fat, fas, dst, dss {
     @Override // defpackage.fat
     public final /* synthetic */ void c(Object obj) {
         hkq hkqVar = (hkq) obj;
-        dlx.c();
+        dlx.ensureMainThread();
         cvd cvdVar = this.e;
         if (cvdVar.c()) {
             return;

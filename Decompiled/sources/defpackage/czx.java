@@ -46,7 +46,7 @@ public final class czx extends lvs implements lws {
         }
         lsr.f(obj);
         if (kuo.c() && a.H()) {
-            Instant instantC = this.a.c();
+            Instant instantC = this.a.ensureMainThread();
             Instant instantA = instantC.A(30L, ChronoUnit.DAYS);
             cqj cqjVar = (cqj) this.b;
             boolean zE = cqjVar.e(instantA, instantC);

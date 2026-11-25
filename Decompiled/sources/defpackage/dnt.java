@@ -74,7 +74,7 @@ public final class dnt extends ctw implements chk, cpb, cqi {
                 arrayList.add(new dmp(str, str2, true));
             }
             cwb cwbVar = cwb.a;
-            dlx.c();
+            dlx.ensureMainThread();
             dnt dntVar = (dnt) cwbVar.c.f;
             dnm dnmVar = dntVar.g;
             kgt kgtVarK = kkb.a.k();
@@ -178,8 +178,8 @@ public final class dnt extends ctw implements chk, cpb, cqi {
     }
 
     public final String i() {
-        dlx.d();
-        dlx.d();
+        dlx.ensureNotMainThread();
+        dlx.ensureNotMainThread();
         dmr dmrVar = this.f;
         if (!dmrVar.d.r()) {
             return null;

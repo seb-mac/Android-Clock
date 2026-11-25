@@ -157,7 +157,7 @@ public final class dba extends dph implements dpi {
         }
         this.E.setImageResource(cwbVar.a(dcoVar));
         TextView textView = this.F;
-        dlx.c();
+        dlx.ensureMainThread();
         cwx cwxVarD = ((cww) cwbVar.c.h).d(dcoVar);
         Context context = cwxVarD.l;
         String string3 = context.getString(cwxVarD.n.l);
@@ -181,7 +181,7 @@ public final class dba extends dph implements dpi {
         this.G.setText(cwbVar.G(dcoVar));
         this.H.setImageResource(dcoVar.j);
         Button button = this.I;
-        dlx.c();
+        dlx.ensureMainThread();
         cwx cwxVarD2 = ((cww) cwbVar.c.h).d(dcoVar);
         if (cwxVarD2.s.u()) {
             string2 = cwxVarD2.l.getString(R.string.provider_install_provider_app);

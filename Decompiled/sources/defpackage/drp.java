@@ -77,7 +77,7 @@ public final class drp extends dqx implements chk, dqs, cqg, cpo, dof {
         }
         imageView.setVisibility(0);
         cwb cwbVar = am;
-        dlx.c();
+        dlx.ensureMainThread();
         Object obj = cwbVar.c.e;
         eia eiaVar = doeVar.a(cpf.DAY).d;
         eif eifVar = ((cyo) obj).h;
@@ -408,7 +408,7 @@ public final class drp extends dqx implements chk, dqs, cqg, cpo, dof {
         cwbVar.ad(this);
         this.aC.I(this);
         this.aB.F(this);
-        dlx.c();
+        dlx.ensureMainThread();
         ((cyo) cwbVar.c.e).e.remove(this);
         ob obVar = this.ax;
         if (obVar != null) {
@@ -515,14 +515,14 @@ public final class drp extends dqx implements chk, dqs, cqg, cpo, dof {
         aO();
         Runnable runnable = this.an;
         dkt dktVar = dkt.a;
-        dlx.c();
+        dlx.ensureMainThread();
         ((cpr) dktVar.e.b()).c(runnable, 2, 100L);
         this.aw.l(this.aG);
         cwb cwbVar = am;
         cwbVar.P(this);
         this.aC.H(this);
         this.aB.E(this);
-        dlx.c();
+        dlx.ensureMainThread();
         ((cyo) cwbVar.c.e).i(this);
         Context contextBw3 = bw();
         Objects.requireNonNull(this);

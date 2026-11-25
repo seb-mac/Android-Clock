@@ -177,7 +177,7 @@ public class StopwatchUtils {
         configuration.setLocales(LocaleList.forLanguageTags(ahpVar.e()));
     }
 
-    public static Object h(Parcel parcel, Parcelable.Creator creator) {
+    public static <T extends Parcelable> T h(Parcel parcel, Parcelable.Creator<T> creator) {
         if (parcel.readInt() != 0) {
             return creator.createFromParcel(parcel);
         }

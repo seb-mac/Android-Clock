@@ -35,7 +35,7 @@ public final class cfx extends cfe {
         ((StopwatchEventLogger) gvuVar.f).b(mjwVar2);
         cty ctyVar = this.a;
         UUID uuidJ = akf.j();
-        Instant instantC = gvuVar.e.c();
+        Instant instantC = gvuVar.e.ensureMainThread();
         cwb cwbVar = cwb.a;
         ctyVar.c(uuidJ);
         ctyVar.b(instantC);

@@ -164,7 +164,7 @@ public final class cuw extends ctw implements cqg, dof {
             long jA = this.c.a();
             cve cveVarC = c();
             cuu cuuVar = new cuu(this, jA, 0);
-            dlx.c();
+            dlx.ensureMainThread();
             akc akcVar = cveVarC.j;
             dlx.f(new cuy(cveVarC, ittVar, cuuVar), new Void[0]);
         }
@@ -174,7 +174,7 @@ public final class cuw extends ctw implements cqg, dof {
         long jA = this.c.a();
         cve cveVarC = c();
         cuu cuuVar = new cuu(this, jA, 1);
-        dlx.c();
+        dlx.ensureMainThread();
         akc akcVar = cveVarC.j;
         new cva(cveVarC, ittVar, cuuVar).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, new Void[0]);
     }

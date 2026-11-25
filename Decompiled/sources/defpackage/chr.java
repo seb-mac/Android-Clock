@@ -53,7 +53,7 @@ public final /* synthetic */ class chr implements pg {
             if (((pf) obj).a == -1) {
                 chx chxVar3 = (chx) this.a;
                 cwb cwbVar = chxVar3.ay;
-                dlx.c();
+                dlx.ensureMainThread();
                 ((cyo) cwbVar.c.e).k(cwbVar.y().d(ehu.b));
                 cua cuaVar = chxVar3.az;
                 if (cuaVar == null) {

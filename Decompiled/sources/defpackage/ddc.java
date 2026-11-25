@@ -76,7 +76,7 @@ public class ddc {
         }
         ddb ddbVar = this.b;
         if (ddbVar != null) {
-            dlx.c();
+            dlx.ensureMainThread();
             ddbVar.d = null;
             dlx.e(new cte(this, ddbVar, 12, null));
             this.b = null;

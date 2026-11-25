@@ -53,7 +53,7 @@ public final class gvu {
 
     public final void d() {
         dkt dktVar = dkt.a;
-        dlx.c();
+        dlx.ensureMainThread();
         cua cuaVar = ((dke) dktVar.f.b()).a;
         ctk ctkVar = new ctk(((Context) this.d).getString(R.string.alarm_deleted));
         ctkVar.b(0);

@@ -50,7 +50,7 @@ public final class ecs implements dya, dxx {
         if (this.a != 0) {
             return this.b;
         }
-        return new BitmapDrawable((Resources) this.b, (Bitmap) this.c.c());
+        return new BitmapDrawable((Resources) this.b, (Bitmap) this.c.ensureMainThread());
     }
 
     @Override // defpackage.dxx

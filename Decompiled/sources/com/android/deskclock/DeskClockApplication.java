@@ -216,7 +216,7 @@ public class DeskClockApplication extends cdu implements hbn, bnh {
     public final void onTerminate() {
         super.onTerminate();
         cwb cwbVar = cwb.a;
-        dlx.c();
+        dlx.ensureMainThread();
         cyr cyrVar = cwbVar.c;
         if (cyrVar != null) {
             SQLiteOpenHelper sQLiteOpenHelper = cuc.c;

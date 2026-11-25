@@ -23,7 +23,7 @@ public final class ccz extends cdc {
     public final RemoteViews c(int i, Size size) {
         ckq ckqVarB = ckq.b(i);
         crw crwVar = crw.a;
-        dlx.c();
+        dlx.ensureMainThread();
         csi csiVar = (csi) crwVar.g.b();
         if (csiVar.B()) {
             return csiVar.E(new lew((Object) ckqVarB, true), false, size);

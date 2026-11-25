@@ -126,10 +126,10 @@ public final class cgv {
 
     public static LocalTime k(LocalTime localTime) {
         dkt dktVar = dkt.a;
-        dlx.c();
+        dlx.ensureMainThread();
         Object obj = ((dke) dktVar.f.b()).e.b;
         Optional optionalEmpty = Optional.empty();
-        dlx.c();
+        dlx.ensureMainThread();
         ((dke) dktVar.f.b()).a();
         return (LocalTime) optionalEmpty.orElse(localTime);
     }

@@ -36,7 +36,7 @@ public class HandleApiCalls extends cdz {
     public static final mka p = mka.OTHER_INTENT;
 
     public static void s(Activity activity, String str) {
-        dlx.c();
+        dlx.ensureMainThread();
         if (activity.isFinishing() || activity.isDestroyed()) {
             return;
         }
@@ -45,7 +45,7 @@ public class HandleApiCalls extends cdz {
     }
 
     public static void t(Activity activity, String str) {
-        dlx.c();
+        dlx.ensureMainThread();
         if (activity.isFinishing() || activity.isDestroyed()) {
             return;
         }

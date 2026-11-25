@@ -24,7 +24,7 @@ public final class cpr implements cpo {
     }
 
     public static Handler a() {
-        dlx.c();
+        dlx.ensureMainThread();
         Handler handler = a;
         if (handler != null) {
             return handler;

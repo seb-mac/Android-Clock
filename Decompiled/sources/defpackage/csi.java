@@ -482,7 +482,7 @@ public final class csi implements dqs, cqg, cqi, cpo, ckr, deh {
                 } else {
                     remoteViews2.setViewVisibility(R.id.weather_section, 0);
                     cwb cwbVar = cwb.a;
-                    dlx.c();
+                    dlx.ensureMainThread();
                     Object obj2 = cwbVar.c.e;
                     eia eiaVar = doeVar.a(cpf.DAY).d;
                     eif eifVar = ((cyo) obj2).h;

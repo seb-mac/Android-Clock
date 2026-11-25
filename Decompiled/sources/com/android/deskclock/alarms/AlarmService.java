@@ -111,14 +111,14 @@ public final class AlarmService extends cgk implements chk {
     }
 
     public final void a(long j, Uri uri, boolean z) {
-        dlx.d();
+        dlx.ensureNotMainThread();
         Set set = this.o;
         Long lValueOf = Long.valueOf(j);
         set.add(lValueOf);
         cwb cwbVar = cwb.a;
         boolean zE = ((cqb) this.b.b()).e();
         if (((lqv) this.d.b()).s() && ((lqv) this.d.b()).t() && cwbVar.E().isPresent() && !zE) {
-            dlx.d();
+            dlx.ensureNotMainThread();
             if (((dnt) cwbVar.c.f).r() == 3) {
                 this.n.postDelayed(new cfk(this, uri, z, j, 1), lValueOf, 15000L);
                 return;

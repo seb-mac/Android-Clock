@@ -48,13 +48,13 @@ public final class dlx {
         }
     }
 
-    public static void c() {
+    public static void ensureMainThread() {
         if (Looper.getMainLooper() != Looper.myLooper()) {
             throw new IllegalAccessError("May only call from main thread.");
         }
     }
 
-    public static void d() {
+    public static void ensureNotMainThread() {
         if (Looper.getMainLooper() == Looper.myLooper()) {
             throw new IllegalAccessError("May not call from main thread.");
         }

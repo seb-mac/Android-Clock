@@ -151,7 +151,7 @@ public final class cig extends cio implements chk, dkf {
             dktVar.x(dkr.ALARMS, mlwVarA);
             long longExtra = intent.getLongExtra("com.android.deskclock.extra.EXPANDED_ALARM_ID", -1L);
             if (longExtra != -1) {
-                dlx.c();
+                dlx.ensureMainThread();
                 if (longExtra == ((dke) dktVar.f.b()).b) {
                     aW(longExtra);
                 } else {
