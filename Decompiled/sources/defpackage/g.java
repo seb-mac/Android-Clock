@@ -20,7 +20,7 @@ public class g {
     }
 
     public static mlw A(String str, mlw mlwVar) {
-        mlw mlwVarValueOf;
+        mlw mlwVarValueOf = null;
         lxj.d(mlwVar, "default");
         if (str == null) {
             mlwVarValueOf = mlwVar;
@@ -36,7 +36,7 @@ public class g {
     }
 
     public static mly B(String str, mly mlyVar) {
-        mly mlyVarValueOf;
+        mly mlyVarValueOf = null;
         lxj.d(mlyVar, "default");
         if (str == null) {
             mlyVarValueOf = mlyVar;
@@ -155,11 +155,11 @@ public class g {
     }
 
     public static ahp f(Configuration configuration) {
-        return ahp.c(ExternalSyntheticApiModelOutline0.m(ExternalSyntheticApiModelOutline0.m(configuration)));
+        return ahp.c(a$$ExternalSyntheticApiModelOutline0.m(a$$ExternalSyntheticApiModelOutline0.m(configuration)).toLanguageTags());
     }
 
     public static void g(Configuration configuration, ahp ahpVar) {
-        ExternalSyntheticApiModelOutline0.m(configuration, ExternalSyntheticApiModelOutline0.m(ahpVar.e()));
+        configuration.setLocales(a$$ExternalSyntheticApiModelOutline0.m(ahpVar.e()));
     }
 
     public static Object h(Parcel parcel, Parcelable.Creator creator) {
@@ -244,7 +244,7 @@ public class g {
     }
 
     public static dcs m(Uri uri, dcx dcxVar, dcz dczVar, czd czdVar, int i, long j, Uri uri2, int i2) {
-        if (dczVar == dcz.a || dczVar == dcz.b) {
+        if (dczVar == dcz.FIRE || dczVar == dcz.BROWSE) {
             return new dcs(uri, dcxVar, dczVar, czdVar, i, (cwt) null, i2, j, uri2, false, 0L);
         }
         throw new IllegalArgumentException("Unexpected connection type: ".concat(dczVar.toString()));
@@ -327,7 +327,7 @@ public class g {
     }
 
     public static mjv v(String str, mjv mjvVar) {
-        mjv mjvVarValueOf;
+        mjv mjvVarValueOf = null;
         lxj.d(mjvVar, "default");
         if (str == null) {
             mjvVarValueOf = mjvVar;
@@ -343,7 +343,7 @@ public class g {
     }
 
     public static mka w(String str, mka mkaVar) {
-        mka mkaVarValueOf;
+        mka mkaVarValueOf = null;
         lxj.d(mkaVar, "default");
         if (str == null) {
             mkaVarValueOf = mkaVar;
@@ -359,7 +359,7 @@ public class g {
     }
 
     public static mkt x(String str, mkt mktVar) {
-        mkt mktVarValueOf;
+        mkt mktVarValueOf = null;
         if (str == null) {
             mktVarValueOf = mktVar;
         } else {
@@ -374,7 +374,7 @@ public class g {
     }
 
     public static mls y(String str, mls mlsVar) {
-        mls mlsVarValueOf;
+        mls mlsVarValueOf = null;
         lxj.d(mlsVar, "default");
         if (str == null) {
             mlsVarValueOf = mlsVar;
@@ -390,7 +390,7 @@ public class g {
     }
 
     public static mlu z(String str, mlu mluVar) {
-        mlu mluVarValueOf;
+        mlu mluVarValueOf = null;
         lxj.d(mluVar, "default");
         if (str == null) {
             mluVarValueOf = mluVar;

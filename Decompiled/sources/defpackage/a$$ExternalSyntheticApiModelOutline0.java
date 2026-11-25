@@ -36,12 +36,12 @@ public final /* synthetic */ class a$$ExternalSyntheticApiModelOutline0 {
     }
 
     /* JADX INFO: renamed from: m, reason: collision with other method in class */
-    public static /* bridge */ /* synthetic */ Consumer m18m(Object obj) {
-        return (Consumer) obj;
+    public static /* bridge */ /* synthetic */ Consumer<?> m18m(Object obj) {
+        return (Consumer<?>) obj;
     }
 
     /* JADX INFO: renamed from: m, reason: collision with other method in class */
-    public static /* bridge */ /* synthetic */ Supplier m19m(Object obj) {
-        return (Supplier) obj;
+    public static /* bridge */ /* synthetic */ Supplier<?> m19m(Object obj) {
+        return (Supplier<?>) obj;
     }
 }

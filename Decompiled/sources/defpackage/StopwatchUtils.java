@@ -319,7 +319,7 @@ public class StopwatchUtils {
         return intentPutExtra;
     }
 
-    public static Intent s(Intent intent, mly mluVar) {
+    public static Intent s(Intent intent, StopwatchEventSource mluVar) {
         lxj.d(intent, "<this>");
         Intent intentPutExtra = intent.putExtra("com.android.deskclock.extra.STOPWATCH_EVENT_SOURCE", mluVar.name());
         lxj.c(intentPutExtra, "putExtra(...)");
@@ -439,20 +439,20 @@ public class StopwatchUtils {
     /* JADX WARN: Type inference failed for: r2v0, types: [java.lang.Object, mlu] */
     /* JADX WARN: Type inference failed for: r2v1 */
     /* JADX WARN: Type inference failed for: r2v3 */
-    public static mlu z(String str, mlu mluVar) {
-        mlu ValueOf = null;
+    public static StopwatchEventSource z(String str, StopwatchEventSource mluVar) {
+        StopwatchEventSource ValueOf = null;
         lxj.d(mluVar, "default");
         if (str == null) {
             ValueOf = mluVar;
         } else {
             try {
-                ValueOf = Enum.valueOf(mlu.class, str);
+                ValueOf = Enum.valueOf(StopwatchEventSource.class, str);
             } catch (IllegalArgumentException unused) {
             }
         }
         lxj.a(ValueOf);
         mluVar = ValueOf;
-        return (mlu) mluVar;
+        return (StopwatchEventSource) mluVar;
     }
 
     public void c(cc ccVar, bg bgVar) {

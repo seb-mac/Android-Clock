@@ -7,7 +7,7 @@ import defpackage.StopwatchEventLogger;
 import defpackage.StopwatchNotificationState;
 import defpackage.StopwatchReceiverBase;
 import defpackage.StopwatchReceiverCallback;
-import defpackage.StopwatchStateModel; //StopwatchState
+import defpackage.StopwatchStateModel;
 import defpackage.dlx; //StopwatchLogger
 import defpackage.StopwatchUtils;
 import defpackage.kkq; //StopwatchManager
