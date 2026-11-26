@@ -81,7 +81,7 @@ public final class vc {
                 if (position != 2) {
                     i2 = 3;
                     if (position != 3) {
-                        throw new IllegalArgumentException(a.aW(position, "Invalid position: "));
+                        throw new IllegalArgumentException(a.appendInt(position, "Invalid position: "));
                     }
                 }
             }
@@ -158,8 +158,8 @@ public final class vc {
         return hpj.a(context, 0, StopwatchUtils.r(StopwatchUtils.t(new Intent().setClassName(context, "com.android.deskclock.uridispatcher.InternalUriDispatcherActivity").setData(new Uri.Builder().scheme("clock-app").authority("com.google.android.deskclock").appendEncodedPath("clock").appendEncodedPath("view").build()), mlwVar), mlsVar), 201326592, 0);
     }
 
-    public static Uri k(dft dftVar) {
-        return new Uri.Builder().scheme("clock-app").authority("com.google.android.deskclock").appendEncodedPath("stopwatch").appendEncodedPath("lap").appendEncodedPath(String.valueOf(dftVar.a)).build();
+    public static Uri k(Lap dftVar) {
+        return new Uri.Builder().scheme("clock-app").authority("com.google.android.deskclock").appendEncodedPath("stopwatch").appendEncodedPath("lap").appendEncodedPath(String.valueOf(dftVar.lapNumber)).build();
     }
 
     public static String l(Uri uri) {

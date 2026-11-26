@@ -209,7 +209,7 @@ public final class ilo extends au {
             i3 = R.string.material_timepicker_text_input_mode_description;
         } else {
             if (i5 != 1) {
-                throw new IllegalArgumentException(a.aW(i5, "no button data for mode: "));
+                throw new IllegalArgumentException(a.appendInt(i5, "no button data for mode: "));
             }
             i = this.av;
             i2 = R.string.material_timepicker_clock_mode_tooltip;

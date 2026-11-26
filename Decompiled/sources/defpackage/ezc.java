@@ -121,7 +121,7 @@ public final class ezc extends evl implements Comparable<ezc> {
             return str.compareTo(str2);
         }
         if (i != 5) {
-            throw new AssertionError(a.aW(i, "Invalid enum value: "));
+            throw new AssertionError(a.appendInt(i, "Invalid enum value: "));
         }
         byte[] bArr = this.f;
         byte[] bArr2 = ezcVar2.f;
@@ -168,7 +168,7 @@ public final class ezc extends evl implements Comparable<ezc> {
                 if (i == 5) {
                     return Arrays.equals(this.f, ezcVar.f);
                 }
-                throw new AssertionError(a.aW(i, "Invalid enum value: "));
+                throw new AssertionError(a.appendInt(i, "Invalid enum value: "));
             }
         }
         return false;

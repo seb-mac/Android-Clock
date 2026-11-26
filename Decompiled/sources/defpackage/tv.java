@@ -94,7 +94,7 @@ public class tv {
     }
 
     public static void h(int i, String str) {
-        throw new SQLException(a.aW(i, "Error code: ").concat(", message: ".concat(str)));
+        throw new SQLException(a.appendInt(i, "Error code: ").concat(", message: ".concat(str)));
     }
 
     public void d(adr adrVar) {

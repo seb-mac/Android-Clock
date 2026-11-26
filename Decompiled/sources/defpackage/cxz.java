@@ -73,18 +73,18 @@ public final class cxz {
         this.d.remove(dhyVar);
         SharedPreferences.Editor editor = this.b;
         int i = dhyVar.e;
-        editor.remove(a.aW(i, "timer_state_"));
-        editor.remove(a.aW(i, "timer_external_uuid_"));
-        editor.remove(a.aW(i, "timer_boot_count_"));
-        editor.remove(a.aW(i, "timer_setup_timet_"));
-        editor.remove(a.aW(i, "timer_original_timet_"));
-        editor.remove(a.aW(i, "timer_first_wall_clock_time_"));
-        editor.remove(a.aW(i, "timer_wall_clock_time_"));
-        editor.remove(a.aW(i, "timer_start_time_"));
-        editor.remove(a.aW(i, "timer_time_left_"));
-        editor.remove(a.aW(i, "timer_label_"));
-        editor.remove(a.aW(i, "delete_after_use_"));
-        editor.remove(a.aW(i, "timer_notification_state_"));
+        editor.remove(a.appendInt(i, "timer_state_"));
+        editor.remove(a.appendInt(i, "timer_external_uuid_"));
+        editor.remove(a.appendInt(i, "timer_boot_count_"));
+        editor.remove(a.appendInt(i, "timer_setup_timet_"));
+        editor.remove(a.appendInt(i, "timer_original_timet_"));
+        editor.remove(a.appendInt(i, "timer_first_wall_clock_time_"));
+        editor.remove(a.appendInt(i, "timer_wall_clock_time_"));
+        editor.remove(a.appendInt(i, "timer_start_time_"));
+        editor.remove(a.appendInt(i, "timer_time_left_"));
+        editor.remove(a.appendInt(i, "timer_label_"));
+        editor.remove(a.appendInt(i, "delete_after_use_"));
+        editor.remove(a.appendInt(i, "timer_notification_state_"));
     }
 
     public final void d() {
@@ -102,17 +102,17 @@ public final class cxz {
         list.set(list.indexOf(dhyVar), dhyVar);
         SharedPreferences.Editor editor = this.b;
         int i = dhyVar.e;
-        editor.putString(a.aW(i, "timer_external_uuid_"), Objects.toString(dhyVar.f, null));
-        editor.putInt(a.aW(i, "timer_state_"), dhyVar.g.g);
-        editor.putInt(a.aW(i, "timer_boot_count_"), dhyVar.h);
-        editor.putLong(a.aW(i, "timer_setup_timet_"), dhyVar.i);
-        editor.putLong(a.aW(i, "timer_original_timet_"), dhyVar.j);
-        editor.putLong(a.aW(i, "timer_first_wall_clock_time_"), dhyVar.k);
-        editor.putLong(a.aW(i, "timer_wall_clock_time_"), dhyVar.l);
-        editor.putLong(a.aW(i, "timer_start_time_"), dhyVar.m);
-        editor.putLong(a.aW(i, "timer_time_left_"), dhyVar.n);
-        editor.putString(a.aW(i, "timer_label_"), dhyVar.o);
-        editor.putBoolean(a.aW(i, "delete_after_use_"), dhyVar.p);
-        editor.putInt(a.aW(i, "timer_notification_state_"), dhyVar.q.ordinal());
+        editor.putString(a.appendInt(i, "timer_external_uuid_"), Objects.toString(dhyVar.f, null));
+        editor.putInt(a.appendInt(i, "timer_state_"), dhyVar.g.g);
+        editor.putInt(a.appendInt(i, "timer_boot_count_"), dhyVar.h);
+        editor.putLong(a.appendInt(i, "timer_setup_timet_"), dhyVar.i);
+        editor.putLong(a.appendInt(i, "timer_original_timet_"), dhyVar.j);
+        editor.putLong(a.appendInt(i, "timer_first_wall_clock_time_"), dhyVar.k);
+        editor.putLong(a.appendInt(i, "timer_wall_clock_time_"), dhyVar.l);
+        editor.putLong(a.appendInt(i, "timer_start_time_"), dhyVar.m);
+        editor.putLong(a.appendInt(i, "timer_time_left_"), dhyVar.n);
+        editor.putString(a.appendInt(i, "timer_label_"), dhyVar.o);
+        editor.putBoolean(a.appendInt(i, "delete_after_use_"), dhyVar.p);
+        editor.putInt(a.appendInt(i, "timer_notification_state_"), dhyVar.q.ordinal());
     }
 }

@@ -105,7 +105,7 @@ public final class ety {
             case 14:
             case 15:
             default:
-                Log.e("GoogleApiAvailability", a.aW(i, "Unexpected error code "));
+                Log.e("GoogleApiAvailability", a.appendInt(i, "Unexpected error code "));
                 return null;
             case 16:
                 Log.e("GoogleApiAvailability", "One of the API components you attempted to connect to is not available.");

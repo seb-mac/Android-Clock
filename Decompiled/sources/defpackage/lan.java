@@ -4,7 +4,7 @@ package defpackage;
 /* JADX INFO: loaded from: classes2.dex */
 public final class lan implements iqz {
     public static final lan a = new lan();
-    private final iqz b = new irc(new lap());
+    private final iqz b = new irc(new lap2());
 
     @Override // defpackage.iqz
     /* JADX INFO: renamed from: b, reason: merged with bridge method [inline-methods] */

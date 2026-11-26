@@ -66,7 +66,7 @@ public final class lrm implements Closeable {
                 int iB2 = lrhVar.b(i3, 31);
                 lrhVar.d = iB2;
                 if (iB2 < 0 || iB2 > lrhVar.c) {
-                    throw new IOException(a.aW(iB2, "Invalid dynamic table size update "));
+                    throw new IOException(a.appendInt(iB2, "Invalid dynamic table size update "));
                 }
                 lrhVar.e();
             } else if (i3 == 16 || i3 == 0) {

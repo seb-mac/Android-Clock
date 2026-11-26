@@ -27,7 +27,7 @@ public final class ehc {
     public static void b(Parcel parcel) {
         int iDataAvail = parcel.dataAvail();
         if (iDataAvail > 0) {
-            throw new BadParcelableException(a.aW(iDataAvail, "Parcel data not fully consumed, unread size: "));
+            throw new BadParcelableException(a.appendInt(iDataAvail, "Parcel data not fully consumed, unread size: "));
         }
     }
 

@@ -52,7 +52,7 @@ final class jip extends etc {
             }
         } else {
             if (i != 1) {
-                String strAW = a.aW(i, "API call failed. Status code: ");
+                String strAW = a.appendInt(i, "API call failed. Status code: ");
                 if (ipj.o(6)) {
                     Log.e("FirebaseAppIndex", strAW);
                 }

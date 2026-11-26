@@ -56,7 +56,7 @@ public final class fgr extends eug {
     @Override // defpackage.ett
     protected final void A(int i, IBinder iBinder, Bundle bundle, int i2) {
         if (Log.isLoggable("WearableClient", 2)) {
-            Log.v("WearableClient", a.aW(i, "onPostInitHandler: statusCode "));
+            Log.v("WearableClient", a.appendInt(i, "onPostInitHandler: statusCode "));
         }
         if (i == 0) {
             this.z.E(iBinder);
@@ -116,7 +116,7 @@ public final class fgr extends eug {
                 Bundle bundle = context.getPackageManager().getApplicationInfo("com.google.android.wearable.app.cn", 128).metaData;
                 int i = bundle != null ? bundle.getInt("com.google.android.wearable.api.version", 0) : 0;
                 if (i < 8600000) {
-                    Log.w("WearableClient", a.aW(i, "The Wear OS app is out of date. Requires API version 8600000 but found "));
+                    Log.w("WearableClient", a.appendInt(i, "The Wear OS app is out of date. Requires API version 8600000 but found "));
                     Intent intent = new Intent("com.google.android.wearable.app.cn.UPDATE_ANDROID_WEAR").setPackage("com.google.android.wearable.app.cn");
                     if (context.getPackageManager().resolveActivity(intent, 65536) == null) {
                         intent = new Intent("android.intent.action.VIEW", Uri.parse("market://details").buildUpon().appendQueryParameter("id", "com.google.android.wearable.app.cn").build());

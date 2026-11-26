@@ -15,7 +15,7 @@ public final /* synthetic */ class ip$$ExternalSyntheticApiModelOutline1 {
         return (InputContentInfo) obj;
     }
 
-    public static /* bridge */ /* synthetic */ Class m() {
+    public static /* bridge */ /* synthetic */ Class<ShortcutManager> m() {
         return ShortcutManager.class;
     }
 }

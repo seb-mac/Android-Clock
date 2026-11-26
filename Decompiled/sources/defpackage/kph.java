@@ -24,7 +24,7 @@ abstract class kph implements mqe {
         kpn kpnVar = this.c;
         int i = kpnVar.d;
         if (i != 5) {
-            throw new IllegalStateException(a.aW(i, "state: "));
+            throw new IllegalStateException(a.appendInt(i, "state: "));
         }
         kpn.k(this.a);
         kpnVar.d = 6;

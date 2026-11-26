@@ -54,7 +54,7 @@ public final class kni {
         if (i >= 0) {
             return new knj(this);
         }
-        throw new IllegalStateException(a.aW(i, "code < 0: "));
+        throw new IllegalStateException(a.appendInt(i, "code < 0: "));
     }
 
     public final void c(String str, String str2) {

@@ -1391,7 +1391,7 @@ public class LinearLayoutManager extends ly implements ml {
 
     public void setOrientation(int i) {
         if (i != 0 && i != 1) {
-            throw new IllegalArgumentException(a.aW(i, "invalid orientation:"));
+            throw new IllegalArgumentException(a.appendInt(i, "invalid orientation:"));
         }
         assertNotInLayoutOrScroll(null);
         if (i != this.mOrientation || this.mOrientationHelper == null) {

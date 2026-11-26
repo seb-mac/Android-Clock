@@ -71,7 +71,7 @@ public final class cqw implements cqg {
 
     public final String e(int i, int i2) {
         if (i < 0) {
-            throw new IllegalArgumentException(a.aW(i, "value may not be negative: "));
+            throw new IllegalArgumentException(a.appendInt(i, "value may not be negative: "));
         }
         SparseArray sparseArray = this.c;
         SparseArray sparseArray2 = (SparseArray) sparseArray.get(i2);

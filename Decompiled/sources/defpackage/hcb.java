@@ -114,7 +114,7 @@ public final /* synthetic */ class hcb implements fan {
                         hbzVar = (hbz) kgtVarK4.m();
                     } else {
                         if (i6 != 5) {
-                            throw new IllegalArgumentException(a.aW(i6, "Unrecognized flag type: "));
+                            throw new IllegalArgumentException(a.appendInt(i6, "Unrecognized flag type: "));
                         }
                         kgt kgtVarK5 = hbz.a.k();
                         String str7 = ezcVar.a;

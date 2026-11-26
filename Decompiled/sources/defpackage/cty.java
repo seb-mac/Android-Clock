@@ -57,10 +57,10 @@ public final class cty {
 
     public final void f(int i, int i2) {
         if (i < 0 || i > 23) {
-            throw new IllegalArgumentException(a.aW(i, "Invalid hour: "));
+            throw new IllegalArgumentException(a.appendInt(i, "Invalid hour: "));
         }
         if (i2 < 0 || i2 > 59) {
-            throw new IllegalArgumentException(a.aW(i2, "Invalid minute: "));
+            throw new IllegalArgumentException(a.appendInt(i2, "Invalid minute: "));
         }
         this.c = i;
         this.d = i2;

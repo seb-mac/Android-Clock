@@ -118,7 +118,7 @@ public final class ewg {
     public static int J(Parcel parcel, int i) {
         int i2 = (i & (-65536)) != -65536 ? (char) (i >> 16) : parcel.readInt();
         if (i2 < 0 || parcel.dataPosition() + i2 > parcel.dataSize()) {
-            throw new evm(a.aW(i2, "Invalid field size: "), parcel);
+            throw new evm(a.appendInt(i2, "Invalid field size: "), parcel);
         }
         return i2;
     }
@@ -244,7 +244,7 @@ public final class ewg {
 
     public static void V(Parcel parcel, int i) {
         if (parcel.dataPosition() != i) {
-            throw new evm(a.aW(i, "Overread allowed size end="), parcel);
+            throw new evm(a.appendInt(i, "Overread allowed size end="), parcel);
         }
     }
 

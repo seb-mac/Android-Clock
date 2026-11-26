@@ -65,7 +65,7 @@ public abstract class mfy implements mgh {
         }
         int i = this.b;
         if (i != -3) {
-            arrayList.add(a.aW(i, "capacity="));
+            arrayList.add(a.appendInt(i, "capacity="));
         }
         int i2 = this.c;
         if (i2 != 1) {

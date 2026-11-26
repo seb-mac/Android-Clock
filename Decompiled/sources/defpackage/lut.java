@@ -26,7 +26,7 @@ final class lut implements Externalizable {
         lxj.d(objectInput, "input");
         byte b = objectInput.readByte();
         if (b != 0) {
-            throw new InvalidObjectException(a.aW(b, "Unsupported flags value: "));
+            throw new InvalidObjectException(a.appendInt(b, "Unsupported flags value: "));
         }
         int i = objectInput.readInt();
         if (i < 0) {

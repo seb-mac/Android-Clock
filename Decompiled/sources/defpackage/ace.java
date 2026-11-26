@@ -278,9 +278,9 @@ public final class ace {
                 }
             }
         } catch (IOException e) {
-            Log.e("MotionScene", a.aW(i, "Error parsing resource: "), e);
+            Log.e("MotionScene", a.appendInt(i, "Error parsing resource: "), e);
         } catch (XmlPullParserException e2) {
-            Log.e("MotionScene", a.aW(i, "Error parsing resource: "), e2);
+            Log.e("MotionScene", a.appendInt(i, "Error parsing resource: "), e2);
         }
     }
 
@@ -359,10 +359,10 @@ public final class ace {
             }
             return -1;
         } catch (IOException e) {
-            Log.e("MotionScene", a.aW(i, "Error parsing resource: "), e);
+            Log.e("MotionScene", a.appendInt(i, "Error parsing resource: "), e);
             return -1;
         } catch (XmlPullParserException e2) {
-            Log.e("MotionScene", a.aW(i, "Error parsing resource: "), e2);
+            Log.e("MotionScene", a.appendInt(i, "Error parsing resource: "), e2);
             return -1;
         }
     }

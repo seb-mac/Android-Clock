@@ -415,7 +415,7 @@ public final class a {
             if (i2 >= i) {
                 break;
             }
-            String string = sharedPreferences.getString(aW(i2, "city_id_"), null);
+            String string = sharedPreferences.getString(appendInt(i2, "city_id_"), null);
             if (string != null) {
                 dqrVarAR = aR(context, string);
             }
@@ -430,12 +430,12 @@ public final class a {
         int i3 = sharedPreferences.getInt("number_of_places", 0);
         int i4 = 0;
         while (i4 < i3) {
-            String string2 = sharedPreferences.getString(aW(i4, "place_id"), str2);
-            long j = sharedPreferences.getLong(aW(i4, "latitude_"), Long.MAX_VALUE);
-            long j2 = sharedPreferences.getLong(aW(i4, "longitude_"), Long.MAX_VALUE);
-            String string3 = sharedPreferences.getString(aW(i4, "place_display_name_"), str2);
-            String string4 = sharedPreferences.getString(aW(i4, "place_full_name_"), string3);
-            String string5 = sharedPreferences.getString(aW(i4, "place_timezone_id_"), str2);
+            String string2 = sharedPreferences.getString(appendInt(i4, "place_id"), str2);
+            long j = sharedPreferences.getLong(appendInt(i4, "latitude_"), Long.MAX_VALUE);
+            long j2 = sharedPreferences.getLong(appendInt(i4, "longitude_"), Long.MAX_VALUE);
+            String string3 = sharedPreferences.getString(appendInt(i4, "place_display_name_"), str2);
+            String string4 = sharedPreferences.getString(appendInt(i4, "place_full_name_"), string3);
+            String string5 = sharedPreferences.getString(appendInt(i4, "place_timezone_id_"), str2);
             if (string2 != null) {
                 dqr dqrVar = new dqr(string2, j != Long.MAX_VALUE ? j2 == Long.MAX_VALUE ? str2 : new cpl(Double.longBitsToDouble(j), Double.longBitsToDouble(j2)) : null, string3, string4, DesugarTimeZone.getTimeZone(true != "ChIJq8vFFn1ugzgRdm2YrY9mRD0".equals(string2) ? string5 : "Asia/Almaty"), doe.a, fhrVar.c());
                 arrayList.add(dqrVar);
@@ -456,7 +456,7 @@ public final class a {
             int i5 = sharedPreferences.getInt("number_of_cities", 0);
             SharedPreferences.Editor editorEdit = sharedPreferences.edit();
             for (int i6 = 0; i6 < i5; i6++) {
-                editorEdit.remove(aW(i6, str3));
+                editorEdit.remove(appendInt(i6, str3));
             }
             editorEdit.remove("number_of_cities").apply();
         }
@@ -471,27 +471,27 @@ public final class a {
         Iterator it = collection.iterator();
         while (it.hasNext()) {
             dqr dqrVar = (dqr) it.next();
-            editorEdit.putString(aW(i, "place_id"), dqrVar.b);
-            editorEdit.putString(aW(i, "place_display_name_"), dqrVar.d);
-            editorEdit.putString(aW(i, "place_full_name_"), dqrVar.e);
-            editorEdit.putString(aW(i, "place_timezone_id_"), dqrVar.f.getID());
+            editorEdit.putString(appendInt(i, "place_id"), dqrVar.b);
+            editorEdit.putString(appendInt(i, "place_display_name_"), dqrVar.d);
+            editorEdit.putString(appendInt(i, "place_full_name_"), dqrVar.e);
+            editorEdit.putString(appendInt(i, "place_timezone_id_"), dqrVar.f.getID());
             cpl cplVar = dqrVar.c;
             if (cplVar == null) {
-                editorEdit.remove(aW(i, "latitude_"));
-                editorEdit.remove(aW(i, "longitude_"));
+                editorEdit.remove(appendInt(i, "latitude_"));
+                editorEdit.remove(appendInt(i, "longitude_"));
             } else {
-                editorEdit.putLong(aW(i, "latitude_"), Double.doubleToLongBits(cplVar.a));
-                editorEdit.putLong(aW(i, "longitude_"), Double.doubleToLongBits(cplVar.b));
+                editorEdit.putLong(appendInt(i, "latitude_"), Double.doubleToLongBits(cplVar.a));
+                editorEdit.putLong(appendInt(i, "longitude_"), Double.doubleToLongBits(cplVar.b));
             }
             i++;
         }
         while (i < i2) {
-            editorEdit.remove(aW(i, "place_id"));
-            editorEdit.remove(aW(i, "latitude_"));
-            editorEdit.remove(aW(i, "longitude_"));
-            editorEdit.remove(aW(i, "place_display_name_"));
-            editorEdit.remove(aW(i, "place_full_name_"));
-            editorEdit.remove(aW(i, "place_timezone_id_"));
+            editorEdit.remove(appendInt(i, "place_id"));
+            editorEdit.remove(appendInt(i, "latitude_"));
+            editorEdit.remove(appendInt(i, "longitude_"));
+            editorEdit.remove(appendInt(i, "place_display_name_"));
+            editorEdit.remove(appendInt(i, "place_full_name_"));
+            editorEdit.remove(appendInt(i, "place_timezone_id_"));
             i++;
         }
         editorEdit.apply();
@@ -2333,7 +2333,7 @@ public final class a {
         return str + i2 + str2 + i;
     }
 
-    public static /* synthetic */ String aW(int i, String str) {
+    public static /* synthetic */ String appendInt(int i, String str) {
         return str + i;
     }
 
@@ -2501,7 +2501,7 @@ public final class a {
         if (i == 8) {
             return 3;
         }
-        throw new IllegalArgumentException(aW(i, "Unknown visibility "));
+        throw new IllegalArgumentException(appendInt(i, "Unknown visibility "));
     }
 
     public static final int at(View view) {

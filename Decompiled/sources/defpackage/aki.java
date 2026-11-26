@@ -68,7 +68,7 @@ public class aki {
         if (i == 512) {
             return 9;
         }
-        throw new IllegalArgumentException(a.aW(i, "type needs to be >= FIRST and <= LAST, type="));
+        throw new IllegalArgumentException(a.appendInt(i, "type needs to be >= FIRST and <= LAST, type="));
     }
 
     /* JADX WARN: Code duplicated, block: B:18:0x003b  */

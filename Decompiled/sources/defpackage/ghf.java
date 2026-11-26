@@ -55,7 +55,7 @@ public final class ghf implements ksl {
                 StringBuilder sb = new StringBuilder(strA);
                 int i4 = 2;
                 while (true) {
-                    String strA3 = hqf.a(a.aW(i4, "gnp.server.url"), "");
+                    String strA3 = hqf.a(a.appendInt(i4, "gnp.server.url"), "");
                     sb.append(strA3);
                     if (strA3.length() != 91) {
                         break;

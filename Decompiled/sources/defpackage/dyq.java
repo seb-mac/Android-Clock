@@ -229,7 +229,7 @@ public final class dyq implements dyi {
     @Override // defpackage.dyi
     public final void e(int i) {
         if (Log.isLoggable("LruBitmapPool", 3)) {
-            Log.d("LruBitmapPool", a.aW(i, "trimMemory, level="));
+            Log.d("LruBitmapPool", a.appendInt(i, "trimMemory, level="));
         }
         if (i >= 40 || i >= 20) {
             c();

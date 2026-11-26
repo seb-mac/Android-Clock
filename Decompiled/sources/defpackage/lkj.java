@@ -93,7 +93,7 @@ public final class lkj {
         } else {
             lfjVar = lfj.INTERNAL;
         }
-        return lfjVar.a().e(a.aW(i2, "HTTP status code "));
+        return lfjVar.a().e(a.appendInt(i2, "HTTP status code "));
     }
 
     public static lfm b(lfm lfmVar) {

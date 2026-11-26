@@ -47,7 +47,7 @@ public final class dgi extends fk {
             lxj.a(context);
             int i2 = ((dgo) dgqVar).a;
             dgi dgiVar = dggVar.w;
-            long jA = dgiVar.e.b().getTime();
+            long jA = dgiVar.e.getStopwatchStateModel().getTime();
             Integer numValueOf = Integer.valueOf(i2);
             String string = context.getString(R.string.gastown_stopwatch_lap_number, numValueOf);
             lxj.c(string, "getString(...)");
@@ -75,8 +75,8 @@ public final class dgi extends fk {
             } else {
                 c = 0;
             }
-            dft dftVar = ((dgp) dgqVar).a;
-            Integer numValueOf2 = Integer.valueOf(dftVar.a);
+            Lap dftVar = ((dgp) dgqVar).a;
+            Integer numValueOf2 = Integer.valueOf(dftVar.lapNumber);
             Object[] objArr = new Object[1];
             objArr[c] = numValueOf2;
             String string3 = context.getString(R.string.gastown_stopwatch_lap_number, objArr);
@@ -86,10 +86,10 @@ public final class dgi extends fk {
             String string4 = context.getString(R.string.gastown_stopwatch_content_description_lap_number, objArr2);
             lxj.c(string4, "getString(...)");
             gog gogVar2 = dggVar.w.f;
-            Duration durationOfMillis3 = Duration.ofMillis(dftVar.b);
+            Duration durationOfMillis3 = Duration.ofMillis(dftVar.lapTime);
             lxj.c(durationOfMillis3, "ofMillis(...)");
             String strAo2 = gogVar2.ao(durationOfMillis3);
-            Duration durationOfMillis4 = Duration.ofMillis(dftVar.c);
+            Duration durationOfMillis4 = Duration.ofMillis(dftVar.accumulatedTime);
             lxj.c(durationOfMillis4, "ofMillis(...)");
             dggVar.G(string3, string4, strAo2, gogVar2.ao(durationOfMillis4));
         }
@@ -104,15 +104,15 @@ public final class dgi extends fk {
             dggVar.E();
             return;
         }
-        dft dftVar2 = ((dgp) dgqVar).a;
+        Lap dftVar2 = ((dgp) dgqVar).a;
         Context context2 = view.getContext();
-        long j = dftVar2.b;
+        long j = dftVar2.lapTime;
         Iterator<E> it = u().iterator();
         Long l = null;
         if (it.hasNext()) {
-            lValueOf = Long.valueOf(((dft) it.next()).b);
+            lValueOf = Long.valueOf(((Lap) it.next()).lapTime);
             while (it.hasNext()) {
-                Long lValueOf2 = Long.valueOf(((dft) it.next()).b);
+                Long lValueOf2 = Long.valueOf(((Lap) it.next()).lapTime);
                 if (lValueOf.compareTo(lValueOf2) < 0) {
                     lValueOf = lValueOf2;
                 }
@@ -126,14 +126,14 @@ public final class dgi extends fk {
         }
         Iterator<E> it2 = u().iterator();
         if (it2.hasNext()) {
-            Long lValueOf3 = Long.valueOf(((dft) it2.next()).b);
+            Long lValueOf3 = Long.valueOf(((Lap) it2.next()).lapTime);
             loop0: while (true) {
                 l = lValueOf3;
                 do {
                     if (!it2.hasNext()) {
                         break loop0;
                     } else {
-                        lValueOf3 = Long.valueOf(((dft) it2.next()).b);
+                        lValueOf3 = Long.valueOf(((Lap) it2.next()).lapTime);
                     }
                 } while (l.compareTo(lValueOf3) <= 0);
             }

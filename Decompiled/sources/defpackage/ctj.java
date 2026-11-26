@@ -52,15 +52,15 @@ public final class ctj implements chk, cof, dhz, dfw, deh {
             ehlVar2.e = kisVarD;
             ehlVar2.b |= 2;
         }
-        for (dft dftVar : this.e.c()) {
+        for (Lap dftVar : this.e.c()) {
             kgt kgtVarK2 = ehk.a.k();
-            kgj kgjVarB2 = kjq.b(dftVar.b);
+            kgj kgjVarB2 = kjq.b(dftVar.lapTime);
             kgtVarK2.p();
             ehk ehkVar = (ehk) kgtVarK2.b;
             Objects.requireNonNull(kgjVarB2);
             ehkVar.d = kgjVarB2;
             ehkVar.b |= 2;
-            kgj kgjVarB3 = kjq.b(dftVar.c);
+            kgj kgjVarB3 = kjq.b(dftVar.accumulatedTime);
             kgtVarK2.p();
             ehk ehkVar2 = (ehk) kgtVarK2.b;
             Objects.requireNonNull(kgjVarB3);
@@ -471,7 +471,7 @@ public final class ctj implements chk, cof, dhz, dfw, deh {
     @Override // defpackage.dfw
     public final void y() {
         if (C()) {
-            A(this.e.b());
+            A(this.e.getStopwatchStateModel());
         }
     }
 

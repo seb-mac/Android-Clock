@@ -547,7 +547,7 @@ public final class duz implements duv {
     public final synchronized void c(dux duxVar, ByteBuffer byteBuffer, int i) {
         try {
             if (i <= 0) {
-                throw new IllegalArgumentException(a.aW(i, "Sample size must be >=0, not: "));
+                throw new IllegalArgumentException(a.appendInt(i, "Sample size must be >=0, not: "));
             }
             int iHighestOneBit = Integer.highestOneBit(i);
             this.r = 0;

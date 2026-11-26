@@ -44,12 +44,12 @@ public final class cdi extends cfe {
         int iAn = eif.an(uri, "hour", -1);
         this.d = iAn;
         if (iAn < 0 || iAn > 23) {
-            throw new IllegalArgumentException(a.aW(iAn, "Invalid hour: "));
+            throw new IllegalArgumentException(a.appendInt(iAn, "Invalid hour: "));
         }
         int iAn2 = eif.an(uri, "minute", -1);
         this.e = iAn2;
         if (iAn2 < 0 || iAn2 > 59) {
-            throw new IllegalArgumentException(a.aW(iAn2, "Invalid minute: "));
+            throw new IllegalArgumentException(a.appendInt(iAn2, "Invalid minute: "));
         }
         this.i = ddz.h(uri, dddVar.a());
         this.l = eif.ao(uri, "ui", "headless");

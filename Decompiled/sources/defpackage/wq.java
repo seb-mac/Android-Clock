@@ -106,14 +106,14 @@ public class wq {
 
     public final Object d(int i) {
         if (i < 0 || i >= this.d) {
-            uj.b(a.aW(i, "Expected index to be within 0..size()-1, but was "));
+            uj.b(a.appendInt(i, "Expected index to be within 0..size()-1, but was "));
         }
         return this.b[i + i];
     }
 
     public Object e(int i) {
         if (i < 0 || i >= this.d) {
-            uj.b(a.aW(i, "Expected index to be within 0..size()-1, but was "));
+            uj.b(a.appendInt(i, "Expected index to be within 0..size()-1, but was "));
         }
         Object[] objArr = this.b;
         int i2 = i + i;
@@ -215,7 +215,7 @@ public class wq {
 
     public Object f(int i, Object obj) {
         if (i < 0 || i >= this.d) {
-            uj.b(a.aW(i, "Expected index to be within 0..size()-1, but was "));
+            uj.b(a.appendInt(i, "Expected index to be within 0..size()-1, but was "));
         }
         Object[] objArr = this.b;
         int i2 = i + i + 1;
@@ -226,7 +226,7 @@ public class wq {
 
     public final Object g(int i) {
         if (i < 0 || i >= this.d) {
-            uj.b(a.aW(i, "Expected index to be within 0..size()-1, but was "));
+            uj.b(a.appendInt(i, "Expected index to be within 0..size()-1, but was "));
         }
         return this.b[i + i + 1];
     }

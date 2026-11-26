@@ -19,7 +19,7 @@ public final class exj extends evl {
         this.b = str2 != null ? str2 : str;
         this.c = strArr;
         if (i != 2 && i != 1) {
-            throw new IllegalArgumentException(a.aW(i, "Unknown expected output format="));
+            throw new IllegalArgumentException(a.appendInt(i, "Unknown expected output format="));
         }
         this.d = i;
         this.e = z;

@@ -182,7 +182,7 @@ public final class cjv implements chk, cpb, cqi, dfw, dhz, deh {
 
     @Override // defpackage.dfw
     public final void y() {
-        u(new cjt(1, this.d.b(), itt.q(this.f.b())));
+        u(new cjt(1, this.d.b(), itt.q(this.f.getStopwatchStateModel())));
     }
 
     /* JADX WARN: Type inference failed for: r2v0, types: [java.lang.Object, java.util.Collection] */

@@ -90,7 +90,7 @@ public class GridLayoutManager extends LinearLayoutManager {
         if (iA != -1) {
             return this.g.c(iA, this.b);
         }
-        Log.w("GridLayoutManager", a.aW(i, "Cannot find span size for pre layout position. "));
+        Log.w("GridLayoutManager", a.appendInt(i, "Cannot find span size for pre layout position. "));
         return 0;
     }
 
@@ -106,7 +106,7 @@ public class GridLayoutManager extends LinearLayoutManager {
         if (iA != -1) {
             return this.g.a(iA, this.b);
         }
-        Log.w("GridLayoutManager", a.aW(i, "Cannot find span size for pre layout position. It is not cached, not in the adapter. Pos:"));
+        Log.w("GridLayoutManager", a.appendInt(i, "Cannot find span size for pre layout position. It is not cached, not in the adapter. Pos:"));
         return 0;
     }
 
@@ -122,7 +122,7 @@ public class GridLayoutManager extends LinearLayoutManager {
         if (iA != -1) {
             return this.g.b(iA);
         }
-        Log.w("GridLayoutManager", a.aW(i, "Cannot find span size for pre layout position. It is not cached, not in the adapter. Pos:"));
+        Log.w("GridLayoutManager", a.appendInt(i, "Cannot find span size for pre layout position. It is not cached, not in the adapter. Pos:"));
         return 1;
     }
 
@@ -262,7 +262,7 @@ public class GridLayoutManager extends LinearLayoutManager {
         }
         this.a = true;
         if (i <= 0) {
-            throw new IllegalArgumentException(a.aW(i, "Span count should be at least 1. Provided "));
+            throw new IllegalArgumentException(a.appendInt(i, "Span count should be at least 1. Provided "));
         }
         this.b = i;
         this.g.e();

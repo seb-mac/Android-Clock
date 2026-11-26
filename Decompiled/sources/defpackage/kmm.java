@@ -42,7 +42,7 @@ public final class kmm {
         }
         kmzVar.d = strC;
         if (i <= 0) {
-            throw new IllegalArgumentException(a.aW(i, "unexpected port: "));
+            throw new IllegalArgumentException(a.appendInt(i, "unexpected port: "));
         }
         kmzVar.e = i;
         this.a = kmzVar.b();

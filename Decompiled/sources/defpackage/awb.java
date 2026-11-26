@@ -784,7 +784,7 @@ public final class awb {
                 avyVar5.c = ByteOrder.BIG_ENDIAN;
                 int i16 = avyVar5.readInt();
                 if (z2) {
-                    Log.d("ExifInterface", a.aW(i16, "numberOfDirectoryEntry: "));
+                    Log.d("ExifInterface", a.appendInt(i16, "numberOfDirectoryEntry: "));
                 }
                 for (int i17 = 0; i17 < i16; i17++) {
                     int unsignedShort = avyVar5.readUnsignedShort();
@@ -991,7 +991,7 @@ public final class awb {
         }
         int i3 = avyVar.readInt();
         if (i3 < 8) {
-            throw new IOException(a.aW(i3, "Invalid first Ifd offset: "));
+            throw new IOException(a.appendInt(i3, "Invalid first Ifd offset: "));
         }
         int i4 = i3 - 8;
         if (i4 > 0) {
@@ -1195,7 +1195,7 @@ public final class awb {
         short s3 = avyVar.readShort();
         boolean z7 = l;
         if (z7) {
-            Log.d("ExifInterface", a.aW(s3, "numberOfDirectoryEntry: "));
+            Log.d("ExifInterface", a.appendInt(s3, "numberOfDirectoryEntry: "));
         }
         if (s3 > 0) {
             short s4 = 0;
@@ -1232,7 +1232,7 @@ public final class awb {
                 }
                 if (ionVar == null) {
                     if (z3) {
-                        Log.d("ExifInterface", a.aW(unsignedShort2, "Skip the tag entry since tag number is not defined: "));
+                        Log.d("ExifInterface", a.appendInt(unsignedShort2, "Skip the tag entry since tag number is not defined: "));
                         z5 = z7;
                         s2 = s4;
                         j = 0;
@@ -1253,7 +1253,7 @@ public final class awb {
                             z4 = z3;
                             z5 = z7;
                             s2 = s4;
-                            Log.d("ExifInterface", a.aW(unsignedShort3, "Skip the tag entry since data format is invalid: "));
+                            Log.d("ExifInterface", a.appendInt(unsignedShort3, "Skip the tag entry since data format is invalid: "));
                         } else {
                             z4 = z3;
                             z5 = z7;
@@ -1331,7 +1331,7 @@ public final class awb {
                         if (j >= 0 && j <= 2147483647L) {
                             z6 = true;
                         } else if (z4) {
-                            Log.d("ExifInterface", a.aW(i7, "Skip the tag entry since the number of components is invalid: "));
+                            Log.d("ExifInterface", a.appendInt(i7, "Skip the tag entry since the number of components is invalid: "));
                             z4 = true;
                             z6 = false;
                         } else {
@@ -1344,7 +1344,7 @@ public final class awb {
                     z5 = z7;
                     s2 = s4;
                     if (z4) {
-                        Log.d("ExifInterface", a.aW(unsignedShort3, "Skip the tag entry since data format is invalid: "));
+                        Log.d("ExifInterface", a.appendInt(unsignedShort3, "Skip the tag entry since data format is invalid: "));
                     }
                     j = 0;
                     z6 = false;
@@ -1354,7 +1354,7 @@ public final class awb {
                     if (j > 4) {
                         int i10 = avyVar.readInt();
                         if (z4) {
-                            Log.d("ExifInterface", a.aW(i10, "seek to data offset: "));
+                            Log.d("ExifInterface", a.appendInt(i10, "seek to data offset: "));
                         }
                         if (this.G == 7) {
                             Object obj2 = ionVar.d;
@@ -1478,12 +1478,12 @@ public final class awb {
             long j4 = i12;
             if (j4 <= 0) {
                 if (z2) {
-                    Log.d("ExifInterface", a.aW(i12, "Stop reading file since a wrong offset may cause an infinite loop: "));
+                    Log.d("ExifInterface", a.appendInt(i12, "Stop reading file since a wrong offset may cause an infinite loop: "));
                 }
             } else {
                 if (set.contains(Integer.valueOf(i12))) {
                     if (z2) {
-                        Log.d("ExifInterface", a.aW(i12, "Stop reading file since re-reading an IFD may cause an infinite loop: "));
+                        Log.d("ExifInterface", a.appendInt(i12, "Stop reading file since re-reading an IFD may cause an infinite loop: "));
                         return;
                     }
                     return;
@@ -1713,7 +1713,7 @@ public final class awb {
         if (str.equals("GPSTimeStamp")) {
             int i2 = avzVarA.a;
             if (i2 != 5 && i2 != 10) {
-                Log.w("ExifInterface", a.aW(i2, "GPS Timestamp format is not rational. format="));
+                Log.w("ExifInterface", a.appendInt(i2, "GPS Timestamp format is not rational. format="));
                 return null;
             }
             awa[] awaVarArr = (awa[]) avzVarA.f(this.j);

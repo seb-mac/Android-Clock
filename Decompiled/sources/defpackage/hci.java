@@ -46,7 +46,7 @@ public final class hci {
                 hchVar = new hch(j, strB, i3, 0L, kgdVar.B());
             } else {
                 if (i3 != 5) {
-                    throw new khn(a.aW(i3, "Unrecognized flag type "));
+                    throw new khn(a.appendInt(i3, "Unrecognized flag type "));
                 }
                 hchVar = new hch(j, strB, i3, 0L, kgdVar.J());
             }

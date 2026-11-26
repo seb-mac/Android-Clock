@@ -39,7 +39,7 @@ public final class jcq extends AbstractExecutorService implements AutoCloseable 
 
     public jcq(int i, ThreadFactory threadFactory, Runnable runnable, Runnable runnable2) {
         if (i <= 0) {
-            throw new IllegalArgumentException(a.aW(i, "numThreads must be positive: "));
+            throw new IllegalArgumentException(a.appendInt(i, "numThreads must be positive: "));
         }
         this.q = Integer.MAX_VALUE;
         this.i = threadFactory;

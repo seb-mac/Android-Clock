@@ -50,7 +50,7 @@ public final class dge extends dgm {
     }
 
     public final StopwatchStateModel aP() {
-        return aO().b();
+        return aO().getStopwatchStateModel();
     }
 
     public final void aQ(View view) {

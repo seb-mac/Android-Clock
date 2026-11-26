@@ -227,7 +227,7 @@ public class StopwatchAppWidgetProvider extends AppWidgetProvider {
                 }
             }
             int iA = csaVar.a(StopwatchAppWidgetProvider.class);
-            StopwatchStateModel dfvVarB = ctqVar.g.b();
+            StopwatchStateModel dfvVarB = ctqVar.g.getStopwatchStateModel();
             Context context2 = ctqVar.b;
             AlarmManager alarmManager = (AlarmManager) context2.getSystemService(AlarmManager.class);
             Intent intentAddFlags = new Intent("com.android.deskclock.UPDATE_APP_WIDGET", null, context2, StopwatchAppWidgetProvider.class).addFlags(268435456);

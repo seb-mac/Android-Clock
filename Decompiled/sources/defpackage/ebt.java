@@ -116,7 +116,7 @@ public final class ebt implements dvd {
             short sD2 = ebrVar.d();
             if (sD2 != 255) {
                 if (Log.isLoggable("DfltImageHeaderParser", 3)) {
-                    Log.d("DfltImageHeaderParser", a.aW(sD2, "Unknown segmentId="));
+                    Log.d("DfltImageHeaderParser", a.appendInt(sD2, "Unknown segmentId="));
                 }
                 return -1;
             }
@@ -150,7 +150,7 @@ public final class ebt implements dvd {
             int iA = ebrVar.a();
             if ((iA & 65496) != 65496 && iA != 19789 && iA != 18761) {
                 if (Log.isLoggable("DfltImageHeaderParser", 3)) {
-                    Log.d("DfltImageHeaderParser", a.aW(iA, "Parser doesn't handle magic number: "));
+                    Log.d("DfltImageHeaderParser", a.appendInt(iA, "Parser doesn't handle magic number: "));
                 }
                 return -1;
             }
@@ -173,7 +173,7 @@ public final class ebt implements dvd {
                     short sJ2 = eif.J(6, byteBuffer);
                     if (sJ2 != 18761) {
                         if (sJ2 != 19789 && Log.isLoggable("DfltImageHeaderParser", 3)) {
-                            Log.d("DfltImageHeaderParser", a.aW(sJ2, "Unknown endianness = "));
+                            Log.d("DfltImageHeaderParser", a.appendInt(sJ2, "Unknown endianness = "));
                         }
                         byteOrder = ByteOrder.BIG_ENDIAN;
                     } else {
@@ -201,19 +201,19 @@ public final class ebt implements dvd {
                                                 return sJ;
                                             }
                                             if (Log.isLoggable("DfltImageHeaderParser", 3)) {
-                                                Log.d("DfltImageHeaderParser", a.aW(274, "Illegal number of bytes for TI tag data tagType="));
+                                                Log.d("DfltImageHeaderParser", a.appendInt(274, "Illegal number of bytes for TI tag data tagType="));
                                             }
                                         } else if (Log.isLoggable("DfltImageHeaderParser", 3)) {
                                             Log.d("DfltImageHeaderParser", a.aV(274, i4, "Illegal tagValueOffset=", " tagType="));
                                         }
                                     } else if (Log.isLoggable("DfltImageHeaderParser", 3)) {
-                                        Log.d("DfltImageHeaderParser", a.aW(sJ4, "Got byte count > 4, not orientation, continuing, formatCode="));
+                                        Log.d("DfltImageHeaderParser", a.appendInt(sJ4, "Got byte count > 4, not orientation, continuing, formatCode="));
                                     }
                                 } else if (Log.isLoggable("DfltImageHeaderParser", 3)) {
                                     Log.d("DfltImageHeaderParser", "Negative tiff component count");
                                 }
                             } else if (Log.isLoggable("DfltImageHeaderParser", 3)) {
-                                Log.d("DfltImageHeaderParser", a.aW(sJ4, "Got invalid format code = "));
+                                Log.d("DfltImageHeaderParser", a.appendInt(sJ4, "Got invalid format code = "));
                             }
                         }
                     }

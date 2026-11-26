@@ -47,7 +47,7 @@ public abstract class asp<MessageType extends asp<MessageType, BuilderType>, Bui
             if (iB >= 0) {
                 return iB;
             }
-            throw new IllegalStateException(a.aW(iB, "serialized size must be non-negative, was "));
+            throw new IllegalStateException(a.appendInt(iB, "serialized size must be non-negative, was "));
         }
         if (g() != Integer.MAX_VALUE) {
             return g();
@@ -124,7 +124,7 @@ public abstract class asp<MessageType extends asp<MessageType, BuilderType>, Bui
 
     final void q(int i) {
         if (i < 0) {
-            throw new IllegalStateException(a.aW(i, "serialized size must be non-negative, was "));
+            throw new IllegalStateException(a.appendInt(i, "serialized size must be non-negative, was "));
         }
         this.memoizedSerializedSize = i | (this.memoizedSerializedSize & Integer.MIN_VALUE);
     }

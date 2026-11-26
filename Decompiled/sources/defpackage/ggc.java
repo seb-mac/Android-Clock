@@ -6,7 +6,7 @@ public final class ggc extends Exception {
     public final int a;
 
     public ggc(int i) {
-        super(a.aW(i, "HTTP Error Code: "));
+        super(a.appendInt(i, "HTTP Error Code: "));
         this.a = i;
     }
 }

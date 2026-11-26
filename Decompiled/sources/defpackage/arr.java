@@ -26,7 +26,7 @@ final class arr extends aru {
             return this.a[i];
         }
         if (i < 0) {
-            throw new ArrayIndexOutOfBoundsException(a.aW(i, "Index < 0: "));
+            throw new ArrayIndexOutOfBoundsException(a.appendInt(i, "Index < 0: "));
         }
         throw new ArrayIndexOutOfBoundsException(a.aV(i2, i, "Index > length: ", ", "));
     }

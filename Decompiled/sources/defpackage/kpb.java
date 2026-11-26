@@ -36,7 +36,7 @@ final class kpb implements knw {
             char c = (char) iF;
             int i5 = i4 & 32767;
             if (i5 != 3) {
-                throw new ProtocolException(a.aW(i5, "version != 3: "));
+                throw new ProtocolException(a.appendInt(i5, "version != 3: "));
             }
             knv knvVar = null;
             switch (c) {

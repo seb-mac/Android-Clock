@@ -201,7 +201,7 @@ public abstract class kgy<MessageT extends kgy<MessageT, BuilderT>, BuilderT ext
 
     final void H(int i) {
         if (i < 0) {
-            throw new IllegalStateException(a.aW(i, "serialized size must be non-negative, was "));
+            throw new IllegalStateException(a.appendInt(i, "serialized size must be non-negative, was "));
         }
         this.b = i | (this.b & LinearLayoutManager.INVALID_OFFSET);
     }
@@ -229,7 +229,7 @@ public abstract class kgy<MessageT extends kgy<MessageT, BuilderT>, BuilderT ext
             if (iB >= 0) {
                 return iB;
             }
-            throw new IllegalStateException(a.aW(iB, "serialized size must be non-negative, was "));
+            throw new IllegalStateException(a.appendInt(iB, "serialized size must be non-negative, was "));
         }
         if (i() != Integer.MAX_VALUE) {
             return i();

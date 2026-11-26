@@ -11,7 +11,7 @@ public abstract class jaw {
             throw new IllegalArgumentException("format options cannot be null");
         }
         if (i < 0) {
-            throw new IllegalArgumentException(a.aW(i, "invalid index: "));
+            throw new IllegalArgumentException(a.appendInt(i, "invalid index: "));
         }
         this.a = i;
         this.b = iyjVar;

@@ -69,7 +69,7 @@ public final class wi implements Cloneable {
 
     public final long c(int i) {
         if (i < 0 || i >= this.d) {
-            uj.b(a.aW(i, "Expected index to be within 0..size()-1, but was "));
+            uj.b(a.appendInt(i, "Expected index to be within 0..size()-1, but was "));
         }
         if (this.a) {
             int i2 = this.d;
@@ -113,7 +113,7 @@ public final class wi implements Cloneable {
 
     public final Object e(int i) {
         if (i < 0 || i >= this.d) {
-            uj.b(a.aW(i, "Expected index to be within 0..size()-1, but was "));
+            uj.b(a.appendInt(i, "Expected index to be within 0..size()-1, but was "));
         }
         if (this.a) {
             int i2 = this.d;

@@ -36,7 +36,7 @@ final class isn extends AbstractMap implements Serializable {
         objectInputStream.defaultReadObject();
         int i = objectInputStream.readInt();
         if (i < 0) {
-            throw new InvalidObjectException(a.aW(i, "Invalid size: "));
+            throw new InvalidObjectException(a.appendInt(i, "Invalid size: "));
         }
         l(i);
         for (int i2 = 0; i2 < i; i2++) {

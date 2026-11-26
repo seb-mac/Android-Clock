@@ -97,7 +97,7 @@ public final /* synthetic */ class bdm extends lxi implements lws {
                 ArrayList arrayList = new ArrayList(lhm.E(listC, 10));
                 Iterator it = listC.iterator();
                 while (it.hasNext()) {
-                    arrayList.add((StopwatchLap) ckbVar3.g().a(instant3, (dft) it.next()));
+                    arrayList.add((StopwatchLap) ckbVar3.g().a(instant3, (Lap) it.next()));
                 }
                 sy syVar = new sy((String) ckbVar3.f().f, ckbVar3.f().b(dfvVar));
                 syVar.s(ckbVar3.f().c(dfvVar));
@@ -110,16 +110,16 @@ public final /* synthetic */ class bdm extends lxi implements lws {
                 return new Stopwatch(syVar);
             case ard.STRING_FIELD_NUMBER /* 5 */:
                 Instant instant4 = (Instant) obj;
-                dft dftVar = (dft) obj2;
+                Lap dftVar = (Lap) obj2;
                 lxj.d(instant4, "p0");
                 lxj.d(dftVar, "p1");
                 ckb ckbVar4 = (ckb) this.c;
                 sz szVar = new sz((String) ckbVar4.g().f, ckbVar4.g().b(dftVar));
                 szVar.s(ckbVar4.g().c(dftVar));
                 szVar.l(instant4.toEpochMilli());
-                szVar.a(dftVar.a);
-                szVar.c = dftVar.b;
-                szVar.d = dftVar.c;
+                szVar.a(dftVar.lapNumber);
+                szVar.c = dftVar.lapTime;
+                szVar.d = dftVar.accumulatedTime;
                 return new StopwatchLap(szVar);
             case ard.STRING_SET_FIELD_NUMBER /* 6 */:
                 Instant instant5 = (Instant) obj;
@@ -206,7 +206,7 @@ public final /* synthetic */ class bdm extends lxi implements lws {
                 ArrayList arrayList2 = new ArrayList(lhm.E(listC2, 10));
                 Iterator it2 = listC2.iterator();
                 while (it2.hasNext()) {
-                    arrayList2.add((G3StopwatchLap) ckdVar3.g().a(instant8, (dft) it2.next()));
+                    arrayList2.add((G3StopwatchLap) ckdVar3.g().a(instant8, (Lap) it2.next()));
                 }
                 sk skVar = new sk((String) ckdVar3.f().f, ckdVar3.f().b(dfvVar2));
                 iwy iwyVar3 = cjz.a;
@@ -221,7 +221,7 @@ public final /* synthetic */ class bdm extends lxi implements lws {
                 return new G3Stopwatch(skVar);
             case 10:
                 Instant instant9 = (Instant) obj;
-                dft dftVar2 = (dft) obj2;
+                Lap dftVar2 = (Lap) obj2;
                 lxj.d(instant9, "p0");
                 lxj.d(dftVar2, "p1");
                 ckd ckdVar4 = (ckd) this.c;
@@ -230,9 +230,9 @@ public final /* synthetic */ class bdm extends lxi implements lws {
                 slVar.a = cjz.a();
                 slVar.s(ckdVar4.g().c(dftVar2));
                 slVar.l(instant9.toEpochMilli());
-                slVar.a(dftVar2.a);
-                slVar.c = dftVar2.b;
-                slVar.d = dftVar2.c;
+                slVar.a(dftVar2.lapNumber);
+                slVar.c = dftVar2.lapTime;
+                slVar.d = dftVar2.accumulatedTime;
                 return new G3StopwatchLap(slVar);
             default:
                 Instant instant10 = (Instant) obj;

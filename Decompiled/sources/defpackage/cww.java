@@ -414,7 +414,7 @@ public final class cww extends ctw {
             bool = false;
         } else {
             if (i != 2) {
-                throw new IllegalStateException(a.aW(i, "Illegal visibility value: "));
+                throw new IllegalStateException(a.appendInt(i, "Illegal visibility value: "));
             }
             bool = true;
         }

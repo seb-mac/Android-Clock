@@ -84,7 +84,7 @@ public final class fds extends evl {
                 strAW = "Association to watch terminated";
                 break;
             default:
-                strAW = a.aW(i, "Unrecognized state value: ");
+                strAW = a.appendInt(i, "Unrecognized state value: ");
                 break;
         }
         return String.format("ConnectionStateEvent: address: %s, state: %s", this.b, strAW);

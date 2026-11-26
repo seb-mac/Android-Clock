@@ -80,7 +80,7 @@ public final class fcx extends ffl {
                     }
                 }
             }
-            Log.e("WearableLS", a.aW(callingUid, "Caller is not GooglePlayServices; caller UID: "));
+            Log.e("WearableLS", a.appendInt(callingUid, "Caller is not GooglePlayServices; caller UID: "));
             return false;
         }
         this.b = callingUid;

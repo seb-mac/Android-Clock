@@ -159,7 +159,7 @@ public abstract class lgl implements IBinder.DeathRecipient {
                 }
                 return true;
             } catch (RuntimeException e3) {
-                lgl.g.logp(Level.SEVERE, "io.grpc.binder.internal.BinderTransport", "handleTransaction", a.aW(i2, "Terminating transport for uncaught Exception in transaction "), (Throwable) e3);
+                lgl.g.logp(Level.SEVERE, "io.grpc.binder.internal.BinderTransport", "handleTransaction", a.appendInt(i2, "Terminating transport for uncaught Exception in transaction "), (Throwable) e3);
                 synchronized (lglVar) {
                     lglVar.v(lfm.j.d(e3), true);
                     return false;

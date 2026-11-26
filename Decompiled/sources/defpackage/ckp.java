@@ -13,15 +13,15 @@ public final class ckp {
     private static final iwy a = iwy.h("com/android/deskclock/appwidgets/data/WidgetDAO");
 
     public static String a(int i) {
-        return a.aW(i, "analog_clock_face_");
+        return a.appendInt(i, "analog_clock_face_");
     }
 
     public static String b(int i) {
-        return a.aW(i, "digital_widget_style_");
+        return a.appendInt(i, "digital_widget_style_");
     }
 
     public static String c(int i) {
-        return a.aW(i, "pending_remap_");
+        return a.appendInt(i, "pending_remap_");
     }
 
     public static final void d(SharedPreferences.Editor editor, Map map, List list) {
@@ -61,7 +61,7 @@ public final class ckp {
     }
 
     public static final boolean j(SharedPreferences sharedPreferences, int i, int i2, Map map, List list) {
-        String strAW = a.aW(i, "restored_digital_widget_style_");
+        String strAW = a.appendInt(i, "restored_digital_widget_style_");
         if (sharedPreferences.contains(strAW)) {
             map.put(b(i2), Integer.valueOf(sharedPreferences.getInt(strAW, -1)));
             list.add(strAW);
@@ -70,8 +70,8 @@ public final class ckp {
             list.add(a(i2));
             return true;
         }
-        if (sharedPreferences.contains(a.aW(i, "restored_analog_clock_face_"))) {
-            String strAW2 = a.aW(i, "restored_analog_clock_face_");
+        if (sharedPreferences.contains(a.appendInt(i, "restored_analog_clock_face_"))) {
+            String strAW2 = a.appendInt(i, "restored_analog_clock_face_");
             map.put(a(i2), Integer.valueOf(sharedPreferences.getInt(strAW2, -1)));
             list.add(strAW2);
             list.add(a(i));

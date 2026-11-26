@@ -83,9 +83,9 @@ public final class acp {
                 }
             }
         } catch (IOException e) {
-            Log.e("ConstraintLayoutStates", a.aW(i, "Error parsing resource: "), e);
+            Log.e("ConstraintLayoutStates", a.appendInt(i, "Error parsing resource: "), e);
         } catch (XmlPullParserException e2) {
-            Log.e("ConstraintLayoutStates", a.aW(i, "Error parsing resource: "), e2);
+            Log.e("ConstraintLayoutStates", a.appendInt(i, "Error parsing resource: "), e2);
         }
     }
 }

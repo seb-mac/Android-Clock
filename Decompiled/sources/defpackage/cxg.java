@@ -83,7 +83,7 @@ public final class cxg extends ctw {
         int resourceId = typedArrayObtainTypedArray.getResourceId(size - 1, 0);
         typedArrayObtainTypedArray.recycle();
         if (resourceId == 0) {
-            throw new IllegalStateException(a.aW(size, "Unexpected number of available music providers: "));
+            throw new IllegalStateException(a.appendInt(size, "Unexpected number of available music providers: "));
         }
         Object[] objArr = new Object[size];
         for (int i = 0; i < size; i++) {

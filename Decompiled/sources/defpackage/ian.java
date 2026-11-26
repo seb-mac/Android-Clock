@@ -485,7 +485,7 @@ public class ian {
         if (length == 4) {
             return new PathInterpolator(a(strArrSplit, 0), a(strArrSplit, 1), a(strArrSplit, 2), a(strArrSplit, 3));
         }
-        throw new IllegalArgumentException(a.aW(length, "Motion easing theme attribute must have 4 control points if using bezier curve format; instead got: "));
+        throw new IllegalArgumentException(a.appendInt(length, "Motion easing theme attribute must have 4 control points if using bezier curve format; instead got: "));
     }
 
     public static avm m(Context context, int i) {

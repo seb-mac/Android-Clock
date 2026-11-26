@@ -14,7 +14,7 @@ public final class lyu extends lyv implements Iterator, lva, lxu {
     private final Throwable c() {
         int i = this.b;
         if (i != 4) {
-            return i != 5 ? new IllegalStateException(a.aW(i, "Unexpected state of the iterator: ")) : new IllegalStateException("Iterator has failed.");
+            return i != 5 ? new IllegalStateException(a.appendInt(i, "Unexpected state of the iterator: ")) : new IllegalStateException("Iterator has failed.");
         }
         return new NoSuchElementException();
     }

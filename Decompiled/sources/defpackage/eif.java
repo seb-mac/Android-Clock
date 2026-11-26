@@ -1113,7 +1113,7 @@ public class eif {
             case 11:
             case 12:
             default:
-                return a.aW(i, "unknown status code: ");
+                return a.appendInt(i, "unknown status code: ");
             case 2:
                 return "SERVICE_VERSION_UPDATE_REQUIRED";
             case ard.INTEGER_FIELD_NUMBER /* 3 */:

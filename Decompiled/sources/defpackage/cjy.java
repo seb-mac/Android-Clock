@@ -20,17 +20,17 @@ public final /* synthetic */ class cjy implements lwo {
     public final Object a(Object obj) {
         switch (this.a) {
             case 0:
-                dft dftVar = (dft) obj;
+                Lap dftVar = (Lap) obj;
                 iwy iwyVar = cjz.a;
                 lxj.d(dftVar, "lap");
                 Uri uriK = vc.k(dftVar);
                 lxj.c(uriK, "getStopwatchLapUri(...)");
                 return uriK;
             case 1:
-                dft dftVar2 = (dft) obj;
+                Lap dftVar2 = (Lap) obj;
                 iwy iwyVar2 = cjz.a;
                 lxj.d(dftVar2, "lap");
-                return String.valueOf(dftVar2.a);
+                return String.valueOf(dftVar2.lapNumber);
             case 2:
                 cua cuaVar = (cua) obj;
                 iwy iwyVar3 = cjz.a;

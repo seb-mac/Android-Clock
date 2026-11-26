@@ -62,7 +62,7 @@ public final /* synthetic */ class cjx implements lws {
         }
         if (i == 2) {
             Instant instant3 = (Instant) obj;
-            dft dftVar = (dft) obj2;
+            Lap dftVar = (Lap) obj2;
             iwy iwyVar3 = cjz.a;
             lxj.d(instant3, "time");
             if (dftVar == null) {

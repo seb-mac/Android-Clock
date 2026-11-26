@@ -338,7 +338,7 @@ public class ihj {
         if (i2 >= 0) {
             return ipj.k("%s (%s) must not be greater than size (%s)", str, Integer.valueOf(i), Integer.valueOf(i2));
         }
-        throw new IllegalArgumentException(a.aW(i2, "negative size: "));
+        throw new IllegalArgumentException(a.appendInt(i2, "negative size: "));
     }
 
     private static void Y(String str) {
@@ -504,7 +504,7 @@ public class ihj {
                 strK = ipj.k("%s (%s) must not be negative", "index", Integer.valueOf(i));
             } else {
                 if (i2 < 0) {
-                    throw new IllegalArgumentException(a.aW(i2, "negative size: "));
+                    throw new IllegalArgumentException(a.appendInt(i2, "negative size: "));
                 }
                 strK = ipj.k("%s (%s) must be less than size (%s)", "index", Integer.valueOf(i), Integer.valueOf(i2));
             }

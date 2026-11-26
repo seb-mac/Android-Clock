@@ -98,11 +98,11 @@ public class uc {
                 try {
                     short s = dataInputStream.readShort();
                     if (s != -21521) {
-                        throw new IllegalStateException(a.aW(s, "Magic number doesn't match: "));
+                        throw new IllegalStateException(a.appendInt(s, "Magic number doesn't match: "));
                     }
                     short s2 = dataInputStream.readShort();
                     if (s2 != 1) {
-                        throw new IllegalStateException(a.aW(s2, "Unsupported version number: "));
+                        throw new IllegalStateException(a.appendInt(s2, "Unsupported version number: "));
                     }
                     int i3 = dataInputStream.readInt();
                     for (int i4 = 0; i4 < i3; i4++) {
@@ -167,7 +167,7 @@ public class uc {
                             utf = (Serializable) dArr;
                         } else {
                             if (b != 14) {
-                                throw new IllegalStateException(a.aW(b, "Unsupported type "));
+                                throw new IllegalStateException(a.appendInt(b, "Unsupported type "));
                             }
                             int i17 = dataInputStream.readInt();
                             String[] strArr = new String[i17];

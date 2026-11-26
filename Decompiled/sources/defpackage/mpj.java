@@ -116,7 +116,7 @@ public final class mpj implements Cloneable, ByteChannel, mpl, mpk {
     public final void L(String str, int i, int i2) {
         lxj.d(str, "string");
         if (i < 0) {
-            throw new IllegalArgumentException(a.aW(i, "beginIndex < 0: "));
+            throw new IllegalArgumentException(a.appendInt(i, "beginIndex < 0: "));
         }
         if (i2 < i) {
             throw new IllegalArgumentException(a.aV(i, i2, "endIndex < beginIndex: ", " < "));

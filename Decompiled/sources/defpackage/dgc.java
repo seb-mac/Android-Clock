@@ -96,7 +96,7 @@ public final class dgc extends dgl {
     }
 
     public final StopwatchStateModel e() {
-        return a().b();
+        return a().getStopwatchStateModel();
     }
 
     public final void f() {
@@ -146,11 +146,11 @@ public final class dgc extends dgl {
         if (e().isReset() || a().c().size() <= 0) {
             arrayList = new ArrayList();
         } else {
-            List<dft> listC = a().c();
+            List<Lap> listC = a().c();
             ArrayList arrayList2 = new ArrayList();
             arrayList2.add(new dgo(listC.size() + 1));
             lxj.a(listC);
-            for (dft dftVar : listC) {
+            for (Lap dftVar : listC) {
                 lxj.a(dftVar);
                 arrayList2.add(new dgp(dftVar));
             }

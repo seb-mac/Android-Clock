@@ -28,7 +28,7 @@ final class iel implements gs {
                     dktVar.x(dkrVar, mlw.TAP);
                 }
             }
-            throw new IllegalArgumentException(a.aW(i, "Unable to find tab for id: "));
+            throw new IllegalArgumentException(a.appendInt(i, "Unable to find tab for id: "));
         }
         return false;
     }

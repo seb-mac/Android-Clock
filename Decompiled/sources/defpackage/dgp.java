@@ -3,13 +3,13 @@ package defpackage;
 /* JADX INFO: compiled from: PG */
 /* JADX INFO: loaded from: classes2.dex */
 public final class dgp implements dgq {
-    public final dft a;
+    public final Lap a;
     private final String b;
 
-    public dgp(dft dftVar) {
+    public dgp(Lap dftVar) {
         lxj.d(dftVar, "lap");
         this.a = dftVar;
-        this.b = "lap_" + dftVar.a;
+        this.b = "lap_" + dftVar.lapNumber;
     }
 
     @Override // defpackage.dgq

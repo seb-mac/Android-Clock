@@ -88,7 +88,7 @@ public final class TimerSetupView extends dhb implements View.OnClickListener, V
         if (i == R.id.timer_setup_digit_9) {
             return 9;
         }
-        throw new IllegalArgumentException(a.aW(i, "Invalid id: "));
+        throw new IllegalArgumentException(a.appendInt(i, "Invalid id: "));
     }
 
     private final void m(int i) {

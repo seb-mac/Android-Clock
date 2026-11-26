@@ -68,7 +68,7 @@ final class kot implements knw {
                 int iB2 = koqVar.b(i3, 31);
                 koqVar.d = iB2;
                 if (iB2 < 0 || iB2 > koqVar.c) {
-                    throw new IOException(a.aW(iB2, "Invalid dynamic table size update "));
+                    throw new IOException(a.appendInt(iB2, "Invalid dynamic table size update "));
                 }
                 koqVar.e();
             } else if (i3 == 16 || i3 == 0) {

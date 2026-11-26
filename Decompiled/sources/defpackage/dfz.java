@@ -48,7 +48,7 @@ public final class dfz extends dgk {
         ((Button) aki.b(view, R.id.start_stop_button)).setOnClickListener(new dfy(this, 0));
         ((Button) aki.b(view, R.id.lap_button)).setOnClickListener(new dfy(this, 2));
         ((Button) aki.b(view, R.id.reset_button)).setOnClickListener(new dfy(this, 3));
-        StopwatchStateModel dfvVarB = a().b();
+        StopwatchStateModel dfvVarB = a().getStopwatchStateModel();
         lxj.c(dfvVarB, "getStopwatch(...)");
         f(view, dfvVarB);
         a().d(this.d);
@@ -61,7 +61,7 @@ public final class dfz extends dgk {
     }
 
     public final StopwatchStateModel e() {
-        StopwatchStateModel dfvVarB = a().b();
+        StopwatchStateModel dfvVarB = a().getStopwatchStateModel();
         lxj.c(dfvVarB, "getStopwatch(...)");
         return dfvVarB;
     }

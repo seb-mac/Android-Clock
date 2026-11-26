@@ -370,7 +370,7 @@ public final class lqv {
         if (i == R.id.timer_setup_digit_9) {
             return 9;
         }
-        throw new IllegalStateException(a.aW(i, "Invalid digit id: "));
+        throw new IllegalStateException(a.appendInt(i, "Invalid digit id: "));
     }
 
     public static String F(Resources resources, int i) {

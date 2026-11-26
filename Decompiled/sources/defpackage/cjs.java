@@ -26,6 +26,6 @@ final class cjs extends cfe {
         cjt cjtVar = new cjt(3, null, ivs.a);
         cjv cjvVar = this.a;
         cjw cjwVar = cjvVar.d;
-        cjvVar.u(cjtVar, new cjt(1, cjwVar.a(), (itt) obj), new cjt(1, cjwVar.c(), cjvVar.e.h()), new cjt(1, cjwVar.b(), itt.q(cjvVar.f.b())));
+        cjvVar.u(cjtVar, new cjt(1, cjwVar.a(), (itt) obj), new cjt(1, cjwVar.c(), cjvVar.e.h()), new cjt(1, cjwVar.b(), itt.q(cjvVar.f.getStopwatchStateModel())));
     }
 }

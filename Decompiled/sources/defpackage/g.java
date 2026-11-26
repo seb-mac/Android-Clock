@@ -111,7 +111,7 @@ public class g {
         SharedPreferences.Editor editorEdit = sharedPreferences.edit();
         int i = sharedPreferences.getInt("sw_lap_num", 0);
         for (int i2 = 1; i2 <= i; i2++) {
-            editorEdit.remove(a.aW(i2, "sw_lap_time_"));
+            editorEdit.remove(a.appendInt(i2, "sw_lap_time_"));
         }
         editorEdit.remove("sw_lap_num");
         editorEdit.apply();

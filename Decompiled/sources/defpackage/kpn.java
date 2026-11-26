@@ -51,7 +51,7 @@ public final class kpn implements kps {
         int i;
         int i2 = this.d;
         if (i2 != 1 && i2 != 3) {
-            throw new IllegalStateException(a.aW(i2, "state: "));
+            throw new IllegalStateException(a.appendInt(i2, "state: "));
         }
         do {
             try {
@@ -86,7 +86,7 @@ public final class kpn implements kps {
             kpr kprVar = this.e;
             int i = this.d;
             if (i != 4) {
-                throw new IllegalStateException(a.aW(i, "state: "));
+                throw new IllegalStateException(a.appendInt(i, "state: "));
             }
             this.d = 5;
             kpmVar = new kpj(this, kprVar);
@@ -97,7 +97,7 @@ public final class kpn implements kps {
             } else {
                 int i2 = this.d;
                 if (i2 != 4) {
-                    throw new IllegalStateException(a.aW(i2, "state: "));
+                    throw new IllegalStateException(a.appendInt(i2, "state: "));
                 }
                 kpz kpzVar = this.a;
                 if (kpzVar == null) {
@@ -117,13 +117,13 @@ public final class kpn implements kps {
         int i = this.d;
         if (zEqualsIgnoreCase) {
             if (i != 1) {
-                throw new IllegalStateException(a.aW(i, "state: "));
+                throw new IllegalStateException(a.appendInt(i, "state: "));
             }
             this.d = 2;
             return new kpi(this);
         }
         if (i != 1) {
-            throw new IllegalStateException(a.aW(i, "state: "));
+            throw new IllegalStateException(a.appendInt(i, "state: "));
         }
         this.d = 2;
         return new kpk(this, j);
@@ -132,7 +132,7 @@ public final class kpn implements kps {
     public final mqe f(long j) {
         int i = this.d;
         if (i != 4) {
-            throw new IllegalStateException(a.aW(i, "state: "));
+            throw new IllegalStateException(a.appendInt(i, "state: "));
         }
         this.d = 5;
         return new kpl(this, j);
@@ -151,7 +151,7 @@ public final class kpn implements kps {
     public final void i(kmy kmyVar, String str) {
         int i = this.d;
         if (i != 0) {
-            throw new IllegalStateException(a.aW(i, "state: "));
+            throw new IllegalStateException(a.appendInt(i, "state: "));
         }
         mpk mpkVar = this.c;
         mpkVar.Q(str);

@@ -36,10 +36,10 @@ public final class cdl extends cfe {
         czbVar.b((mjw) kgtVarK.m());
         Set<String> queryParameterNames = uri.getQueryParameterNames();
         if (queryParameterNames.contains("hour") && ((iAn2 = eif.an(uri, "hour", -1)) < 0 || iAn2 > 23)) {
-            throw new IllegalArgumentException(a.aW(iAn2, "Invalid hour: "));
+            throw new IllegalArgumentException(a.appendInt(iAn2, "Invalid hour: "));
         }
         if (queryParameterNames.contains("minute") && ((iAn = eif.an(uri, "minute", -1)) < 0 || iAn > 59)) {
-            throw new IllegalArgumentException(a.aW(iAn, "Invalid minute: "));
+            throw new IllegalArgumentException(a.appendInt(iAn, "Invalid minute: "));
         }
         adf.w(uri, null, null);
         String strAo = eif.ao(uri, "workflowLabel", null);

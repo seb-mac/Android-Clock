@@ -50,7 +50,7 @@ public final class fkf {
         }
         int iA = fkc.a(i);
         if (iA <= 0 || iA > 10) {
-            throw new IllegalArgumentException(a.aW(iA, "Invalid java priority: "));
+            throw new IllegalArgumentException(a.appendInt(iA, "Invalid java priority: "));
         }
         return fkc.a[iA - 1];
     }

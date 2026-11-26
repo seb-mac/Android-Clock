@@ -77,7 +77,7 @@ public final class cmd extends cmq implements cof, dkh, cqa, dko {
             } else {
                 if (i != 6) {
                     if (i != 7) {
-                        throw new IllegalArgumentException(a.aW(i, "Unexpected request code: "));
+                        throw new IllegalArgumentException(a.appendInt(i, "Unexpected request code: "));
                     }
                     this.as.h();
                     return;

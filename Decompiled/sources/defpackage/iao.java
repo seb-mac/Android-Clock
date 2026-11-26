@@ -207,7 +207,7 @@ public class iao {
 
     public static Object U(int i) {
         if (i < 2 || i > 1073741824 || Integer.highestOneBit(i) != i) {
-            throw new IllegalArgumentException(a.aW(i, "must be power of 2 between 2^1 and 2^30: "));
+            throw new IllegalArgumentException(a.appendInt(i, "must be power of 2 between 2^1 and 2^30: "));
         }
         if (i <= 256) {
             return new byte[i];
@@ -304,7 +304,7 @@ public class iao {
 
     public static void k(Object obj, int i) {
         if (obj == null) {
-            throw new NullPointerException(a.aW(i, "at index "));
+            throw new NullPointerException(a.appendInt(i, "at index "));
         }
     }
 

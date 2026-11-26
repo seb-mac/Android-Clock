@@ -33,7 +33,7 @@ public final class fdn extends evl {
         if (i == 3) {
             fceVar.j(this.a);
         } else if (i != 4) {
-            Log.w("ChannelEventParcelable", a.aW(i, "Unknown type: "));
+            Log.w("ChannelEventParcelable", a.appendInt(i, "Unknown type: "));
         } else {
             fceVar.k(this.a);
         }

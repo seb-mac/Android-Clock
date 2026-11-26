@@ -75,7 +75,7 @@ public final class lfm {
                 return (lfm) list.get(i2);
             }
         }
-        return d.e(a.aW(i2, "Unknown code "));
+        return d.e(a.appendInt(i2, "Unknown code "));
     }
 
     public static lfm c(Throwable th) {

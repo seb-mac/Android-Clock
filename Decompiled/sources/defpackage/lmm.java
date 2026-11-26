@@ -33,7 +33,7 @@ final class lmm extends FilterInputStream implements InputStreamRetargetInterfac
     private final void b() {
         int i = this.a;
         if (this.d > i) {
-            throw new lfp(lfm.g.e(a.aW(i, "Decompressed gRPC message exceeds maximum size ")));
+            throw new lfp(lfm.g.e(a.appendInt(i, "Decompressed gRPC message exceeds maximum size ")));
         }
     }
 

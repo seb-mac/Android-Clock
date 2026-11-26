@@ -39,7 +39,7 @@ public final class dtc {
         long jB4 = gzn.b(dtdVar);
         int iA = gzn.a(dtdVar);
         if (iA < 0) {
-            throw new IOException(a.aW(iA, "readHeaderList size="));
+            throw new IOException(a.appendInt(iA, "readHeaderList size="));
         }
         List arrayList = iA == 0 ? Collections.EMPTY_LIST : new ArrayList();
         for (int i = 0; i < iA; i++) {

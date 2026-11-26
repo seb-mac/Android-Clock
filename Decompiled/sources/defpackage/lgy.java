@@ -23,10 +23,10 @@ public final class lgy extends Binder {
                 if ((i2 & 1) != 0) {
                     return lgxVar.a(i, parcel);
                 }
-                b.logp(Level.WARNING, "io.grpc.binder.internal.LeakSafeOneWayBinder", "onTransact", a.aW(i2, "ignoring non-oneway transaction. flags="));
+                b.logp(Level.WARNING, "io.grpc.binder.internal.LeakSafeOneWayBinder", "onTransact", a.appendInt(i2, "ignoring non-oneway transaction. flags="));
                 return false;
             } catch (RuntimeException e) {
-                b.logp(Level.WARNING, "io.grpc.binder.internal.LeakSafeOneWayBinder", "onTransact", a.aW(i, "failure sending transaction "), (Throwable) e);
+                b.logp(Level.WARNING, "io.grpc.binder.internal.LeakSafeOneWayBinder", "onTransact", a.appendInt(i, "failure sending transaction "), (Throwable) e);
             }
         }
         return false;

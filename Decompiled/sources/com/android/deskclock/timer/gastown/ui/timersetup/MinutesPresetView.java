@@ -35,7 +35,7 @@ public final class MinutesPresetView extends diz {
             lyf lyfVar = new lyf(1, 60);
             int i3 = lyfVar.a;
             if (i2 > lyfVar.b || i3 > i2) {
-                throw new IllegalArgumentException(a.aW(i2, "Invalid minute value: "));
+                throw new IllegalArgumentException(a.appendInt(i2, "Invalid minute value: "));
             }
             jke jkeVar = new jke(i2);
             this.h = jkeVar;

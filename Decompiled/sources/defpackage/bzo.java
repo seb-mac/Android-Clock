@@ -379,7 +379,7 @@ public final class bzo {
                                     i10 = 1;
                                 } else {
                                     if (iB6 != 2) {
-                                        throw new IllegalArgumentException(a.aW(iB6, "Unknown trim path type "));
+                                        throw new IllegalArgumentException(a.appendInt(iB6, "Unknown trim path type "));
                                     }
                                     i10 = 2;
                                 }

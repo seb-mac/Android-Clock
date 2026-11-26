@@ -1,26 +1,38 @@
 package defpackage;
 
-import android.content.Context;
-
 /* JADX INFO: compiled from: PG */
 /* JADX INFO: loaded from: classes2.dex */
-public final class lap implements lao {
-    private static final hdl a;
-    private static final hdl b;
+public final class Lap {
+    public final int lapNumber;
+    public final long lapTime;
+    public final long accumulatedTime;
 
-    static {
-        kqo kqoVar = kzo.b;
-        a = kqoVar.l("45359255", false);
-        b = kqoVar.l("36", true);
+    public Lap(int lapNumber, long lapTime, long accumulatedTime) {
+        this.lapNumber = lapNumber;
+        this.lapTime = lapTime;
+        this.accumulatedTime = accumulatedTime;
     }
 
-    @Override // defpackage.lao
-    public final boolean a(Context context) {
-        return ((Boolean) a.cz(context)).booleanValue();
+    public static final boolean a(long j) {
+        return j >= 0 && j / 3600000 <= 2147483647L;
     }
 
-    @Override // defpackage.lao
-    public final boolean b(Context context) {
-        return ((Boolean) b.cz(context)).booleanValue();
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof Lap)) {
+            return false;
+        }
+        Lap dftVar = (Lap) obj;
+        return this.lapNumber == dftVar.lapNumber && this.lapTime == dftVar.lapTime && this.accumulatedTime == dftVar.accumulatedTime;
+    }
+
+    public final int hashCode() {
+        return (((this.lapNumber * 31) + (int)(this.lapTime ^ (this.lapTime >>> 32))) * 31) + (int)(this.accumulatedTime ^ (this.accumulatedTime >>> 32));
+    }
+
+    public final String toString() {
+        return "Lap(lapNumber=" + this.lapNumber + ", lapTime=" + this.lapTime + ", accumulatedTime=" + this.accumulatedTime + ")";
     }
 }

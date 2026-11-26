@@ -119,7 +119,7 @@ public final class ltz implements List, Serializable, RandomAccess, j$.util.List
         if (i == 0) {
             return lty.a;
         }
-        throw new IndexOutOfBoundsException(a.aW(i, "Index: "));
+        throw new IndexOutOfBoundsException(a.appendInt(i, "Index: "));
     }
 
     @Override // java.util.Collection, j$.util.Collection

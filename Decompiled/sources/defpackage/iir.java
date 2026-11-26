@@ -909,7 +909,7 @@ public class iir<S extends iir<S, L, T>, L extends esg, T extends lpv> extends V
                     iMin = iT;
                 }
             } else if (i != 2) {
-                throw new IllegalStateException(a.aW(i, "Unexpected tickVisibilityMode: "));
+                throw new IllegalStateException(a.appendInt(i, "Unexpected tickVisibilityMode: "));
             }
         } else {
             iMin = Math.min(t(), u());
@@ -1580,7 +1580,7 @@ public class iir<S extends iir<S, L, T>, L extends esg, T extends lpv> extends V
             return;
         }
         if (i != 3) {
-            throw new IllegalArgumentException(a.aW(i, "Unexpected labelBehavior: "));
+            throw new IllegalArgumentException(a.appendInt(i, "Unexpected labelBehavior: "));
         }
         if (isEnabled()) {
             Rect rect = new Rect();

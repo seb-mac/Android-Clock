@@ -29,7 +29,7 @@ public class hm extends gu implements SubMenu {
         if (i == 0) {
             return null;
         }
-        return a.aW(i, "android:menu:actionviewstates:");
+        return a.appendInt(i, "android:menu:actionviewstates:");
     }
 
     @Override // android.view.SubMenu

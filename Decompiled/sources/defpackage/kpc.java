@@ -70,7 +70,7 @@ final class kpc implements knx {
         }
         long j = i2;
         if (j > 16777215) {
-            throw new IllegalArgumentException(a.aW(i2, "FRAME_TOO_LARGE max size is 16Mib: "));
+            throw new IllegalArgumentException(a.appendInt(i2, "FRAME_TOO_LARGE max size is 16Mib: "));
         }
         mpk mpkVar = this.a;
         mpkVar.I(i & Integer.MAX_VALUE);

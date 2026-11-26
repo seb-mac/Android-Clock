@@ -25,7 +25,7 @@ public final class jbe {
     public static StackTraceElement a(Class cls, int i) {
         jam.i(cls, "target");
         if (i < 0) {
-            throw new IllegalArgumentException(a.aW(i, "skip count cannot be negative: "));
+            throw new IllegalArgumentException(a.appendInt(i, "skip count cannot be negative: "));
         }
         return b.a(cls, i + 1);
     }

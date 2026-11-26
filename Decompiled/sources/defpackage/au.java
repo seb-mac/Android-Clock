@@ -217,14 +217,14 @@ public class au extends bg implements DialogInterface.OnCancelListener, DialogIn
             cc ccVarG = G();
             int i = this.an;
             if (i < 0) {
-                throw new IllegalArgumentException(a.aW(i, "Bad id: "));
+                throw new IllegalArgumentException(a.appendInt(i, "Bad id: "));
             }
             ccVarG.ag(i, 1);
         } else {
             cc ccVarG2 = G();
             int i2 = this.an;
             if (i2 < 0) {
-                throw new IllegalArgumentException(a.aW(i2, "Bad id: "));
+                throw new IllegalArgumentException(a.appendInt(i2, "Bad id: "));
             }
             ccVarG2.H(new ca(ccVarG2, i2), z);
         }

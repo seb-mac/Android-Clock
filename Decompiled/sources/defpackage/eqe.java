@@ -160,7 +160,7 @@ public final class eqe {
         int iK = eplVar.k(context, i);
         if (iK != 0) {
             Intent intentL = eplVar.l(context, iK, "e");
-            Log.e("GooglePlayServicesUtil", a.aW(iK, "GooglePlayServices not available due to error "));
+            Log.e("GooglePlayServicesUtil", a.appendInt(iK, "GooglePlayServices not available due to error "));
             if (intentL != null) {
                 throw new eqd(intentL);
             }

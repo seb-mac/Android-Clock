@@ -214,7 +214,7 @@ public final class ikm extends LinearLayout {
                 ijzVar = new ijy(iklVar.b);
             } else {
                 if (i != 3) {
-                    throw new IllegalArgumentException(a.aW(i, "Invalid end icon mode: "));
+                    throw new IllegalArgumentException(a.appendInt(i, "Invalid end icon mode: "));
                 }
                 ijzVar = new iki(iklVar.b);
             }

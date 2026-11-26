@@ -97,7 +97,7 @@ final class tn implements qm {
                 Iterator it2 = setG.iterator();
                 while (it2.hasNext()) {
                     if (tv.b((ql) it2.next(), vwVar, vwVar2, new vy(0)) > i3) {
-                        throw new te(a.aW(i3, "Too many properties to be indexed, max number of properties allowed: "));
+                        throw new te(a.appendInt(i3, "Too many properties to be indexed, max number of properties allowed: "));
                     }
                 }
             } catch (te e) {

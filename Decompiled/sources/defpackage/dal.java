@@ -214,7 +214,7 @@ public final class dal extends lvs implements lws {
                     if (!listC.isEmpty()) {
                         parcelableIndexableArr = new ParcelableIndexable[listC.size()];
                         for (i2 = 0; i2 < listC.size(); i2++) {
-                            dft dftVar = (dft) listC.get(i2);
+                            Lap dftVar = (Lap) listC.get(i2);
                             ParcelableIndexable parcelableIndexable5 = new ParcelableIndexable("StopwatchLap", "StopwatchLap", vc.k(dftVar));
                             parcelableIndexable5.c("elapsedTime", cpu.f(dftVar.b));
                             parcelableIndexable5.c("accumulatedTime", cpu.f(dftVar.c));
@@ -297,7 +297,7 @@ public final class dal extends lvs implements lws {
                 if (!listC.isEmpty()) {
                     parcelableIndexableArr = new ParcelableIndexable[listC.size()];
                     while (i2 < listC.size()) {
-                        dft dftVar2 = (dft) listC.get(i2);
+                        Lap dftVar2 = (Lap) listC.get(i2);
                         ParcelableIndexable parcelableIndexable6 = new ParcelableIndexable("StopwatchLap", "StopwatchLap", vc.k(dftVar2));
                         parcelableIndexable6.c("elapsedTime", cpu.f(dftVar2.b));
                         parcelableIndexable6.c("accumulatedTime", cpu.f(dftVar2.c));

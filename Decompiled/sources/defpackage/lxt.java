@@ -77,7 +77,7 @@ public class lxt {
         if (obj == null || b(obj, i)) {
             return;
         }
-        a(obj, a.aW(i, "kotlin.jvm.functions.Function"));
+        a(obj, a.appendInt(i, "kotlin.jvm.functions.Function"));
     }
 
     public static void d(Object obj) {

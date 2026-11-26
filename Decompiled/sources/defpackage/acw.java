@@ -1620,9 +1620,9 @@ public final class acw {
                 }
             }
         } catch (IOException e) {
-            Log.e("ConstraintSet", a.aW(i2, "Error parsing resource: "), e);
+            Log.e("ConstraintSet", a.appendInt(i2, "Error parsing resource: "), e);
         } catch (XmlPullParserException e2) {
-            Log.e("ConstraintSet", a.aW(i2, "Error parsing resource: "), e2);
+            Log.e("ConstraintSet", a.appendInt(i2, "Error parsing resource: "), e2);
         }
     }
 
@@ -2233,7 +2233,7 @@ public final class acw {
                             }
                         }
                     } else {
-                        Log.v("ConstraintSet", a.aW(id, "WARNING NO CONSTRAINTS for view "));
+                        Log.v("ConstraintSet", a.appendInt(id, "WARNING NO CONSTRAINTS for view "));
                     }
                 }
             }

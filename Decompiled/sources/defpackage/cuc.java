@@ -147,14 +147,14 @@ public final class cuc {
     static void k(Context context, cue cueVar) {
         int iDelete = a(context).delete("alarm_instances", "_id = ?", new String[]{String.valueOf(cueVar.g)});
         if (iDelete > 1) {
-            throw new IllegalStateException(a.aW(iDelete, "Unexpected count: "));
+            throw new IllegalStateException(a.appendInt(iDelete, "Unexpected count: "));
         }
     }
 
     static void l(Context context, cue cueVar) {
         int iUpdate = a(context).update("alarm_instances", cvh.b(cueVar), "_id = ?", new String[]{String.valueOf(cueVar.g)});
         if (iUpdate > 1) {
-            throw new IllegalStateException(a.aW(iUpdate, "Unexpected count: "));
+            throw new IllegalStateException(a.appendInt(iUpdate, "Unexpected count: "));
         }
     }
 }

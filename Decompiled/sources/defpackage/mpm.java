@@ -33,7 +33,7 @@ public class mpm implements Serializable, Comparable {
         int i = objectInputStream.readInt();
         lxj.d(objectInputStream, "<this>");
         if (i < 0) {
-            throw new IllegalArgumentException(a.aW(i, "byteCount < 0: "));
+            throw new IllegalArgumentException(a.appendInt(i, "byteCount < 0: "));
         }
         byte[] bArr = new byte[i];
         int i2 = 0;

@@ -72,7 +72,7 @@ public final class dpj extends lp {
     public final /* bridge */ /* synthetic */ mq f(ViewGroup viewGroup, int i) {
         gog gogVar = (gog) this.h.get(i);
         if (gogVar == null) {
-            throw new IllegalArgumentException(a.aW(i, "Unsupported view type: "));
+            throw new IllegalArgumentException(a.appendInt(i, "Unsupported view type: "));
         }
         return gogVar.a.a(this.i, viewGroup, i, gogVar.b);
     }

@@ -18,7 +18,7 @@ public final class dwe extends FilterInputStream implements InputStreamRetargetI
     public dwe(InputStream inputStream, int i) {
         super(inputStream);
         if (i < -1 || i > 8) {
-            throw new IllegalArgumentException(a.aW(i, "Cannot add invalid orientation: "));
+            throw new IllegalArgumentException(a.appendInt(i, "Cannot add invalid orientation: "));
         }
         this.c = (byte) i;
     }

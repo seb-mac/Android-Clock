@@ -30,7 +30,7 @@ public final class dgn implements dfw, dko, axp {
         Window window;
         StopwatchController cxpVar = this.c;
         boolean z = this.b.c;
-        if (cxpVar.b().isRunning()) {
+        if (cxpVar.getStopwatchStateModel().isRunning()) {
             ccx ccxVar = this.d;
             if (ccxVar.aC() && z) {
                 bj bjVarD = ccxVar.D();

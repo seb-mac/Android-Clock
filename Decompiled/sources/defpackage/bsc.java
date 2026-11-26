@@ -139,7 +139,7 @@ public final class bsc implements brf, bou {
 
     public final void d(int i, int i2) {
         boa.a();
-        Log.i(a, a.aW(i2, "Foreground service timed out, FGS type: "));
+        Log.i(a, a.appendInt(i2, "Foreground service timed out, FGS type: "));
         for (Map.Entry entry : this.e.entrySet()) {
             if (((bnq) entry.getValue()).b == i2) {
                 this.b.f((bsq) entry.getKey(), -128);

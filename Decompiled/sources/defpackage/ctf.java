@@ -22,7 +22,7 @@ public final class ctf implements cpb, cqg, cqi, dfw {
     }
 
     private final void b() {
-        dlx.e(new cte(this, this.c.b(), 0));
+        dlx.e(new cte(this, this.c.getStopwatchStateModel(), 0));
     }
 
     public final ShortcutInfo a(StopwatchStateModel dfvVar) {

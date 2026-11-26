@@ -835,7 +835,7 @@ public class jqg implements Closeable {
                 case ard.BYTES_FIELD_NUMBER /* 8 */:
                     break;
                 default:
-                    throw new AssertionError(a.aW(i3, "Unknown scope value: "));
+                    throw new AssertionError(a.appendInt(i3, "Unknown scope value: "));
             }
             i++;
         }
